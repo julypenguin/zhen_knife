@@ -1,0 +1,179 @@
+.page
+
+.main-view
+    min-height 100vh
+    background-color #EFC39C
+    display flex
+    flex-direction column
+
+.main-view-img-fit
+    width 100%
+    height 100%
+    position absolute
+    top 0
+    left 0
+
+.main-view-img-img
+    width 100%
+    display block
+    object-fit cover
+    height inherit
+
+.center-tools
+    width 100%
+    display flex
+    flex-direction column
+    align-items center
+    // justify-content center
+    // background-color orange
+
+.center-tools-img
+    width: 25%
+    padding-top 25%
+    transform: translateY(-1rem)
+
+.center-tools-img-fit
+    width 100%
+    height 100%
+    position absolute
+    top 0
+    left 0
+
+.center-tools-img-img
+    width 100%
+    display block
+    object-fit cover
+    height inherit
+
+.center-tools-icon
+    font-size 180px
+    margin-bottom 3rem
+    // padding 0 10px
+    // background-color yellow
+
+.center-tools-search
+    position absolute
+    bottom 0
+    display flex
+    width: 30%
+    height: 29px
+    max-height 200px
+    // background-color orange
+    // border-radius 30px
+    // width 200px
+    // top -250px
+
+.center-tools-search-input
+    flex 1
+    border-radius 30px 0 0 30px
+    border none
+    min-width 65px
+    padding-left 10px
+    &:focus
+        outline none
+
+.center-tools-search-button
+    width 65px
+    background-color #9B0500
+    color #fff
+    border-radius 0 30px 30px 0
+    padding 0.25rem 0.5rem
+    &:hover
+        cursor pointer
+
+.side-view
+    width 100%
+    padding-top 1.5rem
+    padding-bottom 1.5rem
+    background-color #000
+
+.side-view-inner
+    width 100%
+    min-height 270px
+    padding-top 1.5rem
+    padding-bottom 1.5rem
+    display flex
+    align-items center
+    height 200px
+    // height 372px
+
+.side-view-imgboxs
+    display flex
+    flex-wrap wrap
+    justify-content space-between
+    padding 0.5rem 0
+    width 100%
+
+.side-view-imgbox
+    width 33.333%
+    padding 0 10px
+    box-sizing border-box
+
+.side-view-imgbox-inner
+    width 100%
+    padding-top 240px
+
+.side-view-imgbox-fit
+    width 100%
+    height 100%
+    position absolute
+    top 0
+    left 0
+
+.side-view-imgbox-image
+    width 100%
+    display block
+    object-fit cover
+    height inherit
+    filter:brightness(0.6)
+    transition all 0.3s
+    &:hover
+        filter:brightness(1)
+        
+.side-view-imgbox-words-red
+    position absolute
+    bottom 0
+    left 0
+    color #fff
+    padding-left 16px
+    font-size 30px
+    line-height 30px
+    font-style italic
+    font-family "Catamaran", Sans-serif
+    font-weight 700
+    text-transform uppercase
+    letter-spacing -2.5px
+    &:hover
+        cursor pointer
+    &:before
+        content: ''
+        position absolute
+        bottom 0
+        left 0
+        height 100%
+        width 5px
+        background-color red
+
+.side-view-imgbox-words-blue
+    position absolute
+    bottom 0
+    left 0
+    color #fff
+    padding-left 16px
+    font-size 30px
+    line-height 30px
+    font-style italic
+    font-family "Catamaran", Sans-serif
+    font-weight 700
+    text-transform uppercase
+    letter-spacing -2.5px
+    &:hover
+        cursor pointer
+    &:before
+        content: ''
+        position absolute
+        bottom 0
+        left 0
+        height 100%
+        width 5px
+        background-color blue
