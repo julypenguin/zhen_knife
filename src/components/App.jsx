@@ -1,11 +1,10 @@
 import { hot } from 'react-hot-loader/root';
 import '../styl/index.styl'
 import React, { Component } from 'react'
-// import { IntlProvider } from 'react-intl'
+import { IntlProvider } from 'react-intl'
 import { Spinner } from 'react-bootstrap'
 import PropTypes from 'prop-types'
-// import Login from './Login'
-// import Main from './Main'
+import Main from './Main'
 
 class App extends Component {
 
@@ -21,14 +20,12 @@ class App extends Component {
     )
 
     render() {
-        let { intl: { language }, isprefetching, islogin, history } = this.props
-        console.log(language)
+        let { intl: { language }, isprefetching, history } = this.props
         // get intl-config by container so IntlProvider(Context API) in here
         return (
-            <div>123</div>
-            // <IntlProvider defaultLocale='zh' {...language}>
-            //     {/* {isprefetching ? this.renderPageLoading() : islogin ? <Main history={history} /> : <Login />} */}
-            // </IntlProvider>
+            <IntlProvider defaultLocale='zh' {...language}>
+                {isprefetching ? this.renderPageLoading() : <Main history={history} />}
+            </IntlProvider>
         )
     }
 
