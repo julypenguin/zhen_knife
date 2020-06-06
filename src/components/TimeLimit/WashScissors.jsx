@@ -29,7 +29,7 @@ const WashScissors = () => {
             <div className='timelimit-wash-img-outer'>
                 <div className='timelimit-wash-img-box'>
                     {data.imgList.map(img => (
-                        <ImgFit className='timelimit-wash-img' src={imgList[img.id]}>
+                        <ImgFit key={img.id} className='timelimit-wash-img' src={imgList[img.id]}>
                             {renderStepText(img)}
                         </ImgFit>
                     ))}

@@ -7,7 +7,7 @@ const ImgFit = ({
     center,
 }) => {
     return (
-        <div className={className}>
+        <div className={className ? className : 'img-box'}>
             <div className='img-fit'>
                 <img className={center ? 'img-img-center' : 'img-img'} src={src} />
             </div>
