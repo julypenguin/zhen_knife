@@ -1,0 +1,47 @@
+{
+    "navTitle": "臻刀具",
+    "navList": [
+        {
+            "nav": "首頁",
+            "to": "/",
+            "exact": "true",
+            "strict": "false"
+        },
+        {
+            "nav": "限時搶購活動",
+            "to": "/SS-01BG",
+            "exact": "true",
+            "strict": "false"
+        },
+        {
+            "nav": "最新訊息",
+            "to": "/news",
+            "exact": "true",
+            "strict": "false"
+        },
+        {
+            "nav": "臻刀具系列",
+            "to": "/shop",
+            "exact": "true",
+            "strict": "false"
+        },
+        {
+            "nav": "聯絡我們",
+            "to": "/contact",
+            "exact": "true",
+            "strict": "false"
+        },
+        {
+            "nav": "購物相關",
+            "to": "/shopping_process",
+            "exact": "true",
+            "strict": "false"
+        },
+        {
+            "nav": "會員專區",
+            "to": "/vip",
+            "exact": "true",
+            "strict": "false"
+        }
+    ]
+}

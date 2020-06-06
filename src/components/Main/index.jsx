@@ -4,6 +4,7 @@ import { Route, Switch } from 'react-router'
 
 import Header from '../../containers/Header/Header'
 import Deshboard from '../../containers/Main/Deshboard'
+import TimeLimit from '../../containers/TimeLimit/index'
 
 const index = (props) => {
     const {
@@ -20,7 +21,8 @@ const index = (props) => {
                 <div className='container-page'>
 
                     <Switch>
-                        <Route exact path="/" render={() => <Deshboard />} />
+                        <Route exact path="/SS-01BG" render={(props) => <TimeLimit {...props} />} />
+                        <Route exact path="/" render={(props) => <Deshboard />} {...props} />
                     </Switch>
 
 

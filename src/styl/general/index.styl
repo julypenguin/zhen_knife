@@ -7,8 +7,11 @@
     // box-sizing border-box
 }
 
-body {
+body, td, input, select, textarea, p {
     font-family 'Microsoft JhengHei','Helvetica Neue','Helvetica','Arial', dashicons, sans-serif !important;
+}
+
+body {
     color #3a3a3a
     box-sizing border-box
 }
@@ -33,3 +36,24 @@ a {
 .f-jc
     display flex
     justify-content center
+
+.f-aic
+    display flex
+    align-items center
+
+.img-fit
+    width 100%
+    height 100%
+    position absolute
+    top 0
+    left 0
+
+.img-img
+    width 100%
+    display block
+    object-fit cover
+    height inherit
+
+.img-img-center
+    @extend .img-img
+    object-position center
