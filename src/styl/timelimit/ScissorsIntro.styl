@@ -65,3 +65,30 @@
 .timelimit-intro-img
     width 100%
     padding-top 60%
+
+.youtube-size
+    max-width 1140px
+    max-height 641px
+    margin 0 auto
+
+.youtube-container-box
+    width 100%
+    overflow hidden
+    margin-bottom 2rem
+    box-sizing border-box
+    >.youtube-container-box-center
+        @extend .youtube-size
+        margin-bottom 1rem
+
+.youtube-container
+    width 100%
+    position relative
+    padding-top 56.25%
+    >iframe
+        @extend .youtube-size
+        position absolute
+        top 0
+        left 0
+        height 100%
+        background #000
+        box-shadow 6px 7px 10px rgba(0, 0, 0, 0.5)
