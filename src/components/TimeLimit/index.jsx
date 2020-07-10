@@ -3,6 +3,8 @@ import ViewMain from './ViewMain'
 import WashScissors from './WashScissors'
 import ScissorsIntro from './ScissorsIntro'
 import YoutubeIframe from './YoutubeIframe'
+import FeaturesIntro from './FeaturesIntro'
+import FeaturesIntroSide from './FeaturesIntroSide'
 
 const index = (props) => {
 
@@ -21,6 +23,12 @@ const index = (props) => {
 
             {/* 影片介紹 */}
             <YoutubeIframe />
+
+            {/* 特點介紹 */}
+            <FeaturesIntro />
+
+            {/* 特點介紹下頁 */}
+            <FeaturesIntroSide />
 
         </section>
     );

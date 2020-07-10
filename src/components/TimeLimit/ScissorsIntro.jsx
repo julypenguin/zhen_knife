@@ -13,7 +13,7 @@ const ScissorsIntro = () => {
                         <div className='timelimit-intro-line'></div>
                     </div>
                     {data.main_intro.intro.map(intro => (
-                        <div className='timelimit-intro-text-box'>
+                        <div key={intro.id} className='timelimit-intro-text-box'>
                             <div className='timelimit-intro-text-title'>{intro.title}</div>
                             {!!intro.desc && <div className='timelimit-intro-text'>{intro.desc}</div>}
                         </div>
@@ -25,7 +25,7 @@ const ScissorsIntro = () => {
                 <div className='timelimit-intro-right-center'>
                     <div className='timelimit-intro-must'>
                         {data.side_intro.intro.map(intro => (
-                            <div className='timelimit-intro-must-text'>{intro.title}</div>
+                            <div key={intro.id} className='timelimit-intro-must-text'>{intro.title}</div>
                         ))}
                     </div>
                     <ImgFit src={cut} className='timelimit-intro-img' />
