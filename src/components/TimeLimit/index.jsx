@@ -5,10 +5,9 @@ import ScissorsIntro from './ScissorsIntro'
 import YoutubeIframe from './YoutubeIframe'
 import FeaturesIntro from './FeaturesIntro'
 import FeaturesIntroSide from './FeaturesIntroSide'
+import DesignConcept from './DesignConcept'
 
 const index = (props) => {
-
-
 
     return (
         <section>
@@ -29,6 +28,9 @@ const index = (props) => {
 
             {/* 特點介紹下頁 */}
             <FeaturesIntroSide />
+
+            {/* 設計理念 */}
+            <DesignConcept />
 
         </section>
     );

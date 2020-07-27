@@ -27,7 +27,7 @@
     "rules": {
         "no-console": "off",
         "react/display-name": [
-            false,
+            0,
             {
                 "ignoreTranspilerName": true
             }
