@@ -6,6 +6,7 @@ import YoutubeIframe from './YoutubeIframe'
 import FeaturesIntro from './FeaturesIntro'
 import FeaturesIntroSide from './FeaturesIntroSide'
 import DesignConcept from './DesignConcept'
+import Universal from './Universal'
 
 const index = (props) => {
 
@@ -31,6 +32,9 @@ const index = (props) => {
 
             {/* 設計理念 */}
             <DesignConcept />
+
+            {/* 一把萬用 */}
+            <Universal />
 
         </section>
     );
