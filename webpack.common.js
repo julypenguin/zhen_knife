@@ -127,6 +127,18 @@ module.exports = {
                     name: 'vendors',
                     chunks: 'all',
                     enforce: true
+                },
+                intls: {
+                    test: /@formatjs.*/,
+                    name: 'intls',
+                    chunks: 'all',
+                    enforce: true
+                },
+                fortawesome: {
+                    test: /@fortawesome.*/,
+                    name: 'fortawesome',
+                    chunks: 'all',
+                    enforce: true
                 }
             }
         }

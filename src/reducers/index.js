@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux'
 import { connectRouter } from 'connected-react-router'
-// import intl from './intl'
+import intl from './intl'
 // import fsx from './fsx'
 // import core from './core'
 // import kb from './kb'
@@ -9,7 +9,7 @@ import { connectRouter } from 'connected-react-router'
 // import exam from './exam'
 
 export default (history) => combineReducers({
-    // intl,
+    intl,
     router: connectRouter(history),
     // fsx,
     // core,

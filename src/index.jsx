@@ -5,26 +5,33 @@ import './lib/formdataPolyfill.js'
 import React from "react"
 import { render } from "react-dom"
 import { Provider, ReactReduxContext } from 'react-redux'
-// import { addLocaleData } from 'react-intl'
-import '@formatjs/intl-relativetimeformat/polyfill'
-import '@formatjs/intl-relativetimeformat/dist/locale-data/en'
-import '@formatjs/intl-relativetimeformat/dist/locale-data/zh'
 import configureStore, { history } from "./store"
+import InstallFontAwesome from './lib/icon'
 import rootSaga from "./sagas"
 import App from './containers/App'
-import InstallFontAwesome from './lib/icon'
+
+if (!Intl.PluralRules) {
+    require('@formatjs/intl-pluralrules/polyfill')
+    require('@formatjs/intl-pluralrules/dist/locale-data/en')
+    require('@formatjs/intl-pluralrules/dist/locale-data/zh')
+    console.log('!Intl.PluralRules')
+}
+
+if (!Intl.RelativeTimeFormat) {
+    require('@formatjs/intl-relativetimeformat/polyfill')
+    require('@formatjs/intl-relativetimeformat/dist/locale-data/en')
+    require('@formatjs/intl-relativetimeformat/dist/locale-data/zh')
+    console.log('!Intl.RelativeTimeFormat')
+
+}
 
 const store = configureStore();
 // start saga
 store.runSaga(rootSaga);
 // install icon
 InstallFontAwesome();
-// install language pack
-// addLocaleData([...locale_en, ...locale_zh,])
 
 const rootElement = document.getElementById("root");
-
-
 
 render(
     <Provider store={store} context={ReactReduxContext}>

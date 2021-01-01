@@ -30,14 +30,14 @@ class App extends Component {
         )
     }
 
-    static defaultProps = {
-        intl: {
-            language: {
-                locale: 'zh',
-                messages: {}
-            }
-        }
-    }
+    // static defaultProps = {
+    //     intl: {
+    //         language: {
+    //             locale: 'zh',
+    //             messages: {}
+    //         }
+    //     }
+    // }
 
     static propTypes = {
         // intl: PropTypes.shape({
