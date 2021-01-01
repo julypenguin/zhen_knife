@@ -1,5 +1,6 @@
 import { hot } from 'react-hot-loader/root';
 import '../styl/index.styl'
+import '../styl/styles.css'
 import React, { Component } from 'react'
 import { IntlProvider } from 'react-intl'
 import { Spinner } from 'react-bootstrap'

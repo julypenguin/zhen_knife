@@ -69,7 +69,8 @@ module.exports = {
                         },
                     },
                     //"style-loader",
-                    "css-loader"
+                    "css-loader",
+                    "postcss-loader"
                 ]
             }
         ]
