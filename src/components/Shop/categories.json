@@ -1,0 +1,334 @@
+{
+    "categories": [
+        {
+            "cats_sid": 1,
+            "name": "三合鋼系列",
+            "intl_id": "ts_10000",
+            "product": [
+                "dmh_01",
+                "dmh_02",
+                "dmh_03",
+                "dph_01",
+                "dph_02",
+                "dph_03",
+                "dph_04",
+                "dth_01",
+                "dth_02",
+                "dpm_01",
+                "dpm_02",
+                "dpm_03",
+                "dpm_04",
+                "dpm_05",
+                "deh_01",
+                "deh_02",
+                "deh_03",
+                "deh_04",
+                "deh_05",
+                "deh_06",
+                "deh_07",
+                "deh_08",
+                "deh_09",
+                "deh_10",
+                "deh_11",
+                "deh_12",
+                "deh_13",
+                "deh_14",
+                "dwh_01",
+                "sck_01",
+                "sck_02",
+                "sck_03",
+                "sck_04",
+                "sph_01",
+                "sph_02",
+                "sck_05",
+                "sck_06",
+                "sck_07",
+                "sck_08",
+                "sck_09",
+                "sck_10",
+                "smh_01",
+                "smh_02",
+                "sma_01",
+                "sea_01",
+                "sea_02",
+                "sea_03",
+                "sea_04",
+                "kh_01",
+                "kh_02",
+                "sc_01",
+                "sc_02"
+            ]
+        },
+        {
+            "cats_sid": 2,
+            "name": "中式菜刀系列",
+            "intl_id": "ck_20000",
+            "product": [
+                "sck_01",
+                "sck_02",
+                "sck_03",
+                "sck_04",
+                "sck_05",
+                "sck_06",
+                "sck_07",
+                "sck_08",
+                "sck_09",
+                "sck_10"
+            ]
+        },
+        {
+            "cats_sid": 3,
+            "name": "日式楓木柄",
+            "intl_id": "jm_30000",
+            "product": [
+                "smh_01",
+                "smh_02",
+                "sma_01"
+            ]
+        },
+        {
+            "cats_sid": 4,
+            "name": "日式類黑檀木柄",
+            "intl_id": "je_40000",
+            "product": [
+                "sea_01",
+                "sea_02",
+                "sea_03",
+                "sea_04"
+            ]
+        },
+        {
+            "cats_sid": 5,
+            "name": "職業主廚刀專區",
+            "intl_id": "pc_50000",
+            "product": [
+                "sph_01",
+                "sph_02",
+                "smh_01",
+                "smh_02",
+                "sma_01",
+                "sea_01",
+                "sea_02",
+                "sea_03",
+                "sea_04"
+            ]
+        },
+        {
+            "cats_sid": 6,
+            "name": "金屬柄中式菜刀",
+            "intl_id": "mc_60000",
+            "product": [
+                "sck_04",
+                "sck_09",
+                "sck_10"
+            ]
+        },
+        {
+            "cats_sid": 7,
+            "name": "刀座 / 刀鞘",
+            "intl_id": "kh_70000",
+            "product": [
+                "kh_01",
+                "kh_02",
+                "sc_01",
+                "sc_02"
+            ]
+        },
+        {
+            "cats_sid": 8,
+            "name": "大馬士革",
+            "intl_id": "dm_80000",
+            "product": [
+                "dmh_01",
+                "dmh_02",
+                "dmh_03",
+                "dph_01",
+                "dph_02",
+                "dph_03",
+                "dph_04",
+                "dth_01",
+                "dth_02",
+                "dpm_01",
+                "dpm_02",
+                "dpm_03",
+                "dpm_04",
+                "dpm_05",
+                "deh_01",
+                "deh_02",
+                "deh_03",
+                "deh_04",
+                "deh_05",
+                "deh_06",
+                "deh_07",
+                "deh_08",
+                "deh_09",
+                "deh_10",
+                "deh_11",
+                "deh_12",
+                "deh_13",
+                "deh_14",
+                "dwh_01"
+            ]
+        },
+        {
+            "cats_sid": 9,
+            "name": "101層亮面綠松石柄",
+            "intl_id": "101tq_90001",
+            "product": [
+                "dth_01",
+                "dth_02"
+            ]
+        },
+        {
+            "cats_sid": 10,
+            "name": "101層大馬士革",
+            "product": [
+                "dmh_01",
+                "dmh_02",
+                "dmh_03",
+                "dph_01",
+                "dph_02",
+                "dph_03",
+                "dph_04"
+            ]
+        },
+        {
+            "cats_sid": 11,
+            "name": "67層大馬士革",
+            "product": [
+                "deh_01",
+                "deh_02",
+                "deh_03",
+                "deh_04",
+                "deh_05",
+                "deh_06",
+                "deh_07",
+                "deh_08",
+                "deh_09",
+                "deh_10",
+                "deh_11",
+                "deh_12",
+                "deh_13",
+                "deh_14"
+            ]
+        },
+        {
+            "cats_sid": 12,
+            "name": "67層手工錘打印",
+            "product": [
+                "dpm_01",
+                "dpm_02",
+                "dpm_03",
+                "dpm_04",
+                "dpm_05"
+            ]
+        },
+        {
+            "cats_sid": 13,
+            "name": "67層胡桃木閃電紋",
+            "product": [
+                "dwh_01"
+            ]
+        },
+        {
+            "cats_sid": 14,
+            "name": "大馬士革中式廚刀系列",
+            "product": [
+                "deh_07",
+                "deh_08"
+            ]
+        },
+        {
+            "cats_sid": 15,
+            "name": "大馬士革職業主廚刀專區",
+            "product": [
+                "dmh_03",
+                "dph_01",
+                "dph_02",
+                "dth_02",
+                "deh_01",
+                "deh_02",
+                "deh_04",
+                "deh_06",
+                "dwh_01"
+            ]
+        },
+        {
+            "cats_sid": 16,
+            "name": "大馬士革閃電紋系列",
+            "product": [
+                "dmh_01",
+                "dmh_02",
+                "dmh_03",
+                "dph_01",
+                "dph_02",
+                "dph_03",
+                "dph_04",
+                "dth_01",
+                "dth_02",
+                "dwh_01"
+            ]
+        },
+        {
+            "cats_sid": 17,
+            "name": "大馬士革經典雋永系列",
+            "product": [
+                "deh_01",
+                "deh_02",
+                "deh_03",
+                "deh_04",
+                "deh_05",
+                "deh_06",
+                "deh_07",
+                "deh_08",
+                "deh_09",
+                "deh_10",
+                "deh_11",
+                "deh_12",
+                "deh_13",
+                "deh_14"
+            ]
+        },
+        {
+            "cats_sid": 18,
+            "name": "家庭實用專區",
+            "product": [
+                "dmh_01",
+                "dmh_02",
+                "sck_01",
+                "sck_02",
+                "sck_03",
+                "sck_04",
+                "sck_05",
+                "sck_06",
+                "sck_07",
+                "sck_08",
+                "sck_09",
+                "sck_10",
+                "deh_03",
+                "deh_14"
+            ]
+        },
+        {
+            "cats_sid": 19,
+            "name": "特價商品",
+            "product": [
+                "dpm_01",
+                "dpm_03",
+                "dpm_04",
+                "dpm_05",
+                "deh_01",
+                "deh_02",
+                "deh_04",
+                "deh_05",
+                "deh_06",
+                "deh_09",
+                "deh_10",
+                "deh_11",
+                "deh_12",
+                "deh_13",
+                "deh_14"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,418 @@
+{
+    "sck_01": {
+        "cat_sid": 10012,
+        "name": "臻 ★日本進口三合鋼 中式菜刀+ 噴砂★~TPR防滑握柄 – 肉桂刀",
+        "intl_id": "ts_10012",
+        "price": "860",
+        "discount": "",
+        "class": "sandwich_chinese_knife"
+    },
+    "sck_02": {
+        "cat_sid": 10013,
+        "name": "臻 ★日本進口三合鋼 中式菜刀+ 噴砂★~TPR防滑握柄-小剁刀",
+        "intl_id": "ts_10013",
+        "price": "980",
+        "discount": "",
+        "class": "sandwich_chinese_knife"
+    },
+    "sck_03": {
+        "cat_sid": 10014,
+        "name": "臻 ★日本進口三合鋼 中式菜刀+ 噴砂★~TPR防滑握柄-片刀",
+        "intl_id": "ts_10014",
+        "price": "860",
+        "discount": "",
+        "class": "sandwich_chinese_knife"
+    },
+    "sck_04": {
+        "cat_sid": 10015,
+        "name": "臻 ★日本進口三合鋼 中式菜刀+ 噴砂★~一體成型防滑握柄 – 肉桂刀",
+        "intl_id": "ts_10015",
+        "price": "1,980",
+        "discount": "",
+        "class": "sandwich_chinese_knife"
+    },
+    "sck_05": {
+        "cat_sid": 10018,
+        "name": "臻 ★日本進口三合鋼 中式菜刀+ 噴砂★~OAK橡木握柄 – 剁刀",
+        "intl_id": "ts_10018",
+        "price": "1,060",
+        "discount": "",
+        "class": "sandwich_chinese_knife"
+    },
+    "sck_06": {
+        "cat_sid": 10019,
+        "name": "臻 ★日本進口三合鋼 中式菜刀+ 噴砂★~OAK橡木握柄 – 小剁刀",
+        "intl_id": "ts_10019",
+        "price": "980",
+        "discount": "",
+        "class": "sandwich_chinese_knife"
+    },
+    "sck_07": {
+        "cat_sid": 10020,
+        "name": "臻 ★日本進口三合鋼 中式菜刀+ 噴砂★~TPR防滑握柄 – 剁刀",
+        "intl_id": "ts_10020",
+        "price": "1,060",
+        "discount": "",
+        "class": "sandwich_chinese_knife"
+    },
+    "sck_08": {
+        "cat_sid": 10021,
+        "name": "臻 ★日本進口三合鋼 中式菜刀+ 噴砂★~TPR防滑握柄 – 大片刀",
+        "intl_id": "ts_10021",
+        "price": "960",
+        "discount": "",
+        "class": "sandwich_chinese_knife"
+    },
+    "sck_09": {
+        "cat_sid": 10022,
+        "name": "臻 ★日本進口三合鋼 中式菜刀+ 噴砂★~一體成型防滑握柄 – 剁刀",
+        "intl_id": "ts_10022",
+        "price": "2,180",
+        "discount": "",
+        "class": "sandwich_chinese_knife"
+    },
+    "sck_10": {
+        "cat_sid": 10023,
+        "name": "臻 ★日本進口三合鋼 中式菜刀+ 噴砂★~一體成型防滑握柄 – 片刀",
+        "intl_id": "ts_10023",
+        "price": "1,980",
+        "discount": "",
+        "class": "sandwich_chinese_knife"
+    },
+    "sph_01": {
+        "cat_sid": 10016,
+        "name": "臻 ★日本進口三合鋼 牛刀★~PAKKA木柄 – 240mm 牛刀",
+        "intl_id": "ts_10016",
+        "price": "1,340",
+        "discount": "",
+        "class": "sandwich_pakka_handle"
+    },
+    "sph_02": {
+        "cat_sid": 10017,
+        "name": "臻 ★日本進口三合鋼 牛刀★~PAKKA木柄 – 270mm 牛刀",
+        "intl_id": "ts_10017",
+        "price": "1,440",
+        "discount": "",
+        "class": "sandwich_pakka_handle"
+    },
+    "smh_01": {
+        "cat_sid": 10044,
+        "name": "臻 ★日本進口頂級三合鋼★~精緻刀面拋磨防銹~楓木柄- 小萬用主廚料理刀",
+        "intl_id": "ts_10044",
+        "price": "750",
+        "discount": "",
+        "class": "sandwich_maple_handle"
+    },
+    "smh_02": {
+        "cat_sid": 10045,
+        "name": "臻 ★日本進口頂級三合鋼★~精緻刀面拋磨防銹~楓木柄- 萬用主廚料理刀、多用途料理刀",
+        "intl_id": "ts_10045",
+        "price": "1,100",
+        "discount": "",
+        "class": "sandwich_maple_handle"
+    },
+    "sma_01": {
+        "cat_sid": 10046,
+        "name": "臻 ★日本進口頂級三合鋼★~精緻刀面拋磨防銹~類楓木柄- 削皮刀",
+        "intl_id": "ts_10046",
+        "price": "650",
+        "discount": "",
+        "class": "sandwich_maple_analogy"
+    },
+    "sea_01": {
+        "cat_sid": 10047,
+        "name": "臻 ★日本進口頂級三合鋼★~精緻刀面拋磨防銹~類黑檀木柄- 120mm萬用料理刀",
+        "intl_id": "ts_10047",
+        "price": "750",
+        "discount": "",
+        "class": "sandwich_ebony_analogy"
+    },
+    "sea_02": {
+        "cat_sid": 10048,
+        "name": "臻 ★日本進口頂級三合鋼★~精緻刀面拋磨防銹~類黑檀木柄- 主廚料理刀 210mm西式主廚刀",
+        "intl_id": "ts_10048",
+        "price": "1,150",
+        "discount": "",
+        "class": "sandwich_ebony_analogy"
+    },
+    "sea_03": {
+        "cat_sid": 10049,
+        "name": "臻 ★日本進口頂級三合鋼★~精緻刀面拋磨防銹~類黑檀木柄- 削皮刀",
+        "intl_id": "ts_10049",
+        "price": "650",
+        "discount": "",
+        "class": "sandwich_ebony_analogy"
+    },
+    "sea_04": {
+        "cat_sid": 10050,
+        "name": "臻 ★日本進口頂級三合鋼★~精緻刀面拋磨防銹~類黑檀木柄- 萬用主廚料理刀、多用途料理刀",
+        "intl_id": "ts_10050",
+        "price": "1,100",
+        "discount": "",
+        "class": "sandwich_ebony_analogy"
+    },
+    "dmh_01": {
+        "cat_sid": 10003,
+        "name": "臻 ★德國進口大馬士革(101層)★~3D Micarta纖維柄 – 世界頂級小片刀 170mm",
+        "intl_id": "ts_10003",
+        "price": "4,600",
+        "discount": "",
+        "class": "damascus_micarta_handle"
+    },
+    "dmh_02": {
+        "cat_sid": 10004,
+        "name": "臻 ★德國進口大馬士革(101層)★~3D Mircarta纖維柄 – 世界頂級肉桂刀 180mm",
+        "intl_id": "ts_10004",
+        "price": "4,600",
+        "discount": "",
+        "class": "damascus_micarta_handle"
+    },
+    "dmh_03": {
+        "cat_sid": 10005,
+        "name": "臻 ★德國進口大馬士革(101層)★~烏木PAKKA柄 – 世界頂級主廚料理刀 210㎜牛刀",
+        "intl_id": "ts_10005",
+        "price": "3,500",
+        "discount": "",
+        "class": "damascus_micarta_handle"
+    },
+    "dph_01": {
+        "cat_sid": 10006,
+        "name": "臻 ★德國進口大馬士革(101層)★~烏木PAKKA柄 – 世界頂級主廚料理刀 240㎜ 劍型牛刀",
+        "intl_id": "ts_10006",
+        "price": "3,900",
+        "discount": "",
+        "class": "damascus_pakka_handle"
+    },
+    "dph_02": {
+        "cat_sid": 10007,
+        "name": "臻 ★德國進口大馬士革(101層)★~烏木PAKKA柄 – 世界頂級主廚料理刀 240㎜牛刀",
+        "intl_id": "ts_10007",
+        "price": "3,800",
+        "discount": "",
+        "class": "damascus_pakka_handle"
+    },
+    "dph_03": {
+        "cat_sid": 10008,
+        "name": "臻 ★德國進口大馬士革(101層)★~烏木PAKKA柄 – 世界頂級削皮刀 90mm",
+        "intl_id": "ts_10008",
+        "price": "1,600",
+        "discount": "",
+        "class": "damascus_pakka_handle"
+    },
+    "dph_04": {
+        "cat_sid": 10009,
+        "name": "臻 ★德國進口大馬士革(101層)★~烏木PAKKA柄 – 世界頂級萬用料理刀 120㎜小三德刀",
+        "intl_id": "ts_10009",
+        "price": "1,900",
+        "discount": "",
+        "class": "damascus_pakka_handle"
+    },
+    "dth_01": {
+        "cat_sid": 10010,
+        "name": "臻 ★德國進口大馬士革(101層)★~綠松石柄 – 世界頂級世界頂級萬用料理刀 180㎜",
+        "intl_id": "ts_10010",
+        "price": "3,700",
+        "discount": "",
+        "class": "damascus_turquoise_handle"
+    },
+    "dth_02": {
+        "cat_sid": 10011,
+        "name": "臻 ★德國進口大馬士革(101層)★~綠松石柄 – 世界頂級主廚料理刀 240㎜牛刀",
+        "intl_id": "ts_10011",
+        "price": "4,200",
+        "discount": "",
+        "class": "damascus_turquoise_handle"
+    },
+    "dpm_01": {
+        "cat_sid": 10024,
+        "name": "臻 ★日本進口大馬士革(積層鋼)★~ 世界頂級主廚料理刀 270mm牛刀",
+        "intl_id": "ts_10024",
+        "price": "3,800",
+        "discount": "2,200",
+        "class": "damascus_premium"
+    },
+    "dpm_02": {
+        "cat_sid": 10025,
+        "name": "臻 ★日本進口大馬士革(積層鋼)★~ 世界頂級小萬用主廚料理刀120mm",
+        "intl_id": "ts_10025",
+        "price": "1,600",
+        "discount": "",
+        "class": "damascus_premium"
+    },
+    "dpm_03": {
+        "cat_sid": 10026,
+        "name": "臻 ★日本進口大馬士革(積層鋼)★~ 世界頂級日式切菜刀",
+        "intl_id": "ts_10026",
+        "price": "3,000",
+        "discount": "1,800",
+        "class": "damascus_premium"
+    },
+    "dpm_04": {
+        "cat_sid": 10027,
+        "name": "臻 ★日本進口大馬士革(積層鋼)★~ 世界頂級萬用主廚料理刀 170mm",
+        "intl_id": "ts_10027",
+        "price": "3,000",
+        "discount": "1,800",
+        "class": "damascus_premium"
+    },
+    "dpm_05": {
+        "cat_sid": 10028,
+        "name": "臻 ★日本進口大馬士革(積層鋼)★~ 世界頂級萬用主廚料理刀 210mm日式牛刀",
+        "intl_id": "ts_10028",
+        "price": "3,000",
+        "discount": "1,800",
+        "class": "damascus_premium"
+    },
+    "deh_01": {
+        "cat_sid": 10029,
+        "name": "臻 ★日本進口大馬士革(積層鋼)★~ 黑檀木柄 – 世界頂級主廚料理刀 270㎜牛刀",
+        "intl_id": "ts_10029",
+        "price": "3,200",
+        "discount": "2,000",
+        "class": "damascus_ebony_handle"
+    },
+    "deh_02": {
+        "cat_sid": 10030,
+        "name": "臻 ★日本進口大馬士革(積層鋼)★~ 黑檀木柄 – 世界頂級主廚料理刀 300㎜牛刀",
+        "intl_id": "ts_10030",
+        "price": "3,400",
+        "discount": "2,200",
+        "class": "damascus_ebony_handle"
+    },
+    "deh_03": {
+        "cat_sid": 10031,
+        "name": "臻 ★日本進口大馬士革(積層鋼)★~黑檀木柄 – 世界頂級240㎜麵包刀",
+        "intl_id": "ts_10031",
+        "price": "2,400",
+        "discount": "",
+        "class": "damascus_ebony_handle"
+    },
+    "deh_04": {
+        "cat_sid": 10032,
+        "name": "臻 ★日本進口大馬士革(積層鋼)★~黑檀木柄 – 世界頂級主廚料理刀 210mm 劍形主廚刀",
+        "intl_id": "ts_10032",
+        "price": "2,800",
+        "discount": "1,800",
+        "class": "damascus_ebony_handle"
+    },
+    "deh_05": {
+        "cat_sid": 10033,
+        "name": "臻 ★日本進口大馬士革(積層鋼)★~黑檀木柄 – 世界頂級主廚料理刀 210mm西式主廚刀",
+        "intl_id": "ts_10033",
+        "price": "2,600",
+        "discount": "1,700",
+        "class": "damascus_ebony_handle"
+    },
+    "deh_06": {
+        "cat_sid": 10034,
+        "name": "臻 ★日本進口大馬士革(積層鋼)★~黑檀木柄 – 世界頂級主廚料理刀 270mm 劍形主廚刀",
+        "intl_id": "ts_10034",
+        "price": "3,300",
+        "discount": "2,000",
+        "class": "damascus_ebony_handle"
+    },
+    "deh_07": {
+        "cat_sid": 10035,
+        "name": "臻 ★日本進口大馬士革(積層鋼)★~黑檀木柄 – 世界頂級大片刀 200mm",
+        "intl_id": "ts_10035",
+        "price": "2,880",
+        "discount": "",
+        "class": "damascus_ebony_handle"
+    },
+    "deh_08": {
+        "cat_sid": 10036,
+        "name": "臻 ★日本進口大馬士革(積層鋼)★~黑檀木柄 – 世界頂級小片刀 170mm",
+        "intl_id": "ts_10036",
+        "price": "2,580",
+        "discount": "",
+        "class": "damascus_ebony_handle"
+    },
+    "deh_09": {
+        "cat_sid": 10037,
+        "name": "臻 ★日本進口大馬士革(積層鋼)★~黑檀木柄 – 世界頂級日式切菜刀",
+        "intl_id": "ts_10037",
+        "price": "2,500",
+        "discount": "1,600",
+        "class": "damascus_ebony_handle"
+    },
+    "deh_10": {
+        "cat_sid": 10038,
+        "name": "臻 ★日本進口大馬士革(積層鋼)★~黑檀木柄 – 世界頂級水果刀、削皮刀",
+        "intl_id": "ts_10038",
+        "price": "1,100",
+        "discount": "700",
+        "class": "damascus_ebony_handle"
+    },
+    "deh_11": {
+        "cat_sid": 10039,
+        "name": "臻 ★日本進口大馬士革(積層鋼)★~黑檀木柄 – 世界頂級水果刀、帶齒牛排刀",
+        "intl_id": "ts_10039",
+        "price": "1,200",
+        "discount": "800",
+        "class": "damascus_ebony_handle"
+    },
+    "deh_12": {
+        "cat_sid": 10040,
+        "name": "臻 ★日本進口大馬士革(積層鋼)★~黑檀木柄 – 世界頂級水果刀、魚肉料理刀",
+        "intl_id": "ts_10040",
+        "price": "2,400",
+        "discount": "1,500",
+        "class": "damascus_ebony_handle"
+    },
+    "deh_13": {
+        "cat_sid": 10041,
+        "name": "臻 ★日本進口大馬士革(積層鋼)★~黑檀木柄 – 世界頂級水果刀150mm",
+        "intl_id": "ts_10041",
+        "price": "1,400",
+        "discount": "1,000",
+        "class": "damascus_ebony_handle"
+    },
+    "deh_14": {
+        "cat_sid": 10042,
+        "name": "臻 ★日本進口大馬士革(積層鋼)★~黑檀木柄 – 世界頂級萬用主廚料理刀",
+        "intl_id": "ts_10042",
+        "price": "2,500",
+        "discount": "1,600",
+        "class": "damascus_ebony_handle"
+    },
+    "dwh_01": {
+        "cat_sid": 10043,
+        "name": "臻 ★日本進口大馬士革閃電紋(積層鋼)★~胡桃木柄 – 世界頂級主廚料理刀 240㎜牛刀",
+        "intl_id": "ts_10043",
+        "price": "3,300",
+        "discount": "",
+        "class": "damascus_walnut_handle"
+    },
+    "sc_01": {
+        "cat_sid": 10051,
+        "name": "臻 ★核桃木色刀鞘★ 臻系列21公分牛刀皆適用 (刀殼)",
+        "intl_id": "ts_10051",
+        "price": "350",
+        "discount": "",
+        "class": "scabbard"
+    },
+    "sc_02": {
+        "cat_sid": 10052,
+        "name": "臻 ★核桃木色刀鞘★ 臻系列27公分牛刀皆適用 (刀殼)",
+        "intl_id": "ts_10052",
+        "price": "450",
+        "discount": "",
+        "class": "scabbard"
+    },
+    "kh_01": {
+        "cat_sid": 10001,
+        "name": " 臻 ★ 三層實木刀架★ 磁性刀座",
+        "intl_id": "ts_10001",
+        "price": "1,980",
+        "discount": "",
+        "class": "knife_holder"
+    },
+    "kh_02": {
+        "cat_sid": 10002,
+        "name": "臻 ★ 單層實木刀架★ 磁性刀座",
+        "intl_id": "ts_10002",
+        "price": "1,100",
+        "discount": "",
+        "class": "knife_holder"
+    },
+}
