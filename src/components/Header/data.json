@@ -1,44 +1,53 @@
 {
-    "navTitle": "臻刀具",
+    "navTitle": {
+        "name": "臻刀具",
+        "intl_name": "zhen"
+    },
     "navList": [
         {
             "nav": "首頁",
+            "intl_name": "home",
             "to": "/",
             "exact": "true",
             "strict": "false"
         },
         {
             "nav": "限時搶購活動",
+            "intl_name": "limit_time",
             "to": "/SS-01BG",
             "exact": "true",
             "strict": "false"
         },
         {
             "nav": "最新訊息",
+            "intl_name": "latest_news",
             "to": "/news",
             "exact": "true",
             "strict": "false"
         },
         {
             "nav": "臻刀具系列",
+            "intl_name": "zhen_series",
             "to": "/shop",
-            "exact": "true",
             "strict": "false"
         },
         {
             "nav": "聯絡我們",
+            "intl_name": "contact_us",
             "to": "/contact",
             "exact": "true",
             "strict": "false"
         },
         {
             "nav": "購物相關",
+            "intl_name": "shopping_related",
             "to": "/shopping_process",
             "exact": "true",
             "strict": "false"
         },
         {
             "nav": "會員專區",
+            "intl_name": "vip",
             "to": "/vip",
             "exact": "true",
             "strict": "false"

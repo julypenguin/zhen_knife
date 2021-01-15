@@ -1,5 +1,27 @@
 {
-   "categories": "商品分類",
+   "product_categories": "商品分類",
+   "categories": {
+      "zhen_series": "臻刀具系列",
+      "sandwich_steel_series": "三合鋼系列",
+      "chinese_kitchen_knife_series": "中式菜刀系列",
+      "japanese_maple_handle_series": "日式楓木柄",
+      "japanese_style_ebony_handle_series": "日式類黑檀木柄",
+      "professional_chef_knife_series": "職業主廚刀專區",
+      "chinese_kitchen_knife_metal_handle_series": "金屬柄中式菜刀",
+      "knife_holder_and_scabbard_series": "刀座",
+      "damascus_series": "大馬士革",
+      "101_turquoise_handle_series": "101層亮面綠松石柄",
+      "101_damascus_series": "101層大馬士革",
+      "67_damascus_series": "67層大馬士革",
+      "67_manual_hammer_printing_series": "67層手工錘打印",
+      "67_walnut_lightning_series": "67層胡桃木閃電紋",
+      "damascus_chinese_kitchen_knife_series": "大馬士革中式廚刀系列",
+      "damascus_professional_chef_knife_series": "大馬士革職業主廚刀專區",
+      "damascus_lightning_pattern_series": "大馬士革閃電紋系列",
+      "damascus_classic_timeless_series": "大馬士革經典雋永系列",
+      "family_practical_series": "家庭實用專區",
+      "special_offer": "特價商品"
+   },
    "products": {
       "sck_01": "臻 ★日本進口三合鋼 中式菜刀+ 噴砂★~TPR防滑握柄 – 肉桂刀",
       "sck_02": "臻 ★日本進口三合鋼 中式菜刀+ 噴砂★~TPR防滑握柄-小剁刀",
