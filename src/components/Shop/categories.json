@@ -1,9 +1,9 @@
 {
     "categories": [
         {
-            "cats_sid": 1,
-            "name": "三合鋼系列",
-            "intl_id": "ts_10000",
+            "cats_sid": 0,
+            "name": "臻刀具系列",
+            "intl_id": "zhen_series",
             "product": [
                 "dmh_01",
                 "dmh_02",
@@ -60,9 +60,45 @@
             ]
         },
         {
+            "cats_sid": 1,
+            "name": "三合鋼系列",
+            "intl_id": "sandwich_steel_series",
+            "product": [
+                "dmh_01",
+                "dmh_02",
+                "dmh_03",
+                "dph_01",
+                "dph_02",
+                "dph_03",
+                "dph_04",
+                "dth_01",
+                "dth_02",
+                "dpm_01",
+                "dpm_02",
+                "dpm_03",
+                "dpm_04",
+                "dpm_05",
+                "deh_01",
+                "deh_02",
+                "deh_03",
+                "deh_04",
+                "deh_05",
+                "deh_06",
+                "deh_07",
+                "deh_08",
+                "deh_09",
+                "deh_10",
+                "deh_11",
+                "deh_12",
+                "deh_13",
+                "deh_14",
+                "dwh_01"
+            ]
+        },
+        {
             "cats_sid": 2,
             "name": "中式菜刀系列",
-            "intl_id": "ck_20000",
+            "intl_id": "chinese_kitchen_knife_series",
             "product": [
                 "sck_01",
                 "sck_02",
@@ -79,7 +115,7 @@
         {
             "cats_sid": 3,
             "name": "日式楓木柄",
-            "intl_id": "jm_30000",
+            "intl_id": "japanese_maple_handle_series",
             "product": [
                 "smh_01",
                 "smh_02",
@@ -89,7 +125,7 @@
         {
             "cats_sid": 4,
             "name": "日式類黑檀木柄",
-            "intl_id": "je_40000",
+            "intl_id": "japanese_style_ebony_handle_series",
             "product": [
                 "sea_01",
                 "sea_02",
@@ -100,7 +136,7 @@
         {
             "cats_sid": 5,
             "name": "職業主廚刀專區",
-            "intl_id": "pc_50000",
+            "intl_id": "professional_chef_knife_series",
             "product": [
                 "sph_01",
                 "sph_02",
@@ -116,7 +152,7 @@
         {
             "cats_sid": 6,
             "name": "金屬柄中式菜刀",
-            "intl_id": "mc_60000",
+            "intl_id": "chinese_kitchen_knife_metal_handle_series",
             "product": [
                 "sck_04",
                 "sck_09",
@@ -126,7 +162,7 @@
         {
             "cats_sid": 7,
             "name": "刀座 / 刀鞘",
-            "intl_id": "kh_70000",
+            "intl_id": "knife_holder_and_scabbard_series",
             "product": [
                 "kh_01",
                 "kh_02",
@@ -137,7 +173,7 @@
         {
             "cats_sid": 8,
             "name": "大馬士革",
-            "intl_id": "dm_80000",
+            "intl_id": "damascus_series",
             "product": [
                 "dmh_01",
                 "dmh_02",
@@ -173,7 +209,7 @@
         {
             "cats_sid": 9,
             "name": "101層亮面綠松石柄",
-            "intl_id": "101tq_90001",
+            "intl_id": "101_turquoise_handle_series",
             "product": [
                 "dth_01",
                 "dth_02"
@@ -182,6 +218,7 @@
         {
             "cats_sid": 10,
             "name": "101層大馬士革",
+            "intl_id": "101_damascus_series",
             "product": [
                 "dmh_01",
                 "dmh_02",
@@ -195,6 +232,7 @@
         {
             "cats_sid": 11,
             "name": "67層大馬士革",
+            "intl_id": "67_damascus_series",
             "product": [
                 "deh_01",
                 "deh_02",
@@ -215,6 +253,7 @@
         {
             "cats_sid": 12,
             "name": "67層手工錘打印",
+            "intl_id": "67_manual_hammer_printing_series",
             "product": [
                 "dpm_01",
                 "dpm_02",
@@ -226,6 +265,7 @@
         {
             "cats_sid": 13,
             "name": "67層胡桃木閃電紋",
+            "intl_id": "67_walnut_lightning_series",
             "product": [
                 "dwh_01"
             ]
@@ -233,6 +273,7 @@
         {
             "cats_sid": 14,
             "name": "大馬士革中式廚刀系列",
+            "intl_id": "damascus_chinese_kitchen_knife_series",
             "product": [
                 "deh_07",
                 "deh_08"
@@ -241,6 +282,7 @@
         {
             "cats_sid": 15,
             "name": "大馬士革職業主廚刀專區",
+            "intl_id": "damascus_professional_chef_knife_series",
             "product": [
                 "dmh_03",
                 "dph_01",
@@ -256,6 +298,7 @@
         {
             "cats_sid": 16,
             "name": "大馬士革閃電紋系列",
+            "intl_id": "damascus_lightning_pattern_series",
             "product": [
                 "dmh_01",
                 "dmh_02",
@@ -272,6 +315,7 @@
         {
             "cats_sid": 17,
             "name": "大馬士革經典雋永系列",
+            "intl_id": "damascus_classic_timeless_series",
             "product": [
                 "deh_01",
                 "deh_02",
@@ -292,6 +336,7 @@
         {
             "cats_sid": 18,
             "name": "家庭實用專區",
+            "intl_id": "family_practical_series",
             "product": [
                 "dmh_01",
                 "dmh_02",
@@ -312,6 +357,7 @@
         {
             "cats_sid": 19,
             "name": "特價商品",
+            "intl_id": "special_offer",
             "product": [
                 "dpm_01",
                 "dpm_03",

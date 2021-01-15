@@ -19,14 +19,13 @@ const index = (props) => {
                 <Route path="/" render={(props) => <Header {...props} />} />
 
 
-                <div className='container-page'>
+                <div className='container'>
 
                     <Switch>
-                        <Route exact path="/shop" render={(props) => <Shop {...props} />} />
+                        <Route path="/shop" render={(props) => <Shop {...props} />} />
                         <Route exact path="/SS-01BG" render={(props) => <TimeLimit {...props} />} />
-                        <Route exact path="/" render={(props) => <Deshboard />} {...props} />
+                        <Route exact path="/" render={(props) => <Deshboard {...props} />} />
                     </Switch>
-
 
                 </div>
 
