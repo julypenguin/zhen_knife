@@ -5,15 +5,25 @@ import productData from './products.json'
 
 const ProductList = ({
     match,
+    push,
 }) => {
     const cats_sid = Number(match.params.cats_sid) || 0
     const [newCatData] = catData.categories.filter(category => category.cats_sid === cats_sid)
+
+    const gotoDetail = id => {
+        if (!cats_sid) push(`/shop/detail/${id}`)
+        
+    }
 
     return (
         <div className='pt-4'>
             <ul className="grid grid-cols-1 gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                 {newCatData.product.map((id, i) => (
-                    <li key={i} className="col-span-1 bg-white rounded-lg shadow divide-y divide-gray-200">
+                    <li 
+                        key={i} 
+                        className="col-span-1 bg-white rounded-lg shadow divide-y divide-gray-200"
+                        onClick={() => gotoDetail(id)}
+                    >
                         <div className="w-full flex items-center justify-between p-6 space-x-6">
                             <div className="flex-1">
                                 <div className="flex items-center space-x-3">

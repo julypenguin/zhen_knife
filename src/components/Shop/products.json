@@ -405,7 +405,82 @@
         "intl_id": "kh_01",
         "price": "1,980",
         "discount": "",
-        "class": "knife_holder"
+        "class": "knife_holder",
+        "detail": {
+            "id": "BL-04",
+            "name": "三層磁性吸力實木刀座(可放9把刀)",
+            "name_intl": "BL-04",
+            "use": "9支刀三層刀座",
+            "use_intl": "BL-04_use",
+            "material": "山毛櫸木",
+            "material_intl": "beech",
+            "length": "315 mm",
+            "width": "270 mm",
+            "high": "330 mm",
+            "blade_length": "",
+            "total_length": "",
+            "blade_width": "",
+            "thickness": "",
+            "weight": "",
+            "net_weight": "3.6 kg",
+            "steel": "",
+            "steel_intl": "",
+            "handle": "",
+            "handle_intl": "",
+            "transaction_note": "下標不代表成交，須經賣家確認訂單始成立",
+            "transaction_note_intl": "bid_not_mean_deal_must_be_confirmed_by_seller",
+            "desc": "",
+            "desc_intl": "",
+            "desc_list": [
+                {
+                    "desc": "組立後規格：",
+                    "desc_intl": "composition_specification",
+                    "show": false
+                },
+                {
+                    "desc": "長：315 mm",
+                    "desc_intl": "length_315",
+                    "show": false
+                },
+                {
+                    "desc": "寬：270 mm",
+                    "desc_intl": "width_270",
+                    "show": false
+                },
+                {
+                    "desc": "高：330 mm",
+                    "desc_intl": "height_330",
+                    "show": false
+                },
+                {
+                    "desc": "淨重約：3.6kg",
+                    "desc_intl": "net_weight_3.6",
+                    "show": false
+                },
+                {
+                    "desc": "第一層：可放刃長14 cm 以下",
+                    "desc_intl": "level_1_can_under_14_length",
+                    "show": true
+                },
+                {
+                    "desc": "第二層：可放刃長23 cm 以下",
+                    "desc_intl": "level_2_can_under_23_length",
+                    "show": true
+                },
+                {
+                    "desc": "第三層：可放刃長33 cm 以下",
+                    "desc_intl": "level_3_can_under_33_length",
+                    "show": true
+                }
+            ],
+            "note_list": [
+            ],
+            "relation": [
+                "kh_02",
+                "sc_01",
+                "sc_02"
+            ]
+        }
     },
     "kh_02": {
         "cat_sid": 10002,
@@ -413,6 +488,66 @@
         "intl_id": "kh_02",
         "price": "1,100",
         "discount": "",
-        "class": "knife_holder"
+        "class": "knife_holder",
+        "detail": {
+            "id": "BL-05",
+            "name": "單層磁性實木刀座",
+            "name_intl": "BL-05",
+            "use": "4支刀單層刀座",
+            "use_intl": "BL-05_use",
+            "material": "橡木",
+            "material_intl": "oak",
+            "length": "345 mm",
+            "width": "175 mm",
+            "high": "235 mm",
+            "blade_length": "",
+            "total_length": "",
+            "blade_width": "",
+            "thickness": "",
+            "weight": "",
+            "net_weight": "1.45 kg",
+            "steel": "",
+            "steel_intl": "",
+            "handle": "",
+            "handle_intl": "",
+            "transaction_note": "下標不代表成交，須經賣家確認訂單始成立",
+            "transaction_note_intl": "bid_not_mean_deal_must_be_confirmed_by_seller",
+            "desc": "可放 4 隻刃長 21cm 以下的西式刀",
+            "desc_intl": "can_hold_4_with_length_21_or_less",
+            "desc_list": [
+                {
+                    "desc": "組立後規格：",
+                    "desc_intl": "composition_specification",
+                    "show": true
+                },
+                {
+                    "desc": "長：345 mm",
+                    "desc_intl": "length_345",
+                    "show": true
+                },
+                {
+                    "desc": "寬：175 mm",
+                    "desc_intl": "width_175",
+                    "show": true
+                },
+                {
+                    "desc": "高：235 mm",
+                    "desc_intl": "height_235",
+                    "show": true
+                },
+                {
+                    "desc": "淨重：1.45kg",
+                    "desc_intl": "net_weight_1.45",
+                    "show": true
+                }
+            ],
+            "note_list": [
+            ],
+            "relation": [
+                "kh_01",
+                "sc_01",
+                "sc_02"
+            ]
+        }
     }
 }

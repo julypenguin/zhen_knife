@@ -1,5 +1,7 @@
 {
    "product_categories": "商品分類",
+   "add_to_bag": "加入購物車",
+   "buy_now": "直接結帳",
    "categories": {
       "zhen_series": "臻刀具系列",
       "sandwich_steel_series": "三合鋼系列",
@@ -75,5 +77,27 @@
       "sc_02": "臻 ★核桃木色刀鞘★ 臻系列27公分牛刀皆適用 (刀殼)",
       "kh_01": "臻 ★ 三層實木刀架★ 磁性刀座",
       "kh_02": "臻 ★ 單層實木刀架★ 磁性刀座"
+   },
+   "detail": {
+      "BL-04": "三層磁性吸力實木刀座(可放9把刀)",
+      "BL-04_use": "9支刀三層刀座",
+      "BL-05": "單層磁性實木刀座",
+      "BL-05_use": "4支刀單層刀座",
+      "beech": "山毛櫸木",
+      "oak": "橡木",
+      "bid_not_mean_deal_must_be_confirmed_by_seller": "下標不代表成交，須經賣家確認訂單始成立",
+      "can_hold_4_with_length_21_or_less": "可放 4 隻刃長 21cm 以下的西式刀",
+      "composition_specification": "組立後規格：",
+      "length_315": "長：315 mm",
+      "length_345": "長：345 mm",
+      "width_270": "寬：270 mm",
+      "width_175": "寬：175 mm",
+      "height_330": "高：330 mm",
+      "height_235": "高：235 mm",
+      "net_weight_3.6": "淨重：3.6kg",
+      "net_weight_1.45": "淨重：1.45kg",
+      "level_1_can_under_14_length": "第一層：可放刃長14 cm 以下",
+      "level_2_can_under_23_length": "第二層：可放刃長23 cm 以下",
+      "level_3_can_under_33_length": "第三層：可放刃長33 cm 以下"
    }
 }

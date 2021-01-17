@@ -30,10 +30,10 @@ const LeftSidebar = ({
                 />
             </form>
             {/* 商品分類 */}
-            <div className='py-6 text-lg font-bold'>{msgintl.product_categories}</div>
+            <div className='py-6 text-lg font-bold pl-4'>{msgintl.product_categories}</div>
 
             {/* 類別 */}
-            <ul className="list-disc space-y-3">
+            <ul className="list-disc space-y-3 pl-4">
                 {data.categories.map(category => (
                     <li key={category.cats_sid} className="flex items-start select-none text-blue-600 hover:text-black">
                         <p className="cursor-pointer" onClick={() => push(`/shop${!category.cats_sid ? '' : `/${category.cats_sid}`}`)}>
