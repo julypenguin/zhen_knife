@@ -1,6 +1,7 @@
 import React from 'react';
 import { injectIntl, FormattedMessage } from 'react-intl'
 import LeftSidebar from '../../containers/Shop/LeftSidebar'
+import LeftSidebarCopy from './LeftSidebarCopy'
 import ProductList from '../../containers/Shop/ProductList';
 import ProductDetail from './ProductDetail';
 import BaseBreadcrumbs from '../Base/BaseBreadcrumbs'
@@ -38,7 +39,8 @@ const ShopPage = (props) => {
 
     return (
         <div className='py-8 flex'>
-            <LeftSidebar />
+            {/* <LeftSidebar /> */}
+            <LeftSidebarCopy />
             <div className='px-6 flex-1 ml-6 divide-y divide-gray-200'>
                 <div className='py-2 items-center'>
                     {/* <BaseBreadcrumbs homeLink='/' pathList={pathList} /> */}

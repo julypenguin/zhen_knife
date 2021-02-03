@@ -2,8 +2,8 @@
     "categories": [
         {
             "cats_sid": 0,
-            "name": "臻刀具系列",
-            "intl_id": "zhen_series",
+            "name": "全系列",
+            "intl_id": "all_series",
             "product": [
                 "dmh_01",
                 "dmh_02",
@@ -34,6 +34,7 @@
                 "deh_13",
                 "deh_14",
                 "dwh_01",
+                "dwh_02",
                 "sck_01",
                 "sck_02",
                 "sck_03",
@@ -92,7 +93,8 @@
                 "deh_12",
                 "deh_13",
                 "deh_14",
-                "dwh_01"
+                "dwh_01",
+                "dwh_02"
             ]
         },
         {
@@ -203,7 +205,8 @@
                 "deh_12",
                 "deh_13",
                 "deh_14",
-                "dwh_01"
+                "dwh_01",
+                "dwh_02"
             ]
         },
         {
@@ -267,7 +270,8 @@
             "name": "67層胡桃木閃電紋",
             "intl_id": "67_walnut_lightning_series",
             "product": [
-                "dwh_01"
+                "dwh_01",
+                "dwh_02"
             ]
         },
         {
@@ -292,7 +296,8 @@
                 "deh_02",
                 "deh_04",
                 "deh_06",
-                "dwh_01"
+                "dwh_01",
+                "dwh_02"
             ]
         },
         {
@@ -309,7 +314,8 @@
                 "dph_04",
                 "dth_01",
                 "dth_02",
-                "dwh_01"
+                "dwh_01",
+                "dwh_02"
             ]
         },
         {

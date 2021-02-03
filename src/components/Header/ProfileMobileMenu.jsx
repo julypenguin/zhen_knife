@@ -3,6 +3,7 @@ import classNames from 'classnames'
 import { injectIntl, FormattedMessage } from 'react-intl'
 import data from './data.json'
 import BaseMobileTab from '../Base/BaseMobileTab'
+import { NavLink } from 'react-router-dom'
 
 // TODO - dropdown 內容實作
 
@@ -47,9 +48,9 @@ const ProfileMobileMenu = ({
                             </button>
                         </div>
                         <div className="mt-3 space-y-1">
-                            <a href="#" className="block px-4 py-2 text-base font-medium text-gray-500 hover:text-gray-800 hover:bg-gray-100">Your Profile</a>
-                            <a href="#" className="block px-4 py-2 text-base font-medium text-gray-500 hover:text-gray-800 hover:bg-gray-100">Settings</a>
-                            <a href="#" className="block px-4 py-2 text-base font-medium text-gray-500 hover:text-gray-800 hover:bg-gray-100">Sign out</a>
+                            <NavLink to="#" className="block px-4 py-2 text-base font-medium text-gray-500 hover:text-gray-800 hover:bg-gray-100">Your Profile</NavLink>
+                            <NavLink to="#" className="block px-4 py-2 text-base font-medium text-gray-500 hover:text-gray-800 hover:bg-gray-100">Settings</NavLink>
+                            <NavLink to="#" className="block px-4 py-2 text-base font-medium text-gray-500 hover:text-gray-800 hover:bg-gray-100">Sign out</NavLink>
                         </div>
                     </div>
                 </div>
