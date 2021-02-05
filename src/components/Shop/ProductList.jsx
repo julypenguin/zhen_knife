@@ -21,7 +21,7 @@ const ProductList = ({
                 {newCatData.product.map((id, i) => (
                     <li 
                         key={i} 
-                        className="col-span-1 bg-white rounded-lg shadow divide-y divide-gray-200"
+                        className="col-span-1 bg-white rounded-lg shadow divide-y divide-gray-200 cursor-pointer"
                         onClick={() => gotoDetail(id)}
                     >
                         <div className="w-full flex items-center justify-between p-6 space-x-6">

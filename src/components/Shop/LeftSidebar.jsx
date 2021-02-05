@@ -37,7 +37,8 @@ const LeftSidebar = ({
                 {data.categories.map(category => (
                     <li key={category.cats_sid} className="flex items-start select-none text-blue-600 hover:text-black">
                         <p className="cursor-pointer" onClick={() => push(`/shop${!category.cats_sid ? '' : `/${category.cats_sid}`}`)}>
-                            {`${category.name} (${category.product.length})`}
+                            <span><FormattedMessage id={`shop.categories.${category.intl_id}`} /></span>
+                            <span>({category.product.length})</span>
                         </p>
                     </li>
                 ))}
