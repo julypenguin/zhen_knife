@@ -6,6 +6,7 @@ import Header from '../../containers/Header/Header'
 import Deshboard from '../../containers/Main/Deshboard'
 import TimeLimit from '../../containers/TimeLimit/index'
 import Shop from '../../containers/Shop/index'
+import ContactPage from '../../containers/Contact/ContactPage'
 
 const index = (props) => {
     const {
@@ -22,6 +23,7 @@ const index = (props) => {
                 <div className='container'>
 
                     <Switch>
+                        <Route path="/contact" render={(props) => <ContactPage {...props} />} />
                         <Route path="/shop" render={(props) => <Shop {...props} />} />
                         <Route exact path="/SS-01BG" render={(props) => <TimeLimit {...props} />} />
                         <Route exact path="/" render={(props) => <Deshboard {...props} />} />

@@ -58,6 +58,7 @@ import {
     faHeart,
     faUserEdit,
     faBars,
+    faFax,
 } from '@fortawesome/free-solid-svg-icons'
 
 import {
@@ -74,6 +75,11 @@ import {
     faClock as farClock,
     faHeart as farHeart
 } from '@fortawesome/free-regular-svg-icons'
+
+import {
+    faFacebook as fabFacebook,
+    faLine as fabLine,
+} from '@fortawesome/free-brands-svg-icons'
 
 export default () => library.add(
     fab,
@@ -146,4 +152,7 @@ export default () => library.add(
     farHeart,
     faUserEdit,
     faBars,
+    faFax,
+    fabFacebook,
+    fabLine,
 )
