@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import LeftSidebar from '../../components/Shop/LeftSidebar'
+import LeftSidebarCopy from '../../components/Shop/LeftSidebarCopy'
 import { push } from 'connected-react-router'
 
 
@@ -18,4 +18,4 @@ function mapDispatchToProps(dispatch) {
 export default connect(
     mapStateToProps,
     mapDispatchToProps
-)(LeftSidebar);
+)(LeftSidebarCopy);

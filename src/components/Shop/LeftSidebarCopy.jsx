@@ -1,8 +1,11 @@
 import React from 'react';
 import { injectIntl, FormattedMessage } from 'react-intl'
 import data from './categories.json'
+import market_17 from '../../img/market_17.jpg'
 
-const LeftSidebarCopy = () => {
+const LeftSidebarCopy = ({
+    push,
+}) => {
     return (
         <div>
             {/* 商品分類 */}
@@ -12,8 +15,8 @@ const LeftSidebarCopy = () => {
 
             <ul className="divide-y divide-gray-200">
                 {data.categories.map(category => (
-                    <li key={category.cats_sid} className="p-4 flex items-center cursor-pointer hover:bg-gray-200 rounded-md">
-                        <img className="h-10 w-10 rounded-full" src="#" alt="" />
+                    <li key={category.cats_sid} className="p-4 flex items-center cursor-pointer hover:bg-gray-200 rounded-md" onClick={() => push(`/shop${!category.cats_sid ? '' : `/${category.cats_sid}`}`)}>
+                        <img className="h-10 w-10 rounded-full" src={market_17} alt="" />
                         <div className="ml-3">
                             <p className="text-sm font-medium text-blue-500 hover:text-black">
                                 <FormattedMessage id={`shop.categories.${category.intl_id}`} />

@@ -1,7 +1,8 @@
 import React from 'react';
 import { injectIntl, FormattedMessage } from 'react-intl'
-import LeftSidebar from '../../containers/Shop/LeftSidebar'
-import LeftSidebarCopy from './LeftSidebarCopy'
+// import LeftSidebar from '../../containers/Shop/LeftSidebar'
+// import LeftSidebarCopy from './LeftSidebarCopy'
+import LeftSidebarCopy from './../../containers/Shop/LeftSidebar'
 import ProductList from '../../containers/Shop/ProductList';
 import ProductDetail from './ProductDetail';
 import BaseBreadcrumbs from '../Base/BaseBreadcrumbs'
