@@ -7,6 +7,7 @@ import Deshboard from '../../containers/Main/Deshboard'
 import TimeLimit from '../../containers/TimeLimit/index'
 import Shop from '../../containers/Shop/index'
 import ContactPage from '../../containers/Contact/ContactPage'
+import ShoppingProcessPage from '../../containers/ShoppingProcess/ShoppingProcessPage'
 
 const index = (props) => {
     const {
@@ -23,6 +24,7 @@ const index = (props) => {
                 <div className='container'>
 
                     <Switch>
+                        <Route path="/shopping_process" render={(props) => <ShoppingProcessPage {...props} />} />
                         <Route path="/contact" render={(props) => <ContactPage {...props} />} />
                         <Route path="/shop" render={(props) => <Shop {...props} />} />
                         <Route exact path="/SS-01BG" render={(props) => <TimeLimit {...props} />} />
