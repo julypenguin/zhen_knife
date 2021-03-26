@@ -20,7 +20,7 @@ const index = (props) => {
                 <Route path="/" render={(props) => <Header {...props} />} />
 
 
-                <div className='container'>
+                <div className='container mt-4'>
 
                     <Switch>
                         <Route path="/contact" render={(props) => <ContactPage {...props} />} />
