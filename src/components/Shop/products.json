@@ -3871,6 +3871,9 @@
                 }
             ],
             "product_img": [
+                "sc_01",
+                "sc_01_02",
+                "sc_01_03"
             ],
             "marketing_img": [
             ],
@@ -3949,6 +3952,8 @@
                 }
             ],
             "product_img": [
+                "sc_02",
+                "sc_02_02"
             ],
             "marketing_img": [
             ],
@@ -4046,7 +4051,9 @@
                     "show": true
                 }
             ],
-            "product_img": [],
+            "product_img": [
+                "kh_01"
+            ],
             "marketing_img": [
 
             ],
@@ -4127,7 +4134,9 @@
             ],
             "note_list": [],
             "show_notice": 0,
-            "product_img": [],
+            "product_img": [
+                "kh_02"
+            ],
             "marketing_img": [
 
             ],

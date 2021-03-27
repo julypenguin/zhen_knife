@@ -91,10 +91,10 @@ const ProductDetail = ({
                     <div className="flex space-x-3 mb-4 text-sm font-medium">
                         <Counter />
                         <div className="flex-auto flex space-x-3">
-                            <button className="w-1/2 flex items-center justify-center rounded-md bg-black text-white p-2" type="submit">
+                            <button className="w-1/2 flex items-center justify-center rounded-md bg-gray-700 hover:bg-black text-white p-2" type="submit">
                                 <FormattedMessage id='shop.buy_now' />
                             </button>
-                            <button className="w-1/2 flex items-center justify-center rounded-md border border-gray-300 p-2" type="button">
+                            <button className="w-1/2 flex items-center justify-center rounded-md border border-gray-300 p-2 hover:bg-gray-50" type="button">
                                 <FormattedMessage id='shop.add_to_bag' />
                             </button>
                         </div>

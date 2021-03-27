@@ -283,6 +283,15 @@ import kh_01 from '../../img/kh_01/kh_01.jpg'
 // kh_02
 import kh_02 from '../../img/kh_02/kh_02.jpg'
 
+// sc_01
+import sc_01 from '../../img/sc_01/sc_01.jpg'
+import sc_01_02 from '../../img/sc_01/sc_01_02.jpg'
+import sc_01_03 from '../../img/sc_01/sc_01_03.jpg'
+
+// sc_02
+import sc_02 from '../../img/sc_02/sc_02.jpg'
+import sc_02_02 from '../../img/sc_02/sc_02_02.jpg'
+
 // sck_01
 import sck_01 from '../../img/sck_01/sck_01.jpg'
 import sck_01_02 from '../../img/sck_01/sck_01_02.jpg'
@@ -722,6 +731,16 @@ const ProductImg = ({
 
             // kh_02
             case 'kh_02': return kh_02 
+
+            // sc_01
+            case 'sc_01': return sc_01 
+            case 'sc_01_02': return sc_01_02 
+            case 'sc_01_03': return sc_01_03 
+
+            // sc_02
+            case 'sc_02': return sc_02 
+            case 'sc_02_02': return sc_02_02 
+
 
             // sck_01
             case 'sck_01': return sck_01 

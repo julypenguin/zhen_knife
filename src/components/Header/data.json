@@ -19,13 +19,6 @@
             "strict": "false"
         },
         {
-            "nav": "最新訊息",
-            "intl_name": "latest_news",
-            "to": "/news",
-            "exact": "true",
-            "strict": "false"
-        },
-        {
             "nav": "臻刀具系列",
             "intl_name": "zhen_series",
             "to": "/shop",

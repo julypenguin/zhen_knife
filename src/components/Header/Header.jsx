@@ -19,7 +19,7 @@ const Header = (props) => {
     const [showProfileDropdown, setShowProfileDropdown] = useState(false)
 
     return (
-        <nav className="bg-white shadow">
+        <nav className="bg-white shadow sticky top-0 z-50">
             <div className="max-w-full mx-auto px-2 sm:px-4 lg:px-16">
                 <div className="flex justify-between h-16">
                     <div className="flex px-2 lg:px-0">

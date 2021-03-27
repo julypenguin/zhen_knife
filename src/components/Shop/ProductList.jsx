@@ -12,39 +12,55 @@ const ProductList = ({
     const [newCatData] = catData.categories.filter(category => category.cats_sid === cats_sid)
 
     const gotoDetail = id => {
-        if (!cats_sid) push(`/shop/detail/${id}`)
+        push(`/shop/detail/${id}`)
 
     }
 
     return (
         <div className='pt-4'>
-            <ul className="grid grid-cols-1 gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+            <h1 className='text-4xl'>{newCatData.name}</h1>
+            <ul className="grid grid-cols-1 gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                 {newCatData.product.map((id, i) => (
                     <li
                         key={i}
-                        className="col-span-1 bg-white rounded-lg shadow divide-y divide-gray-200 cursor-pointer"
-                        onClick={() => gotoDetail(id)}
+                        className="col-span-1 bg-white rounded-lg divide-gray-200 cursor-pointer"
                     >
                         <div className="w-full flex items-center justify-between p-6 space-x-6">
                             <div className="flex-1">
                                 <div className="flex items-center space-x-3">
-                                    <h3 className="text-gray-900 text-sm font-medium">
-                                        {productData[id] &&
-                                        <div className='w-full flex justify-center'>
-                                            <div className='relative w-48 pt-48'>
-                                                <ProductImg
-                                                    img={productData[id].detail && productData[id].detail.product_img && productData[id].detail.product_img[0]}
-                                                />
-                                            </div>
+                                    <div className="text-gray-900 text-sm font-medium">
+                                        {!productData[id] ? null :
+                                            <>
+                                                <div
+                                                    className='w-full flex justify-center'
+                                                    onClick={() => gotoDetail(id)}
+                                                >
+                                                    <div className='relative w-56 pt-56'>
+                                                        <ProductImg
+                                                            img={productData[id].detail && productData[id].detail.product_img && productData[id].detail.product_img[0]}
+                                                        />
+                                                    </div>
 
-                                        </div>
+                                                </div>
+
+                                                <h3
+                                                    className='text-lg text-center line-clamp-2'
+                                                    onClick={() => gotoDetail(id)}
+                                                >
+                                                    <FormattedMessage id={`shop.products.${productData[id].intl_id}`} />
+                                                </h3>
+
+                                                <div className="flex-auto flex space-x-3 mt-4">
+                                                    <button className="w-1/2 flex items-center justify-center rounded-md bg-gray-700 hover:bg-black text-white p-2" type="submit">
+                                                        <FormattedMessage id='shop.buy_now' />
+                                                    </button>
+                                                    <button className="w-1/2 flex items-center justify-center rounded-md border border-gray-300 p-2 hover:bg-gray-50" type="button">
+                                                        <FormattedMessage id='shop.add_to_bag' />
+                                                    </button>
+                                                </div>
+                                            </>
                                         }
-                                        {productData[id] &&
-                                            <div className='text-lg text-center'>
-                                                <FormattedMessage id={`shop.products.${productData[id].intl_id}`} />
-                                            </div>
-                                        }
-                                    </h3>
+                                    </div>
                                     {/* <span className="flex-shrink-0 inline-block px-2 py-0.5 text-green-800 text-xs font-medium bg-green-100 rounded-full">Admin</span> */}
                                 </div>
                                 {/* <p className="mt-1 text-gray-500 text-sm truncate">Regional Paradigm Technician</p> */}
