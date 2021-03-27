@@ -15,7 +15,7 @@ const ProfileMobileMenu = ({
     return (
         <>
             {showProfileDropdown &&
-                <div className="block lg:hidden z-10">
+                <div className="block xl:hidden z-10">
                     <div className="pt-2 pb-3 space-y-1">
                         {data.navList.map((nav, i) => (
                             <BaseMobileTab

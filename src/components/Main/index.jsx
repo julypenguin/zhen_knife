@@ -21,7 +21,7 @@ const index = (props) => {
                 <Route path="/" render={(props) => <Header {...props} />} />
 
 
-                <div className='container mt-4'>
+                <div className='lg:mt-4'>
 
                     <Switch>
                         <Route path="/shopping_process" render={(props) => <ShoppingProcessPage {...props} />} />

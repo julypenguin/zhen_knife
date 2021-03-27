@@ -8,6 +8,7 @@ import kitchen from '../../img/kitchen.jpg'
 import mainView from '../../img//mainView.png'
 import zhenBlack from '../../img//zhenBlack.png'
 import data from './data.json'
+import ProductImg from '../Shop/ProductImg'
 
 const Deshboard = () => {
 
@@ -23,6 +24,7 @@ const Deshboard = () => {
     return (
         <>
             <section className='main-view f-jc'>
+                {/* <ProductImg img='mainView' /> */}
                 <div className='main-view-img-fit'>
                     <img className='main-view-img-img' src={mainView} />
                 </div>

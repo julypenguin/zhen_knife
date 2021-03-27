@@ -440,6 +440,9 @@ import market_16 from '../../img/market_16.jpg'
 import market_17 from '../../img/market_17.jpg'
 import market_18 from '../../img/market_18.jpg'
 
+// other
+import mainView from '../../img//mainView.png'
+
 
 const ProductImg = ({
     img,
@@ -889,6 +892,9 @@ const ProductImg = ({
             case 'market_16': return market_16
             case 'market_17': return market_17
             case 'market_18': return market_18
+
+            // other
+            case 'mainView': return mainView
 
             default: return ''
         }

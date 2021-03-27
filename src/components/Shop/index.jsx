@@ -39,7 +39,7 @@ const ShopPage = (props) => {
     }
 
     return (
-        <div className='py-8 flex'>
+        <div className='py-8 flex container'>
             {/* <LeftSidebar /> */}
             <LeftSidebarCopy />
             <div className='px-6 flex-1 ml-6 divide-y divide-gray-200'>

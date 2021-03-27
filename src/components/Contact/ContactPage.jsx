@@ -20,7 +20,7 @@ const ContactPage = ({
     }
 
     return (
-        <div className=''>
+        <div className='container'>
             {/* 上方描述 */}
             <div className='p-4 md:p-8 flex flex-wrap justify-center lg:py-16'>
                 <div className='text-3xl font-bold py-4 w-full text-center lg:pb-8'>

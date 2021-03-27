@@ -59,6 +59,7 @@ import {
     faUserEdit,
     faBars,
     faFax,
+    faGlobe,
 } from '@fortawesome/free-solid-svg-icons'
 
 import {
@@ -73,7 +74,7 @@ import {
     faStar as farStar,
     faEdit as farEdit,
     faClock as farClock,
-    faHeart as farHeart
+    faHeart as farHeart,
 } from '@fortawesome/free-regular-svg-icons'
 
 import {
@@ -155,4 +156,5 @@ export default () => library.add(
     faFax,
     fabFacebook,
     fabLine,
+    faGlobe,
 )

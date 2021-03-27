@@ -5,7 +5,7 @@ import CommonProblem from './CommonProblem'
 
 const ShoppingProcessPage = () => {
     return (
-        <>
+        <div className='container'>
             <div className='p-4 mt-4 text-4xl font-bold flex justify-center'>
                 <FormattedMessage id='shoppingProcess.shopping_related_instructions' />
             </div>
@@ -28,7 +28,7 @@ const ShoppingProcessPage = () => {
                 </Switch>
 
             </div>
-        </>
+        </div>
     );
 };
 
