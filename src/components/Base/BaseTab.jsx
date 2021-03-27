@@ -3,6 +3,8 @@ import { NavLink } from 'react-router-dom'
 import propTypes from 'prop-types'
 import classNames from 'classnames'
 import { tabCompare } from 'lib/tabCompare'
+import { push } from 'connected-react-router';
+import { useDispatch } from 'react-redux'
 
 const BaseTab = ({
     location,
@@ -16,6 +18,8 @@ const BaseTab = ({
     index,
     ...otherProps
 }) => {
+    const dispatch = useDispatch();
+
     const isMatch = typeof compare === 'function' ? compare() : tabCompare({ to, extpath, exact, strict })
 
     const linkClass = classNames(
@@ -27,6 +31,7 @@ const BaseTab = ({
         'text-sm',
         'font-medium',
         'transition-all',
+        'cursor-pointer',
         {
             'border-indigo-500': isMatch,
             'text-gray-900': isMatch,
@@ -47,12 +52,13 @@ const BaseTab = ({
                     {children}
                 </span>
                 :
-                <NavLink
-                    to={to}
+                <div
+                    // to={to}
+                    onClick={() => dispatch(push(to))}
                     className={linkClass}
                 >
                     {children}
-                </NavLink>
+                </div>
             }
         </>
     );

@@ -23,9 +23,9 @@ const ProductList = ({
                 {newCatData.product.map((id, i) => (
                     <li
                         key={i}
-                        className="col-span-1 bg-white rounded-lg divide-gray-200 cursor-pointer"
+                        className="col-span-1 bg-white rounded-lg divide-gray-200 cursor-pointer flex flex-col"
                     >
-                        <div className="w-full flex items-center justify-between p-6 space-x-6">
+                        <div className="w-full flex items-center justify-between p-6 space-x-6 flex-1">
                             <div className="flex-1">
                                 <div className="flex items-center space-x-3">
                                     <div className="text-gray-900 text-sm font-medium">
@@ -44,20 +44,19 @@ const ProductList = ({
                                                 </div>
 
                                                 <h3
-                                                    className='text-lg text-center line-clamp-2'
+                                                    className='text-lg text-center'
                                                     onClick={() => gotoDetail(id)}
                                                 >
                                                     <FormattedMessage id={`shop.products.${productData[id].intl_id}`} />
                                                 </h3>
 
-                                                <div className="flex-auto flex space-x-3 mt-4">
-                                                    <button className="w-1/2 flex items-center justify-center rounded-md bg-gray-700 hover:bg-black text-white p-2" type="submit">
-                                                        <FormattedMessage id='shop.buy_now' />
-                                                    </button>
-                                                    <button className="w-1/2 flex items-center justify-center rounded-md border border-gray-300 p-2 hover:bg-gray-50" type="button">
-                                                        <FormattedMessage id='shop.add_to_bag' />
-                                                    </button>
-                                                </div>
+                                                <h3
+                                                    className='text-center text-red-600'
+                                                    onClick={() => gotoDetail(id)}
+                                                >
+                                                    <span className='mr-2 text-xl'>NT$</span>
+                                                    <span className='text-xl'>{productData[id].price}</span>
+                                                </h3>
                                             </>
                                         }
                                     </div>
@@ -67,8 +66,16 @@ const ProductList = ({
                             </div>
                         </div>
 
-                        <div>
-
+                        <div className=''>
+                            {/* <div className='flex-1'></div> */}
+                            <div className="flex-auto flex space-x-3 mt-4">
+                                <button className="w-1/2 flex items-center justify-center rounded-md bg-gray-700 hover:bg-black text-white p-2" type="submit">
+                                    <FormattedMessage id='shop.buy_now' />
+                                </button>
+                                <button className="w-1/2 flex items-center justify-center rounded-md border border-gray-300 p-2 hover:bg-gray-50" type="button">
+                                    <FormattedMessage id='shop.add_to_bag' />
+                                </button>
+                            </div>
                         </div>
                     </li>
                 ))}

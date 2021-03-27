@@ -24,6 +24,8 @@ const Header = (props) => {
                 <div className="flex justify-between h-16">
                     <div className="flex px-2 lg:px-0">
                         <NavIcon />
+                        {/* <div onClick={() => push('/')}>首頁</div>
+                        <div onClick={() => push('/SS-01BG')}>限時搶購活動</div> */}
                         <Navbar {...props} />
                     </div>
                     <div className="flex-1 flex items-center justify-center px-2 lg:ml-6 lg:justify-end">

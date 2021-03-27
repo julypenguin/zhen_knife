@@ -34,10 +34,10 @@ const Deshboard = () => {
                             <img className='center-tools-img-img' src={zhenBlack} />
                         </div>
                     </div>
-                    <div className='center-tools-search'>
+                    {/* <div className='center-tools-search'>
                         <input className='center-tools-search-input' type='text' />
                         <span className='center-tools-search-button'>{data.search}</span>
-                    </div>
+                    </div> */}
                     {/* <div className='center-tools-icon'>臻</div> */}
                 </div>
             </section>
