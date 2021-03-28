@@ -17,8 +17,8 @@ const ProductList = ({
     }
 
     return (
-        <div className='pt-4'>
-            <h1 className='text-4xl'>{newCatData.name}</h1>
+        <div className=''>
+            <h1 className='text-lg font-bold'>{newCatData.name}</h1>
             <ul className="grid grid-cols-1 gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                 {newCatData.product.map((id, i) => (
                     <li

@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import LeftSidebarCopy from '../../components/Shop/LeftSidebarCopy'
+import LeftSidebarCopy from '../../components/Shop/LeftSidebarCopyCopy'
 import { push } from 'connected-react-router'
 
 
