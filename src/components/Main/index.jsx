@@ -16,12 +16,12 @@ const index = (props) => {
 
     return (
         <ConnectedRouter history={history}>
-            <div className='main'>
+            <div className='main h-screen flex flex-col'>
 
                 <Route path="/" render={(props) => <Header {...props} />} />
 
 
-                <div className='lg:mt-4'>
+                <div className='lg:mt-4 flex flex-col flex-1'>
 
                     <Switch>
                         <Route path="/shopping_process" render={(props) => <ShoppingProcessPage {...props} />} />

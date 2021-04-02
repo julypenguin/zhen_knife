@@ -40,7 +40,7 @@ const ShopPage = (props) => {
     }
 
     return (
-        <div className='container'>
+        <div className='container flex flex-col flex-1 overflow-hidden pb-8'>
             <div className='py-2 px-4 items-center'>
                 {/* <BaseBreadcrumbs homeLink='/' pathList={pathList} /> */}
                 <Switch>
@@ -49,10 +49,10 @@ const ShopPage = (props) => {
                     <Route exact path="/shop" render={(props) => <BaseBreadcrumbs homeLink='/' pathList={getPath(props)} />} />
                 </Switch>
             </div>
-            <div className='py-4 flex'>
+            <div className='py-4 flex flex-1'>
                 {/* <LeftSidebar /> */}
                 <LeftSidebarCopyCopy />
-                <div className='px-6 flex-1 ml-6 divide-y divide-gray-200'>
+                <div className='flex-1 ml-6 divide-y divide-gray-200'>
 
                     <Switch>
                         <Route exact path="/shop/detail/:intl_id" render={(props) => <ProductDetail {...props} />} />
