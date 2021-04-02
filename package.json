@@ -108,7 +108,9 @@
     "webpack-dev-server": "^3.10.3",
     "webpack-merge": "^4.2.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "tailwind-scrollbar": "^1.2.4"
+  },
   "scripts": {
     "start": "webpack-dev-server --open --watch --progress --config webpack.dev.js",
     "dev": "webpack --open --watch --progress --config webpack.dev.js",
