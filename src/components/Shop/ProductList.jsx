@@ -17,13 +17,13 @@ const ProductList = ({
     }
 
     return (
-        <div className='relative h-full'>
+        <div className='relative h-full pl-4'>
             <h1 className='text-lg font-bold'>{newCatData.name}</h1>
-            <ul className="grid grid-cols-1 gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 absolute h-full overflow-auto">
+            <ul className="pr-12 grid grid-cols-1 gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 absolute h-full overflow-auto scrollbar scrollbar-thumb-gray-300 scrollbar-track-gray-100">
                 {newCatData.product.map((id, i) => (
                     <li
                         key={i}
-                        className="col-span-1 bg-white rounded-lg divide-gray-200 cursor-pointer flex flex-col"
+                        className="col-span-1 bg-white rounded-lg divide-gray-200 cursor-pointer inline-block"
                     >
                         <div className="w-full flex items-center justify-between space-x-6 flex-1">
                             <div className="flex-1">
