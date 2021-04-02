@@ -23,7 +23,8 @@ const ProductList = ({
                 {newCatData.product.map((id, i) => (
                     <li
                         key={i}
-                        className="col-span-1 bg-white rounded-lg divide-gray-200 cursor-pointer inline-block"
+                        className="col-span-1 bg-white rounded-lg divide-gray-200 cursor-pointer flex flex-col"
+                        style={{ maxHeight: '400px' }}
                     >
                         <div className="w-full flex items-center justify-between space-x-6 flex-1">
                             <div className="flex-1">
@@ -39,6 +40,9 @@ const ProductList = ({
                                                         <ProductImg
                                                             img={productData[id].detail && productData[id].detail.product_img && productData[id].detail.product_img[0]}
                                                         />
+                                                        <span className="flex-shrink-0 inline-block py-2 px-4 text-white text-sm font-medium bg-black absolute top-0 right-0">
+                                                            <FormattedMessage id='shop.discount' />
+                                                        </span>
                                                     </div>
 
                                                 </div>
@@ -54,13 +58,18 @@ const ProductList = ({
                                                     className='text-center text-red-600'
                                                     onClick={() => gotoDetail(id)}
                                                 >
-                                                    <span className='mr-2 text-xl'>NT$</span>
-                                                    <span className='text-xl'>{productData[id].price}</span>
+                                                    <span className='mr-4 text-yellow-600 line-through'>
+                                                        <span className='mr-2 text-xl'>NT$</span>
+                                                        <span className='text-xl'>{productData[id].discount}</span>
+                                                    </span>
+                                                    <span>
+                                                        <span className='mr-2 text-xl'>NT$</span>
+                                                        <span className='text-xl'>{productData[id].price}</span>
+                                                    </span>
                                                 </h3>
                                             </>
                                         }
                                     </div>
-                                    {/* <span className="flex-shrink-0 inline-block px-2 py-0.5 text-green-800 text-xs font-medium bg-green-100 rounded-full">Admin</span> */}
                                 </div>
                                 {/* <p className="mt-1 text-gray-500 text-sm truncate">Regional Paradigm Technician</p> */}
                             </div>
