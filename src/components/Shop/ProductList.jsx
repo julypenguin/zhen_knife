@@ -48,9 +48,11 @@ const ProductList = ({
                                                     <ProductImg
                                                         img={productData[id].detail && productData[id].detail.product_img && productData[id].detail.product_img[0]}
                                                     />
-                                                    <span className="flex-shrink-0 inline-block py-2 px-4 text-white text-sm font-medium bg-black absolute top-0 right-0">
-                                                        <FormattedMessage id='shop.discount' />
-                                                    </span>
+                                                    {productData[id].discount &&
+                                                        <span className="flex-shrink-0 inline-block py-2 px-4 text-white text-sm font-medium bg-black absolute top-0 right-0">
+                                                            <FormattedMessage id='shop.discount' />
+                                                        </span>
+                                                    }
                                                 </div>
 
                                             </div>
@@ -67,10 +69,12 @@ const ProductList = ({
                                             className='text-center text-red-600'
                                             onClick={() => gotoDetail(id)}
                                         >
-                                            <span className='mr-4 text-yellow-600 line-through'>
-                                                <span className='mr-2 text-xl'>NT$</span>
-                                                <span className='text-xl'>{productData[id].discount}</span>
-                                            </span>
+                                            {productData[id].discount &&
+                                                <span className='mr-4 text-yellow-600 line-through'>
+                                                    <span className='mr-2 text-xl'>NT$</span>
+                                                    <span className='text-xl'>{productData[id].discount}</span>
+                                                </span>
+                                            }
                                             <span>
                                                 <span className='mr-2 text-xl'>NT$</span>
                                                 <span className='text-xl'>{productData[id].price}</span>
@@ -94,9 +98,6 @@ const ProductList = ({
                         </div>
                     </li>
                 ))}
-
-
-
 
             </ul>
         </div>

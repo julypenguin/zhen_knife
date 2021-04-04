@@ -34,7 +34,7 @@ const LeftSidebarCopy = ({
                 </li>
 
                 {data.categories.map(category => (
-                    category.cats_sid !== 1 && category.cats_sid !== 8 ? null :
+                    category.cats_sid !== 1 && category.cats_sid !== 2 && category.cats_sid !== 3 ? null :
                         <li
                             key={category.cats_sid}
                             className="px-4 py-1 flex items-center cursor-pointer rounded-md hover:bg-blue-500 hover:text-white"
@@ -63,7 +63,7 @@ const LeftSidebarCopy = ({
                 </li>
 
                 {data.categories.map(category => (
-                    category.cats_sid === 0 || category.cats_sid === 1 || category.cats_sid === 8 ? null :
+                    category.cats_sid === 0 || category.cats_sid === 1 || category.cats_sid === 2 || category.cats_sid === 3 ? null :
                         <li
                             key={category.cats_sid}
                             className="px-4 py-1 flex items-center cursor-pointer rounded-md hover:bg-blue-500 hover:text-white"

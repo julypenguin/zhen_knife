@@ -90,87 +90,6 @@
         },
         {
             "cats_sid": 2,
-            "name": "中式菜刀系列",
-            "intl_id": "chinese_kitchen_knife_series",
-            "img": "sck_01",
-            "product": [
-                "sck_01",
-                "sck_02",
-                "sck_03",
-                "sck_04",
-                "sck_05",
-                "sck_06",
-                "sck_07",
-                "sck_08",
-                "sck_09",
-                "sck_10"
-            ]
-        },
-        {
-            "cats_sid": 3,
-            "name": "日式楓木柄",
-            "intl_id": "japanese_maple_handle_series",
-            "img": "smh_01",
-            "product": [
-                "smh_01",
-                "smh_02",
-                "sma_01"
-            ]
-        },
-        {
-            "cats_sid": 4,
-            "name": "日式類黑檀木柄",
-            "intl_id": "japanese_style_ebony_handle_series",
-            "img": "sea_01",
-            "product": [
-                "sea_01",
-                "sea_02",
-                "sea_03",
-                "sea_04"
-            ]
-        },
-        {
-            "cats_sid": 5,
-            "name": "職業主廚刀專區",
-            "intl_id": "professional_chef_knife_series",
-            "img": "sph_01",
-            "product": [
-                "sph_01",
-                "sph_02",
-                "smh_01",
-                "smh_02",
-                "sma_01",
-                "sea_01",
-                "sea_02",
-                "sea_03",
-                "sea_04"
-            ]
-        },
-        {
-            "cats_sid": 6,
-            "name": "金屬柄中式菜刀",
-            "intl_id": "chinese_kitchen_knife_metal_handle_series",
-            "img": "sck_04",
-            "product": [
-                "sck_04",
-                "sck_09",
-                "sck_10"
-            ]
-        },
-        {
-            "cats_sid": 7,
-            "name": "刀座 / 刀鞘",
-            "intl_id": "knife_holder_and_scabbard_series",
-            "img": "kh_01",
-            "product": [
-                "sc_01",
-                "sc_02",
-                "kh_01",
-                "kh_02"
-            ]
-        },
-        {
-            "cats_sid": 8,
             "name": "大馬士革",
             "intl_id": "damascus_series",
             "img": "dmh_01",
@@ -208,32 +127,19 @@
             ]
         },
         {
-            "cats_sid": 9,
-            "name": "101層亮面綠松石柄",
-            "intl_id": "101_turquoise_handle_series",
-            "img": "dth_01",
+            "cats_sid": 3,
+            "name": "刀座 / 刀鞘",
+            "intl_id": "knife_holder_and_scabbard_series",
+            "img": "kh_01",
             "product": [
-                "dth_01",
-                "dth_02"
+                "sc_01",
+                "sc_02",
+                "kh_01",
+                "kh_02"
             ]
         },
         {
-            "cats_sid": 10,
-            "name": "101層大馬士革",
-            "intl_id": "101_damascus_series",
-            "img": "dmh_01",
-            "product": [
-                "dmh_01",
-                "dmh_02",
-                "dmh_03",
-                "dph_01",
-                "dph_02",
-                "dph_03",
-                "dph_04"
-            ]
-        },
-        {
-            "cats_sid": 11,
+            "cats_sid": 4,
             "name": "67層大馬士革",
             "intl_id": "67_damascus_series",
             "img": "deh_01",
@@ -255,7 +161,7 @@
             ]
         },
         {
-            "cats_sid": 12,
+            "cats_sid": 5,
             "name": "67層手工錘打印",
             "intl_id": "67_manual_hammer_printing_series",
             "img": "dpm_01",
@@ -268,7 +174,7 @@
             ]
         },
         {
-            "cats_sid": 13,
+            "cats_sid": 6,
             "name": "67層胡桃木閃電紋",
             "intl_id": "67_walnut_lightning_series",
             "img": "dwh_01",
@@ -278,7 +184,32 @@
             ]
         },
         {
-            "cats_sid": 14,
+            "cats_sid": 7,
+            "name": "101層亮面綠松石柄",
+            "intl_id": "101_turquoise_handle_series",
+            "img": "dth_01",
+            "product": [
+                "dth_01",
+                "dth_02"
+            ]
+        },
+        {
+            "cats_sid": 8,
+            "name": "101層大馬士革",
+            "intl_id": "101_damascus_series",
+            "img": "dmh_01",
+            "product": [
+                "dmh_01",
+                "dmh_02",
+                "dmh_03",
+                "dph_01",
+                "dph_02",
+                "dph_03",
+                "dph_04"
+            ]
+        },
+        {
+            "cats_sid": 9,
             "name": "大馬士革中式廚刀系列",
             "intl_id": "damascus_chinese_kitchen_knife_series",
             "img": "deh_07",
@@ -288,7 +219,7 @@
             ]
         },
         {
-            "cats_sid": 15,
+            "cats_sid": 10,
             "name": "大馬士革職業主廚刀專區",
             "intl_id": "damascus_professional_chef_knife_series",
             "img": "dmh_03",
@@ -306,7 +237,7 @@
             ]
         },
         {
-            "cats_sid": 16,
+            "cats_sid": 11,
             "name": "大馬士革閃電紋系列",
             "intl_id": "damascus_lightning_pattern_series",
             "img": "dmh_01",
@@ -325,7 +256,7 @@
             ]
         },
         {
-            "cats_sid": 17,
+            "cats_sid": 12,
             "name": "大馬士革經典雋永系列",
             "intl_id": "damascus_classic_timeless_series",
             "img": "deh_01",
@@ -344,6 +275,75 @@
                 "deh_12",
                 "deh_13",
                 "deh_14"
+            ]
+        },
+        {
+            "cats_sid": 13,
+            "name": "中式菜刀系列",
+            "intl_id": "chinese_kitchen_knife_series",
+            "img": "sck_01",
+            "product": [
+                "sck_01",
+                "sck_02",
+                "sck_03",
+                "sck_04",
+                "sck_05",
+                "sck_06",
+                "sck_07",
+                "sck_08",
+                "sck_09",
+                "sck_10"
+            ]
+        },
+        {
+            "cats_sid": 14,
+            "name": "日式楓木柄",
+            "intl_id": "japanese_maple_handle_series",
+            "img": "smh_01",
+            "product": [
+                "smh_01",
+                "smh_02",
+                "sma_01"
+            ]
+        },
+        {
+            "cats_sid": 15,
+            "name": "日式類黑檀木柄",
+            "intl_id": "japanese_style_ebony_handle_series",
+            "img": "sea_01",
+            "product": [
+                "sea_01",
+                "sea_02",
+                "sea_03",
+                "sea_04"
+            ]
+        },
+        {
+            "cats_sid": 16,
+            "name": "金屬柄中式菜刀",
+            "intl_id": "chinese_kitchen_knife_metal_handle_series",
+            "img": "sck_04",
+            "product": [
+                "sck_04",
+                "sck_09",
+                "sck_10"
+            ]
+        },
+        {
+            "cats_sid": 17,
+            "name": "職業主廚刀專區",
+            "intl_id": "professional_chef_knife_series",
+            "img": "sph_01",
+            "product": [
+                "sph_01",
+                "sph_02",
+                "smh_01",
+                "smh_02",
+                "sma_01",
+                "sea_01",
+                "sea_02",
+                "sea_03",
+                "sea_04"
             ]
         },
         {
