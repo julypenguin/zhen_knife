@@ -1,15 +1,22 @@
 import React from 'react';
 
 const NavMenuBtn = ({
+    showProfileDropdown,
     setShowProfileDropdown,
 }) => {
+
+    const handleShowProfile = e => {
+        e.stopPropagation()
+        setShowProfileDropdown(!showProfileDropdown)
+    }
+
     return (
         <div className="flex items-center xl:hidden">
             {/* Mobile menu button */}
             <button 
                 className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" 
                 aria-expanded="false"
-                onClick={() => setShowProfileDropdown(true)}
+                onClick={handleShowProfile}
             >
                 <span className="sr-only">Open main menu</span>
 

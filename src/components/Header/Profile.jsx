@@ -29,16 +29,22 @@ const Profile = ({
         'ease-out',
         'duration-75',
         'transform',
-        'opacity-0',
         'scale-95',
         'z-10',
+        'select-none',
         {
             'transform': showProfileDropdown,
-            'opacity-100': showProfileDropdown,
             'scale-100': showProfileDropdown,
+            'hidden': !showProfileDropdown,
+            'block': showProfileDropdown,
         },
         className,
     )
+
+    const handleShowProfile = e => {
+        e.stopPropagation()
+        setShowProfileDropdown(!showProfileDropdown)
+    }
 
     return (
         <div className="ml-4 relative flex-shrink-0">
@@ -47,7 +53,7 @@ const Profile = ({
                     className="bg-white rounded-full flex text-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                     id="user-menu"
                     aria-haspopup="true"
-                    onClick={() => setShowProfileDropdown(true)}
+                    onClick={handleShowProfile}
                 >
                     <span className="sr-only">Open user menu</span>
                     <img className="h-8 w-8 rounded-full" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" />

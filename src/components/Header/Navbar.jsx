@@ -9,7 +9,7 @@ const Navbar = ({
 }) => {
 
     return (
-        <div className="hidden lg:ml-16 lg:flex lg:space-x-8">
+        <div className="hidden lg:ml-16 lg:flex lg:space-x-8 select-none">
             {data.navList.map((nav, i) => (
                 <BaseTab
                     key={i}

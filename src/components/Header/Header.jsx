@@ -5,7 +5,7 @@ import { matchPath } from 'react-router'
 import Tab from '../Base/Tab'
 import Navbar from '../../containers/Header/Navbar'
 import data from './data.json'
-import NavIcon from './NavIcon'
+import NavIcon from '../../containers/Header/NavIcon'
 import NavSearch from './NavSearch'
 import NavMenuBtn from './NavMenuBtn'
 import Profile from './Profile'
@@ -19,7 +19,7 @@ const Header = (props) => {
     const [showProfileDropdown, setShowProfileDropdown] = useState(false)
 
     return (
-        <nav className="bg-white shadow sticky top-0 z-50">
+        <nav className="bg-white shadow sticky top-0 z-10" onClick={() => setShowProfileDropdown(false)}>
             <div className="max-w-full mx-auto px-2 sm:px-4 lg:px-16">
                 <div className="flex justify-between h-16">
                     <div className="flex px-2 lg:px-0">
@@ -32,10 +32,11 @@ const Header = (props) => {
                         <NavSearch />
                     </div>
                     <NavMenuBtn
+                        showProfileDropdown={showProfileDropdown}
                         setShowProfileDropdown={setShowProfileDropdown}
                     />
 
-                    <div className="hidden xl:ml-4 xl:flex xl:items-center">
+                    <div className="hidden xl:ml-4 xl:flex xl:items-center select-none">
 
                         {/* 多國語系 */}
                         <button className="mr-2 flex-shrink-0 bg-white p-1 text-gray-400 rounded-full hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
@@ -50,7 +51,7 @@ const Header = (props) => {
                         </button>
 
                         {/* 購物車 */}
-                        <button className="flex-shrink-0 bg-white p-1 text-gray-400 rounded-full hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                        <button className="flex-shrink-0 bg-white p-1 text-gray-400 rounded-full hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 select-none">
                             <span className="sr-only">shop car</span>
                             {/* Heroicon name: bell */}
                             {/* <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
