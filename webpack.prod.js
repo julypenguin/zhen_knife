@@ -1,16 +1,17 @@
-const merge = require('webpack-merge'),
+const { merge } = require('webpack-merge'),
     common = require('./webpack.common.js'),
     webpack = require('webpack'),
-    CleanWebpackPlugin = require('clean-webpack-plugin'),
+    {CleanWebpackPlugin} = require('clean-webpack-plugin'),
     TerserPlugin = require('terser-webpack-plugin')
 
 module.exports = merge(common, {
+    
     mode: 'production',
     devtool: false,
     output: {
         path: __dirname + '/dist/',
         filename: '[name].[chunkhash].js',
-        publicPath: '/dist/',
+        publicPath: '',
     },
     plugins: [
         new CleanWebpackPlugin(),
