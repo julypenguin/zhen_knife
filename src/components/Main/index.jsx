@@ -3,6 +3,7 @@ import { ConnectedRouter } from 'connected-react-router'
 import { Route, Switch } from 'react-router'
 
 import Header from '../../containers/Header/Header'
+import Footer from '../../containers/Footer/Footer'
 import Deshboard from '../../containers/Main/Deshboard'
 import TimeLimit from '../../containers/TimeLimit/index'
 import Shop from '../../containers/Shop/index'
@@ -32,6 +33,8 @@ const index = (props) => {
                     </Switch>
 
                 </div>
+
+                <Route path="/" render={(props) => <Footer {...props} />} />
 
             </div>
         </ConnectedRouter >
