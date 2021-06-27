@@ -1,4 +1,3 @@
-import 'url-search-params-polyfill'
 import './lib/scrollPolyfill.js'
 import './lib/formdataPolyfill.js'
 

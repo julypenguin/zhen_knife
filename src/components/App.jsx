@@ -3,7 +3,6 @@ import '../styl/index.styl'
 import '../styl/styles.css'
 import React, { Component } from 'react'
 import { IntlProvider } from 'react-intl'
-import { Spinner } from 'react-bootstrap'
 import PropTypes from 'prop-types'
 import Main from './Main'
 
@@ -16,7 +15,7 @@ class App extends Component {
 
     renderPageLoading = () => (
         <div className='full-page-center'>
-            <Spinner animation="grow" variant="secondary" className='loading' />
+            {/* <Spinner animation="grow" variant="secondary" className='loading' /> */}
         </div>
     )
 
