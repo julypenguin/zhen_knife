@@ -25,9 +25,9 @@ module.exports = {
                 use: [
                     {
                         loader: MiniCssExtractPlugin.loader,
-                        options: {
-                            hmr: process.env.NODE_ENV !== 'production',
-                        },
+                        // options: {
+                        //     hmr: process.env.NODE_ENV !== 'production',
+                        // },
                     },
                     //"style-loader",
                     "css-loader",
@@ -35,6 +35,9 @@ module.exports = {
                         loader: "postcss-loader",
                         options: {
                             ident: "postcss",
+                            modules: {
+                                localIdentName: process.env.NODE_ENV !== 'production' ? '[hash:base64]' : '[path][name]__[local]',
+                            },
                             plugins: [
                                 require("autoprefixer")(),
                                 require("cssnano")()
@@ -64,9 +67,9 @@ module.exports = {
                 use: [
                     {
                         loader: MiniCssExtractPlugin.loader,
-                        options: {
-                            hmr: process.env.NODE_ENV !== 'production',
-                        },
+                        // options: {
+                        //     hmr: process.env.NODE_ENV !== 'production',
+                        // },
                     },
                     //"style-loader",
                     "css-loader",
@@ -87,7 +90,7 @@ module.exports = {
     plugins: [
         new MiniCssExtractPlugin({
             filename: '[name].css',
-            chunkFilename: '[id].css',
+            chunkFilename: process.env.NODE_ENV !== 'production' ? '[id].css' : '[id].[hash].css',
         }),
         new webpack.optimize.ModuleConcatenationPlugin(),
         new HtmlWebpackPlugin({
@@ -95,10 +98,11 @@ module.exports = {
             filename: "index.html",
             inject: "body"
         }),
-        // new webpack.ProvidePlugin({
-        //     $: "jquery",
-        //     jQuery: "jquery",
-        // })
+        new webpack.ProvidePlugin({
+            $: "jquery",
+            jQuery: "jquery",
+            store: "store"
+        })
     ],
 
     optimization: {
@@ -127,20 +131,10 @@ module.exports = {
                     name: 'vendors',
                     chunks: 'all',
                     enforce: true
-                },
-                intls: {
-                    test: /@formatjs.*/,
-                    name: 'intls',
-                    chunks: 'all',
-                    enforce: true
-                },
-                fortawesome: {
-                    test: /@fortawesome.*/,
-                    name: 'fortawesome',
-                    chunks: 'all',
-                    enforce: true
                 }
             }
         }
     }
 };
+
+
