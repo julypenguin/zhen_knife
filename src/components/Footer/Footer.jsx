@@ -1,31 +1,28 @@
 import React, { useState, Fragment } from 'react';
+import { Link } from 'react-router-dom'
 import NavIcon from '../../containers/Header/NavIcon'
 import zhenGold from '../../img/zhenGold.png'
 
 const navigation = {
-    solutions: [
-        { name: 'Marketing', href: '#' },
-        { name: 'Analytics', href: '#' },
-        { name: 'Commerce', href: '#' },
-        { name: 'Insights', href: '#' },
+    companyInformation: [
+        { name: '台中市西屯區中工二路51-1號' },
+        { name: '電話 : 04-23508566' },
+        { name: '傳真 : 04-23508380' },
+        { name: '信箱：zhen.knife@gmail.com' },
     ],
-    support: [
-        { name: 'Pricing', href: '#' },
-        { name: 'Documentation', href: '#' },
-        { name: 'Guides', href: '#' },
-        { name: 'API Status', href: '#' },
+    shop: [
+        { name: '大馬士革系列', href: '/shop/2' },
+        { name: '三合鋼系列', href: '/shop/1' },
+        { name: '頂級高碳鋼', href: '#' },
+        { name: '特價商品', href: '/shop/19' },
+        { name: '刀鞘/刀架', href: '/shop/3' },
     ],
-    company: [
-        { name: 'About', href: '#' },
-        { name: 'Blog', href: '#' },
-        { name: 'Jobs', href: '#' },
-        { name: 'Press', href: '#' },
-        { name: 'Partners', href: '#' },
-    ],
-    legal: [
-        { name: 'Claim', href: '#' },
-        { name: 'Privacy', href: '#' },
-        { name: 'Terms', href: '#' },
+    shopping_process: [
+        { name: '購物流程', href: '#' },
+        { name: '常見問題', href: '#' },
+        { name: '隱私權政策', href: '#' },
+        { name: '用戶協議', href: '#' },
+        { name: '聯絡我們', href: '#' },
     ],
     social: [
         {
@@ -102,71 +99,65 @@ const Footer = () => {
                 <div className="xl:grid xl:grid-cols-3 xl:gap-8">
                     <div className="space-y-8 xl:col-span-1">
                         <div className='flex justify-center'>
-                            <NavIcon 
+                            <NavIcon
                                 imageSrc={zhenGold}
                                 className="block h-24"
                             />
                         </div>
-                        <p className="text-gray-500 text-base">
+                        <p className="text-gray-300 text-base">
                             臻 高級料理刀具是一家專業生產廚房刀具的企業，公司擁有先進的生產設備，產品質量優良，價格合理，暢銷德、法、美、英、西班牙等歐美國際市場，深受客商信賴和用戶青睞！
                         </p>
-                        <div className="flex space-x-6">
+                        {/* <div className="flex space-x-6">
                             {navigation.social.map((item) => (
                                 <a key={item.name} href={item.href} className="text-gray-400 hover:text-gray-500">
                                     <span className="sr-only">{item.name}</span>
                                     <item.icon className="h-6 w-6" aria-hidden="true" />
                                 </a>
                             ))}
-                        </div>
+                        </div> */}
                     </div>
-                    <div className="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2">
-                        <div className="md:grid md:grid-cols-2 md:gap-8">
-                            <div>
-                                <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">Solutions</h3>
-                                <ul className="mt-4 space-y-4">
-                                    {navigation.solutions.map((item) => (
-                                        <li key={item.name}>
-                                            <a href={item.href} className="text-base text-gray-500 hover:text-gray-900">
+                    <div className="mt-12 grid grid-cols-1 gap-8 xl:mt-0 xl:col-span-2">
+                        <div className="md:grid md:grid-cols-3 md:gap-8">
+                            <div className=''>
+                                <h3 className="text-xl font-semibold text-gray-400 tracking-wider">公司資訊</h3>
+                                <div className="mt-4 space-y-4">
+                                    <ul className="mt-4 space-y-4">
+                                        {navigation.companyInformation.map((item) => (
+                                            <li key={item.name} className="text-base text-gray-300 ">
                                                 {item.name}
+                                            </li>
+                                        ))}
+                                    </ul>
+                                    <li className="flex space-x-6">
+                                        {navigation.social.map((item) => (
+                                            <a key={item.name} href={item.href} className="text-gray-300 hover:text-white">
+                                                <span className="sr-only">{item.name}</span>
+                                                <item.icon className="h-6 w-6" aria-hidden="true" />
                                             </a>
+                                        ))}
+                                    </li>
+                                </div>
+                            </div>
+                            <div className="mt-12 md:mt-0">
+                                <h3 className="text-xl font-semibold text-gray-400 tracking-wider">臻刀具系列</h3>
+                                <ul className="mt-4 space-y-4">
+                                    {navigation.shop.map((item) => (
+                                        <li key={item.name}>
+                                            <Link to={item.href} className="text-base text-gray-300 hover:text-white">
+                                                {item.name}
+                                            </Link>
                                         </li>
                                     ))}
                                 </ul>
                             </div>
                             <div className="mt-12 md:mt-0">
-                                <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">Support</h3>
+                                <h3 className="text-xl font-semibold text-gray-400 tracking-wider">購物相關</h3>
                                 <ul className="mt-4 space-y-4">
-                                    {navigation.support.map((item) => (
+                                    {navigation.shopping_process.map((item) => (
                                         <li key={item.name}>
-                                            <a href={item.href} className="text-base text-gray-500 hover:text-gray-900">
+                                            <Link to={item.href} className="text-base text-gray-300 hover:text-white">
                                                 {item.name}
-                                            </a>
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
-                        </div>
-                        <div className="md:grid md:grid-cols-2 md:gap-8">
-                            <div>
-                                <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">Company</h3>
-                                <ul className="mt-4 space-y-4">
-                                    {navigation.company.map((item) => (
-                                        <li key={item.name}>
-                                            <a href={item.href} className="text-base text-gray-500 hover:text-gray-900">
-                                                {item.name}
-                                            </a>
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
-                            <div className="mt-12 md:mt-0">
-                                <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">Legal</h3>
-                                <ul className="mt-4 space-y-4">
-                                    {navigation.legal.map((item) => (
-                                        <li key={item.name}>
-                                            <a href={item.href} className="text-base text-gray-500 hover:text-gray-900">
-                                                {item.name}
-                                            </a>
+                                            </Link>
                                         </li>
                                     ))}
                                 </ul>

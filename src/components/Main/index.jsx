@@ -22,7 +22,10 @@ const index = (props) => {
                 <Route path="/" render={(props) => <Header {...props} />} />
 
 
-                <div className='lg:mt-4 flex flex-col flex-1'>
+                <div 
+                    className='lg:mt-4 flex flex-col flex-1' 
+                    // style={{ minHeight: '450px' }}
+                >
 
                     <Switch>
                         <Route path="/shopping_process" render={(props) => <ShoppingProcessPage {...props} />} />
