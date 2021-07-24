@@ -2,6 +2,7 @@ import React, { useState, Fragment } from 'react';
 import { Link } from 'react-router-dom'
 import NavIcon from '../../containers/Header/NavIcon'
 import zhenGold from '../../img/zhenGold.png'
+import { injectIntl, FormattedMessage } from 'react-intl'
 
 const navigation = {
     companyInformation: [
@@ -105,7 +106,7 @@ const Footer = () => {
                             />
                         </div>
                         <p className="text-gray-300 text-base">
-                            臻 高級料理刀具是一家專業生產廚房刀具的企業，公司擁有先進的生產設備，產品質量優良，價格合理，暢銷德、法、美、英、西班牙等歐美國際市場，深受客商信賴和用戶青睞！
+                            <FormattedMessage id='footer.premium_cooking_knives_is_an_enterprise_spacializing' />
                         </p>
                         {/* <div className="flex space-x-6">
                             {navigation.social.map((item) => (
@@ -119,7 +120,9 @@ const Footer = () => {
                     <div className="mt-12 grid grid-cols-1 gap-8 xl:mt-0 xl:col-span-2">
                         <div className="md:grid md:grid-cols-3 md:gap-8">
                             <div className=''>
-                                <h3 className="text-xl font-semibold text-gray-400 tracking-wider">公司資訊</h3>
+                                <h3 className="text-xl font-semibold text-gray-400 tracking-wider">
+                                    <FormattedMessage id='footer.company_information' />
+                                </h3>
                                 <div className="mt-4 space-y-4">
                                     <ul className="mt-4 space-y-4">
                                         {navigation.companyInformation.map((item) => (
@@ -139,7 +142,9 @@ const Footer = () => {
                                 </div>
                             </div>
                             <div className="mt-12 md:mt-0">
-                                <h3 className="text-xl font-semibold text-gray-400 tracking-wider">臻刀具系列</h3>
+                                <h3 className="text-xl font-semibold text-gray-400 tracking-wider">
+                                    <FormattedMessage id='nav.zhen_series' />
+                                </h3>
                                 <ul className="mt-4 space-y-4">
                                     {navigation.shop.map((item) => (
                                         <li key={item.name}>
@@ -151,7 +156,9 @@ const Footer = () => {
                                 </ul>
                             </div>
                             <div className="mt-12 md:mt-0">
-                                <h3 className="text-xl font-semibold text-gray-400 tracking-wider">購物相關</h3>
+                                <h3 className="text-xl font-semibold text-gray-400 tracking-wider">
+                                    <FormattedMessage id='nav.shopping_related' />
+                                </h3>
                                 <ul className="mt-4 space-y-4">
                                     {navigation.shopping_process.map((item) => (
                                         <li key={item.name}>

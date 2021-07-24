@@ -1,13 +1,17 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { injectIntl, FormattedMessage } from 'react-intl'
 import catData from './categories.json'
 import productData from './products.json'
 import ProductImg from './ProductImg'
+import Pagination from '../Pagination/Pagination'
 
 const ProductList = ({
     match,
     push,
 }) => {
+    const [page, setPage] = useState(1)
+    const [limit, setLimit] = useState(12)
+
     const UlRef = useRef()
 
     const cats_sid = Number(match.params.cats_sid) || 0
@@ -15,7 +19,18 @@ const ProductList = ({
 
     const gotoDetail = id => {
         push(`/shop/detail/${id}`)
+    }
 
+    const getdata = (page) => {
+        setPage(page)
+    }
+
+    const formatData = (list) => {
+        if (!Array.isArray(list)) return []
+        const start = ((page - 1 ) * limit) + 1
+        const end = (page) * limit
+        const newList = list.slice(start - 1, end)
+        return newList
     }
 
     useEffect(() => {
@@ -25,11 +40,12 @@ const ProductList = ({
     return (
         <div className='relative h-full pl-4'>
             <h1 className='text-lg font-bold'>{newCatData.name}</h1>
+            {/* absolute h-full overflow-auto scrollbar scrollbar-thumb-gray-300 scrollbar-track-gray-100 */}
             <ul
-                className="pr-12 grid grid-cols-1 gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 absolute h-full overflow-auto scrollbar scrollbar-thumb-gray-300 scrollbar-track-gray-100"
+                className="pr-12 mb-12 grid grid-cols-1 gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
                 ref={UlRef}
             >
-                {newCatData.product.map((id, i) => (
+                {formatData(newCatData.product).map((id, i) => (
                     <li
                         key={i}
                         className="col-span-1 bg-white rounded-lg divide-gray-200 cursor-pointer flex flex-col"
@@ -100,6 +116,16 @@ const ProductList = ({
                 ))}
 
             </ul>
+
+            {/* 翻頁 */}
+            <Pagination
+                count={newCatData.product.length}
+                limit={limit}
+                page={page}
+                length={10}
+                getdata={getdata}
+            />
+
         </div>
     );
 };

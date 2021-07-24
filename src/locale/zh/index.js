@@ -5,6 +5,7 @@ import global from './global.json'
 import nav from './nav.json'
 import shop from './shop.json'
 import shoppingProcess from './shoppingProcess.json'
+import footer from './footer.json'
 
 export default flatjson({ 
     contact,
@@ -13,4 +14,5 @@ export default flatjson({
     nav,
     shop,
     shoppingProcess,
+    footer,
 })
