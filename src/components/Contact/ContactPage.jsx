@@ -1,4 +1,3 @@
-import { icon } from '@fortawesome/fontawesome-svg-core';
 import React from 'react';
 import { injectIntl, FormattedMessage } from 'react-intl'
 import { FontAwesomeIcon as Icon } from '@fortawesome/react-fontawesome'

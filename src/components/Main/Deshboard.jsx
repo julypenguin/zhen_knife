@@ -10,7 +10,9 @@ import zhenBlack from '../../img//zhenBlack.png'
 import data from './data.json'
 import ProductImg from '../Shop/ProductImg'
 
-const Deshboard = () => {
+const Deshboard = ({
+    push,
+}) => {
 
     const imgList = {
         101: damascus,
@@ -42,23 +44,28 @@ const Deshboard = () => {
                 </div>
             </section>
 
-            <section className='side-view'>
-                {data.sideViewList.map((sideView, i) => (
-                    <div key={i} className='side-view-inner'>
-                        <div className='side-view-imgboxs'>
-                            {sideView.map((view, i) => (
-                                <div key={view.name} className='side-view-imgbox'>
-                                    <div className='side-view-imgbox-inner'>
-                                        <div className='side-view-imgbox-fit'>
-                                            <img className='side-view-imgbox-image' src={imgList[view.id]}></img>
-                                            <div className='side-view-imgbox-words-red'>{view.name}</div>
+            <section>
+                <ul role="list" className="bg-black py-8 grid grid-cols-1 gap-x-4 gap-y-8 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-3">
+                    {data.sideViewList.map((sideView, i) => (
+                        <li
+                            key={i}
+                            className="relative"
+                            onClick={() => push(sideView.href)}
+                        >
+                            <div className="group block w-full aspect-w-10 aspect-h-7 bg-gray-100 overflow-hidden">
+                                <div key={sideView.name} className='w-full'>
+                                    <div className='w-full pt-40 lg:pt-64'>
+                                        <div className='w-full h-full absolute top-0 left-0'>
+                                            <img className='w-full h-full block object-cover transition-all filter brightness-75 group-hover:brightness-100' src={imgList[sideView.id]}></img>
+                                            <div className='side-view-imgbox-words-red'>{sideView.name}</div>
                                         </div>
                                     </div>
                                 </div>
-                            ))}
-                        </div>
-                    </div>
-                ))}
+                            </div>
+                        </li>
+                    ))}
+
+                </ul>
             </section>
         </>
     );

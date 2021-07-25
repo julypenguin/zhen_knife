@@ -10,6 +10,9 @@ module.exports = {
       padding: {
         "144": "36rem",
         "176": "44rem",
+      },
+      fontFamily: {
+        "catamaran": ["Catamaran", "Sans-serif"],
       }
     },
     container: {
@@ -17,7 +20,9 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      brightness: ['hover', 'group-hover', 'focus'],
+    },
   },
   plugins: [
     require('@tailwindcss/forms'),

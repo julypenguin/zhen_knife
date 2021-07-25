@@ -1,33 +1,39 @@
 {
     "search": "搜尋刀具",
     "sideViewList": [
-        [
-            {
-                "id": 101,
-                "name": "大馬士革系列"
-            },
-            {
-                "id": 102,
-                "name": "三合鋼系列"
-            },
-            {
-                "id": 103,
-                "name": "高碳鋼系列"
-            }
-        ],
-        [
-            {
-                "id": 104,
-                "name": "活動訊息"
-            },
-            {
-                "id": 105,
-                "name": "最新消息"
-            },
-            {
-                "id": 106,
-                "name": "廚房知識"
-            }
-        ]
+        {
+            "id": 101,
+            "name": "大馬士革系列",
+            "intl_id": "damascus_series",
+            "href": "/shop/2"
+        },
+        {
+            "id": 102,
+            "name": "三合鋼系列",
+            "intl_id": "sandwich_steel_series",
+            "href": "/shop/1"
+        },
+        {
+            "id": 103,
+            "name": "高碳鋼系列",
+            "href": ""
+        },
+        {
+            "id": 104,
+            "name": "刀座 / 刀鞘",
+            "intl_id": "knife_holder_and_scabbard_series",
+            "href": "/shop/3"
+        },
+        {
+            "id": 105,
+            "name": "特價商品",
+            "intl_id": "special_offer",
+            "href": "/shop/19"
+        },
+        {
+            "id": 106,
+            "name": "廚房知識",
+            "href": ""
+        }
     ]
 }
