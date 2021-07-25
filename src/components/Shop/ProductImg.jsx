@@ -420,6 +420,19 @@ import sph_02_02 from '../../img/sph_02/sph_02_02.jpg'
 import sph_02_market_01 from '../../img/sph_02/sph_02_market_01.jpg'
 import sph_02_market_02 from '../../img/sph_02/sph_02_market_02.jpg'
 
+// hc_01
+import hc_01 from '../../img/hc_01/hc_01.jpg'
+import hc_01_02 from '../../img/hc_01/hc_01_02.jpg'
+import hc_01_market_01 from '../../img/hc_01/hc_01_market_01.jpg'
+import hc_01_market_02 from '../../img/hc_01/hc_01_market_02.jpg'
+import hc_01_market_03 from '../../img/hc_01/hc_01_market_03.jpg'
+import hc_01_market_04 from '../../img/hc_01/hc_01_market_04.jpg'
+import hc_01_market_05 from '../../img/hc_01/hc_01_market_05.jpg'
+import hc_01_market_06 from '../../img/hc_01/hc_01_market_06.jpg'
+import hc_01_market_07 from '../../img/hc_01/hc_01_market_07.jpg'
+import hc_01_market_08 from '../../img/hc_01/hc_01_market_08.jpg'
+import hc_01_market_09 from '../../img/hc_01/hc_01_market_09.jpg'
+
 // market
 import market_01 from '../../img/market_01.jpg'
 import market_02 from '../../img/market_02.jpg'
@@ -873,6 +886,19 @@ const ProductImg = ({
             case 'sph_02_market_01': return sph_02_market_01 
             case 'sph_02_market_02': return sph_02_market_02 
 
+            // hc_01
+            case 'hc_01': return hc_01 
+            case 'hc_01_02': return hc_01_02 
+            case 'hc_01_market_01': return hc_01_market_01 
+            case 'hc_01_market_02': return hc_01_market_02 
+            case 'hc_01_market_03': return hc_01_market_03 
+            case 'hc_01_market_04': return hc_01_market_04 
+            case 'hc_01_market_05': return hc_01_market_05 
+            case 'hc_01_market_06': return hc_01_market_06 
+            case 'hc_01_market_07': return hc_01_market_07 
+            case 'hc_01_market_08': return hc_01_market_08 
+            case 'hc_01_market_09': return hc_01_market_09 
+            
             // market
             case 'market_01': return market_01
             case 'market_02': return market_02

@@ -54,5 +54,22 @@
             "notice_intl": "scabbard_made_of_ash_wood_from_north_America_anti_corrosion_it_beautiful",
             "show": true
         }
+    ],
+    "4": [
+        {
+            "notice": "此剪刀為多功能廚房剪，除剪硬骨外皆可適任廚房一般操作",
+            "notice_intl": "scissors_is_multifunctional_it_can_be_used_for_general",
+            "show": true
+        },
+        {
+            "notice": "長時間使用後，建議要拆開擦拭乾淨才能保持其順暢度，並維持最佳鋒利狀態",
+            "notice_intl": "after_longterm_use_recommended_to_disassemble_and_wipe_clean",
+            "show": true
+        },
+        {
+            "notice": "平常收納即使用完畢清洗擦乾，置放於通風乾燥處即可",
+            "notice_intl": "clean_and_dry_after_use_and_put_it_in_a_ventilated_and_dry_place",
+            "show": true
+        }
     ]
 }

@@ -3843,7 +3843,7 @@
             "weight": "",
             "net_weight": "",
             "steel": "",
-            "steel_intl": "p",
+            "steel_intl": "",
             "handle": "",
             "handle_intl": "",
             "desc": "",
@@ -3924,7 +3924,7 @@
             "weight": "",
             "net_weight": "",
             "steel": "",
-            "steel_intl": "p",
+            "steel_intl": "",
             "handle": "",
             "handle_intl": "",
             "desc": "",
@@ -4139,6 +4139,88 @@
             ],
             "marketing_img": [
 
+            ],
+            "relation": [
+                "kh_01",
+                "sc_01",
+                "sc_02"
+            ]
+        }
+    },
+    "hc_01": {
+        "cat_sid": 10054,
+        "name": "臻 ★ 料理剪刀",
+        "intl_id": "hc_01",
+        "can_sell": true,
+        "price": "490",
+        "discount": "",
+        "class": "cooking_scissors",
+        "detail": {
+            "id": "SS-01BG",
+            "name": "",
+            "name_intl": "",
+            "use": "多功能剪刀",
+            "use_intl": "SS-01BG_use",
+            "color": "",
+            "color_intl": "",
+            "material": "",
+            "material_intl": "",
+            "length": "",
+            "width": "",
+            "high": "",
+            "blade_length": "95 mm",
+            "total_length": "230 mm",
+            "blade_width": "25 mm",
+            "thickness": "3 mm",
+            "weight": "140±5g",
+            "net_weight": "",
+            "steel": "日本進口高碳鋼",
+            "steel_intl": "high_carbon_steel_from_jp",
+            "handle": "TPR + PP",
+            "handle_intl": "TPR_and_PP",
+            "desc": "",
+            "desc_intl": "",
+            "desc_list": [
+                {
+                    "desc": "日本進口頂級高碳鋼精心打造",
+                    "desc_intl": "top_high_carbon_steel_carefully_crafted_from_jp",
+                    "show": true
+                },
+                {
+                    "desc": "外型由國外設計師精心設計",
+                    "desc_intl": "appearance_carefully_designed_by_designers",
+                    "show": true
+                },
+                {
+                    "desc": "刀面拋磨防銹處理",
+                    "desc_intl": "knife_face_polished_and_antirust_treatment",
+                    "show": true
+                },
+                {
+                    "desc": "握柄採用TPR、PP材料-具有防滑、防菌、柔軟等特性",
+                    "desc_intl": "handle_made_of_TPR_PP_material_nonslip_antibac_soft",
+                    "show": true
+                }
+            ],
+            "special_marketing_img": [
+
+            ],
+            "note_list": [],
+            "show_notice": 4,
+            "product_img": [
+                "hc_01",
+                "hc_01_02"
+            ],
+            "marketing_img": [
+                "hc_01_market_01",
+                "hc_01_market_02",
+                "hc_01_market_03",
+                "hc_01_market_04",
+                "hc_01_market_05",
+                "hc_01_market_06",
+                "hc_01_market_07",
+                "hc_01_market_08",
+                "hc_01_market_09"
             ],
             "relation": [
                 "kh_01",
