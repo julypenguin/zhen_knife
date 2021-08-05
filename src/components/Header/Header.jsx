@@ -11,24 +11,12 @@ import NavSearch from './NavSearch'
 import NavMenuBtn from './NavMenuBtn'
 import Profile from './Profile'
 import ProfileMobileMenu from './ProfileMobileMenu'
-
-
 import { Popover, Transition } from '@headlessui/react'
 import {
     AnnotationIcon,
     ChatAlt2Icon,
-    ChatAltIcon,
-    DocumentReportIcon,
-    HeartIcon,
     InboxIcon,
-    MenuIcon,
-    PencilAltIcon,
     QuestionMarkCircleIcon,
-    ReplyIcon,
-    SparklesIcon,
-    TrashIcon,
-    UsersIcon,
-    XIcon,
 } from '@heroicons/react/outline'
 import { ChevronDownIcon } from '@heroicons/react/solid'
 

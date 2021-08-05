@@ -8,6 +8,7 @@ import FeaturesIntroSide from './FeaturesIntroSide'
 import DesignConcept from './DesignConcept'
 import Universal from './Universal'
 import UniversalImgList from './UniversalImgList'
+import Multifunctional from './Multifunctional'
 
 const index = (props) => {
 
@@ -39,6 +40,9 @@ const index = (props) => {
 
             {/* 一把萬用系列圖 */}
             <UniversalImgList />
+
+            {/* 多功能合一 */}
+            <Multifunctional />
 
         </section>
     );

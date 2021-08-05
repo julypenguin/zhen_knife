@@ -2,15 +2,15 @@ import React from 'react';
 import classNames from 'classnames';
 import { FormattedMessage } from 'react-intl';
 import ImgFit from '../Base/ImgFit'
-import img271 from '../../img/img271.jpg'
-import img272 from '../../img/img272.jpg'
-import img273 from '../../img/img273.jpg'
-import img274 from '../../img/img274.jpg'
-import img275 from '../../img/img275.jpg'
-import img276 from '../../img/img276.jpg'
-import img277 from '../../img/img277.jpg'
-import img278 from '../../img/img278.jpg'
-import img279 from '../../img/img279.jpg'
+import img271 from '../../img/sid/img271.jpg'
+import img272 from '../../img/sid/img272.jpg'
+import img273 from '../../img/sid/img273.jpg'
+import img274 from '../../img/sid/img274.jpg'
+import img275 from '../../img/sid/img275.jpg'
+import img276 from '../../img/sid/img276.jpg'
+import img277 from '../../img/sid/img277.jpg'
+import img278 from '../../img/sid/img278.jpg'
+import img279 from '../../img/sid/img279.jpg'
 import data from './universalImgList.json'
 
 const UniversalImgList = () => {

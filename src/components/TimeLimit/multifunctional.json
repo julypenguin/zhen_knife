@@ -1,0 +1,25 @@
+{
+    "func_list": [
+        {
+            "id": 281,
+            "title": "多功能合一",
+            "title_intl": "multifunctional_in_one",
+            "desc": "刮魚鱗,剪魚肚（清內臟）,剪雞骨,剪鐵絲(魚線）,夾核桃〈夾蟹腳）,開罐頭（奶粉/油漆罐）,開瓶器",
+            "desc_intl": "fish_scales_fish_maw_chicken_bones_wire_walnuts_cans_bottle_opener"
+        },
+        {
+            "id": 282,
+            "title": "把手好施力",
+            "title_intl": "good_hands",
+            "desc": "TPR環保橡膠材質，抗菌又防滑",
+            "desc_intl": "TPR_environmentally_friendly_rubber_material_antibac_and_nonslip"
+        },
+        {
+            "id": 283,
+            "title": "一體成型刀片",
+            "title_intl": "one_piece_blade",
+            "desc": "頂級日本高碳鋼材質，刀片長度：9英寸，0.3磅",
+            "desc_intl": "top_Jp_high_carbon_steel_material"
+        }
+    ]
+}
