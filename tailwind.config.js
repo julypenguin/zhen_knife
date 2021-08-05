@@ -6,13 +6,27 @@ module.exports = {
       width: {
         "144": "36rem",
         "176": "44rem",
+        "10/21": "47.6%"
       },
       padding: {
+        "112": "28rem",
         "144": "36rem",
         "176": "44rem",
+        "25p": "25%",
+        "60p": "60%",
+        "80p": "80%"
+      },
+      maxWidth: {
+        "8xl": "88rem",
+        "9xl": "96rem",
+        "10xl": "104rem"
       },
       fontFamily: {
         "catamaran": ["Catamaran", "Sans-serif"],
+        "playfair": ["Playfair Display", "Sans-serif"],
+        "abel": ["Abel", "Sans-serif"],
+        "jhengHei": ["Microsoft JhengHei", "Helvetica Neue", "Helvetica", "Arial", "dashicons", "sans-serif"],
+        "vidaloka": ["Vidaloka", "Sans-serif"]
       }
     },
     container: {
@@ -22,6 +36,7 @@ module.exports = {
   variants: {
     extend: {
       brightness: ['hover', 'group-hover', 'focus'],
+      scale: ['hover', 'group-hover', 'focus']
     },
   },
   plugins: [

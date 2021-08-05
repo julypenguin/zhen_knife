@@ -59,7 +59,8 @@
                 "sc_01",
                 "sc_02",
                 "kh_01",
-                "kh_02"
+                "kh_02",
+                "hc_01"
             ]
         },
         {
@@ -131,6 +132,16 @@
         },
         {
             "cats_sid": 3,
+            "name": "高碳鋼系列",
+            "intl_id": "high_carbon_steel_series",
+            "img": "hc_01",
+            "main": true,
+            "product": [
+                "hc_01"
+            ]
+        },
+        {
+            "cats_sid": 4,
             "name": "刀座 / 刀鞘",
             "intl_id": "knife_holder_and_scabbard_series",
             "img": "kh_01",
@@ -140,16 +151,6 @@
                 "sc_02",
                 "kh_01",
                 "kh_02"
-            ]
-        },
-        {
-            "cats_sid": 4,
-            "name": "高碳鋼系列",
-            "intl_id": "high_carbon_steel_series",
-            "img": "hc_01",
-            "main": true,
-            "product": [
-                "hc_01"
             ]
         },
         {

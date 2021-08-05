@@ -1,21 +1,29 @@
 {
     "title_main": "可拆洗的剪刀",
+    "title_main_intl": "detachable_and_washable_scissors",
     "title_text": "將細縫處清洗乾淨，維持食物的清潔。",
+    "title_text_intl": "clean_the_crevices_and_keep_the_food_clean",
     "imgList": [
         {
             "id": 201,
             "step": "步驟1",
-            "text": "輕鬆轉動即可將剪刀拆開"
+            "step_intl": "step_1",
+            "text": "輕鬆轉動即可將剪刀拆開",
+            "text_intl": "disassemble_the_scissors_by_turning_easily"
         },
         {
             "id": 202,
             "step": "步驟2",
-            "text": "拆開後可針對單邊進行清洗"
+            "step_intl": "step_2",
+            "text": "拆開後可針對單邊進行清洗",
+            "text_intl": "can_be_cleaned_on_one_side_after_disassembly"
         },
         {
             "id": 203,
             "step": "步驟3",
-            "text": "清洗完畢，再裝回去即完成清洗"
+            "step_intl": "step_3",
+            "text": "清洗完畢，再裝回去即完成清洗",
+            "text_intl": "after_cleaning_put_it_back_to_complete_the_cleaning"
         }
     ]
 }

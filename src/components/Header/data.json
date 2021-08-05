@@ -12,13 +12,6 @@
             "strict": "false"
         },
         {
-            "nav": "限時搶購活動",
-            "intl_name": "limit_time",
-            "to": "/SS-01BG",
-            "exact": "true",
-            "strict": "false"
-        },
-        {
             "nav": "臻刀具系列",
             "intl_name": "zhen_series",
             "to": "/shop",

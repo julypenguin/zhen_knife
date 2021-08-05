@@ -1,4 +1,5 @@
 import React from 'react';
+import { injectIntl, FormattedMessage } from 'react-intl'
 import ImgFit from '../Base/ImgFit'
 import WashScissorsStep1 from '../../img/WashScissorsStep1.jpg'
 import WashScissorsStep2 from '../../img/WashScissorsStep2.jpg'
@@ -14,24 +15,29 @@ const WashScissors = () => {
     }
 
     const renderStepText = img => (
-        <div className='timelimit-wash-img-text-box'>
-            <div className='timelimit-wash-img-text-h'>{img.step}</div>
-            <div className='timelimit-wash-img-text-p'>{img.text}</div>
+        <div className='absolute top-0 md:-top-8 left-0 w-full'>
+            <div className='text-white pt-2 text-6xl font-medium italic text-shadow-gray-900'><FormattedMessage id={`deshboard.${img.step_intl}`} /></div>
+            <div className='text-white text-xl font-bold italic text-shadow-gray-900'><FormattedMessage id={`deshboard.${img.text_intl}`} /></div>
         </div>
     )
 
     return (
-        <div>
-            <div className='timelimit-wash-title-box'>
-                <h2 className='timelimit-wash-title-main'>{data.title_main}!</h2>
-                <p className='timelimit-wash-title-text'>{data.title_text}</p>
+        <div className='mt-8'>
+            <div className='p-4'>
+                <h2 className='text-gray-500 text-5xl font-black text-center mb-6'>
+                    <FormattedMessage id={`deshboard.${data.title_main_intl}`} />
+                    !
+                </h2>
+                <p className='text-center mb-8 text-lg'><FormattedMessage id={`deshboard.${data.title_text_intl}`} /></p>
             </div>
-            <div className='timelimit-wash-img-outer'>
-                <div className='timelimit-wash-img-box'>
+            <div className='py-8 bg-gray-100 flex justify-center'>
+                <div className='flex flex-wrap justify-around w-full max-w-10xl'>
                     {data.imgList.map(img => (
-                        <ImgFit key={img.id} className='timelimit-wash-img' src={imgList[img.id]}>
-                            {renderStepText(img)}
-                        </ImgFit>
+                        <div key={img.id} className='flex justify-center w-full md:w-1/3 max-w-lg'>
+                            <ImgFit className='w-2/3 pt-60p md:pt-80p relative md:w-full' src={imgList[img.id]}>
+                                {renderStepText(img)}
+                            </ImgFit>
+                        </div>
                     ))}
                 </div>
             </div>

@@ -39,7 +39,8 @@
       "family_practical_series": "家庭實用專區",
       "special_offer": "特價商品",
       "all_series": "全系列",
-      "other_categories": "分類"
+      "other_categories": "分類",
+      "shopping_related": "購物相關"
    },
    "products": {
       "sck_01": "臻 ★日本進口三合鋼 中式菜刀+ 噴砂★~TPR防滑握柄 – 肉桂刀",
@@ -161,9 +162,11 @@
       "appearance_carefully_designed_by_designers": "外型由國外設計師精心設計",
       "sandblasting": "刀面噴砂處理",
       "knife_face_polished_and_antirust_treatment": "刀面拋磨防銹處理",
+      "sharper_than_stainless_steel": "鋒利更勝不鏽鋼",
       "natural_pattern_on_surface_fusion_technology_of_blade_and_handle": "刀面花紋清晰自然，刀身與刀柄融合技術",
       "natural_pattern_on_surface": "刀面花紋清晰自然",
       "sharp_toughness_and_not_easy_to_rust": "鋒利、韌性佳、而且不易鏽蝕",
+      "more_convenient_maintenance": "保養更方便",
       "handle_made_of_TPR_material_nonslip_antibac_soft": "刀柄採用TPR材料-具有防滑、防菌、柔軟等特性",
       "handle_made_of_steel_material_bamboo_nonslip_antibac_soft": "刀柄採用不鏽鋼材料竹節造型-具有防滑、抗菌、等特性",
       "handle_made_of_oak_material_hard_coarse_wear_resistance": "刀柄採用OAK橡木-具有質重料硬、結構粗、耐磨損等特性",

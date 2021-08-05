@@ -23,7 +23,7 @@ const index = (props) => {
             <ScissorsIntro />
 
             {/* 影片介紹 */}
-            {/* <YoutubeIframe /> */}
+            <YoutubeIframe />
 
             {/* 特點介紹 */}
             <FeaturesIntro />

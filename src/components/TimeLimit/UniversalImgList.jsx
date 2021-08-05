@@ -1,40 +1,50 @@
 import React from 'react';
+import classNames from 'classnames';
+import { FormattedMessage } from 'react-intl';
 import ImgFit from '../Base/ImgFit'
-import img261 from '../../img/img261.jpg'
-import img262 from '../../img/img262.jpg'
-import img263 from '../../img/img263.jpg'
-import img264 from '../../img/img264.jpg'
-import img265 from '../../img/img265.jpg'
-import img266 from '../../img/img266.jpg'
-import img267 from '../../img/img267.jpg'
-import img268 from '../../img/img268.jpg'
-import img269 from '../../img/img269.jpg'
+import img271 from '../../img/img271.jpg'
+import img272 from '../../img/img272.jpg'
+import img273 from '../../img/img273.jpg'
+import img274 from '../../img/img274.jpg'
+import img275 from '../../img/img275.jpg'
+import img276 from '../../img/img276.jpg'
+import img277 from '../../img/img277.jpg'
+import img278 from '../../img/img278.jpg'
+import img279 from '../../img/img279.jpg'
 import data from './universalImgList.json'
 
 const UniversalImgList = () => {
     const imgMap = {
-        261: img261,
-        262: img262,
-        263: img263,
-        264: img264,
-        265: img265,
-        266: img266,
-        267: img267,
-        268: img268,
-        269: img269,
+        271: img271,
+        272: img272,
+        273: img273,
+        274: img274,
+        275: img275,
+        276: img276,
+        277: img277,
+        278: img278,
+        279: img279,
     }
 
     return (
-        <div className=''>
-            {data.list.map((block, i) => (
-                <div key={i} className='universal-img-block f jc-sb'>
-                    {block.map(box => (
-                        <div key={box.id} className={`${box.bgc === 'green' ? 'bgc-green-u' : 'bgc-gray-u'} universal-img-pd f1 m05rem`}>
-                            <ImgFit src={imgMap[box.id]} />
-                            <div className='pdb05rem' />
-                            <div className={`${box.bgc === 'green' ? 'c-gray-u' : 'c-green-u'} ta-c fs22`}>{box.desc}</div>
+        <div className='container mb-12 grid grid-cols-1 gap-y-0 md:grid-cols-3 md:gap-y-12'>
+            {data.list.map((msg) => (
+                <div key={msg.id} className='col-span-1'>
+                    <div
+                        className={classNames('pt-3 pb-2 px-3 flex-1 m-2 md:pb-1', {
+                            'bg-green-400': msg.bgc === 'green',
+                            'bg-gray-700': msg.bgc !== 'green'
+                        })}
+                    >
+                        <ImgFit src={imgMap[msg.id]} />
+                        <div className='pb-2' />
+                        <div className={classNames('text-center text-2xl md:text-xl', {
+                            'text-gray-700': msg.bgc === 'green',
+                            'text-green-400': msg.bgc !== 'green'
+                        })}>
+                            <FormattedMessage id={`deshboard.${msg.desc_intl}`} />
                         </div>
-                    ))}
+                    </div>
                 </div>
             ))}
         </div>

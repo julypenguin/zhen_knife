@@ -23,22 +23,20 @@ const BaseTab = ({
     const isMatch = typeof compare === 'function' ? compare() : tabCompare({ to, extpath, exact, strict })
 
     const linkClass = classNames(
-        'inline-flex',
+        'flex',
         'items-center',
-        'px-1',
-        'pt-1',
-        'border-b-2',
+        'px-4',
         'text-sm',
         'font-medium',
-        'transition-all',
         'cursor-pointer',
         {
-            'border-indigo-500': isMatch,
-            'text-gray-900': isMatch,
-            'border-transparent': !isMatch,
-            'text-gray-500': !isMatch,
-            'hover:border-gray-300': !isMatch,
-            ' hover:text-gray-700': !isMatch,
+            'bg-black': isMatch,
+            'text-white': isMatch,
+            'bg-white': !isMatch,
+            'text-black': !isMatch,
+            'hover:text-white': !isMatch,
+            'hover:bg-gray-300': !isMatch,
+
         },
         className
     )

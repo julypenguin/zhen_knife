@@ -3,7 +3,7 @@ import { injectIntl, FormattedMessage } from 'react-intl'
 // import LeftSidebar from '../../containers/Shop/LeftSidebar'
 // import LeftSidebarCopy from './LeftSidebarCopy'
 // import LeftSidebarCopy from './../../containers/Shop/LeftSidebar'
-import LeftSidebarCopyCopy from './../../containers/Shop/LeftSidebar'
+import LeftSidebar from './../../containers/Shop/LeftSidebar'
 import ProductList from '../../containers/Shop/ProductList';
 import ProductDetail from './ProductDetail';
 import BaseBreadcrumbs from '../Base/BaseBreadcrumbs'
@@ -40,7 +40,7 @@ const ShopPage = (props) => {
     }
 
     return (
-        <div className='container flex flex-col flex-1 overflow-hidden pb-8'>
+        <div className='container flex flex-col flex-1 overflow-hidden pb-8 mt-4'>
             <div className='py-2 px-4 items-center'>
                 {/* <BaseBreadcrumbs homeLink='/' pathList={pathList} /> */}
                 <Switch>
@@ -51,7 +51,7 @@ const ShopPage = (props) => {
             </div>
             <div className='py-4 flex flex-1'>
                 {/* <LeftSidebar /> */}
-                <LeftSidebarCopyCopy />
+                <LeftSidebar />
                 <div className='flex-1 ml-6 divide-y divide-gray-200'>
 
                     <Switch>

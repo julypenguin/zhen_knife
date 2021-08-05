@@ -1,39 +1,31 @@
 import React from 'react';
-import damascus from '../../img/damascus.jpg'
-import three from '../../img/three.png'
-import carbon from '../../img/carbon.png'
-import event from '../../img/event.jpg'
-import newMessage from '../../img/newMessage.jpg'
-import kitchen from '../../img/kitchen.jpg'
-import mainView from '../../img//mainView.png'
-import zhenBlack from '../../img//zhenBlack.png'
 import data from './data.json'
 import ProductImg from '../Shop/ProductImg'
+import TimeLimit from '../../containers/TimeLimit/index'
 
 const Deshboard = ({
     push,
 }) => {
 
-    const imgList = {
-        101: damascus,
-        102: three,
-        103: carbon,
-        104: event,
-        105: newMessage,
-        106: kitchen,
+    const renderImg = (img) => {
+        return <ProductImg
+            img={img}
+            className='w-full h-full block object-cover transition-all filter brightness-75 group-hover:brightness-100'
+        />
     }
 
     return (
         <>
-            <section className='main-view f-jc'>
-                {/* <ProductImg img='mainView' /> */}
-                <div className='main-view-img-fit'>
-                    <img className='main-view-img-img' src={mainView} />
-                </div>
-                <div className='center-tools'>
+            <section className='flex flex-col justify-center'>
+                {/* <div className='w-full h-full absolute top-0 left-0'>
+                    <ProductImg img='mainView' />
+                </div> */}
+                <ProductImg img='mainView' className='block h-screen' />
+
+                <div className='center-tools absolute'>
                     <div className='center-tools-img'>
                         <div className='center-tools-img-fit'>
-                            <img className='center-tools-img-img' src={zhenBlack} />
+                            <ProductImg img='zhenBlack' />
                         </div>
                     </div>
                     {/* <div className='center-tools-search'>
@@ -45,7 +37,7 @@ const Deshboard = ({
             </section>
 
             <section>
-                <ul role="list" className="bg-black py-8 grid grid-cols-1 gap-x-4 gap-y-8 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-3">
+                <ul role="list" className="bg-black py-28 grid grid-cols-1 gap-x-4 gap-y-12 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-3">
                     {data.sideViewList.map((sideView, i) => (
                         <li
                             key={i}
@@ -56,7 +48,7 @@ const Deshboard = ({
                                 <div key={sideView.name} className='w-full'>
                                     <div className='w-full pt-40 lg:pt-64'>
                                         <div className='w-full h-full absolute top-0 left-0'>
-                                            <img className='w-full h-full block object-cover transition-all filter brightness-75 group-hover:brightness-100' src={imgList[sideView.id]}></img>
+                                            {renderImg(sideView.img)}
                                             <div className='side-view-imgbox-words-red'>{sideView.name}</div>
                                         </div>
                                     </div>
@@ -66,6 +58,10 @@ const Deshboard = ({
                     ))}
 
                 </ul>
+            </section>
+
+            <section>
+                <TimeLimit />
             </section>
         </>
     );

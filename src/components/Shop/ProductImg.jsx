@@ -455,6 +455,12 @@ import market_18 from '../../img/market_18.jpg'
 
 // other
 import mainView from '../../img//mainView.png'
+import damascus from '../../img/damascus.jpg'
+import three from '../../img/three.png'
+import carbon from '../../img/carbon.png'
+import newMessage from '../../img/newMessage.jpg'
+import event from '../../img/event.jpg'
+import zhenBlack from '../../img//zhenBlack.png'
 
 
 const ProductImg = ({
@@ -921,6 +927,12 @@ const ProductImg = ({
 
             // other
             case 'mainView': return mainView
+            case 'damascus': return damascus
+            case 'three': return three
+            case 'carbon': return carbon
+            case 'newMessage': return newMessage
+            case 'event': return event
+            case 'zhenBlack': return zhenBlack
 
             default: return ''
         }

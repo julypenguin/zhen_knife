@@ -2,12 +2,15 @@
     "titleList": [
         {
             "id": 231,
-            "text": "臻．料理剪刀"
+            "text": "臻．料理剪刀",
+            "text_intl": "zhen_cooking_scissors"
         },
         {
             "id": 232,
-            "text": "適用各種做菜情境"
+            "text": "適用各種做菜情境",
+            "text_intl": "applicable_to_various_cooking_situations"
         }
     ],
-    "desc": "外出露營野餐需要一刀多用，國外專業廚師於處理核桃、螃蟹、蝦子幾乎使用剪刀，家庭使用更是不可或缺。"
+    "desc": "外出露營野餐需要一刀多用，國外專業廚師於處理核桃、螃蟹、蝦子幾乎使用剪刀，家庭使用更是不可或缺。",
+    "desc_intl": "requires_one_knife_for_multiple_purposes_more_indispensable"
 }

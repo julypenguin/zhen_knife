@@ -1,44 +1,44 @@
 {
     "block": [
-        [
-            {
-                "id": "241",
-                "type": "img",
-                "title": "",
-                "desc": "scissorsFeature1"
-            },
-            {
-                "id": "242",
-                "type": "text",
-                "title": "日本頂級鋼材",
-                "desc": "【自體研磨】無毒的氧化鐵在使用過程中會緩慢脫落、產生微侵蝕的效果，讓刀面隨著日常使用自體研磨，即使經過多年使用，刀鋒角度仍能維持完美的15度。"
-            },
-            {
-                "id": "243",
-                "type": "img",
-                "title": "",
-                "desc": "scissorsFeature3"
-            }
-        ],
-        [
-            {
-                "id": "244",
-                "type": "text",
-                "title": "",
-                "desc": "【鋒利度】鋼材硬度遠高於不鏽鋼，讓高碳鋼刀具能被研磨的更薄、更銳利。"
-            },
-            {
-                "id": "245",
-                "type": "img",
-                "title": "",
-                "desc": "scissorsFeature2"
-            },
-            {
-                "id": "246",
-                "type": "text",
-                "title": "",
-                "desc": "【持久度】堅硬的鋼材意味著刀鋒的銳利度能持續更久，不需經常磨刀。"
-            }
-        ]
+        {
+            "id": "241",
+            "type": "img",
+            "title": "",
+            "desc": "scissorsFeature1"
+        },
+        {
+            "id": "242",
+            "type": "text",
+            "title": "日本頂級鋼材",
+            "title_intl": "Japan_top_steel",
+            "desc": "【自體研磨】無毒的氧化鐵在使用過程中會緩慢脫落、產生微侵蝕的效果，讓刀面隨著日常使用自體研磨，即使經過多年使用，刀鋒角度仍能維持完美的15度。",
+            "desc_intl": "the_knife_face_to_self_grind_with_daily_use"
+        },
+        {
+            "id": "243",
+            "type": "img",
+            "title": "",
+            "desc": "scissorsFeature3"
+        },
+        {
+            "id": "244",
+            "type": "text",
+            "title": "",
+            "desc": "【鋒利度】鋼材硬度遠高於不鏽鋼，讓高碳鋼刀具能被研磨的更薄、更銳利。",
+            "desc_intl": "the_hardness_of_steel_is_much_higher_than_that_of_stainless_steel"
+        },
+        {
+            "id": "245",
+            "type": "img",
+            "title": "",
+            "desc": "scissorsFeature2"
+        },
+        {
+            "id": "246",
+            "type": "text",
+            "title": "",
+            "desc": "【持久度】堅硬的鋼材意味著刀鋒的銳利度能持續更久，不需經常磨刀。",
+            "desc_intl": "hard_steel_means_that_the_sharpness_of_the_blade_can_last_longer"
+        }
     ]
 }

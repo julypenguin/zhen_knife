@@ -14,7 +14,7 @@ const LeftSidebarCopy = ({
     return (
         <div className='hidden lg:block'>
             {/* 商品分類 */}
-            <div className='text-lg font-bold px-4 py-1 mb-4 bg-gray-200 text-center'>
+            <div className='text-lg font-bold mx-2 py-1 mb-4 bg-gray-200 text-center'>
                 <FormattedMessage id='shop.product_categories' />
             </div>
 
@@ -34,7 +34,7 @@ const LeftSidebarCopy = ({
                 </li>
 
                 {data.categories.map(category => (
-                    !category.main ? null :
+                    !category.main || !category.cats_sid ? null :
                         <li
                             key={category.cats_sid}
                             className="px-4 py-1 flex items-center cursor-pointer rounded-md hover:bg-blue-500 hover:text-white"

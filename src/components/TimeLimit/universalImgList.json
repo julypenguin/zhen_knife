@@ -1,53 +1,58 @@
 {
     "list": [
-        [
-            {
-                "id": 261,
-                "desc": "處理魚鱗",
-                "bgc": "gray"
-            },
-            {
-                "id": 262,
-                "desc": "清理魚肚",
-                "bgc": "green"
-            },
-            {
-                "id": 263,
-                "desc": "剪斷雞骨",
-                "bgc": "gray"
-            }
-        ],[
-            {
-                "id": 264,
-                "desc": "剪開螃蟹",
-                "bgc": "green"
-            },
-            {
-                "id": 265,
-                "desc": "夾爆核桃",
-                "bgc": "gray"
-            },
-            {
-                "id": 266,
-                "desc": "剪開全雞",
-                "bgc": "green"
-            }
-        ],[
-            {
-                "id": 267,
-                "desc": "剪開鐵絲",
-                "bgc": "gray"
-            },
-            {
-                "id": 268,
-                "desc": "罐裝瓶蓋",
-                "bgc": "green"
-            },
-            {
-                "id": 269,
-                "desc": "開啟瓶蓋",
-                "bgc": "gray"
-            }
-        ]
+        {
+            "id": 271,
+            "desc": "處理魚鱗",
+            "desc_intl": "processing_fish_scales",
+            "bgc": "gray"
+        },
+        {
+            "id": 272,
+            "desc": "清理魚肚",
+            "desc_intl": "clean_up_fish_maw",
+            "bgc": "green"
+        },
+        {
+            "id": 273,
+            "desc": "剪斷雞骨",
+            "desc_intl": "cut_the_chicken_bones",
+            "bgc": "gray"
+        },
+        {
+            "id": 274,
+            "desc": "剪開螃蟹",
+            "desc_intl": "cut_the_crab",
+            "bgc": "green"
+        },
+        {
+            "id": 275,
+            "desc": "夾爆核桃",
+            "desc_intl": "pinch_walnuts",
+            "bgc": "gray"
+        },
+        {
+            "id": 276,
+            "desc": "剪開全雞",
+            "desc_intl": "cut_the_whole_chicken",
+            "bgc": "green"
+        },
+        {
+            "id": 277,
+            "desc": "剪開鐵絲",
+            "desc_intl": "cut_the_wire",
+            "bgc": "gray"
+        },
+        {
+            "id": 278,
+            "desc": "罐裝瓶蓋",
+            "desc_intl": "canned_bottle_cap",
+            "bgc": "green"
+        },
+        {
+            "id": 279,
+            "desc": "開啟瓶蓋",
+            "desc_intl": "open_the_cap",
+            "bgc": "gray"
+        }
     ]
 }

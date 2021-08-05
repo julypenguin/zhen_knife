@@ -1,6 +1,14 @@
 {
     "text_list": [
-        "此把剪刀能",
-        "幫你處理↓"
+        {
+            "id": 261,
+            "text": "此把剪刀能",
+            "text_intl": "scissors_can"
+        },
+        {
+            "id": 262,
+            "text": "幫你處理↓",
+            "text_intl": "handle_it_for_you"
+        }
     ]
 }

@@ -62,7 +62,7 @@ const Header = (props) => {
     const [showProfileDropdown, setShowProfileDropdown] = useState(false)
 
     return (
-        <header className="bg-white">
+        <header className="bg-white sticky top-0 z-10">
 
             <nav className="shadow sticky top-0 z-10" onClick={() => setShowProfileDropdown(false)}>
                 <div className="max-w-full mx-auto px-2 sm:px-4 lg:px-16">

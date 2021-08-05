@@ -1,24 +1,31 @@
 {
     "main_intro": {
-        "title": "臻．剪刀",
+        "brand": "臻．剪刀",
+        "brand_intl": "zhen_scissors",
         "intro": [
             {
                 "id": 211,
                 "title": "日本進口頂級高碳鋼精心打造",
-                "desc": "鋒利更勝不鏽鋼"
+                "title_intl": "top_high_carbon_steel_carefully_crafted_from_jp",
+                "desc": "鋒利更勝不鏽鋼",
+                "desc_intl": "sharper_than_stainless_steel"
             },
             {
                 "id": 212,
-                "title": "外型由國外設計師精心設計"
+                "title": "外型由國外設計師精心設計",
+                "title_intl": "appearance_carefully_designed_by_designers"
             },
             {
                 "id": 213,
                 "title": "刀面拋磨防銹處理",
-                "desc": "保養更方便"
+                "title_intl": "knife_face_polished_and_antirust_treatment",
+                "desc": "保養更方便",
+                "desc_intl": "more_convenient_maintenance"
             },
             {
                 "id": 214,
-                "title": "握柄採用TPR、PP材料-具有防滑防菌、柔軟等特性"
+                "title": "握柄採用TPR、PP材料-具有防滑、防菌、柔軟等特性",
+                "title_intl": "handle_made_of_TPR_PP_material_nonslip_antibac_soft"
             }
         ]
     },
@@ -26,11 +33,13 @@
         "intro": [
             {
                 "id": 221,
-                "title": "家庭必備料理剪刀"
+                "title": "家庭必備料理剪刀",
+                "title_intl": "family_essential_cooking_scissors"
             },
             {
                 "id": 222,
-                "title": "生食/熟食 各一支"
+                "title": "生食/熟食 各一支",
+                "title_intl": "raw_food_cooked_food_one_each"
             }
         ]
     }

@@ -1,7 +1,10 @@
 {
-    "title1": "Zhen",
-    "title2": "Kitchen scissors",
-    "message": "熱銷美、日等多國",
-    "text": "您有想過。原來一把剪刀就能處理廚房大小事?",
-    "button": "完整影片介紹"
+    "brand": "Zhen",
+    "product": "Kitchen scissors",
+    "title": "熱銷美、日等多國",
+    "title_intl": "hot_sales_in_the_us_jp",
+    "text": "您有想過。原來一把剪刀就能處理廚房大小事",
+    "text_intl": "have_you_thought_about_it_can_handle_things",
+    "button": "完整影片介紹",
+    "button_intl": "full_video_introduction"
 }
