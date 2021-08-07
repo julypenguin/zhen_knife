@@ -8,7 +8,7 @@ import { StarIcon } from '@heroicons/react/solid'
 const Multifunctional = () => {
     return (
         <div className='container py-4 px-2 mb-12'>
-            <div className='grid grid-cols-2'>
+            <div className='grid grid-cols-1 md:grid-cols-2'>
                 <div className='col-span-1 px-4'>
                     <div className='mb-4 w-1/3 h-1 bg-green-400 lg:mb-12'></div>
                     {data.func_list.map((funcText) => (

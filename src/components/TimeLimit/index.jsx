@@ -9,6 +9,7 @@ import DesignConcept from './DesignConcept'
 import Universal from './Universal'
 import UniversalImgList from './UniversalImgList'
 import Multifunctional from './Multifunctional'
+import Certificate from './Certificate'
 
 const index = (props) => {
 
@@ -43,6 +44,9 @@ const index = (props) => {
 
             {/* 多功能合一 */}
             <Multifunctional />
+
+            {/* 檢驗證書 */}
+            <Certificate />
 
         </section>
     );
