@@ -6,8 +6,8 @@ import data from './certificate.json'
 
 const Certificate = () => {
     return (
-        <div className='container bg-black py-8 mb-12'>
-            <div className='grid grid-cols-1 py-12 px-4 lg:grid-cols-2'>
+        <div className='bg-black py-8 mb-12'>
+            <div className='container grid grid-cols-1 py-12 px-4 lg:grid-cols-2'>
                 <div className='flex flex-col justify-center'>
                     <div className='text-gray-300 text-xl mb-6'>
                         <FormattedMessage id={`deshboard.${data.title_intl}`} />

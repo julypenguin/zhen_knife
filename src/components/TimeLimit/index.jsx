@@ -10,6 +10,7 @@ import Universal from './Universal'
 import UniversalImgList from './UniversalImgList'
 import Multifunctional from './Multifunctional'
 import Certificate from './Certificate'
+import SalesPlatforms from './SalesPlatforms'
 
 const index = (props) => {
 
@@ -47,6 +48,9 @@ const index = (props) => {
 
             {/* 檢驗證書 */}
             <Certificate />
+
+            {/* 國外各大銷售平台 */}
+            <SalesPlatforms />
 
         </section>
     );

@@ -1,0 +1,32 @@
+{
+    "title": "國外各大銷售平台",
+    "title_intl": "major_foreign_sales_platforms",
+    "desc": "大型通路也選擇「臻．刀具」",
+    "desc_intl": "choose_zhen_knife_for_large_passages",
+    "brand_list": [
+        {
+            "id": "wayfair",
+            "href": "https://www.wayfair.com/brand/bnd/zhen-b30617.html?curpage=2#sbprodgrid"
+        },
+        {
+            "id": "woodcraft",
+            "href": "https://www.woodcraft.com/search?q=+Zhen+Kitchen&button=search"
+        },
+        {
+            "id": "zeppy",
+            "href": "http://www.zeppy.io/individual.php?keyword=japanese+knife+set+zhen&country_code=us"
+        },
+        {
+            "id": "onthegas",
+            "href": "https://onthegas.org/cutlery/zhen-knives-review"
+        },
+        {
+            "id": "houzz",
+            "href": "https://www.houzz.com/products/zhen-multi-purpose-utility-kitchen-shears-9-6-in-1-scissor-prvw-vr~48513643"
+        },
+        {
+            "id": "amazon",
+            "href": "https://www.amazon.co.jp/s?k=zhen&i=kitchen&rh=n%3A13945791&page=2&__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&qid=1571725113&ref=sr_pg_1"
+        }
+    ]
+}
