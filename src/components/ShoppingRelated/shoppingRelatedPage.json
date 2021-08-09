@@ -1,0 +1,32 @@
+{
+    "menuList": [
+        {
+            "nav": "購物流程",
+            "intl_name": "shopping_process",
+            "to": "/shopping_process",
+            "exact": "true",
+            "strict": "false"
+        },
+        {
+            "nav": "常見問題",
+            "intl_name": "common_problem",
+            "to": "/shopping_process/qa",
+            "exact": "true",
+            "strict": "false"
+        },
+        {
+            "nav": "隱私權政策",
+            "intl_name": "privacy_policy",
+            "to": "/shopping_process/privacy_policy",
+            "exact": "true",
+            "strict": "false"
+        },
+        {
+            "nav": "用戶協議",
+            "intl_name": "user_agreement",
+            "to": "/shopping_process/user_agreement",
+            "exact": "true",
+            "strict": "false"
+        }
+    ]
+}

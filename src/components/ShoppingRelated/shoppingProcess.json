@@ -1,0 +1,49 @@
+{
+    "process_list": [
+        {
+            "id": 401,
+            "step_title": "選擇您想購買的商品加入購物車",
+            "step_title_intl": "select_the_product_and_add_it_to_the_shopping_cart",
+            "step_desc": "全館目前全部免運費",
+            "step_desc_intl": "the_entire_museum_is_currently_free_of_charge",
+            "color": "red",
+            "icon": "ShoppingCartIcon"
+        },
+        {
+            "id": 402,
+            "step_title": "結帳頁面確認購物金額及相關聯絡資料",
+            "step_title_intl": "confirm_the_purchase_related_contact_information",
+            "step_desc": "資料請確實填寫，以免影響您的權益",
+            "step_desc_intl": "please_fill_in_the_information_so_as_not_to_affect_your_rights",
+            "color": "",
+            "icon": "DocumentTextIcon"
+        },
+        {
+            "id": 403,
+            "step_title": "確認後至第三方金流進行付款作業",
+            "step_title_intl": "after_confirmation_go_to_the_thirdparty_cash_flow_for_payment",
+            "step_desc": "線上刷卡/ATM轉帳/超商付款/貨到付款/超商取貨",
+            "step_desc_intl": "online_credit_card_ATM_superstore_payment_cash_on_delivery_superstore_pickup",
+            "color": "",
+            "icon": "CreditCardIcon"
+        },
+        {
+            "id": 404,
+            "step_title": "確認訂單完成",
+            "step_title_intl": "confirm_order_completion",
+            "step_desc": "若您是選擇ATM轉帳或是超商付款，記得要在三天內付款，訂單才算完成喔!",
+            "step_desc_intl": "if_you_choose_ATM_or_supermarket_payment_within_three_days",
+            "color": "",
+            "icon": "ClipboardCheckIcon"
+        },
+        {
+            "id": 405,
+            "step_title": "等待收貨",
+            "step_title_intl": "waiting_for_receipt",
+            "step_desc": "請卻確認商品完整，有任何問題歡迎與我們聯繫",
+            "step_desc_intl": "please_confirm_product_is_complete_please_contact_us",
+            "color": "",
+            "icon": "ShoppingBagIcon"
+        }
+    ]
+}

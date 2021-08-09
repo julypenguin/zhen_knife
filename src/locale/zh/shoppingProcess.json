@@ -7,11 +7,16 @@
         "user_agreement": "用戶協議"
     },
     "shopping_process": {
-        "step_1": "STEP1. 選擇您想購買的商品加入購物車全館目前全部免運費",
-        "step_2": "STEP2. 結帳頁面確認購物金額及相關聯絡資料資料請確實填寫，以免影響您的權益",
-        "step_3": "STEP3. 確認後至第三方金流進行付款作業線上刷卡/ATM轉帳/超商付款/貨到付款/超商取貨",
-        "step_4": "STEP4. 確認訂單完成若您是選擇ATM轉帳或是超商付款，記得要在三天內付款，訂單才算完成喔!",
-        "step_5": "STEP5. 等待收貨請卻確認商品完整，有任何問題歡迎與我們聯繫"
+        "select_the_product_and_add_it_to_the_shopping_cart": "選擇您想購買的商品加入購物車",
+        "the_entire_museum_is_currently_free_of_charge": "全館目前全部免運費",
+        "confirm_the_purchase_related_contact_information": "結帳頁面確認購物金額及相關聯絡資料",
+        "please_fill_in_the_information_so_as_not_to_affect_your_rights": "資料請確實填寫，以免影響您的權益",
+        "after_confirmation_go_to_the_thirdparty_cash_flow_for_payment": "確認後至第三方金流進行付款作業",
+        "online_credit_card_ATM_superstore_payment_cash_on_delivery_superstore_pickup": "線上刷卡/ATM轉帳/超商付款/貨到付款/超商取貨",
+        "confirm_order_completion": "確認訂單完成",
+        "if_you_choose_ATM_or_supermarket_payment_within_three_days": "若您是選擇ATM轉帳或是超商付款，記得要在三天內付款，訂單才算完成喔!",
+        "waiting_for_receipt": "等待收貨",
+        "please_confirm_product_is_complete_please_contact_us": "請卻確認商品完整，有任何問題歡迎與我們聯繫"
     },
     "common_problem": {
         "how_many_payment_methods": "請問有幾種付款方式？",

@@ -28,7 +28,6 @@
             "nav": "購物相關",
             "intl_name": "shopping_related",
             "to": "/shopping_process",
-            "exact": "true",
             "strict": "false"
         },
         {

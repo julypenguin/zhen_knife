@@ -7,7 +7,7 @@ import Footer from '../../containers/Footer/Footer'
 import Deshboard from '../../containers/Main/Deshboard'
 import Shop from '../../containers/Shop/index'
 import ContactPage from '../../containers/Contact/ContactPage'
-import ShoppingProcessPage from '../../containers/ShoppingProcess/ShoppingProcessPage'
+import ShoppingRelatedPage from '../../containers/ShoppingRelated/ShoppingRelatedPage'
 
 const index = (props) => {
     const {
@@ -26,7 +26,7 @@ const index = (props) => {
                 >
 
                     <Switch>
-                        <Route path="/shopping_process" render={(props) => <ShoppingProcessPage {...props} />} />
+                        <Route path="/shopping_process" render={(props) => <ShoppingRelatedPage {...props} />} />
                         <Route path="/contact" render={(props) => <ContactPage {...props} />} />
                         <Route path="/shop" render={(props) => <Shop {...props} />} />
                         <Route exact path="/" render={(props) => <Deshboard {...props} />} />
