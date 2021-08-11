@@ -1,7 +1,7 @@
 {
     "process_list": [
         {
-            "id": 401,
+            "id": 4001,
             "step_title": "選擇您想購買的商品加入購物車",
             "step_title_intl": "select_the_product_and_add_it_to_the_shopping_cart",
             "step_desc": "全館目前全部免運費",
@@ -10,7 +10,7 @@
             "icon": "ShoppingCartIcon"
         },
         {
-            "id": 402,
+            "id": 4002,
             "step_title": "結帳頁面確認購物金額及相關聯絡資料",
             "step_title_intl": "confirm_the_purchase_related_contact_information",
             "step_desc": "資料請確實填寫，以免影響您的權益",
@@ -19,7 +19,7 @@
             "icon": "DocumentTextIcon"
         },
         {
-            "id": 403,
+            "id": 4003,
             "step_title": "確認後至第三方金流進行付款作業",
             "step_title_intl": "after_confirmation_go_to_the_thirdparty_cash_flow_for_payment",
             "step_desc": "線上刷卡/ATM轉帳/超商付款/貨到付款/超商取貨",
@@ -28,7 +28,7 @@
             "icon": "CreditCardIcon"
         },
         {
-            "id": 404,
+            "id": 4004,
             "step_title": "確認訂單完成",
             "step_title_intl": "confirm_order_completion",
             "step_desc": "若您是選擇ATM轉帳或是超商付款，記得要在三天內付款，訂單才算完成喔!",
@@ -37,7 +37,7 @@
             "icon": "ClipboardCheckIcon"
         },
         {
-            "id": 405,
+            "id": 4005,
             "step_title": "等待收貨",
             "step_title_intl": "waiting_for_receipt",
             "step_desc": "請卻確認商品完整，有任何問題歡迎與我們聯繫",

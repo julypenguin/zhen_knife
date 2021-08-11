@@ -1,0 +1,573 @@
+{
+    "ques_list": [
+        {
+            "id": 4101,
+            "ques_title": "請問有幾種付款方式？",
+            "ques_title_intl": "how_many_payment_methods",
+            "answer_list": [
+                {
+                    "id": 4111,
+                    "title": "",
+                    "title_intl": "",
+                    "desc_list": [
+                        {
+                            "id": 4112,
+                            "desc": "臻刀具是採用第三方藍星合作，目前共開放以下幾種付款方式：",
+                            "desc_intl": "the_following_payment_methods",
+                            "color": "",
+                            "is_important": false,
+                            "itme_list": [],
+                            "list_style": "none",
+                            "space": 4
+                        }
+                    ]
+                },
+                {
+                    "id": 4121,
+                    "title": "貨到付款",
+                    "title_intl": "cash_on_delivery",
+                    "desc_list": [
+                        {
+                            "id": 4122,
+                            "desc": "當商品宅配到府時，再以現金支付商品費用給宅配業者。",
+                            "desc_intl": "cash_on_delivery_desc",
+                            "color": "",
+                            "is_important": false,
+                            "itme_list": [],
+                            "list_style": "none",
+                            "space": 8
+                        }
+                    ]
+                },
+                {
+                    "id": 4131,
+                    "title": "線上刷卡",
+                    "title_intl": "swipe_online",
+                    "desc_list": [
+                        {
+                            "id": 4132,
+                            "desc": "接受VISA、Master、JCB、聯合信用卡。",
+                            "desc_intl": "accept_credit_cards",
+                            "color": "",
+                            "is_important": false,
+                            "itme_list": [],
+                            "list_style": "none",
+                            "space": 0
+                        },
+                        {
+                            "id": 4133,
+                            "desc": "實際分期金額將依各發卡銀行規定略調整。",
+                            "desc_intl": "installment_amount_will_be_adjusted_with_regulations_of_bank",
+                            "color": "",
+                            "is_important": false,
+                            "itme_list": [],
+                            "list_style": "none",
+                            "space": 0
+                        },
+                        {
+                            "id": 4134,
+                            "desc": "部分發卡銀行所發行之信用卡可能會出現交易失敗的情形。",
+                            "desc_intl": "some_credit_cards_by_the_banks_may_fail_transactions",
+                            "color": "",
+                            "is_important": false,
+                            "itme_list": [],
+                            "list_style": "none",
+                            "space": 0
+                        },
+                        {
+                            "id": 4135,
+                            "desc": "持卡人如遇到無法進行網路交易的狀況，請向您的發卡銀行詢問詳細原因。",
+                            "desc_intl": "if_cardholder_is_unable_to_transactions_please_ask_your_card_bank",
+                            "color": "",
+                            "is_important": false,
+                            "itme_list": [],
+                            "list_style": "none",
+                            "space": 8
+                        }
+                    ]
+                },
+                {
+                    "id": 4141,
+                    "title": "ATM轉帳",
+                    "title_intl": "ATM_transfer",
+                    "desc_list": [
+                        {
+                            "id": 4141,
+                            "desc": "",
+                            "desc_intl": "",
+                            "color": "",
+                            "is_important": false,
+                            "itme_list": [
+                                {
+                                    "id": 4142,
+                                    "item": "繳費期限：",
+                                    "item_intl": "payment_deadline",
+                                    "color": "",
+                                    "is_important": false,
+                                    "href": ""
+                                },
+                                {
+                                    "id": 4143,
+                                    "item": "需3天內完成繳費",
+                                    "item_intl": "within_3_days_to_complete_the_payment",
+                                    "color": "red",
+                                    "is_important": true,
+                                    "href": ""
+                                }
+                            ],
+                            "list_style": "none",
+                            "space": 4
+                        },
+                        {
+                            "id": 4144,
+                            "desc": "如您持有以上金融機構發行之金融卡，您可選擇取得該金融機構之ATM轉帳帳號。",
+                            "desc_intl": "if_you_hold_a_financial_card_issued_by_the_above_financial_institution",
+                            "color": "",
+                            "is_important": false,
+                            "itme_list": [],
+                            "list_style": "none",
+                            "space": 0
+                        },
+                        {
+                            "id": 4145,
+                            "desc": "並至該金融機構之ATM自動櫃員機或透過網路ATM進行交易轉帳可享轉帳免跨行轉帳手續費。",
+                            "desc_intl": "ATM_automatic_teller_machine_of_the_financial_institution",
+                            "color": "",
+                            "is_important": false,
+                            "itme_list": [],
+                            "list_style": "none",
+                            "space": 0
+                        },
+                        {
+                            "id": 4146,
+                            "desc": "若無以上金融機構發行之金融卡，可依您喜好選擇其中一家金融機構取得ATM轉帳帳號。",
+                            "desc_intl": "if_there_is_no_financial_card_issued_by_the_above_financial_institutions",
+                            "color": "",
+                            "is_important": false,
+                            "itme_list": [],
+                            "list_style": "none",
+                            "space": 8
+                        }
+                    ]
+                },
+                {
+                    "id": 4151,
+                    "title": "網路ATM",
+                    "title_intl": "network_ATM",
+                    "desc_list": [
+                        {
+                            "id": 4152,
+                            "desc": "",
+                            "desc_intl": "",
+                            "color": "",
+                            "is_important": false,
+                            "itme_list": [
+                                {
+                                    "id": 4153,
+                                    "item": "繳費期限：",
+                                    "item_intl": "payment_deadline",
+                                    "color": "",
+                                    "is_important": false,
+                                    "href": ""
+                                },
+                                {
+                                    "id": 4154,
+                                    "item": "需3天內完成繳費",
+                                    "item_intl": "within_3_days_to_complete_the_payment",
+                                    "color": "red",
+                                    "is_important": true,
+                                    "href": ""
+                                }
+                            ],
+                            "list_style": "none",
+                            "space": 4
+                        },
+                        {
+                            "id": 4155,
+                            "desc": "請先準備晶片金融卡與晶片讀卡機，智付寶(Pay2go)將引導您至指定金融機構之網路ATM進行轉帳。",
+                            "desc_intl": "",
+                            "color": "",
+                            "is_important": false,
+                            "itme_list": [],
+                            "list_style": "none",
+                            "space": 0
+                        },
+                        {
+                            "id": 4156,
+                            "desc": "持以上金融機構發行之金融卡，並至同一金融機構之網路ATM進行交易轉帳，可享轉帳免跨行轉帳手續費；若無以上金融機構發行之金融卡，可依您的喜好選擇其中一家金融機構進行網路ATM轉帳。",
+                            "desc_intl": "hold_the_financial_card_and_transfer_to_the_online_ATM_of_same",
+                            "color": "",
+                            "is_important": false,
+                            "itme_list": [],
+                            "list_style": "none",
+                            "space": 8
+                        }
+                    ]
+                },
+                {
+                    "id": 4161,
+                    "title": "超商代碼繳費",
+                    "title_intl": "shop_code_payment",
+                    "desc_list": [
+                        {
+                            "id": 4162,
+                            "desc": "7-11 ibon全家 FamiPort萊爾富 Life-ETOK超商 OK-GO",
+                            "desc_intl": "shops",
+                            "color": "",
+                            "is_important": false,
+                            "itme_list": [],
+                            "list_style": "none",
+                            "space": 4
+                        },
+                        {
+                            "id": 4163,
+                            "desc": "請於訂單完成後3日內至全省4大超商(上方)，於店內之多媒體機台上列印繳費單至超商櫃台以現金繳費。",
+                            "desc_intl": "please_go_to_the_supermarkets_within_3_days_after_the_order_and_print_payment_slip",
+                            "color": "",
+                            "is_important": false,
+                            "itme_list": [],
+                            "list_style": "none",
+                            "space": 8
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 4201,
+            "ques_title": "請問有幾種付款方式？",
+            "ques_title_intl": "how_is_the_shipping_cost_calculated",
+            "answer_list": [
+                {
+                    "id": 4211,
+                    "title": "台灣本島運費說明",
+                    "title_intl": "taiwan_main_island_freight_description",
+                    "desc_list": [
+                        {
+                            "id": 4212,
+                            "desc": "目前全面免運費。",
+                            "desc_intl": "currently_free_shipping",
+                            "color": "red",
+                            "is_important": true,
+                            "itme_list": [],
+                            "list_style": "none",
+                            "space": 4
+                        }
+                    ]
+                },
+                {
+                    "id": 4221,
+                    "title": "外島運費說明",
+                    "title_intl": "outer_island_freight_description",
+                    "desc_list": [
+                        {
+                            "id": 4122,
+                            "desc": "並非所有外島地區都有運送服務，要視當地物流公司配送範圍",
+                            "desc_intl": "cash_on_delivery_desc",
+                            "color": "",
+                            "is_important": false,
+                            "itme_list": [],
+                            "list_style": "none",
+                            "space": 0
+                        },
+                        {
+                            "id": 4123,
+                            "desc": "請先來電洽詢是否有配送服務以及運費金額，如果有的話再下單",
+                            "desc_intl": "please_call_first_to_inquire_if_so_then_place_an_order",
+                            "color": "",
+                            "is_important": false,
+                            "itme_list": [],
+                            "list_style": "none",
+                            "space": 0
+                        },
+                        {
+                            "id": 4124,
+                            "desc": "部分商品於出貨前可能需要另行簽定保固切結書",
+                            "desc_intl": "some_products_may_need_to_sign_separate_warranty_statement_before_shipment",
+                            "color": "",
+                            "is_important": false,
+                            "itme_list": [],
+                            "list_style": "none",
+                            "space": 8
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 4301,
+            "ques_title": "請問寄送的時間？",
+            "ques_title_intl": "may_I_ask_the_delivery_time",
+            "answer_list": [
+                {
+                    "id": 4311,
+                    "title": "",
+                    "title_intl": "",
+                    "desc_list": [
+                        {
+                            "id": 4312,
+                            "desc": "一般送貨時間為週一到週六早上9:00~下午6:00，從訂單付款確認後約2-4天內到貨。",
+                            "desc_intl": "general_delivery_time_is_Monday_to_Saturday_and_will_arrive_within_2_4_days",
+                            "color": "",
+                            "is_important": false,
+                            "itme_list": [],
+                            "list_style": "none",
+                            "space": 0
+                        },
+                        {
+                            "id": 4313,
+                            "desc": "國定例假日、年節無送貨服務（以網站公告時間為準）",
+                            "desc_intl": "no_delivery_service_on_national_holidays",
+                            "color": "",
+                            "is_important": false,
+                            "itme_list": [],
+                            "list_style": "none",
+                            "space": 8
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 4401,
+            "ques_title": "請問產品保固內容及時間？",
+            "ques_title_intl": "what_is_the_warranty_content_and_time_of_the_product",
+            "answer_list": [
+                {
+                    "id": 4411,
+                    "title": "",
+                    "title_intl": "",
+                    "desc_list": [
+                        {
+                            "id": 4412,
+                            "desc": "一般商品保固時間皆為1年",
+                            "desc_intl": "general_product_warranty_period_is_1_year",
+                            "color": "",
+                            "is_important": false,
+                            "itme_list": [],
+                            "list_style": "disc",
+                            "space": 0
+                        },
+                        {
+                            "id": 4413,
+                            "desc": "網路享有7天鑑賞期",
+                            "desc_intl": "enjoy_7_day_appreciation_period_online",
+                            "color": "",
+                            "is_important": false,
+                            "itme_list": [],
+                            "list_style": "disc",
+                            "space": 0
+                        },
+                        {
+                            "id": 4414,
+                            "desc": "產品超過保固期後，如需要售後服務，則需酌收基本費用。",
+                            "desc_intl": "after_the_product_has_exceeded_the_warranty_period_if_required_will_be_charged",
+                            "color": "",
+                            "is_important": false,
+                            "itme_list": [],
+                            "list_style": "disc",
+                            "space": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 4501,
+            "ques_title": "請問該如何辦理退換貨？",
+            "ques_title_intl": "how_do_I_handle_the_return_and_exchange",
+            "answer_list": [
+                {
+                    "id": 4511,
+                    "title": "",
+                    "title_intl": "",
+                    "desc_list": [
+                        {
+                            "id": 4512,
+                            "desc": "如需退換貨服務，需麻煩於7天鑑賞期內與客服進行聯繫，並告知您的訂單編號與商品問題。",
+                            "desc_intl": "if_you_need_return_or_exchange_service_please_contact_customer_service",
+                            "color": "",
+                            "is_important": false,
+                            "itme_list": [],
+                            "list_style": "none",
+                            "space": 0
+                        },
+                        {
+                            "id": 4513,
+                            "desc": "退換貨服務需注意以下事項：",
+                            "desc_intl": "pay_attention_to_the_following_items_for_the_return_and_exchange_service",
+                            "color": "",
+                            "is_important": false,
+                            "itme_list": [],
+                            "list_style": "none",
+                            "space": 4
+                        },
+                        {
+                            "id": 4514,
+                            "desc": "需退換的貨品必須為全新且未被使用，及需連同所有原本的完整無損之包裝、保證書、配件及統一發票等一併退回。",
+                            "desc_intl": "returned_must_be_brand_new_and_unused",
+                            "color": "",
+                            "is_important": false,
+                            "itme_list": [],
+                            "list_style": "disc",
+                            "space": 0
+                        },
+                        {
+                            "id": 4515,
+                            "desc": "為避免訂單資料不完整造成您我的損失，退貨時需整筆訂單內容之商品全數退回",
+                            "desc_intl": "in_order_to_avoid_incomplete_order_information_and_you_need_to_return_entire",
+                            "color": "",
+                            "is_important": false,
+                            "itme_list": [],
+                            "list_style": "disc",
+                            "space": 0
+                        },
+                        {
+                            "id": 4516,
+                            "desc": "除例假日外，退換貨會在收到客戶退換貨申請5~7個工作天安排協助將商品收回/更換。",
+                            "desc_intl": "except_holidays_returns_and_exchanges_will_within_5_to_7_working_days_after_receiving",
+                            "color": "",
+                            "is_important": false,
+                            "itme_list": [],
+                            "list_style": "disc",
+                            "space": 0
+                        },
+                        {
+                            "id": 4517,
+                            "desc": "每筆訂單換貨以一次為限(若是商品有瑕疵則不在此限)。",
+                            "desc_intl": "each_order_exchange_is_limited_to_one_time",
+                            "color": "",
+                            "is_important": false,
+                            "itme_list": [],
+                            "list_style": "disc",
+                            "space": 0
+                        },
+                        {
+                            "id": 4518,
+                            "desc": "若付款方式為信用卡，我們會直接將款項全額刷退至原付款的信用卡帳戶",
+                            "desc_intl": "if_the_payment_method_is_credit_card_will_directly_refund_full_amount_to_credit_card",
+                            "color": "",
+                            "is_important": false,
+                            "itme_list": [],
+                            "list_style": "disc",
+                            "space": 0
+                        },
+                        {
+                            "id": 4519,
+                            "desc": "若付款方式為ATM轉帳或是超商付款，我們將採用轉帳方式，並直接將款項退回您的帳戶。",
+                            "desc_intl": "if_the_payment_method_is_ATM_will_refund_the_money_to_your_account",
+                            "color": "",
+                            "is_important": false,
+                            "itme_list": [],
+                            "list_style": "disc",
+                            "space": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 4601,
+            "ques_title": "請問是否有產品鑑賞？",
+            "ques_title_intl": "is_there_any_product_appreciation",
+            "answer_list": [
+                {
+                    "id": 4611,
+                    "title": "",
+                    "title_intl": "",
+                    "desc_list": [
+                        {
+                            "id": 4612,
+                            "desc": "臻刀具依據消保法的規定，消費者在簽收產品後享有7天產品鑑賞期(非試用期)，相關規範將完全參考消基會提供之訊息。",
+                            "desc_intl": "according_to_Consumer_Protection_Law_consumers_enjoy_7_day_product_appreciation_period",
+                            "color": "",
+                            "is_important": false,
+                            "itme_list": [],
+                            "list_style": "none",
+                            "space": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 4701,
+            "ques_title": "如何聯絡客服？",
+            "ques_title_intl": "how_to_contact_customer_service",
+            "answer_list": [
+                {
+                    "id": 4711,
+                    "title": "",
+                    "title_intl": "",
+                    "desc_list": [
+                        {
+                            "id": 4712,
+                            "desc": "您可以在週一到週五 10：00-18：00 聯絡客服人員。",
+                            "desc_intl": "you_can_contact_customer_service_staff_from_Monday_to_Friday",
+                            "color": "",
+                            "is_important": false,
+                            "itme_list": [],
+                            "list_style": "none",
+                            "space": 0
+                        },
+                        {
+                            "id": 4713,
+                            "desc": "電話：04-23508566",
+                            "desc_intl": "contact_phone",
+                            "color": "",
+                            "is_important": false,
+                            "itme_list": [],
+                            "list_style": "none",
+                            "space": 0
+                        },
+                        {
+                            "id": 4714,
+                            "desc": "E-mail：zhen.knife@gmail.com",
+                            "desc_intl": "contact_email",
+                            "color": "",
+                            "is_important": false,
+                            "itme_list": [],
+                            "list_style": "none",
+                            "space": 4
+                        },
+                        {
+                            "id": 4715,
+                            "desc": "",
+                            "desc_intl": "",
+                            "color": "",
+                            "is_important": false,
+                            "itme_list": [
+                                {
+                                    "id": 4716,
+                                    "item": "或前往",
+                                    "item_intl": "or_go_to",
+                                    "color": "",
+                                    "is_important": false,
+                                    "href": ""
+                                },
+                                {
+                                    "id": 4717,
+                                    "item": "聯絡我們",
+                                    "item_intl": "contact_us",
+                                    "color": "blue",
+                                    "is_important": false,
+                                    "href": "/contact"
+                                },
+                                {
+                                    "id": 4718,
+                                    "item": "查詢更多聯絡資料",
+                                    "item_intl": "for_more_contact_information",
+                                    "color": "",
+                                    "is_important": false,
+                                    "href": ""
+                                }
+                            ],
+                            "list_style": "none",
+                            "space": 4
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -3,7 +3,7 @@ import classNames from 'classnames';
 import { injectIntl, FormattedMessage } from 'react-intl'
 import { Route, Switch } from 'react-router'
 import ShoppingProcess from './ShoppingProcess'
-import CommonProblem from './CommonProblem'
+import Qa from './Qa'
 import ShoppingProcessMenu from './ShoppingProcessMenu'
 import data from './shoppingRelatedPage.json'
 
@@ -18,7 +18,7 @@ const ShoppingRelatedPage = ({
             </div>
             <div className='p-8 flex flex-col lg:grid lg:grid-cols-12'>
                 <div className='mb-8 lg:col-span-2'>
-                    <ul className='border divide-y divide-gray-200'>
+                    <ul className='border border-gray-300 divide-y divide-gray-300'>
                         {data.menuList.map((menu) => (
                             <ShoppingProcessMenu
                                 key={menu.to}
@@ -33,7 +33,7 @@ const ShoppingRelatedPage = ({
                     <Switch>
                         {/* <Route exact path="/shopping_process/user_agreement" render={(props) => <ProductDetail {...props} />} /> */}
                         {/* <Route exact path="/shopping_process/privacy_policy" render={(props) => <ProductDetail {...props} />} /> */}
-                        <Route exact path="/shopping_process/qa" render={(props) => <CommonProblem {...props} />} />
+                        <Route exact path="/shopping_process/qa" render={(props) => <Qa {...props} />} />
                         <Route exact path="/shopping_process" render={(props) => <ShoppingProcess {...props} />} />
                     </Switch>
                 </div>
