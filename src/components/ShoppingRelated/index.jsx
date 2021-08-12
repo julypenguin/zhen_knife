@@ -5,6 +5,7 @@ import { Route, Switch } from 'react-router'
 import ShoppingProcess from './ShoppingProcess'
 import Qa from './Qa'
 import ShoppingProcessMenu from './ShoppingProcessMenu'
+import PrivacyPolicy from './PrivacyPolicy'
 import data from './shoppingRelatedPage.json'
 
 const ShoppingRelatedPage = ({
@@ -32,7 +33,7 @@ const ShoppingRelatedPage = ({
                 <div className='lg:col-span-10 pl-12'>
                     <Switch>
                         {/* <Route exact path="/shopping_process/user_agreement" render={(props) => <ProductDetail {...props} />} /> */}
-                        {/* <Route exact path="/shopping_process/privacy_policy" render={(props) => <ProductDetail {...props} />} /> */}
+                        <Route exact path="/shopping_process/privacy_policy" render={(props) => <PrivacyPolicy {...props} />} />
                         <Route exact path="/shopping_process/qa" render={(props) => <Qa {...props} />} />
                         <Route exact path="/shopping_process" render={(props) => <ShoppingProcess {...props} />} />
                     </Switch>

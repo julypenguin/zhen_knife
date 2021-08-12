@@ -1,0 +1,464 @@
+{
+    "title": "隱私政策",
+    "title_intl": "privacy_policy",
+    "policy_list": [
+        {
+            "id": 4701,
+            "title": "",
+            "title_intl": "",
+            "desc_list": [
+                {
+                    "id": 4702,
+                    "desc": "關於您的會員註冊以及其他特定資料依本公司「隱私權政策」受到保護與規範。本公司十分重視您的隱私權保護，將依個人資料保護法及本隱私權政策，蒐集、處理及利用您的個人資料，並提供您對個人資料權利之行使與保護。若您不同意本隱私權政策之全部或部分者，請您停止使用本網站服務。",
+                    "desc_intl": "the_company_attaches_great_importance_to_the_protection_of_your_privacy",
+                    "color": "",
+                    "is_important": false,
+                    "itme_list": [],
+                    "list_style": "none",
+                    "space": 4
+                },
+                {
+                    "id": 4703,
+                    "desc": "為了確保會員之個人資料、隱私及消費者權益之保護，於交易過程中將使用會員之個人資料，謹依個人資料保護法第8條規定告知以下事項：",
+                    "desc_intl": "in_order_to_ensure_the_protection_of_the_members_personal_data",
+                    "color": "",
+                    "is_important": false,
+                    "itme_list": [],
+                    "list_style": "none",
+                    "space": 8
+                }
+            ]
+        },
+        {
+            "id": 4711,
+            "title": "收集個人資料的種類",
+            "title_intl": "types_of_personal_data_collected",
+            "desc_list": [
+                {
+                    "id": 4712,
+                    "desc": "您提供可辨識個人身份的資料，包括但不限於您的姓名、性別、年齡、電話號碼、傳真號碼、地址、電子郵件信箱、信用卡資料、銀行戶口號碼、教育程度、職業、家庭收入、興趣及喜好活動等。如您拒絕提供有關資料，可能無法登入網站的部分內容，並可能令本公司無法處理您的申請或要求，因而令您無法達到瀏覽網站的目的。如您未滿十八歲，必須先得到家長或監護人的同意，方可向本公司提供任何可辨識個人身份的資料。",
+                    "desc_intl": "you_provide_personally_identifiable_information",
+                    "color": "",
+                    "is_important": false,
+                    "itme_list": [],
+                    "list_style": "none",
+                    "space": 8
+                }
+            ]
+        },
+        {
+            "id": 4721,
+            "title": "蒐集之目的",
+            "title_intl": "purpose_of_collection",
+            "desc_list": [
+                {
+                    "id": 4722,
+                    "desc": "您使用本網站時，包括但不限於：",
+                    "desc_intl": "when_you_use_this_website_including_but_not_limited_to",
+                    "color": "",
+                    "is_important": false,
+                    "itme_list": [],
+                    "list_style": "none",
+                    "space": 4
+                }
+            ]
+        },
+        {
+            "id": 4723,
+            "title": "",
+            "title_intl": "",
+            "desc_list": [
+                {
+                    "id": 4724,
+                    "desc": "要求本網站提供的產品或服務的資訊",
+                    "desc_intl": "request_information_about_products_or_services_provided_on_this_website",
+                    "color": "",
+                    "is_important": false,
+                    "itme_list": [],
+                    "list_style": "decimal",
+                    "space": 0
+                },
+                {
+                    "id": 4725,
+                    "desc": "使用產品或服務",
+                    "desc_intl": "use_products_or_services",
+                    "color": "",
+                    "is_important": false,
+                    "itme_list": [],
+                    "list_style": "decimal",
+                    "space": 0
+                },
+                {
+                    "id": 4726,
+                    "desc": "透過本網站購買產品或服務或註冊產品和 / 或申請額外服務",
+                    "desc_intl": "purchase_products_or_services_or_register_products_through_this_website",
+                    "color": "",
+                    "is_important": false,
+                    "itme_list": [],
+                    "list_style": "decimal",
+                    "space": 0
+                },
+                {
+                    "id": 4727,
+                    "desc": "參加競賽或是促銷活動",
+                    "desc_intl": "participate_in_contests_or_promotions",
+                    "color": "",
+                    "is_important": false,
+                    "itme_list": [],
+                    "list_style": "decimal",
+                    "space": 0
+                },
+                {
+                    "id": 4728,
+                    "desc": "訂閱新訊電子報",
+                    "desc_intl": "subscribe_to_Newsletter",
+                    "color": "",
+                    "is_important": false,
+                    "itme_list": [],
+                    "list_style": "decimal",
+                    "space": 0
+                },
+                {
+                    "id": 4729,
+                    "desc": "利用其他資訊工具",
+                    "desc_intl": "use_other_information_tools",
+                    "color": "",
+                    "is_important": false,
+                    "itme_list": [],
+                    "list_style": "decimal",
+                    "space": 4
+                }
+            ]
+        },
+        {
+            "id": 4714,
+            "title": "",
+            "title_intl": "",
+            "desc_list": [
+                {
+                    "id": 4715,
+                    "desc": "基於下列目的蒐集與處理您的個人資料(法定特定目的項目編號為040、069、090、137、148、157)",
+                    "desc_intl": "collect_and_process_your_personal_data",
+                    "color": "",
+                    "is_important": false,
+                    "itme_list": [],
+                    "list_style": "none",
+                    "space": 8
+                }
+            ]
+        },
+        {
+            "id": 4731,
+            "title": "個人資料類別",
+            "title_intl": "personal_data_category",
+            "desc_list": [
+                {
+                    "id": 4732,
+                    "desc": "網站內蒐集的個人資料包括：",
+                    "desc_intl": "the_personal_information_collected_on_the_website_includes",
+                    "color": "",
+                    "is_important": false,
+                    "itme_list": [],
+                    "list_style": "none",
+                    "space": 4
+                }
+            ]
+        },
+        {
+            "id": 4733,
+            "title": "",
+            "title_intl": "",
+            "desc_list": [
+                {
+                    "id": 4734,
+                    "desc": "C001辨識個人者： 如會員之姓名、地址、電話、、IP位址、電子郵件、其他您用於驗證身分或避免詐騙而送出的資訊等資訊。",
+                    "desc_intl": "C001_identify_the_individual",
+                    "color": "",
+                    "is_important": false,
+                    "itme_list": [],
+                    "list_style": "decimal",
+                    "space": 0
+                },
+                {
+                    "id": 4735,
+                    "desc": "C002辨識財務者： 如信用卡或金融機構帳戶資訊。",
+                    "desc_intl": "C002_identify_the_financial_person",
+                    "color": "",
+                    "is_important": false,
+                    "itme_list": [],
+                    "list_style": "decimal",
+                    "space": 0
+                },
+                {
+                    "id": 4736,
+                    "desc": "C011個人描述：例如：性別、出生年月日等。",
+                    "desc_intl": "C011_personal_description",
+                    "color": "",
+                    "is_important": false,
+                    "itme_list": [],
+                    "list_style": "decimal",
+                    "space": 8
+                }
+            ]
+        },
+        {
+            "id": 4741,
+            "title": "利用期間、地區、對象及方式",
+            "title_intl": "use_period_area_target_and_method",
+            "desc_list": [
+                {
+                    "id": 4742,
+                    "desc": "期間：會員當事人要求停止使用或臻刀具停止提供服務之日為止。",
+                    "desc_intl": "period_until_the_day_when_stops_providing_services",
+                    "color": "",
+                    "is_important": false,
+                    "itme_list": [],
+                    "list_style": "decimal",
+                    "space": 0
+                },
+                {
+                    "id": 4743,
+                    "desc": "地區：會員之個人資料將使用於台灣地區。",
+                    "desc_intl": "region_personal_information_will_be_used_in_Taiwan",
+                    "color": "",
+                    "is_important": false,
+                    "itme_list": [],
+                    "list_style": "decimal",
+                    "space": 0
+                },
+                {
+                    "id": 4744,
+                    "desc": "利用對象及方式：會員之個人資料蒐集除用於會員管理、客戶管理之檢索查詢等功能外，亦將利用於辨識身份、金流服務、物流服務、行銷廣宣等。",
+                    "desc_intl": "utilization_object_and_method",
+                    "color": "",
+                    "is_important": false,
+                    "itme_list": [],
+                    "list_style": "decimal",
+                    "space": 8
+                }
+            ]
+        },
+        {
+            "id": 4751,
+            "title": "資料協助與處理",
+            "title_intl": "data_assistance_and_processing",
+            "desc_list": [
+                {
+                    "id": 4752,
+                    "desc": "若有任何問題，仍可與本公司聯絡，本公司將協助您確認、處理相關問題。除依法應提供予司法、檢調機關、相關主管機關，或與本公司協力廠商為執行相關活動必要範圍之利用外，本公司將不會任意將您的個人資料提供予第三人。",
+                    "desc_intl": "if_you_have_any_questions_you_can_stil_contact_the_company",
+                    "color": "",
+                    "is_important": false,
+                    "itme_list": [],
+                    "list_style": "none",
+                    "space": 8
+                }
+            ]
+        },
+        {
+            "id": 4761,
+            "title": "保密與安全性",
+            "title_intl": "confidentiality_and_security",
+            "desc_list": [
+                {
+                    "id": 4762,
+                    "desc": "我們會將有權存取您個人資料之員工限於我們合理相信是為了向您提供產品或服務或為了完成工作而需要取得這些資料的員工。為了保護您的帳戶及個人資料的安全，請您不要任意將個人帳號、密碼提供予第三人或允許第三人以您的個人資料申請帳號、密碼，否則，相關責任由您自行負擔。若您的帳號、密碼有外洩之虞，請您立即更改密碼，或通知本公司暫停該帳號（本公司可能會要求核對您的個人資料）。",
+                    "desc_intl": "we_restrict_the_employees_who_have_access_to_your_personal_data",
+                    "color": "",
+                    "is_important": false,
+                    "itme_list": [],
+                    "list_style": "none",
+                    "space": 0
+                },
+                {
+                    "id": 4763,
+                    "desc": "網際網路並不是一個安全的資訊傳輸環境，請您在使用本網站時，避免將敏感的個人資料提供予他人或在網站上公開揭露。",
+                    "desc_intl": "internet_is_not_secure_information_transmission_environment",
+                    "color": "",
+                    "is_important": false,
+                    "itme_list": [],
+                    "list_style": "none",
+                    "space": 8
+                }
+            ]
+        },
+        {
+            "id": 4771,
+            "title": "如何蒐集、處理您的資訊",
+            "title_intl": "how_to_collect_and_process_your_information",
+            "desc_list": [
+                {
+                    "id": 4772,
+                    "desc": "以會員身份使用臻刀具提供之各項服務時，於頁面中自動顯示會員資訊。",
+                    "desc_intl": "using_various_services_provided_by_Zhen_as_a_member_will_be_auto_displayed",
+                    "color": "",
+                    "is_important": false,
+                    "itme_list": [],
+                    "list_style": "decimal",
+                    "space": 0
+                },
+                {
+                    "id": 4773,
+                    "desc": "網際網路並不是一個安全的資訊傳輸環境，請您在使用本網站時，避免將敏感的個人資料提供予他人或在網站上公開揭露。",
+                    "desc_intl": "transaction_behavior_when_members_make_reservations",
+                    "color": "",
+                    "is_important": false,
+                    "itme_list": [],
+                    "list_style": "decimal",
+                    "space": 0
+                },
+                {
+                    "id": 4774,
+                    "desc": "宣傳廣告或行銷等：提供會員各種電子雜誌等資訊、透過電子郵件、郵件、電話等提供與服務有關之資訊。將會員所瀏覽之內容或廣告，依客戶之個人屬性或購買紀錄、臻刀具網站之瀏覽紀錄等項目，進行個人化作業、會員使用服務之分析、新服務之開發或既有服務之改善等。針對民調、活動、留言版等之意見，或其他服務關連事項，與會員進行聯繫。",
+                    "desc_intl": "promotional_advertisements_or_marketing_provide_members_information",
+                    "color": "",
+                    "is_important": false,
+                    "itme_list": [],
+                    "list_style": "decimal",
+                    "space": 0
+                },
+                {
+                    "id": 4775,
+                    "desc": "回覆客戶之詢問：針對會員透過電子郵件、郵件、傳真、電話或其他任何直接間接連絡方式向臻刀具所提出之詢問進行回覆。",
+                    "desc_intl": "responding_to_customer_inquiries",
+                    "color": "",
+                    "is_important": false,
+                    "itme_list": [],
+                    "list_style": "decimal",
+                    "space": 0
+                },
+                {
+                    "id": 4776,
+                    "desc": "其他業務附隨之事項：附隨於上述利用目的而為臻刀具提供服務所必要之使用。",
+                    "desc_intl": "other_business_incidental_matters",
+                    "color": "",
+                    "is_important": false,
+                    "itme_list": [],
+                    "list_style": "decimal",
+                    "space": 0
+                },
+                {
+                    "id": 4777,
+                    "desc": "對於各別服務提供者之資訊提供：會員對服務提供者之商品或勞務為預約、下標、購買、參加贈獎活動或申請其他交易時，臻刀具於該交易所必要之範圍內，得將會員之個人資料檔案提供予服務提供者，並由服務提供者負責管理該個人資料檔案。臻刀具將以規約課予服務提供者依保障會員隱私權之原則處理個人資料之義務，但無法保證服務提供者會必然遵守。詳細內容，請向各別服務提供者洽詢。",
+                    "desc_intl": "information_provision_for_individual_service_providers",
+                    "color": "",
+                    "is_important": false,
+                    "itme_list": [],
+                    "list_style": "decimal",
+                    "space": 0
+                },
+                {
+                    "id": 4778,
+                    "desc": "其他：提供個別服務時，亦可能於上述規定之目的以外，利用個人資料。此時將在該個別服務之網頁載明其要旨。",
+                    "desc_intl": "when_providing_individual_services_the_main_points_will_be_stated",
+                    "color": "",
+                    "is_important": false,
+                    "itme_list": [],
+                    "list_style": "decimal",
+                    "space": 8
+                }
+            ]
+        },
+        {
+            "id": 4791,
+            "title": "會員就個人資料之權利",
+            "title_intl": "members_rights_with_regard_to_personal_data",
+            "desc_list": [
+                {
+                    "id": 4792,
+                    "desc": "所蒐集個人資料之當事人，依個人資料保護法得對行使以下權利",
+                    "desc_intl": "the_parties_to_the_collected_personal_data_may_exercise",
+                    "color": "",
+                    "is_important": false,
+                    "itme_list": [],
+                    "list_style": "none",
+                    "space": 4
+                }
+            ]
+        },
+        {
+            "id": 4716,
+            "title": "",
+            "title_intl": "",
+            "desc_list": [
+                {
+                    "id": 4793,
+                    "desc": "查詢或請求閱覽。",
+                    "desc_intl": "inquiry_or_request_to_read",
+                    "color": "",
+                    "is_important": false,
+                    "itme_list": [],
+                    "list_style": "decimal",
+                    "space": 0
+                },
+                {
+                    "id": 4794,
+                    "desc": "請求製給複製本。",
+                    "desc_intl": "request_a_copy",
+                    "color": "",
+                    "is_important": false,
+                    "itme_list": [],
+                    "list_style": "decimal",
+                    "space": 0
+                },
+                {
+                    "id": 4795,
+                    "desc": "請求補充或更正。",
+                    "desc_intl": "request_supplements_or_corrections",
+                    "color": "",
+                    "is_important": false,
+                    "itme_list": [],
+                    "list_style": "decimal",
+                    "space": 0
+                },
+                {
+                    "id": 4796,
+                    "desc": "請求停止蒐集、處理或利用。",
+                    "desc_intl": "request_to_stop_collection_processing_or_utilization",
+                    "color": "",
+                    "is_important": false,
+                    "itme_list": [],
+                    "list_style": "decimal",
+                    "space": 0
+                },
+                {
+                    "id": 4797,
+                    "desc": "請求刪除。",
+                    "desc_intl": "request_deletion",
+                    "color": "",
+                    "is_important": false,
+                    "itme_list": [],
+                    "list_style": "decimal",
+                    "space": 4
+                }
+            ]
+        },
+        {
+            "id": 4717,
+            "title": "",
+            "title_intl": "",
+            "desc_list": [
+                {
+                    "id": 4798,
+                    "desc": "會員如欲行使上述權利，可與客服連絡進行申請修改。",
+                    "desc_intl": "if_members_want_to_exercise_the_above_rights_can_contact_customer_service",
+                    "color": "",
+                    "is_important": false,
+                    "itme_list": [],
+                    "list_style": "none",
+                    "space": 0
+                },
+                {
+                    "id": 4799,
+                    "desc": "請注意！如拒絕提供加入會員所需必要之資料，將可能導致無法享受完整服務或完全無法使用該項服務。",
+                    "desc_intl": "if_you_refuse_to_provide_the_necessary_information_for_membership",
+                    "color": "",
+                    "is_important": false,
+                    "itme_list": [],
+                    "list_style": "none",
+                    "space": 8
+                }
+            ]
+        }
+    ]
+}
