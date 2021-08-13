@@ -1,0 +1,573 @@
+{
+    "title": "服務協議",
+    "title_intl": "user_agreement",
+    "policy_list": [
+        {
+            "id": 4801,
+            "title": "",
+            "title_intl": "",
+            "desc_list": [
+                {
+                    "id": 4802,
+                    "desc": "感謝您使用臻刀具網站（https://www.zhen.com.tw）。本公司依據本服務條款提供本網站的服務(以下簡稱「本服務」)。當您使用本服務時，即表示您已閱讀，瞭解並同意接受本服務條款之所有內容。本公司有權於任何時間修改或變更本服務條款之內容，建議您隨時注意該等修改或變更。您於任何修改或變更後繼續使用本服務，視為您已閱讀，瞭解並同意接受該等修改或變更。如果您不同意本服務條款的內容，或者您所屬的國家或地域排除本服務條款內容之全部或部份時，您應立即停止使用本服務。",
+                    "desc_intl": "thank_you_for_using_Zhen_website",
+                    "color": "",
+                    "is_important": false,
+                    "itme_list": [],
+                    "list_style": "none",
+                    "space": 8
+                }
+            ]
+        },
+        {
+            "id": 4811,
+            "title": "聯絡方式",
+            "title_intl": "contact_method",
+            "desc_list": [
+                {
+                    "id": 4812,
+                    "desc": "電話: 04-23508566",
+                    "desc_intl": "telephone",
+                    "color": "",
+                    "is_important": false,
+                    "itme_list": [],
+                    "list_style": "none",
+                    "space": 0
+                },
+                {
+                    "id": 4813,
+                    "desc": "LINE:",
+                    "desc_intl": "line",
+                    "color": "",
+                    "is_important": false,
+                    "itme_list": [],
+                    "list_style": "none",
+                    "space": 0
+                },
+                {
+                    "id": 4814,
+                    "desc": "電子信箱：zhen.knife@gmail.com",
+                    "desc_intl": "email",
+                    "color": "",
+                    "is_important": false,
+                    "itme_list": [],
+                    "list_style": "none",
+                    "space": 8
+                }
+            ]
+        },
+        {
+            "id": 4821,
+            "title": "會員使用規則",
+            "title_intl": "member_use_rules",
+            "desc_list": [
+                {
+                    "id": 4822,
+                    "desc": "為了能使用本服務，您需要同意以下事項：",
+                    "desc_intl": "in_order_to_use_this_service_you_need_to_agree",
+                    "color": "",
+                    "is_important": false,
+                    "itme_list": [],
+                    "list_style": "none",
+                    "space": 4
+                }
+            ]
+        },
+        {
+            "id": 4823,
+            "title": "",
+            "title_intl": "",
+            "desc_list": [
+                {
+                    "id": 4824,
+                    "desc": "依本服務註冊中所提示提供您本人正確，最新及完整的資料",
+                    "desc_intl": "provide_your_correct_uptodate_and_complete_information",
+                    "color": "",
+                    "is_important": false,
+                    "itme_list": [],
+                    "list_style": "decimal",
+                    "space": 0
+                },
+                {
+                    "id": 4825,
+                    "desc": "維持並更新您個人資料，確保其為正確，最新及完整。若您提供任何錯誤，不實或不完整的資料，本公司有權暫停或終止您的帳號，並拒絕您使用本服務之全部或部份。",
+                    "desc_intl": "maintain_and_update_your_personal_information",
+                    "color": "",
+                    "is_important": false,
+                    "itme_list": [],
+                    "list_style": "decimal",
+                    "space": 8
+                }
+            ]
+        },
+        {
+            "id": 4831,
+            "title": "會員帳號、密碼及安全",
+            "title_intl": "member_account_password_and_security",
+            "desc_list": [
+                {
+                    "id": 4832,
+                    "desc": "網站內蒐集的個人資料包括：",
+                    "desc_intl": "after_completing_the_registration_process_for_this_service_maintaining_the_security",
+                    "color": "",
+                    "is_important": false,
+                    "itme_list": [],
+                    "list_style": "none",
+                    "space": 4
+                }
+            ]
+        },
+        {
+            "id": 4833,
+            "title": "",
+            "title_intl": "",
+            "desc_list": [
+                {
+                    "id": 4834,
+                    "desc": "您的密碼或帳號遭到盜用或有其他任何安全問題發生時，您將立即通知本公司。",
+                    "desc_intl": "when_your_password_or_account_is_stolen_you_will_notify",
+                    "color": "",
+                    "is_important": false,
+                    "itme_list": [],
+                    "list_style": "decimal",
+                    "space": 0
+                },
+                {
+                    "id": 4835,
+                    "desc": "每次連線完畢，均結束您的帳號使用。",
+                    "desc_intl": "every_time_the_connection_is_completed_will_be_terminated",
+                    "color": "",
+                    "is_important": false,
+                    "itme_list": [],
+                    "list_style": "decimal",
+                    "space": 8
+                }
+            ]
+        },
+        {
+            "id": 4841,
+            "title": "會員服務",
+            "title_intl": "membership_service",
+            "desc_list": [
+                {
+                    "id": 4842,
+                    "desc": "您主動加入臻刀具會員後，即享有臻刀具的會員服務。",
+                    "desc_intl": "after_you_voluntarily_join_zhen_member_you_will_enjoy_service",
+                    "color": "",
+                    "is_important": false,
+                    "itme_list": [],
+                    "list_style": "none",
+                    "space": 0
+                }
+            ]
+        },
+        {
+            "id": 4843,
+            "title": "",
+            "title_intl": "",
+            "desc_list": [
+                {
+                    "id": 4844,
+                    "desc": "臻刀具有權於任何時間修改會員服務內容、會員制度，並以適當方式通知您會員服務的增減與異動內容，您同意無條件接受會員服務的內容。",
+                    "desc_intl": "zhen_reserves_the_right_to_modify_the_content",
+                    "color": "",
+                    "is_important": false,
+                    "itme_list": [],
+                    "list_style": "decimal",
+                    "space": 0
+                },
+                {
+                    "id": 4845,
+                    "desc": "若您對增減與異動的會員服務內容有所異議，您可通知臻刀具取消您的會員資格。",
+                    "desc_intl": "can_notify_zhen_to_cancel_your_membership",
+                    "color": "",
+                    "is_important": false,
+                    "itme_list": [],
+                    "list_style": "decimal",
+                    "space": 0
+                },
+                {
+                    "id": 4846,
+                    "desc": "因會員服務所提供之因會員身分得享有之權益，均仍屬本公司或其他合法權利人所有；會員僅得於服務期間內依本使用條款之約定為使用，不得以任何方式將其會員權益轉讓、移轉、出租或出借予其他任何第三人。",
+                    "desc_intl": "members_can_only_use_them_in_accordance_with_the_service_period",
+                    "color": "",
+                    "is_important": false,
+                    "itme_list": [],
+                    "list_style": "decimal",
+                    "space": 0
+                },
+                {
+                    "id": 4847,
+                    "desc": "會員服務僅依當時所提供之功能及狀態提供服務；本公司並保留新增、修改或取消會員服務內相關系統或功能之全部或一部之權利。",
+                    "desc_intl": "the_membership_service_only_provides_services_based_on_the_functions_and_status_provided",
+                    "color": "",
+                    "is_important": false,
+                    "itme_list": [],
+                    "list_style": "decimal",
+                    "space": 8
+                }
+            ]
+        },
+        {
+            "id": 4851,
+            "title": "使用者的守法義務及承諾",
+            "title_intl": "obligations_and_commitments_of_users_to_abide_by_the_law",
+            "desc_list": [
+                {
+                    "id": 4852,
+                    "desc": "您承諾絕不為任何非法目的或以任何非法方式使用臻刀具網站服務，並承諾遵守中華民國相關法規及一切使用網際網路之國際慣例。您若係中華民國以外之使用者，並同意遵守所屬國家或地域之法令。",
+                    "desc_intl": "you_promise_that_you_will_never_use_the_illegal",
+                    "color": "",
+                    "is_important": false,
+                    "itme_list": [],
+                    "list_style": "none",
+                    "space": 4
+                },
+                {
+                    "id": 4853,
+                    "desc": "您同意並保證不得利用本服務從事侵害他人權益或違法之行為，包括但不限於以下行為：",
+                    "desc_intl": "you_agree_and_warrant_that_you_will_not_use_service_to_engage",
+                    "color": "",
+                    "is_important": false,
+                    "itme_list": [],
+                    "list_style": "none",
+                    "space": 8
+                }
+            ]
+        },
+        {
+            "id": 4854,
+            "title": "使用者的守法義務及承諾",
+            "title_intl": "obligations_and_commitments_of_users_to_abide_by_the_law",
+            "desc_list": [
+                {
+                    "id": 4855,
+                    "desc": "不會利用有關資料或本網站之使用權，作任何非法，不當，淫褻或誹謗的用途。",
+                    "desc_intl": "will_not_use_the_relevant_information_or_the_right_to_use_any_illegal",
+                    "color": "",
+                    "is_important": false,
+                    "itme_list": [],
+                    "list_style": "decimal",
+                    "space": 0
+                },
+                {
+                    "id": 4856,
+                    "desc": "不會進行或容許進行任何侵犯版權的活動。",
+                    "desc_intl": "will_not_conduct_or_allow_any_copyright",
+                    "color": "",
+                    "is_important": false,
+                    "itme_list": [],
+                    "list_style": "decimal",
+                    "space": 0
+                },
+                {
+                    "id": 4856,
+                    "desc": "採取一切措施，確保有關資料不會損害使用者的資料或系統。",
+                    "desc_intl": "take_all_measures_to_ensure_that_the_relevant_information_does_not_harm",
+                    "color": "",
+                    "is_important": false,
+                    "itme_list": [],
+                    "list_style": "decimal",
+                    "space": 0
+                },
+                {
+                    "id": 4856,
+                    "desc": "確保您向臻刀具提供的一切資料，均為您深知屬於真實及準確之資料。",
+                    "desc_intl": "ensure_that_all_the_information_you_provide_to_zhen_is_true",
+                    "color": "",
+                    "is_important": false,
+                    "itme_list": [],
+                    "list_style": "decimal",
+                    "space": 0
+                },
+                {
+                    "id": 4856,
+                    "desc": "接納本條款所載的一切本公司免責聲明。",
+                    "desc_intl": "accept_all_the_company_disclaimers_contained",
+                    "color": "",
+                    "is_important": false,
+                    "itme_list": [],
+                    "list_style": "decimal",
+                    "space": 0
+                },
+                {
+                    "id": 4856,
+                    "desc": "未得本公司發出書面通知之前，不可將權利及責任以分配，轉送或其他形式轉讓給任何其他人等。",
+                    "desc_intl": "before_the_company_issues_a_written_notice",
+                    "color": "",
+                    "is_important": false,
+                    "itme_list": [],
+                    "list_style": "decimal",
+                    "space": 8
+                }
+            ]
+        },
+        {
+            "id": 4861,
+            "title": "停止、中斷提供服務",
+            "title_intl": "stop_or_interrupt_the_provision_of_services",
+            "desc_list": [
+                {
+                    "id": 4862,
+                    "desc": "如發生下列情形時，臻刀具網站有權可以停止、中斷提供服務",
+                    "desc_intl": "in_the_event_of_the_following_circumstances_zhen_has_to_stop",
+                    "color": "",
+                    "is_important": false,
+                    "itme_list": [],
+                    "list_style": "none",
+                    "space": 4
+                }
+            ]
+        },
+        {
+            "id": 4863,
+            "title": "",
+            "title_intl": "",
+            "desc_list": [
+                {
+                    "id": 4864,
+                    "desc": "臻刀具網站電子通信設備進行必要之保養及施工時。",
+                    "desc_intl": "necessary_maintenance_and_construction",
+                    "color": "",
+                    "is_important": false,
+                    "itme_list": [],
+                    "list_style": "decimal",
+                    "space": 0
+                },
+                {
+                    "id": 4865,
+                    "desc": "發生突發性之電子通信設備故障時。",
+                    "desc_intl": "when_a_sudden_electronic_communication_equipment_failure",
+                    "color": "",
+                    "is_important": false,
+                    "itme_list": [],
+                    "list_style": "decimal",
+                    "space": 0
+                },
+                {
+                    "id": 4866,
+                    "desc": "臻刀具網站申請之電子通信服務被停止，無法提供服務時。",
+                    "desc_intl": "when_the_electronic_communication_service_applied_for_by_zhen_is_stopped",
+                    "color": "",
+                    "is_important": false,
+                    "itme_list": [],
+                    "list_style": "decimal",
+                    "space": 0
+                },
+                {
+                    "id": 4867,
+                    "desc": "由於天災等不可抗力之因素致使臻刀具網站無法提供服務時。",
+                    "desc_intl": "when_due_to_natural_disasters_cannot_provide_services",
+                    "color": "",
+                    "is_important": false,
+                    "itme_list": [],
+                    "list_style": "decimal",
+                    "space": 8
+                }
+            ]
+        },
+        {
+            "id": 4871,
+            "title": "交易行為",
+            "title_intl": "trading_behavior",
+            "desc_list": [
+                {
+                    "id": 4772,
+                    "desc": "會員同意其訂購行為，以臻刀具網站所示之電子交易資料為準，如有糾紛，並以該電子交易資料為認定標準。",
+                    "desc_intl": "the_member_agrees_that_its_ordering_behavior",
+                    "color": "",
+                    "is_important": false,
+                    "itme_list": [],
+                    "list_style": "none",
+                    "space": 4
+                },
+                {
+                    "id": 4773,
+                    "desc": "會員於訂購後倘任意大量退換貨、取消訂單，因已造成臻刀具作業上之困擾與損害，臻刀具可視情況採取拒絕交易或永久取消其會員資格辦理。",
+                    "desc_intl": "if_a_member_returns_or_exchanges_a_large_number_of_goods",
+                    "color": "",
+                    "is_important": false,
+                    "itme_list": [],
+                    "list_style": "none",
+                    "space": 8
+                }
+            ]
+        },
+        {
+            "id": 4891,
+            "title": "廣告",
+            "title_intl": "advertise",
+            "desc_list": [
+                {
+                    "id": 4892,
+                    "desc": "您在本服務中瀏覽到的所有廣告內容、文字與圖片之說明、展示樣品或其他銷售資訊，均由各該廣告商、產品與服務的供應商所設計與提出。您對於廣告之正確性與可信度應自行斟酌與判斷。臻刀具僅接受委託予以刊登，不對前述廣告負擔保責任。",
+                    "desc_intl": "all_advertising_content_text_and_picture_descriptions",
+                    "color": "",
+                    "is_important": false,
+                    "itme_list": [],
+                    "list_style": "none",
+                    "space": 8
+                }
+            ]
+        },
+        {
+            "id": 4901,
+            "title": "免責聲明",
+            "title_intl": "disclaimer",
+            "desc_list": [
+                {
+                    "id": 4902,
+                    "desc": "您清晰理解及同意以下情況：",
+                    "desc_intl": "you_clearly_understand_and_agree_to_the_following",
+                    "color": "",
+                    "is_important": false,
+                    "itme_list": [],
+                    "list_style": "none",
+                    "space": 4
+                },
+                {
+                    "id": 4903,
+                    "desc": "自行承擔使用本網站及/或服務的風險。在法律許可範圍內，本公司明確表示不對下列事宜承擔責任或作出陳述或保證(明示或暗示)：",
+                    "desc_intl": "use_this_website_and_service_at_your_own_risk",
+                    "color": "",
+                    "is_important": false,
+                    "itme_list": [],
+                    "list_style": "none",
+                    "space": 4
+                }
+            ]
+        },
+        {
+            "id": 4904,
+            "title": "",
+            "title_intl": "",
+            "desc_list": [
+                {
+                    "id": 4905,
+                    "desc": "本網站或有關資料的質量，運作，使用，準確性或時效，或對任何目的之適合性或用途",
+                    "desc_intl": "the_quality_operation_use_accuracy_or_timeliness_of_this_website_for_any_purpose",
+                    "color": "",
+                    "is_important": false,
+                    "itme_list": [],
+                    "list_style": "decimal",
+                    "space": 0
+                },
+                {
+                    "id": 4906,
+                    "desc": "瀏覽本網站或有關資料時不受干擾，或資料正確無誤，或有關資料不含任何電腦病毒或不具污染性或破壞性",
+                    "desc_intl": "there_is_no_interference_when_browsing_this_website",
+                    "color": "",
+                    "is_important": false,
+                    "itme_list": [],
+                    "list_style": "decimal",
+                    "space": 0
+                },
+                {
+                    "id": 4907,
+                    "desc": "有關資料不會令使用者或其他人士反感或厭惡",
+                    "desc_intl": "the_information_will_not_be_offensive_or_disgusting_to_users",
+                    "color": "",
+                    "is_important": false,
+                    "itme_list": [],
+                    "list_style": "decimal",
+                    "space": 0
+                },
+                {
+                    "id": 4908,
+                    "desc": "有關資料含有或會引致錯誤，遺漏或失實陳述",
+                    "desc_intl": "the_relevant_information_may_cause_errors",
+                    "color": "",
+                    "is_important": false,
+                    "itme_list": [],
+                    "list_style": "decimal",
+                    "space": 8
+                }
+            ]
+        },
+        {
+            "id": 4909,
+            "title": "",
+            "title_intl": "",
+            "desc_list": [
+                {
+                    "id": 4910,
+                    "desc": "本公司並不認可或推薦有關資料提及的任何人士，機構，名稱，產品或服務，而有關資料亦不代表本公司的觀點或意見。",
+                    "desc_intl": "the_company_does_not_endorse_or_recommend_any_person",
+                    "color": "",
+                    "is_important": false,
+                    "itme_list": [],
+                    "list_style": "none",
+                    "space": 8
+                }
+            ]
+        },
+        {
+            "id": 4911,
+            "title": "智慧財產權的保護",
+            "title_intl": "protection_of_intellectual_property_rights",
+            "desc_list": [
+                {
+                    "id": 4912,
+                    "desc": "本公司所使用之軟體或程式，網站上所有內容，包括但不限於著作、圖片、檔案、資訊、資料、網站架構、網站畫面的安排、網頁設計， 均由「本公司」或其他權利人依法擁有其智慧財產權，任何人不得擅自使用，修改，複製，刊印，傳送或以其他形式使用。若您欲引用或轉載前述軟體，程式或網站內容，除明確為法律所許可者外，必須依法取得本公司或其他權利人的事前書面同意。尊重智慧財產權是您應盡的義務，如有違反，您應對本公司負損害賠償責任。",
+                    "desc_intl": "the_software_or_programs_used_by_the_company_and_all_content_on_the_website",
+                    "color": "",
+                    "is_important": false,
+                    "itme_list": [],
+                    "list_style": "none",
+                    "space": 8
+                }
+            ]
+        },
+        {
+            "id": 4921,
+            "title": "您對臻刀具之授權",
+            "title_intl": "your_authorization_to_Zhen",
+            "desc_list": [
+                {
+                    "id": 4922,
+                    "desc": "當您同意加入臻刀具網站會員時，即代表您同意授權臻刀具，得為提供服務、行銷及贈獎之目的，提供必須之會員資料給合作夥伴(第三者)做約定範圍內之妥善使用，倘若會員不同意將其資料列於合作夥伴(第三者)產品或服務名單內，可以通知臻刀具，我們將於名單中刪除其資料。對於會員所登錄或留存之個人資料，會員同意臻刀具得於合理之範圍內蒐集、處理、保存、傳遞及使用該等資料，以提供使用者其他資訊或服務、或作成會員統計資料、或進行關於網路行為之調查或研究，或為任何之合法使用。",
+                    "desc_intl": "when_you_agree_to_join_as_a_member_of_zhen_it_means_you_agree",
+                    "color": "",
+                    "is_important": false,
+                    "itme_list": [],
+                    "list_style": "none",
+                    "space": 8
+                }
+            ]
+        },
+        {
+            "id": 4931,
+            "title": "終止",
+            "title_intl": "termination",
+            "desc_list": [
+                {
+                    "id": 4932,
+                    "desc": "您同意如果本公司合理相信使用者已違反本服務條款的明文規定及精神，或侵犯本公司或任何第三方權利，或根據任何其它合理原因，本公司可以隨時終止或限制您使用本網站或服務而不需要事先通知。此外，您承認並同意本公司可以在通知或不通知使用者的情況下修改或停止本網站；您同意若本服務之使用被終止或限制時，本公司對您或任何第三人均不承擔責任。",
+                    "desc_intl": "you_agree_that_if_the_company_reasonably_believes",
+                    "color": "",
+                    "is_important": false,
+                    "itme_list": [],
+                    "list_style": "none",
+                    "space": 8
+                }
+            ]
+        },
+        {
+            "id": 4941,
+            "title": "一般條款",
+            "title_intl": "normal_condition",
+            "desc_list": [
+                {
+                    "id": 4942,
+                    "desc": "本服務條款構成您與臻刀具就您使用本服務之完整合意，取代您先前與臻刀具間有關本服務所為之任何約定。本服務條款之解釋與適用，以及與本服務條款有關的爭議，除法律另有規定者外，均應依照中華民國法律予以處理，並以台灣台北地方法院為第一審管轄法院。",
+                    "desc_intl": "these_terms_of_service_constitute_the_complete_agreement_between_you_and_zhen",
+                    "color": "",
+                    "is_important": false,
+                    "itme_list": [],
+                    "list_style": "none",
+                    "space": 8
+                }
+            ]
+        }
+    ]
+}
