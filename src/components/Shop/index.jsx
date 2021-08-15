@@ -27,7 +27,6 @@ const ShopPage = (props) => {
             })
 
         if (intl_id) {
-            console.log('cats_sid', cats_sid)
             if (!cats_sid) {
                 pathList.push({
                     link: `/shop/detail/${intl_id}`,

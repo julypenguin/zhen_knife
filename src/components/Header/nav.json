@@ -1,0 +1,112 @@
+{
+    "navTitle": {
+        "name": "臻刀具",
+        "name_intl": "zhen"
+    },
+    "navList": [
+        {
+            "id": 3001,
+            "nav": "首頁",
+            "name_intl": "home",
+            "to": "/",
+            "exact": "true",
+            "strict": "false",
+            "sections": []
+        },
+        {
+            "id": 3101,
+            "nav": "臻刀具系列",
+            "name_intl": "zhen_series",
+            "to": "/shop",
+            "strict": "false",
+            "sections": [
+                {
+                    "id": 3102,
+                    "name": "全系列",
+                    "name_intl": "all_series",
+                    "href": "/shop"
+                },
+                {
+                    "id": 3103,
+                    "name": "三合鋼系列",
+                    "name_intl": "sandwich_steel_series",
+                    "href": "/shop/1"
+                },
+                {
+                    "id": 3104,
+                    "name": "大馬士革",
+                    "name_intl": "damascus_series",
+                    "href": "/shop/2"
+                },
+                {
+                    "id": 3105,
+                    "name": "高碳鋼系列",
+                    "name_intl": "high_carbon_steel_series",
+                    "href": "/shop/3"
+                },
+                {
+                    "id": 3106,
+                    "name": "刀座 / 刀鞘",
+                    "name_intl": "knife_holder_and_scabbard_series",
+                    "href": "/shop/4"
+                }
+            ]
+   },
+        {
+            "id": 3201,
+            "nav": "聯絡我們",
+            "name_intl": "contact_us",
+            "to": "/contact",
+            "exact": "true",
+            "strict": "false",
+            "sections": []
+        },
+        {
+            "id": 3301,
+            "nav": "購物相關",
+            "name_intl": "shopping_related",
+            "to": "/shopping_process",
+            "strict": "false",
+            "sections": []
+        },
+        {
+            "id": 3401,
+            "nav": "會員專區",
+            "name_intl": "vip",
+            "to": "/vip",
+            "exact": "true",
+            "strict": "false",
+            "sections": []
+        }
+    ],
+    "preview_list": [
+        {
+            "cat_sid": 10054,
+            "name": "臻 ★ 料理剪刀",
+            "name_intl": "hc_01",
+            "img": "hc_01",
+            "href": "/shop/detail/hc_01"
+        },
+        {
+            "cat_sid": 10005,
+            "name": "臻 ★德國進口大馬士革(101層)★~烏木PAKKA柄 – 世界頂級主廚料理刀 210㎜牛刀",
+            "name_intl": "dmh_03",
+            "img": "dmh_03",
+            "href": "/shop/detail/dmh_03"
+        },
+        {
+            "cat_sid": 10022,
+            "name": "臻 ★日本進口三合鋼 中式菜刀+ 噴砂★~一體成型防滑握柄 – 剁刀",
+            "name_intl": "sck_09",
+            "img": "sck_09",
+            "href": "/shop/detail/sck_09"
+        },
+        {
+            "cat_sid": 10001,
+            "name": "臻 ★ 三層實木刀架★ 磁性刀座",
+            "name_intl": "kh_01",
+            "img": "kh_01",
+            "href": "/shop/detail/kh_01"
+        }
+    ]
+}

@@ -1,7 +1,7 @@
 import React from 'react';
 import classNames from 'classnames'
 import { injectIntl, FormattedMessage } from 'react-intl'
-import data from './data.json'
+import data from './nav.json'
 import BaseMobileTab from '../Base/BaseMobileTab'
 import { NavLink } from 'react-router-dom'
 

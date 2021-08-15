@@ -1,7 +1,7 @@
 import React from 'react';
 import { injectIntl, FormattedMessage } from 'react-intl'
 
-import data from './data.json'
+import data from './nav.json'
 import BaseTab from '../Base/BaseTab'
 
 const Navbar = ({
@@ -9,7 +9,7 @@ const Navbar = ({
 }) => {
 
     return (
-        <div className="hidden lg:ml-16 lg:flex select-none">
+        <div className="hidden lg:ml-auto lg:flex select-none h-full">
             {data.navList.map((nav, i) => (
                 <BaseTab
                     key={i}
@@ -17,7 +17,7 @@ const Navbar = ({
                     to={nav.to}
                     strict={nav.strict}
                 >
-                    <FormattedMessage id={`nav.${nav.intl_name}`} />
+                    <FormattedMessage id={`nav.${nav.name_intl}`} />
                 </BaseTab>
             ))}
         </div>

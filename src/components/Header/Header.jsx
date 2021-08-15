@@ -3,44 +3,20 @@ import classNames from 'classnames';
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon as Icon } from '@fortawesome/react-fontawesome'
 import { matchPath } from 'react-router'
-import Tab from '../Base/Tab'
 import Navbar from '../../containers/Header/Navbar'
-import data from './data.json'
+import data from './nav.json'
+import categoriesData from '../Shop/categories.json'
+import cateData from '../Shop/categories.json'
 import NavIcon from '../../containers/Header/NavIcon'
 import NavSearch from './NavSearch'
 import NavMenuBtn from './NavMenuBtn'
 import Profile from './Profile'
 import ProfileMobileMenu from './ProfileMobileMenu'
-import { Popover, Transition } from '@headlessui/react'
-import {
-    AnnotationIcon,
-    ChatAlt2Icon,
-    InboxIcon,
-    QuestionMarkCircleIcon,
-} from '@heroicons/react/outline'
-import { ChevronDownIcon } from '@heroicons/react/solid'
-
-const solutions = [
-    {
-        name: 'Inbox',
-        description: 'Get a better understanding of where your traffic is coming from.',
-        href: '#',
-        icon: InboxIcon,
-    },
-    {
-        name: 'Messaging',
-        description: 'Speak directly to your customers in a more meaningful way.',
-        href: '#',
-        icon: AnnotationIcon,
-    },
-    { name: 'Live Chat', description: "Your customers' data will be safe and secure.", href: '#', icon: ChatAlt2Icon },
-    {
-        name: 'Knowledge Base',
-        description: "Connect with third-party tools that you're already using.",
-        href: '#',
-        icon: QuestionMarkCircleIcon,
-    },
-]
+import { Dialog, Popover, Tab, Transition } from '@headlessui/react'
+import { MenuIcon, SearchIcon, ShoppingCartIcon, XIcon as XIconOutline } from '@heroicons/react/outline'
+import { CheckIcon, ClockIcon, QuestionMarkCircleIcon, XIcon as XIconSolid } from '@heroicons/react/solid'
+import ProductImg from '../Shop/ProductImg'
+import { FormattedMessage } from 'react-intl';
 
 const Header = (props) => {
     const {
@@ -48,71 +24,224 @@ const Header = (props) => {
     } = props
 
     const [showProfileDropdown, setShowProfileDropdown] = useState(false)
+    const [open, setOpen] = useState(false)
 
     return (
-        <header className="bg-white sticky top-0 z-10">
+        <div className="bg-white sticky top-0 z-10">
 
-            <nav className="shadow sticky top-0 z-10" onClick={() => setShowProfileDropdown(false)}>
-                <div className="max-w-full mx-auto px-2 sm:px-4 lg:px-16">
-                    <div className="flex justify-between h-16">
-                        <div className="flex px-2 lg:px-0">
-                            <NavIcon />
-                            {/* <div onClick={() => push('/')}>首頁</div>
-                        <div onClick={() => push('/SS-01BG')}>限時搶購活動</div> */}
+            {/* 手機 menu */}
+            <Transition.Root show={open} as={Fragment}>
+                <Dialog as="div" className="fixed inset-0 flex z-40 lg:hidden" onClose={setOpen}>
+                    <Transition.Child
+                        as={Fragment}
+                        enter="transition-opacity ease-linear duration-300"
+                        enterFrom="opacity-0"
+                        enterTo="opacity-100"
+                        leave="transition-opacity ease-linear duration-300"
+                        leaveFrom="opacity-100"
+                        leaveTo="opacity-0"
+                    >
+                        <Dialog.Overlay className="fixed inset-0 bg-black bg-opacity-25" />
+                    </Transition.Child>
+
+                    <Transition.Child
+                        as={Fragment}
+                        enter="transition ease-in-out duration-300 transform"
+                        enterFrom="-translate-x-full"
+                        enterTo="translate-x-0"
+                        leave="transition ease-in-out duration-300 transform"
+                        leaveFrom="translate-x-0"
+                        leaveTo="-translate-x-full"
+                    >
+                        <div className="relative max-w-xs w-full bg-white shadow-xl pb-12 flex flex-col overflow-y-auto">
+                            <div className="px-4 pt-5 pb-2 flex">
+                                <button
+                                    type="button"
+                                    className="-m-2 p-2 rounded-md inline-flex items-center justify-center text-gray-400"
+                                    onClick={() => setOpen(false)}
+                                >
+                                    <span className="sr-only">Close menu</span>
+                                    <XIconOutline className="h-6 w-6" aria-hidden="true" />
+                                </button>
+                            </div>
+
+                            {/* Links */}
+                            <Tab.Group as="div" className="mt-2">
+                                <div className="pt-4 pb-8 px-4 space-y-8">
+                                    <div className="grid grid-cols-2 gap-x-4">
+                                        {data.preview_list.map((preview) => (
+                                            <div key={preview.cat_sid} className="group relative text-sm">
+                                                <div className="aspect-w-1 aspect-h-1 rounded-lg bg-gray-100 overflow-hidden group-hover:opacity-75">
+                                                    <div className='border'>
+                                                        <ProductImg img={preview.img} className="object-center object-cover rounded-lg p-1 bg-white" />
+                                                    </div>
+                                                </div>
+                                                <Link
+                                                    to={preview.href}
+                                                    className="mt-6 block font-medium text-gray-900"
+                                                    onClick={() => setOpen(false)}
+                                                >
+                                                    <span className="absolute z-10 inset-0" aria-hidden="true" />
+                                                    {/* {preview.name} */}
+                                                </Link>
+                                            </div>
+                                        ))}
+                                    </div>
+
+                                    {data.navList.map((nav) => (
+                                        nav.name_intl !== 'zhen_series' ? null :
+                                            <div key={nav.id}>
+                                                <p className="font-bold text-gray-900">
+                                                    <FormattedMessage id={`nav.${nav.name_intl}`} />
+                                                </p>
+                                                <ul
+                                                    role="list"
+                                                    className="mt-2 flex flex-col space-y-4"
+                                                >
+                                                    {categoriesData.categories.map((cate) => (
+                                                        <li key={cate.cats_sid} className="flow-root">
+                                                            <Link
+                                                                to={`/shop/${cate.cats_sid}`}
+                                                                className="-m-2 p-2 block text-gray-500"
+                                                                onClick={() => setOpen(false)}
+                                                            >
+                                                                <FormattedMessage id={`shop.categories.${cate.intl_id}`} />
+                                                            </Link>
+                                                        </li>
+                                                    ))}
+                                                </ul>
+                                            </div>
+                                    ))}
+
+                                    {/* {data.navList.map((nav) => (
+                                        !nav.sections.length ? null :
+                                            <div key={nav.id}>
+                                                <p className="font-bold text-gray-900">
+                                                    <FormattedMessage id={`nav.${nav.nav}`} />
+                                                </p>
+                                                <ul
+                                                    role="list"
+                                                    className="mt-2 flex flex-col space-y-4"
+                                                >
+                                                    {nav.sections.map((section) => (
+                                                        <li key={section.id} className="flow-root">
+                                                            <Link
+                                                                to={section.href}
+                                                                className="-m-2 p-2 block text-gray-500"
+                                                                onClick={() => setOpen(false)}
+                                                            >
+                                                                {section.name}
+                                                            </Link>
+                                                        </li>
+                                                    ))}
+                                                </ul>
+                                            </div>
+                                    ))} */}
+                                </div>
+                            </Tab.Group>
+
+                            {/* side nav */}
+                            <div className="border-t border-gray-200 py-6 px-4 space-y-4">
+                                {data.navList.map((nav) => (
+                                    nav.sections.length ? null :
+                                        <div key={nav.id}>
+                                            <Link
+                                                to={nav.to}
+                                                className="font-medium text-gray-900"
+                                                onClick={() => setOpen(false)}
+                                            >
+                                                <FormattedMessage id={`nav.${nav.name_intl}`} />
+                                            </Link>
+                                        </div>
+                                ))}
+                            </div>
+
+                            <div className="border-t border-gray-200 py-6 px-4 space-y-6">
+                                <div className="flow-root">
+                                    <Link
+                                        to="login"
+                                        className="-m-2 p-2 block font-medium text-gray-900"
+                                        onClick={() => setOpen(false)}
+                                    >
+                                        <FormattedMessage id='nav.sign_in' defaultMessage='登入' />
+                                    </Link>
+                                </div>
+                                <div className="flow-root">
+                                    <Link
+                                        to="create_account"
+                                        className="-m-2 p-2 block font-medium text-gray-900"
+                                        onClick={() => setOpen(false)}
+                                    >
+                                        Create account
+                                    </Link>
+                                </div>
+                            </div>
+                        </div>
+                    </Transition.Child>
+                </Dialog>
+            </Transition.Root>
+
+            <header className="relative bg-white">
+                <nav aria-label="Top" className="max-w-7xl mx-auto px-2 sm:px-6">
+                    <div className="border-b border-gray-200">
+                        <div className="h-16 flex items-center">
+                            <button
+                                type="button"
+                                className="bg-white p-2 rounded-md text-gray-400 lg:hidden"
+                                onClick={() => setOpen(true)}
+                            >
+                                <span className="sr-only">Open menu</span>
+                                <MenuIcon className="h-6 w-6" aria-hidden="true" />
+                            </button>
+
+                            {/* Logo */}
+                            <div className="ml-4 flex lg:ml-0">
+                                <Link to="/">
+                                    <NavIcon />
+                                </Link>
+                            </div>
+
                             <Navbar {...props} />
-                        </div>
-                        <div className="flex-1 flex items-center justify-center px-2 lg:ml-6 lg:justify-end">
-                            <NavSearch />
-                        </div>
-                        <NavMenuBtn
-                            showProfileDropdown={showProfileDropdown}
-                            setShowProfileDropdown={setShowProfileDropdown}
-                        />
 
-                        <div className="hidden xl:ml-4 xl:flex xl:items-center select-none">
+                            <div className="ml-auto flex items-center">
+                                {/* 登入 */}
+                                <div className="ml-4 hidden lg:flex lg:items-center lg:justify-end">
+                                    <Link to="/login" className="text-sm font-medium text-gray-700 hover:text-gray-800">
+                                        <FormattedMessage id='nav.sign_in' defaultMessage='登入' />
+                                    </Link>
+                                </div>
 
-                            {/* 多國語系 */}
-                            <button className="mr-2 flex-shrink-0 bg-white p-1 text-gray-400 rounded-full hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-                                <span className="sr-only">globe</span>
-                                {/* Heroicon name: bell */}
-                                {/* <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
-                            </svg> */}
+                                <div className="flex-1 flex items-center justify-center px-2 lg:ml-6 lg:justify-end">
+                                    <NavSearch />
+                                </div>
 
-                                <Icon className='mr-2' icon='globe' />
-                                <span>繁體中文</span>
-                            </button>
+                                {/* 多國語系 */}
+                                <button className="mr-2 flex-shrink-0 bg-white p-1 text-gray-400 rounded-full hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                                    <span className="sr-only">globe</span>
+                                    <Icon className='mr-2' icon='globe' />
+                                    <span>
+                                        <FormattedMessage id='nav.traditional_chinese' defaultMessage='繁體中文' />
+                                    </span>
+                                </button>
 
-                            {/* 購物車 */}
-                            <button className="flex-shrink-0 bg-white p-1 text-gray-400 rounded-full hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 select-none">
-                                <span className="sr-only">shop car</span>
-                                {/* Heroicon name: bell */}
-                                {/* <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
-                            </svg> */}
+                                {/* Cart */}
+                                <div className="ml-4 flow-root lg:ml-6">
+                                    <Link to="/cart" className="group -m-2 p-2 flex items-center">
+                                        <ShoppingCartIcon
+                                            className="flex-shink-0 h-6 w-6 text-gray-400 group-hover:text-gray-500"
+                                            aria-hidden="true"
+                                        />
+                                        <span className="ml-2 text-sm font-medium text-gray-700 group-hover:text-gray-800">0</span>
+                                    </Link>
+                                </div>
 
-                                <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
-                                </svg>
-                            </button>
-
-                            {/* Profile dropdown */}
-                            <Profile
-                                showProfileDropdown={showProfileDropdown}
-                                setShowProfileDropdown={setShowProfileDropdown}
-                            />
-
+                            </div>
                         </div>
                     </div>
-                </div>
+                </nav>
+            </header>
 
-                <ProfileMobileMenu
-                    showProfileDropdown={showProfileDropdown}
-                    setShowProfileDropdown={setShowProfileDropdown}
-                />
-            </nav>
-
-        </header>
+        </div>
     );
 };
 
