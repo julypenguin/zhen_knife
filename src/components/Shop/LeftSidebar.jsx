@@ -1,4 +1,5 @@
 import React from 'react';
+import classNames from 'classnames';
 import { injectIntl, FormattedMessage } from 'react-intl'
 import data from './categories.json'
 import market_17 from '../../img/market_17.jpg'
@@ -7,9 +8,12 @@ import { FontAwesomeIcon as Icon } from '@fortawesome/react-fontawesome'
 
 
 const LeftSidebarCopy = ({
+    match,
     push,
 }) => {
     const [all_series] = data.categories.filter(category => category.cats_sid === 0)
+
+    const cats_sid = Number(match.params.cats_sid) || 0
 
     return (
         <div className='hidden lg:block'>
@@ -37,7 +41,10 @@ const LeftSidebarCopy = ({
                     !category.main || !category.cats_sid ? null :
                         <li
                             key={category.cats_sid}
-                            className="px-4 py-1 flex items-center cursor-pointer rounded-md hover:bg-blue-500 hover:text-white"
+                            className={classNames("px-4 py-1 flex items-center cursor-pointer rounded-md ", {
+                                "hover:bg-blue-400 hover:text-white": category.cats_sid !== cats_sid,
+                                "bg-blue-500 text-white": category.cats_sid === cats_sid,
+                            })}
                             onClick={() => push(`/shop${!category.cats_sid ? '' : `/${category.cats_sid}`}`)}
                         >
                             {/* <img className="h-10 w-10 rounded-full" src={market_17} alt="" /> */}
@@ -66,7 +73,10 @@ const LeftSidebarCopy = ({
                     category.main ? null :
                         <li
                             key={category.cats_sid}
-                            className="px-4 py-1 flex items-center cursor-pointer rounded-md hover:bg-blue-500 hover:text-white"
+                            className={classNames("px-4 py-1 flex items-center cursor-pointer rounded-md", {
+                                "hover:bg-blue-400 hover:text-white": category.cats_sid !== cats_sid,
+                                "bg-blue-500 text-white": category.cats_sid === cats_sid,
+                            })}
                             onClick={() => push(`/shop${!category.cats_sid ? '' : `/${category.cats_sid}`}`)}
                         >
                             {/* <img className="h-10 w-10 rounded-full" src={market_17} alt="" /> */}

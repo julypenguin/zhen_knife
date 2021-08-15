@@ -12,7 +12,7 @@ const ProductList = ({
     const [page, setPage] = useState(1)
     const [limit, setLimit] = useState(12)
 
-    const UlRef = useRef()
+    const ulRef = useRef()
 
     const cats_sid = Number(match.params.cats_sid) || 0
     const [newCatData] = catData.categories.filter(category => category.cats_sid === cats_sid)
@@ -34,8 +34,12 @@ const ProductList = ({
     }
 
     useEffect(() => {
-        UlRef.current.scrollTo(0, 0)
+        ulRef.current.scrollTo(0, 0)
     }, [cats_sid])
+
+    useEffect(() => {
+        setPage(1)
+    }, [match.url])
 
     return (
         <div className='relative h-full pl-4'>
@@ -43,7 +47,7 @@ const ProductList = ({
             {/* absolute h-full overflow-auto scrollbar scrollbar-thumb-gray-300 scrollbar-track-gray-100 */}
             <ul
                 className="pr-12 mb-12 grid grid-cols-1 gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
-                ref={UlRef}
+                ref={ulRef}
             >
                 {formatData(newCatData.product).map((id, i) => (
                     <li

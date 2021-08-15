@@ -51,7 +51,11 @@ const ShopPage = (props) => {
             </div>
             <div className='py-4 flex flex-1'>
                 {/* <LeftSidebar /> */}
-                <LeftSidebar />
+                <Switch>
+                    <Route path="/shop/:cats_sid" render={(props) => <LeftSidebar {...props} />} />
+                    <Route path="/shop" render={(props) => <LeftSidebar {...props} />} />
+                </Switch>
+
                 <div className='flex-1 ml-6 divide-y divide-gray-200'>
 
                     <Switch>

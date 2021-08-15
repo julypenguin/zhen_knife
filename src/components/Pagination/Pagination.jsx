@@ -33,6 +33,9 @@ const Pagination = ({
 
     const { start, end, canprev, cannext, pagecount } = getPageRange()
 
+    const showStart = ((page - 1 ) * limit) + 1
+    const showEnd = pagecount === page ? count : (page) * limit
+
     const renderPaginationItem = (start, end, page) => {
         const items = []
         for (let i = start; i <= end; i++) {
@@ -77,9 +80,9 @@ const Pagination = ({
                 <div>
                     <p className="text-sm text-gray-700">
                         <span className='mr-1'>Showing</span>
-                        <span className="mr-1 font-medium">{((page - 1 ) * limit) + 1}</span>
+                        <span className="mr-1 font-medium">{showStart}</span>
                         <span className='mr-1'>to</span>
-                        <span className="mr-1 font-medium">{pagecount === page ? count : (page) * limit}</span>
+                        <span className="mr-1 font-medium">{showEnd}</span>
                         <span className='mr-1'>of{' '}</span>
                         <span className="mr-1 font-medium">{count}</span>
                         <span className=''>results</span>
@@ -89,18 +92,32 @@ const Pagination = ({
                     <nav className="relative z-0 inline-flex rounded-md shadow-sm -space-x-px" aria-label="Pagination">
                         <div
                             href="#"
-                            className="relative inline-flex items-center px-2 py-2 rounded-l-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50"
-                            onClick={() => handleGetData(page - 1)}
+                            className={classNames("relative inline-flex items-center px-2 py-2 rounded-l-md border border-gray-300 bg-white text-sm font-medium", {
+                                "text-gray-500": showStart !== 1,
+                                "hover:bg-gray-50": showStart !== 1,
+                                "text-gray-300": showStart === 1,
+                            })}
+                            onClick={() => {
+                                if (showStart === 1) return
+                                handleGetData(page - 1)
+                            }}
                         >
                             <span className="sr-only">Previous</span>
                             <ChevronLeftIcon className="h-5 w-5" aria-hidden="true" />
                         </div>
-                        {/* Current: "z-10 bg-indigo-50 border-indigo-500 text-indigo-600", Default: "bg-white border-gray-300 text-gray-500 hover:bg-gray-50" */}
+
                         {renderPaginationItem(start, end, page)}
 
                         <div
-                            className="relative inline-flex items-center px-2 py-2 rounded-r-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50"
-                            onClick={() => handleGetData(page + 1)}
+                            className={classNames("relative inline-flex items-center px-2 py-2 rounded-r-md border border-gray-300 bg-white text-sm font-medium", {
+                                "text-gray-500": showEnd !== count,
+                                "hover:bg-gray-50": showEnd !== count,
+                                "text-gray-300": showEnd === count,
+                            })}
+                            onClick={() => {
+                                if (showEnd === count) return
+                                handleGetData(page + 1)
+                            }}
                         >
                             <span className="sr-only">Next</span>
                             <ChevronRightIcon className="h-5 w-5" aria-hidden="true" />
