@@ -4,9 +4,10 @@ import { NavLink } from 'react-router-dom'
 const BaseBreadcrumbs = ({
     homeLink,
     pathList,
+    className,
 }) => {
     return (
-        <nav className="flex" aria-label="Breadcrumb">
+        <nav className={className ? className : "flex"} aria-label="Breadcrumb">
             <ol className="flex items-center space-x-4">
                 <li>
                     <div>

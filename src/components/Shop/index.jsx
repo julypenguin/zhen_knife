@@ -1,8 +1,5 @@
 import React from 'react';
 import { injectIntl, FormattedMessage } from 'react-intl'
-// import LeftSidebar from '../../containers/Shop/LeftSidebar'
-// import LeftSidebarCopy from './LeftSidebarCopy'
-// import LeftSidebarCopy from './../../containers/Shop/LeftSidebar'
 import LeftSidebar from './../../containers/Shop/LeftSidebar'
 import ProductList from '../../containers/Shop/ProductList';
 import ProductDetail from './ProductDetail';
@@ -41,11 +38,10 @@ const ShopPage = (props) => {
     return (
         <div className='container flex flex-col flex-1 overflow-hidden pb-8 mt-4'>
             <div className='py-2 px-4 items-center'>
-                {/* <BaseBreadcrumbs homeLink='/' pathList={pathList} /> */}
                 <Switch>
-                    <Route exact path="/shop/detail/:intl_id" render={(props) => <BaseBreadcrumbs homeLink='/' pathList={getPath(props)} />} />
-                    <Route exact path="/shop/:cats_sid" render={(props) => <BaseBreadcrumbs homeLink='/' pathList={getPath(props)} />} />
-                    <Route exact path="/shop" render={(props) => <BaseBreadcrumbs homeLink='/' pathList={getPath(props)} />} />
+                    <Route exact path="/shop/detail/:intl_id" render={(props) => <BaseBreadcrumbs homeLink='/' pathList={getPath(props)} className='flex ml-6 lg:ml-0' />} />
+                    <Route exact path="/shop/:cats_sid" render={(props) => <BaseBreadcrumbs homeLink='/' pathList={getPath(props)} className='flex ml-6 lg:ml-0' />} />
+                    <Route exact path="/shop" render={(props) => <BaseBreadcrumbs homeLink='/' pathList={getPath(props)} className='flex ml-6 lg:ml-0' />} />
                 </Switch>
             </div>
             <div className='py-4 flex flex-1'>
