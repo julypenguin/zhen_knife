@@ -2,7 +2,7 @@ import React from 'react';
 import { injectIntl, FormattedMessage } from 'react-intl'
 import LeftSidebar from './../../containers/Shop/LeftSidebar'
 import ProductList from '../../containers/Shop/ProductList';
-import ProductDetail from './ProductDetail';
+import ProductDetail from '../../containers/Shop/ProductDetail';
 import BaseBreadcrumbs from '../Base/BaseBreadcrumbs'
 import { Route, Switch } from 'react-router'
 import data from './categories.json'

@@ -3,9 +3,10 @@ import { connect } from 'react-redux'
 import { push } from 'connected-react-router'
 
 function mapStateToProps(state) {
+    const { cart } = state
     return {
-        
-    }
+        cart,
+    };
 }
 
 function mapDispatchToProps(dispatch) {

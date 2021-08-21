@@ -1,6 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
-const Counter = () => {
+const Counter = ({
+    defaultCount=1,
+    handleCount,
+}) => {
     const [count, setCount] = useState(1)
 
     // 1=plus, 2=minus, 不能小於 0
@@ -11,6 +14,16 @@ const Counter = () => {
         if (newCount <= 0) newCount = 1
         setCount(newCount)
     }
+
+    useEffect(() => {
+        setCount(defaultCount)
+    }, [])
+
+    useEffect(() => {
+        if (typeof handleCount === 'function') {
+            handleCount(count)
+        }
+    }, [count])
 
     return (
         <div className="bg-white flex items-center justify-between">

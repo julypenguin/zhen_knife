@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import ShoppingCartPage from '../../components/ShoppingCart/index'
+import MainPage from '../../components/Main/index'
 import { push } from 'connected-react-router'
 import { update_cart } from 'actions'
 
@@ -21,4 +21,4 @@ function mapDispatchToProps(dispatch) {
 export default connect(
     mapStateToProps,
     mapDispatchToProps
-)(ShoppingCartPage);
+)(MainPage);

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { ConnectedRouter } from 'connected-react-router'
 import { Route, Switch } from 'react-router'
 
@@ -13,7 +13,16 @@ import ShoppingCartPage from '../../containers/ShoppingCart/ShoppingCartPage'
 const index = (props) => {
     const {
         history,
+        cart,
+        updateCart,
+        push,
     } = props
+
+    useEffect(() => {
+        if (!localStorage.getItem('cart')) return
+        const cart = JSON.parse(localStorage.getItem('cart'))
+        updateCart(cart)
+    }, [])
 
     return (
         <ConnectedRouter history={history}>
@@ -22,8 +31,8 @@ const index = (props) => {
                 <Route path="/" render={(props) => <Header {...props} />} />
 
 
-                <div 
-                    className='flex flex-col flex-1' 
+                <div
+                    className='flex flex-col flex-1'
                 >
 
                     <Switch>

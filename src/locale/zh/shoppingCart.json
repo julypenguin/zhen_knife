@@ -5,5 +5,8 @@
     "order_total": "總計",
     "checkout": "前往結帳",
     "order_summary": "購物車總計",
-    "you_may_also_like": "你可能會喜歡"
+    "you_may_also_like": "你可能會喜歡",
+    "free_transportation": "免運",
+    "no_products_in_your_shopping_cart": "您的購物車裡還沒有任何商品。",
+    "back_to_the_store": "回到商店"
 }

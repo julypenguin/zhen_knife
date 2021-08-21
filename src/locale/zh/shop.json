@@ -16,6 +16,7 @@
    "steel": "鋼材",
    "handle": "握柄",
    "color": "色系",
+   "not_find_data": "找不到資料",
    "categories": {
       "zhen_series": "臻刀具系列",
       "sandwich_steel_series": "三合鋼系列",
@@ -94,6 +95,7 @@
       "dwh_02": "臻 ★日本進口大馬士革閃電紋(積層鋼)★~胡桃木柄 – 世界頂級主廚料理刀 240㎜牛刀",
       "sc_01": "臻 ★核桃木色刀鞘★ 臻系列21公分牛刀皆適用 (刀殼)",
       "sc_02": "臻 ★核桃木色刀鞘★ 臻系列27公分牛刀皆適用 (刀殼)",
+      "sc_03": "臻 ★核桃木色刀鞘★ 臻系列21公分刀鞘 (刀殼) 新版磁吸式",
       "kh_01": "臻 ★ 三層實木刀架★ 磁性刀座",
       "kh_02": "臻 ★ 單層實木刀架★ 磁性刀座",
       "hc_01": "臻 ★ 料理剪刀"
@@ -187,9 +189,11 @@
       "designed_abroad_and_carefully_designed": "國外設計、精心設計",
       "durable_antibacterial_and_mildew_proof": "堅固耐用、抗菌防霉",
       "natural_wood_grain_natural_and_beautiful": "天然木紋、自然美觀",
-      "cork_fastened_and_carried_safely": "木塞緊固、攜帶安全"
+      "cork_fastened_and_carried_safely": "木塞緊固、攜帶安全",
+      "scabbard_made_of_ash_wood_from_north_America_anti_corrosion_it_beautiful": "使用北美進口白蠟木制作之刀鞘，具有很強的耐腐朽功能，紋理自然美觀，其光澤度非常高，可以很清晰的看見整潔交錯的木紋；白蠟木材料的密度高，強度與硬度也是非常高的"
    },
    "notice": {
+      "notice": "注意事項",
       "general_kitchen_knife_be_used_for_kitchen_except_cutting_bone": "此刀型為一般廚房用刀，除剁硬骨外皆可適任廚房一般操作",
       "damascuc_used_for_long_time_suggest_polish_it_as_good_as_new": "大馬士革刀具長時間使用後，建議偶爾也要打磨才能長保如新，維持最佳鋒利狀態",
       "cleaned_and_dried_after_use_and_place_in_dry_place": "刀具平常收納即使用完畢清洗擦乾，置放於通風乾燥處即可",
@@ -197,7 +201,6 @@
       "21cm_wooden_scabbard_suitable_for_all_sandwich_and_21cm_chef_knife": "21cm木刀鞘 適用於臻所有三刀德及21cm(8吋) 主廚刀(牛刀)",
       "27cm_wooden_scabbard_suitable_for_all_24cm_27cm_chef_knife": "27cm木刀鞘 適用於臻所有24cm至27cm 主廚刀 (牛刀)",
       "scabbard_is_general_type_some_have_slightly_loose_when_used": "因刀鞘是通用型，部份刀款使用上會略顯寬鬆的感覺，但仍是完全包覆，安全保障無慮",
-      "scabbard_made_of_ash_wood_from_north_America_anti_corrosion_it_beautiful": "使用北美進口白蠟木制作之刀鞘，具有很強的耐腐朽功能，紋理自然美觀，其光澤度非常高，可以很清晰的看見整潔交錯的木紋；白蠟木材料的密度高，強度與硬度也是非常高的",
       "scissors_is_multifunctional_it_can_be_used_for_general": "此剪刀為多功能廚房剪，除剪硬骨外皆可適任廚房一般操作",
       "after_longterm_use_recommended_to_disassemble_and_wipe_clean": "長時間使用後，建議要拆開擦拭乾淨才能保持其順暢度，並維持最佳鋒利狀態",
       "clean_and_dry_after_use_and_put_it_in_a_ventilated_and_dry_place": "平常收納即使用完畢清洗擦乾，置放於通風乾燥處即可"

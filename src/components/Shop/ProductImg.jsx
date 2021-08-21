@@ -292,6 +292,10 @@ import sc_01_03 from '../../img/sc_01/sc_01_03.jpg'
 import sc_02 from '../../img/sc_02/sc_02.jpg'
 import sc_02_02 from '../../img/sc_02/sc_02_02.jpg'
 
+// sc_03
+import sc_03 from '../../img/sc_03/sc_03.jpg'
+import sc_03_02 from '../../img/sc_03/sc_03_02.jpg'
+
 // sck_01
 import sck_01 from '../../img/sck_01/sck_01.jpg'
 import sck_01_02 from '../../img/sck_01/sck_01_02.jpg'
@@ -465,6 +469,7 @@ import zhenBlack from '../../img//zhenBlack.png'
 
 const ProductImg = ({
     img,
+    alt,
     className,
 }) => {
 
@@ -763,6 +768,9 @@ const ProductImg = ({
             case 'sc_02': return sc_02 
             case 'sc_02_02': return sc_02_02 
 
+            // sc_03
+            case 'sc_03': return sc_03 
+            case 'sc_03_02': return sc_03_02 
 
             // sck_01
             case 'sck_01': return sck_01 
@@ -891,7 +899,7 @@ const ProductImg = ({
             case 'sph_02_02': return sph_02_02 
             case 'sph_02_market_01': return sph_02_market_01 
             case 'sph_02_market_02': return sph_02_market_02 
-
+            
             // hc_01
             case 'hc_01': return hc_01 
             case 'hc_01_02': return hc_01_02 
@@ -940,7 +948,7 @@ const ProductImg = ({
 
 
     return (
-        <img src={getImg()} alt="" className={`${className ? className : "absolute inset-0 w-full h-full object-cover"}`} />
+        <img src={getImg()} alt={alt} className={`${className ? className : "absolute inset-0 w-full h-full object-cover"}`} />
     );
 };
 

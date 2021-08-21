@@ -4,9 +4,12 @@ import catData from './categories.json'
 import productData from './products.json'
 import ProductImg from './ProductImg'
 import Pagination from '../Pagination/Pagination'
+import { numberWithCommas } from 'lib/numberWithCommas'
 
 const ProductList = ({
     match,
+    cart,
+    updateCart,
     push,
 }) => {
     const [page, setPage] = useState(1)
@@ -16,6 +19,27 @@ const ProductList = ({
 
     const cats_sid = Number(match.params.cats_sid) || 0
     const [newCatData] = catData.categories.filter(category => category.cats_sid === cats_sid)
+
+    const addCart = (data, count=1) => {
+        const haveAlready = !!cart.filter(bag => bag.cat_sid === data.cat_sid).length
+        let newCart = [...cart]
+        if (haveAlready) {
+            newCart = newCart.map((bag) => {
+                if (bag.cat_sid !== data.cat_sid) return bag
+                return {
+                    ...bag,
+                    buyCount: bag.buyCount + count
+                }
+            })
+        } else {
+            newCart.push({
+                ...data,
+                buyCount: count,
+            })
+        }
+        localStorage.setItem('cart', JSON.stringify(newCart))
+        updateCart(newCart)
+    }
 
     const gotoDetail = id => {
         push(`/shop/detail/${id}`)
@@ -27,7 +51,7 @@ const ProductList = ({
 
     const formatData = (list) => {
         if (!Array.isArray(list)) return []
-        const start = ((page - 1 ) * limit) + 1
+        const start = ((page - 1) * limit) + 1
         const end = (page) * limit
         const newList = list.slice(start - 1, end)
         return newList
@@ -50,73 +74,82 @@ const ProductList = ({
                 ref={ulRef}
             >
                 {formatData(newCatData.product).map((id, i) => (
-                    <li
-                        key={i}
-                        className="col-span-1 bg-white rounded-lg divide-gray-200 cursor-pointer flex flex-col"
-                        style={{ maxHeight: '400px' }}
-                    >
-                        <div className="w-full flex flex-1">
-                            <div className="text-gray-900 text-sm font-medium flex flex-col justify-between">
-                                {!productData[id] ? null :
-                                    <>
-                                        <div>
-                                            <div
-                                                className='w-full flex justify-center mb-4'
-                                                onClick={() => gotoDetail(id)}
-                                            >
-                                                <div className='relative w-56 pt-56'>
-                                                    <ProductImg
-                                                        img={productData[id].detail && productData[id].detail.product_img && productData[id].detail.product_img[0]}
-                                                    />
-                                                    {productData[id].discount &&
-                                                        <span className="flex-shrink-0 inline-block py-2 px-4 text-white text-sm font-medium bg-black absolute top-0 right-0">
-                                                            <FormattedMessage id='shop.discount' />
-                                                        </span>
-                                                    }
-                                                </div>
-
+                    !productData[id] ? null :
+                        <li
+                            key={i}
+                            className="col-span-1 bg-white rounded-lg divide-gray-200 cursor-pointer flex flex-col"
+                            style={{ maxHeight: '400px' }}
+                        >
+                            <div className="w-full flex flex-1">
+                                <div className="text-gray-900 text-sm font-medium flex flex-col justify-between">
+                                    <div>
+                                        <div
+                                            className='w-full flex justify-center mb-4'
+                                            onClick={() => gotoDetail(id)}
+                                        >
+                                            <div className='relative w-56 pt-56'>
+                                                <ProductImg
+                                                    img={productData[id].detail && productData[id].detail.product_img && productData[id].detail.product_img[0]}
+                                                />
+                                                {productData[id].discount &&
+                                                    <span className="flex-shrink-0 inline-block py-2 px-4 text-white text-sm font-medium bg-black absolute top-0 right-0">
+                                                        <FormattedMessage id='shop.discount' />
+                                                    </span>
+                                                }
                                             </div>
 
-                                            <h3
-                                                className='text-lg text-center'
-                                                onClick={() => gotoDetail(id)}
-                                            >
-                                                <FormattedMessage id={`shop.products.${productData[id].intl_id}`} />
-                                            </h3>
                                         </div>
 
                                         <h3
-                                            className='text-center text-red-600'
+                                            className='text-lg text-center'
                                             onClick={() => gotoDetail(id)}
                                         >
-                                            {productData[id].discount &&
-                                                <span className='mr-4 text-yellow-600 line-through'>
-                                                    <span className='mr-2 text-xl'>NT$</span>
-                                                    <span className='text-xl'>{productData[id].discount}</span>
-                                                </span>
-                                            }
-                                            <span>
-                                                <span className='mr-2 text-xl'>NT$</span>
-                                                <span className='text-xl'>{productData[id].price}</span>
-                                            </span>
+                                            <FormattedMessage id={`shop.products.${productData[id].intl_id}`} />
                                         </h3>
-                                    </>
-                                }
-                            </div>
-                        </div>
+                                    </div>
 
-                        <div className=''>
-                            {/* <div className='flex-1'></div> */}
-                            <div className="flex-auto flex space-x-3 mt-4">
-                                <button className="w-1/2 flex items-center justify-center rounded-md bg-gray-700 hover:bg-black text-white p-2" type="submit">
-                                    <FormattedMessage id='shop.buy_now' />
-                                </button>
-                                <button className="w-1/2 flex items-center justify-center rounded-md border border-gray-300 p-2 hover:bg-gray-50" type="button">
-                                    <FormattedMessage id='shop.add_to_bag' />
-                                </button>
+                                    <h3
+                                        className='text-center text-red-600'
+                                        onClick={() => gotoDetail(id)}
+                                    >
+                                        <span className={`mr-4 ${!productData[id].discount ? '' : 'text-yellow-600 line-through'}`}>
+                                            <span className='text-xl'>NT$</span>
+                                            <span className='text-xl'>{numberWithCommas(productData[id].price)}</span>
+                                        </span>
+
+                                        {productData[id].discount &&
+                                            <span className=''>
+                                                <span className='text-xl'>NT$</span>
+                                                <span className='text-xl'>{numberWithCommas(productData[id].discount)}</span>
+                                            </span>
+                                        }
+                                    </h3>
+                                </div>
                             </div>
-                        </div>
-                    </li>
+
+                            <div className=''>
+                                {/* <div className='flex-1'></div> */}
+                                <div className="flex-auto flex space-x-3 mt-4">
+                                    <button
+                                        className="w-1/2 flex items-center justify-center rounded-md bg-gray-700 hover:bg-black text-white p-2"
+                                        type="submit"
+                                        onClick={() => {
+                                            addCart(productData[id])
+                                            push('/cart')
+                                        }}
+                                    >
+                                        <FormattedMessage id='shop.buy_now' defaultMessage='直接結帳' />
+                                    </button>
+                                    <button
+                                        className="w-1/2 flex items-center justify-center rounded-md border border-gray-300 p-2 hover:bg-gray-50"
+                                        type="button"
+                                        onClick={() => addCart(productData[id])}
+                                    >
+                                        <FormattedMessage id='shop.add_to_bag' defaultMessage='加入購物車' />
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
                 ))}
 
             </ul>

@@ -4,7 +4,7 @@ import '../styl/styles.css'
 import React, { Component } from 'react'
 import { IntlProvider } from 'react-intl'
 import PropTypes from 'prop-types'
-import Main from './Main'
+import Main from '../containers/Main'
 
 class App extends Component {
 
