@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { ConnectedRouter } from 'connected-react-router'
 import { Route, Switch } from 'react-router'
+import { useSelector, useDispatch } from 'react-redux'
 
 import Header from '../../containers/Header/Header'
 import Footer from '../../containers/Footer/Footer'
@@ -9,14 +10,17 @@ import Shop from '../../containers/Shop/index'
 import ContactPage from '../../containers/Contact/ContactPage'
 import ShoppingRelatedPage from '../../containers/ShoppingRelated/ShoppingRelatedPage'
 import ShoppingCartPage from '../../containers/ShoppingCart/ShoppingCartPage'
+import { update_cart } from 'actions'
 
 const index = (props) => {
     const {
         history,
-        cart,
-        updateCart,
         push,
     } = props
+
+    const cart = useSelector(state => state.cart)
+    const dispatch = useDispatch()
+    const updateCart = data => dispatch(update_cart(data))
 
     useEffect(() => {
         if (!localStorage.getItem('cart')) return

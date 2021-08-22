@@ -44,7 +44,7 @@ const Deshboard = ({
                             className="relative"
                             onClick={() => push(sideView.href)}
                         >
-                            <div className="group block w-full aspect-w-10 aspect-h-7 bg-gray-100 overflow-hidden">
+                            <div className="group block w-full bg-gray-100 overflow-hidden">
                                 <div key={sideView.name} className='w-full'>
                                     <div className='w-full pt-40 lg:pt-64'>
                                         <div className='w-full h-full absolute top-0 left-0'>
