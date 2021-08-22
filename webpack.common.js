@@ -84,6 +84,7 @@ module.exports = {
             'react-dom': '@hot-loader/react-dom',
             'actions': `${__dirname}/src/actions`,
             'lib': `${__dirname}/src/lib`,
+            'firebaseConfig': `${__dirname}/firebaseConfig`,
         },
         extensions: [".jsx", ".js", ".styl"]
     },
