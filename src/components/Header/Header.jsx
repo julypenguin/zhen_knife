@@ -68,8 +68,8 @@ const Header = (props) => {
 
                             {/* Links */}
                             <Tab.Group as="div" className="mt-2">
-                                <div className="pt-4 pb-8 px-4 space-y-8">
-                                    <div className="grid grid-cols-2 gap-x-4">
+                                <div className="py-4 space-y-8">
+                                    <div className="px-4 grid grid-cols-2 gap-x-4">
                                         {data.preview_list.map((preview) => (
                                             <div key={preview.cat_sid} className="group relative text-sm">
                                                 <div className="aspect-w-1 aspect-h-1 rounded-lg bg-gray-100 overflow-hidden group-hover:opacity-75">
@@ -92,18 +92,18 @@ const Header = (props) => {
                                     {data.navList.map((nav) => (
                                         nav.name_intl !== 'zhen_series' ? null :
                                             <div key={nav.id}>
-                                                <p className="font-bold text-gray-900">
+                                                <p className="px-4 mb-4 font-bold text-gray-900">
                                                     <FormattedMessage id={`nav.${nav.name_intl}`} />
                                                 </p>
                                                 <ul
                                                     role="list"
-                                                    className="mt-2 flex flex-col space-y-4"
+                                                    className="mt-2 flex flex-col"
                                                 >
                                                     {categoriesData.categories.map((cate) => (
                                                         <li key={cate.cats_sid} className="flow-root">
                                                             <Link
                                                                 to={`/shop/${cate.cats_sid}`}
-                                                                className="-m-2 p-2 block text-gray-500"
+                                                                className="px-4 py-2 block text-gray-500 hover:bg-blue-400 hover:text-white"
                                                                 onClick={() => setOpen(false)}
                                                             >
                                                                 <FormattedMessage id={`shop.categories.${cate.intl_id}`} />
@@ -113,42 +113,17 @@ const Header = (props) => {
                                                 </ul>
                                             </div>
                                     ))}
-
-                                    {/* {data.navList.map((nav) => (
-                                        !nav.sections.length ? null :
-                                            <div key={nav.id}>
-                                                <p className="font-bold text-gray-900">
-                                                    <FormattedMessage id={`nav.${nav.nav}`} />
-                                                </p>
-                                                <ul
-                                                    role="list"
-                                                    className="mt-2 flex flex-col space-y-4"
-                                                >
-                                                    {nav.sections.map((section) => (
-                                                        <li key={section.id} className="flow-root">
-                                                            <Link
-                                                                to={section.href}
-                                                                className="-m-2 p-2 block text-gray-500"
-                                                                onClick={() => setOpen(false)}
-                                                            >
-                                                                {section.name}
-                                                            </Link>
-                                                        </li>
-                                                    ))}
-                                                </ul>
-                                            </div>
-                                    ))} */}
                                 </div>
                             </Tab.Group>
 
                             {/* side nav */}
-                            <div className="border-t border-gray-200 py-6 px-4 space-y-4">
+                            <div className="py-4 border-t border-gray-200">
                                 {data.navList.map((nav) => (
                                     nav.sections.length ? null :
                                         <div key={nav.id}>
                                             <Link
                                                 to={nav.to}
-                                                className="font-medium text-gray-900"
+                                                className="px-4 py-2 block font-medium text-gray-900 hover:bg-blue-400 hover:text-white"
                                                 onClick={() => setOpen(false)}
                                             >
                                                 <FormattedMessage id={`nav.${nav.name_intl}`} />
