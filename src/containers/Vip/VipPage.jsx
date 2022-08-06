@@ -1,12 +1,11 @@
-import Header from '../../components/Header/Header'
-import { connect } from 'react-redux'
-import { push } from 'connected-react-router'
+import { connect } from 'react-redux';
+import VipPage from '../../components/Vip/VipPage'
 import { update_profile } from 'actions'
 
+
 function mapStateToProps(state) {
-    const { cart, profile } = state
+    const { profile } = state
     return {
-        cart,
         profile,
     };
 }
@@ -14,11 +13,11 @@ function mapStateToProps(state) {
 function mapDispatchToProps(dispatch) {
     return {
         updateProfile: data => dispatch(update_profile(data)),
-        push: (path, state) => dispatch(push(path, state)),
-    }
+    };
 }
+
 
 export default connect(
     mapStateToProps,
     mapDispatchToProps
-)(Header)
+)(VipPage);

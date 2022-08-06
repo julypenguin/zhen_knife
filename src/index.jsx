@@ -4,11 +4,15 @@ import './lib/formdataPolyfill.js'
 import React from "react"
 import { render } from "react-dom"
 import { Provider, ReactReduxContext } from 'react-redux'
-import firebase from "firebase/app";
-import "firebase/analytics";
-import "firebase/auth";
-import "firebase/firestore"
-import "firebase/database"
+import { initializeApp } from "firebase/app";
+import { initializeAppCheck } from "firebase/app-check";
+import { getStorage } from "firebase/storage";
+import { getFirestore } from "firebase/firestore";
+import { getAnalytics } from "firebase/analytics";
+// import "firebase/analytics";
+// import "firebase/auth";
+// import "firebase/firestore"
+// import "firebase/database"
 
 import configureStore, { history } from "./store"
 import InstallFontAwesome from './lib/icon'
@@ -36,14 +40,18 @@ InstallFontAwesome();
 
 const rootElement = document.getElementById("root");
 
-firebase.initializeApp(firebaseConfig);
-firebase.analytics();
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
 
-const db = firebase.database()
+const defaultStorage = getStorage(app);
+const defaultFirestore = getFirestore(app);
+// firebase.analytics();
+
+// const db = firebase.database()
 
 render(
     <Provider store={store} context={ReactReduxContext}>
-        <App history={history}/>  
+        <App history={history} />
     </Provider>,
     rootElement
 )

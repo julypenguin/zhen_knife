@@ -8,6 +8,7 @@ import shop from './shop.json'
 import shoppingProcess from './shoppingProcess.json'
 import footer from './footer.json'
 import shoppingCart from './shoppingCart.json'
+import vip from './vip.json'
 
 export default flatjson({ 
     contact,
@@ -19,4 +20,5 @@ export default flatjson({
     shoppingProcess,
     footer,
     shoppingCart,
+    vip,
 })

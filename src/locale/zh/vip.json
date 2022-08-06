@@ -1,0 +1,16 @@
+{
+    "member_login": "會員登入",
+    "forgot_your_password": "忘記密碼了嗎",
+    "reset_password": "重設密碼",
+    "email_address": "電子郵件",
+    "password": "密碼",
+    "sign_in": "登入",
+    "not_have_member": "尚未擁有會員嗎",
+    "register": "註冊",
+    "is_there_already_account": "已經有帳號了",
+    "member_area": "會員專區",
+    "order": "訂單",
+    "address": "地址",
+    "account_detail": "帳戶詳細資料",
+    "log_out": "登出"
+}

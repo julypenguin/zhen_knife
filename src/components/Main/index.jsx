@@ -1,7 +1,8 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useMemo } from 'react';
 import { ConnectedRouter } from 'connected-react-router'
 import { Route, Switch } from 'react-router'
 import { useSelector, useDispatch } from 'react-redux'
+import { getAuth, onAuthStateChanged } from "firebase/auth"
 
 import Header from '../../containers/Header/Header'
 import Footer from '../../containers/Footer/Footer'
@@ -10,7 +11,9 @@ import Shop from '../../containers/Shop/index'
 import ContactPage from '../../containers/Contact/ContactPage'
 import ShoppingRelatedPage from '../../containers/ShoppingRelated/ShoppingRelatedPage'
 import ShoppingCartPage from '../../containers/ShoppingCart/ShoppingCartPage'
-import { update_cart } from 'actions'
+import VipPage from '../../containers/Vip/VipPage'
+import { update_cart, update_profile } from 'actions'
+
 
 const index = (props) => {
     const {
@@ -21,6 +24,16 @@ const index = (props) => {
     const cart = useSelector(state => state.cart)
     const dispatch = useDispatch()
     const updateCart = data => dispatch(update_cart(data))
+    const updateProfile = data => dispatch(update_profile(data))
+
+    const auth = getAuth();
+    onAuthStateChanged(auth, (user) => {
+        if (user) {
+            updateProfile(user)
+        } else {
+            updateProfile({})
+        }
+    });
 
     useEffect(() => {
         if (!localStorage.getItem('cart')) return
@@ -31,7 +44,6 @@ const index = (props) => {
     return (
         <ConnectedRouter history={history}>
             <div className='main flex flex-col'>
-
                 <Route path="/" render={(props) => <Header {...props} />} />
 
 
@@ -44,6 +56,7 @@ const index = (props) => {
                         <Route path="/shopping_process" render={(props) => <ShoppingRelatedPage {...props} />} />
                         <Route path="/contact" render={(props) => <ContactPage {...props} />} />
                         <Route path="/shop" render={(props) => <Shop {...props} />} />
+                        <Route path="/vip" render={(props) => <VipPage {...props} />} />
                         <Route exact path="/" render={(props) => <Deshboard {...props} />} />
                     </Switch>
 

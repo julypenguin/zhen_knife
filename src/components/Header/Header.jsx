@@ -17,15 +17,28 @@ import { MenuIcon, SearchIcon, ShoppingCartIcon, XIcon as XIconOutline } from '@
 import { CheckIcon, ClockIcon, QuestionMarkCircleIcon, XIcon as XIconSolid } from '@heroicons/react/solid'
 import ProductImg from '../Shop/ProductImg'
 import { FormattedMessage } from 'react-intl';
+import { getAuth, signOut } from "firebase/auth"
 
 const Header = (props) => {
     const {
         cart,
+        profile,
+        updateProfile,
         push,
     } = props
 
     const [showProfileDropdown, setShowProfileDropdown] = useState(false)
     const [open, setOpen] = useState(false)
+
+    const logOut = () => {
+        const auth = getAuth();
+
+        signOut(auth).then(() => {
+            updateProfile({})
+        }).catch((error) => {
+            console.error(error)
+        });
+    }
 
     return (
         <div className="bg-white sticky top-0 z-10">
@@ -135,20 +148,11 @@ const Header = (props) => {
                             <div className="border-t border-gray-200 py-6 px-4 space-y-6">
                                 <div className="flow-root">
                                     <Link
-                                        to="login"
+                                        to="vip"
                                         className="-m-2 p-2 block font-medium text-gray-900"
                                         onClick={() => setOpen(false)}
                                     >
                                         <FormattedMessage id='nav.sign_in' defaultMessage='登入' />
-                                    </Link>
-                                </div>
-                                <div className="flow-root">
-                                    <Link
-                                        to="create_account"
-                                        className="-m-2 p-2 block font-medium text-gray-900"
-                                        onClick={() => setOpen(false)}
-                                    >
-                                        Create account
                                     </Link>
                                 </div>
                             </div>
@@ -158,7 +162,7 @@ const Header = (props) => {
             </Transition.Root>
 
             <header className="relative bg-white">
-                <nav aria-label="Top" className="max-w-7xl mx-auto px-2 sm:px-6">
+                <nav aria-label="Top" className="container mx-auto px-2 sm:px-6">
                     <div className="border-b border-gray-200">
                         <div className="h-16 flex items-center">
                             <button
@@ -182,9 +186,18 @@ const Header = (props) => {
                             <div className="ml-auto flex items-center">
                                 {/* 登入 */}
                                 <div className="ml-4 hidden lg:flex lg:items-center lg:justify-end">
-                                    <Link to="/login" className="text-sm font-medium text-gray-700 hover:text-gray-800">
-                                        <FormattedMessage id='nav.sign_in' defaultMessage='登入' />
-                                    </Link>
+                                    {!profile.email ?
+                                        <Link to="/vip" className="text-sm font-medium text-gray-700 hover:text-gray-800">
+                                            <FormattedMessage id='nav.sign_in' defaultMessage='登入' />
+                                        </Link>
+                                        :
+                                        <span
+                                            className='cursor-pointer'
+                                            onClick={logOut}
+                                        >
+                                            <FormattedMessage id='nav.log_out' defaultMessage='登出' />
+                                        </span>
+                                    }
                                 </div>
 
                                 <div className="flex-1 flex items-center justify-center px-2 lg:ml-6 lg:justify-end">
