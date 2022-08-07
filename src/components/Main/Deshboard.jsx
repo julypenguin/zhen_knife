@@ -15,12 +15,15 @@ const Deshboard = ({
     }
 
     return (
-        <>
+        <div className='container'>
             <section className='flex flex-col justify-center'>
                 {/* <div className='w-full h-full absolute top-0 left-0'>
                     <ProductImg img='mainView' />
                 </div> */}
-                <ProductImg img='mainView' className='block h-screen' />
+                <ProductImg img='mainView' className='block object-cover h-screen' />
+                {/* <div className='block w-full h-full xl:h-screen'>
+                    <div className='bg-mainView block w-full h-full xl:h-screen'></div>
+                </div> */}
 
                 <div className='center-tools absolute'>
                     <div className='center-tools-img'>
@@ -63,7 +66,7 @@ const Deshboard = ({
             <section>
                 <TimeLimit />
             </section>
-        </>
+        </div>
     );
 };
 

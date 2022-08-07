@@ -12,6 +12,7 @@ import ContactPage from '../../containers/Contact/ContactPage'
 import ShoppingRelatedPage from '../../containers/ShoppingRelated/ShoppingRelatedPage'
 import ShoppingCartPage from '../../containers/ShoppingCart/ShoppingCartPage'
 import VipPage from '../../containers/Vip/VipPage'
+import PhoneMenuBar from './PhoneMenuBar'
 import { update_cart, update_profile } from 'actions'
 
 
@@ -63,6 +64,8 @@ const index = (props) => {
                 </div>
 
                 <Route path="/" render={(props) => <Footer {...props} />} />
+
+                <Route path="/" render={(props) => <PhoneMenuBar {...props} />} />
 
             </div>
         </ConnectedRouter >

@@ -79,6 +79,7 @@ import {
 
 import {
     faFacebook as fabFacebook,
+    faFacebookMessenger as fabFacebookMessenger,
     faLine as fabLine,
 } from '@fortawesome/free-brands-svg-icons'
 
@@ -155,6 +156,7 @@ export default () => library.add(
     faBars,
     faFax,
     fabFacebook,
+    fabFacebookMessenger,
     fabLine,
     faGlobe,
 )

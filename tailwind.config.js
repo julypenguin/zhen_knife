@@ -21,6 +21,17 @@ module.exports = {
         "9xl": "96rem",
         "10xl": "104rem"
       },
+      colors: {
+        green: {
+          line: "#07BE5B",
+        },
+        blue: {
+          facebook: "#1877F2",
+        },
+        menu: {
+          phone: "#001C38"
+        },
+      },
       fontFamily: {
         "catamaran": ["Catamaran", "Sans-serif"],
         "playfair": ["Playfair Display", "Sans-serif"],
@@ -28,9 +39,10 @@ module.exports = {
         "jhengHei": ["Microsoft JhengHei", "Helvetica Neue", "Helvetica", "Arial", "dashicons", "sans-serif"],
         "vidaloka": ["Vidaloka", "Sans-serif"]
       },
-      backgroundImage: theme => ({
-        'scissors': "url('/src/img/sid/img282.jpg')"
-      })
+      backgroundImage: {
+        'scissors': "url('/src/img/sid/img282.jpg')",
+        'mainView': "url('/src/img/mainView.png')"
+      }
     },
     container: {
       center: true,
@@ -39,7 +51,7 @@ module.exports = {
   variants: {
     extend: {
       brightness: ['hover', 'group-hover', 'focus'],
-      scale: ['hover', 'group-hover', 'focus']
+      scale: ['hover', 'group-hover', 'focus'],
     },
   },
   plugins: [
