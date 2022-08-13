@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import { FontAwesomeIcon as Icon } from '@fortawesome/react-fontawesome'
 import { HomeIcon, ChatIcon, ShoppingBagIcon, ShoppingCartIcon, UserIcon, MailIcon, PhoneOutgoingIcon } from '@heroicons/react/solid'
 
+// 手機板底部 chat
 const PhoneMenuBar = ({
     intl,
 }) => {
@@ -22,6 +23,7 @@ const PhoneMenuBar = ({
     return (
         <div className='text-white flex flex-col-reverse flex-wrap fixed z-10 bottom-0 w-full bg-menu-phone md:hidden'>
             <div className='flex w-full'>
+                {/* 下層按鈕 */}
                 <Link
                     to='/'
                     className='h-16 flex-1 text-center text-white flex justify-center items-center flex-col cursor-pointer bg-menu-phone'
@@ -30,14 +32,15 @@ const PhoneMenuBar = ({
                     <HomeIcon className='w-8 h-8' />
                     <div className='text-sm'>{msgintl.front_page}</div>
                 </Link>
-                <Link
+                <span
                     className='h-16 flex-1 text-center text-white flex justify-center items-center flex-col cursor-pointer bg-menu-phone'
                     onClick={() => setShowChatBottom(!showchatBottom)}
                 >
                     <ChatIcon className='w-8 h-8' />
                     <div className='text-sm'>{msgintl.customer_service}</div>
-                </Link>
+                </span>
                 <Link
+                    to='/shop'
                     className='h-16 flex-1 text-center text-white flex justify-center items-center flex-col cursor-pointer bg-menu-phone'
                     onClick={() => setShowChatBottom(false)}
                 >
@@ -45,6 +48,7 @@ const PhoneMenuBar = ({
                     <div className='text-sm'>{msgintl.product_list}</div>
                 </Link>
                 <Link
+                    to='/cart'
                     className='h-16 flex-1 text-center text-white flex justify-center items-center flex-col cursor-pointer bg-menu-phone'
                     onClick={() => setShowChatBottom(false)}
                 >
@@ -52,13 +56,16 @@ const PhoneMenuBar = ({
                     <div className='text-sm'>{msgintl.shopping_cart}</div>
                 </Link>
                 <Link
+                    to='/vip'
                     className='h-16 flex-1 text-center text-white flex justify-center items-center flex-col cursor-pointer bg-menu-phone'
                     onClick={() => setShowChatBottom(false)}
                 >
                     <UserIcon className='w-8 h-8' />
                     <div className='text-sm'>{msgintl.member}</div>
                 </Link>
+                {/* 上層按鈕 */}
                 <div className={`fixed flex w-full transition-all duration-300 ease-in-out ${!showchatBottom ? 'bottom-0' : 'bottom-16'}`} style={{ zIndex: '-1' }}>
+                    {/* email */}
                     <a
                         href="mailto:zhen.knife@gmail.com"
                         target="_blank"
@@ -68,6 +75,7 @@ const PhoneMenuBar = ({
                         <MailIcon className='w-8 h-8' />
                         <div className='text-sm'>Email</div>
                     </a>
+                    {/* tel */}
                     <a
                         href="tel:423508566"
                         target="_blank"
@@ -77,22 +85,32 @@ const PhoneMenuBar = ({
                         <PhoneOutgoingIcon className='w-8 h-8' />
                         <div className='text-sm'>Phone</div>
                     </a>
+                    {/* line */}
                     <a
                         href="https://line.me/ti/p/@vlm0153e"
                         target="_blank"
                         rel="noreferrer"
                         className='h-16 flex-1 text-center text-white flex justify-center items-center flex-col cursor-pointer bg-green-line'
                     >
-                        <Icon className='w-8 h-8' style={{ width: '1.5rem' }} icon={['fab', 'line']} />
+                        <Icon
+                            className='w-8 h-8'
+                            style={{ width: '1.5rem' }}
+                            icon={['fab', 'line']}
+                        />
                         <div className='text-sm'>Line</div>
                     </a>
+                    {/* facebook */}
                     <a
                         href="https://m.me/112474420116080"
                         target="_blank"
                         rel="noreferrer"
                         className='h-16 flex-1 text-center text-white flex justify-center items-center flex-col cursor-pointer bg-blue-facebook'
                     >
-                        <Icon className='w-8 h-8' style={{ width: '1.5rem' }} icon={['fab', 'facebook-messenger']} />
+                        <Icon
+                            className='h-8'
+                            style={{ width: '1.5rem' }}
+                            icon={['fab', 'facebook-messenger']}
+                        />
                         <div className='text-sm'>Facebook</div>
                     </a>
                 </div>

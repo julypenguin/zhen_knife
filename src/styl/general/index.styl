@@ -70,3 +70,19 @@ a {
 .img-img-center
     @extend .img-img
     object-position center
+
+.hover\\:menu-button
+    &:hover
+        animation menu-ext 0.3s
+        animation-fill-mode both
+
+@keyframes menu-ext {
+    0% {
+        width 6rem
+        right 3rem
+    }
+    100% {
+        width 8.25rem
+        right 5.25rem
+    }
+}

@@ -52,6 +52,8 @@ module.exports = {
     extend: {
       brightness: ['hover', 'group-hover', 'focus'],
       scale: ['hover', 'group-hover', 'focus'],
+      display: ['hover', 'group-hover', 'focus'],
+      margin: ['hover', 'group-hover', 'focus']
     },
   },
   plugins: [
