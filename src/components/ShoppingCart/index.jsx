@@ -135,10 +135,10 @@ const ShoppingCartPage = ({
                                                             </a>
                                                         </h3>
                                                     </div>
-                                                    <p className="mt-4">
+                                                    <div className="mt-4">
                                                         <span className='text-sm font-medium text-gray-900 mr-1'>NT $</span>
                                                         <span className='text-sm font-medium text-gray-900'>{numberWithCommas(product.price)}</span>
-                                                    </p>
+                                                    </div>
                                                 </div>
 
                                                 <div className="mt-4 sm:mt-0 sm:pr-9">
@@ -159,12 +159,12 @@ const ShoppingCartPage = ({
                                                 </div>
                                             </div>
 
-                                            <p className="mt-4 flex text-sm text-gray-700 space-x-2">
+                                            <div className="mt-4 flex text-sm text-gray-700 space-x-2">
                                                 <Counter
                                                     defaultCount={product.buyCount}
                                                     handleCount={setCount(productIdx)}
                                                 />
-                                            </p>
+                                            </div>
                                         </div>
                                     </li>
                                 ))}
@@ -242,10 +242,10 @@ const ShoppingCartPage = ({
                                             </h3>
                                         </div>
                                     </div>
-                                    <p className="">
+                                    <div className="">
                                         <span className='mr-1 text-sm font-medium text-gray-900'>NT $</span>
                                         <span className='text-sm font-medium text-gray-900'>{numberWithCommas(productsData[relatedProduct].price)}</span>
-                                    </p>
+                                    </div>
                                 </div>
                             ))}
                         </div>
