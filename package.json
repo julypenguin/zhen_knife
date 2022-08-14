@@ -31,7 +31,7 @@
     "react-intl": "^6.0.5",
     "react-redux": "^7.2.4",
     "react-router-dom": "^5.2.0",
-    "react-youtube": "^7.13.1",
+    "react-youtube": "^9.0.3",
     "redux": "^4.0.5",
     "redux-loop": "^6.0.1",
     "redux-saga": "^1.1.3",

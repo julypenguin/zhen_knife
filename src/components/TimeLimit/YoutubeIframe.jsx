@@ -17,14 +17,20 @@ const YoutubeIframe = () => {
     }
 
     return (
-        <div className='youtube-container-box'>
-            <div className='youtube-container-box-center'>
-                <YouTube
-                    videoId="auCNlT032Xs"
-                    opts={opts}
-                    onReady={_onReady}
-                    containerClassName='youtube-container'
-                />
+        <div className='youtube-container-box w-full'>
+            <div
+                className='youtube-container-box-center relative'
+                style={{ paddingTop: '57%' }}
+            >
+                <div className='absolute top-0 left-0 w-full h-full'>
+                    <YouTube
+                        videoId="auCNlT032Xs"
+                        opts={opts}
+                        onReady={_onReady}
+                        containerClassName='youtube-container'
+                        className='w-full h-full'
+                    />
+                </div>
             </div>
         </div>
     );
