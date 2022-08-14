@@ -51,7 +51,7 @@ const CommonProblem = () => {
                                                         [`mb-${desc.space}`]: desc.space,
                                                         'font-bold': desc.is_important,
                                                         [`text-${desc.color}-400`]: desc.color,
-                                                        'ml-16': desc.list_style !== 'none'
+                                                        // 'ml-16': desc.list_style !== 'none'
                                                     })}
                                                 >
                                                     {desc.desc_intl ?
