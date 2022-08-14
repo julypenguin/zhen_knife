@@ -3,7 +3,7 @@ const webpack = require("webpack"),
     MiniCssExtractPlugin = require("mini-css-extract-plugin")
 
 module.exports = {
-    entry: ["@babel/polyfill", "./src/index.jsx"],
+    entry: ["./src/index.jsx"],
     output: {
         path: __dirname + "/dist/",
         filename: "[name].[hash].js",
@@ -34,14 +34,16 @@ module.exports = {
                     {
                         loader: "postcss-loader",
                         options: {
-                            ident: "postcss",
-                            modules: {
-                                localIdentName: process.env.NODE_ENV !== 'production' ? '[hash:base64]' : '[path][name]__[local]',
-                            },
-                            plugins: [
-                                require("autoprefixer")(),
-                                require("cssnano")()
-                            ]
+                            // ident: "postcss",
+                            // modules: {
+                            //     localIdentName: process.env.NODE_ENV !== 'production' ? '[hash:base64]' : '[path][name]__[local]',
+                            // },
+                            postcssOptions: {
+                                plugins: [
+                                    require("autoprefixer")(),
+                                    require("cssnano")()
+                                ]
+                            }
                         }
                     },
                     "stylus-loader"
@@ -81,7 +83,6 @@ module.exports = {
     resolve: {
         alias: {
             'Config': `${__dirname}/config.json`,
-            'react-dom': '@hot-loader/react-dom',
             'actions': `${__dirname}/src/actions`,
             'lib': `${__dirname}/src/lib`,
             'firebaseConfig': `${__dirname}/firebaseConfig`,

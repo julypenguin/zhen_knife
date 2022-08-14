@@ -1,6 +1,6 @@
 import { hot } from 'react-hot-loader/root';
 import '../styl/index.styl'
-import '../styl/styles.css'
+import '../styl/input.css'
 import React, { Component } from 'react'
 import { IntlProvider } from 'react-intl'
 import PropTypes from 'prop-types'

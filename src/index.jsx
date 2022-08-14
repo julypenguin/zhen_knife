@@ -20,17 +20,17 @@ import rootSaga from "./sagas"
 import App from './containers/App'
 import { firebaseConfig } from 'firebaseConfig'
 
-if (!Intl.PluralRules) {
-    require('@formatjs/intl-pluralrules/polyfill')
-    require('@formatjs/intl-pluralrules/locale-data/en')
-    require('@formatjs/intl-pluralrules/locale-data/zh')
-}
+// if (!Intl.PluralRules) {
+//     require('@formatjs/intl-pluralrules/polyfill')
+//     require('@formatjs/intl-pluralrules/locale-data/en')
+//     require('@formatjs/intl-pluralrules/locale-data/zh')
+// }
 
-if (!Intl.RelativeTimeFormat) {
-    require('@formatjs/intl-relativetimeformat/polyfill')
-    require('@formatjs/intl-relativetimeformat/locale-data/en')
-    require('@formatjs/intl-relativetimeformat/locale-data/zh')
-}
+// if (!Intl.RelativeTimeFormat) {
+//     require('@formatjs/intl-relativetimeformat/polyfill')
+//     require('@formatjs/intl-relativetimeformat/locale-data/en')
+//     require('@formatjs/intl-relativetimeformat/locale-data/zh')
+// }
 
 const store = configureStore();
 // start saga

@@ -1,5 +1,8 @@
 module.exports = {
-  purge: [],
+  content: [
+    "./src/**/*.{html,js,jsx}",
+    "./index.html"
+  ],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
@@ -57,9 +60,9 @@ module.exports = {
     },
   },
   plugins: [
-    require('@tailwindcss/forms'),
-    require('@tailwindcss/line-clamp'),
-    require('tailwind-scrollbar'),
-    require('@tailwindcss/aspect-ratio'),
+    // require('@tailwindcss/forms'),
+    // require('@tailwindcss/line-clamp'),
+    // require('tailwind-scrollbar'),
+    // require('@tailwindcss/aspect-ratio'),
   ],
 }

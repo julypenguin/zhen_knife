@@ -6,10 +6,11 @@ module.exports = merge(common, {
     mode: 'development',
     devtool: 'eval-source-map',
     devServer: {
-        contentBase: './dist',
+        static: './dist',
         port: 777,
         historyApiFallback: true,
-        hot: true
+        hot: true,
+        client: { overlay: false },
     },
     plugins: [
         new webpack.HotModuleReplacementPlugin(),
