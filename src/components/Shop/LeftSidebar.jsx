@@ -1,5 +1,5 @@
 import React from 'react';
-import classNames from 'classnames';
+import classnames from 'classnames';
 import { injectIntl, FormattedMessage } from 'react-intl'
 import data from './categories.json'
 import market_17 from '../../img/market_17.jpg'
@@ -41,7 +41,7 @@ const LeftSidebarCopy = ({
                     !category.main || !category.cats_sid ? null :
                         <li
                             key={category.cats_sid}
-                            className={classNames("px-4 py-1 flex items-center cursor-pointer rounded-md ", {
+                            className={classnames("px-4 py-1 flex items-center cursor-pointer rounded-md ", {
                                 "hover:bg-blue-400 hover:text-white": category.cats_sid !== cats_sid,
                                 "bg-blue-500 text-white": category.cats_sid === cats_sid,
                             })}
@@ -73,7 +73,7 @@ const LeftSidebarCopy = ({
                     category.main ? null :
                         <li
                             key={category.cats_sid}
-                            className={classNames("px-4 py-1 flex items-center cursor-pointer rounded-md", {
+                            className={classnames("px-4 py-1 flex items-center cursor-pointer rounded-md", {
                                 "hover:bg-blue-400 hover:text-white": category.cats_sid !== cats_sid,
                                 "bg-blue-500 text-white": category.cats_sid === cats_sid,
                             })}

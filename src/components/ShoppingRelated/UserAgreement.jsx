@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import classNames from 'classnames';
+import classnames from 'classnames';
 import { injectIntl, FormattedMessage } from 'react-intl'
 import { Link } from 'react-router-dom'
 import data from './userAgreement.json'
@@ -20,7 +20,7 @@ const PrivacyPolicy = () => {
                     {policy.desc_list.map((desc) => (
                         <li
                             key={desc.id}
-                            className={classNames(`text-xl leading-10 list-${desc.list_style}`, {
+                            className={classnames(`text-xl leading-10 list-${desc.list_style}`, {
                                 [`mb-${desc.space}`]: desc.space,
                                 'font-bold': desc.is_important,
                                 [`text-${desc.color}-400`]: desc.color,
@@ -34,7 +34,7 @@ const PrivacyPolicy = () => {
                                     <Fragment key={item.id}>
                                         {!item.href ?
                                             <span
-                                                className={classNames('text-xl', {
+                                                className={classnames('text-xl', {
                                                     'font-bold': item.is_important,
                                                     [`text-${item.color}-500`]: item.color
                                                 })}
@@ -44,7 +44,7 @@ const PrivacyPolicy = () => {
                                             :
                                             <Link
                                                 to={item.href}
-                                                className={classNames('text-xl', {
+                                                className={classnames('text-xl', {
                                                     'font-bold': item.is_important,
                                                     [`text-${item.color}-500`]: item.color
                                                 })}

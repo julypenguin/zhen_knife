@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom'
-import classNames from 'classnames'
+import classnames from 'classnames'
 import { NavLink } from 'react-router-dom'
 
 // TODO - dropdown 內容實作
@@ -12,7 +12,7 @@ const Profile = ({
 }) => {
 
 
-    const dropDownClass = classNames(
+    const dropDownClass = classnames(
         'origin-top-right',
         'absolute',
         'right-0',

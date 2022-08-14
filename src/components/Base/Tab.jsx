@@ -2,7 +2,7 @@ import React from 'react';
 import { matchPath } from 'react-router'
 import { NavLink } from 'react-router-dom'
 import propTypes from 'prop-types'
-import classNames from 'classnames'
+import classnames from 'classnames'
 
 const Tab = ( {
     location,
@@ -30,7 +30,7 @@ const Tab = ( {
     }
 
     const isMatch = typeof compare === 'function' ? compare() : tabCompare()
-    const linkClass = classNames('tab', { 'tab-clickable': !isMatch  }, className)
+    const linkClass = classnames('tab', { 'tab-clickable': !isMatch  }, className)
 
     return (
         <li className={linkClass} key={index}>

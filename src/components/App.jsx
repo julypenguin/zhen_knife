@@ -1,4 +1,3 @@
-import { hot } from 'react-hot-loader/root';
 import '../styl/index.styl'
 import '../styl/input.css'
 import React, { Component } from 'react'
@@ -52,4 +51,4 @@ class App extends Component {
 }
 
 
-export default hot(App)
+export default App

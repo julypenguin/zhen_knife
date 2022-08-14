@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom'
 import propTypes from 'prop-types'
-import classNames from 'classnames'
+import classnames from 'classnames'
 import { tabCompare } from 'lib/tabCompare'
 
 const BaseMobileTab = ({
@@ -19,7 +19,7 @@ const BaseMobileTab = ({
 }) => {
     const isMatch = typeof compare === 'function' ? compare() : tabCompare({ to, extpath, exact, strict })
 
-    const linkClass = classNames(
+    const linkClass = classnames(
         'block',
         'pl-3',
         'pr-4',

@@ -1,5 +1,5 @@
 import React from 'react';
-import classNames from 'classNames'
+import classnames from 'classnames'
 import { injectIntl, FormattedMessage } from 'react-intl'
 import { tabCompare } from 'lib/tabCompare'
 
@@ -17,7 +17,7 @@ const ShoppingProcessMenu = ({
 
     return (
         <li
-            className={classNames('flex justify-center py-2 px-8 cursor-pointer transition-all select-none text-xl lg:justify-start', {
+            className={classnames('flex justify-center py-2 px-8 cursor-pointer transition-all select-none text-xl lg:justify-start', {
                 'bg-black': isMatch,
                 'text-white': isMatch,
                 'hover:bg-gray-700': !isMatch,

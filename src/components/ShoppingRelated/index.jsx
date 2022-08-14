@@ -1,5 +1,5 @@
 import React from 'react';
-import classNames from 'classnames';
+import classnames from 'classnames';
 import { injectIntl, FormattedMessage } from 'react-intl'
 import { Route, Switch } from 'react-router'
 import ShoppingProcess from './ShoppingProcess'

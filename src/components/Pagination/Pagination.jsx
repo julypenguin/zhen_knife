@@ -1,5 +1,5 @@
 import React from 'react';
-import classNames from 'classNames';
+import classnames from 'classnames';
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/solid'
 
 const Pagination = ({
@@ -33,20 +33,21 @@ const Pagination = ({
 
     const { start, end, canprev, cannext, pagecount } = getPageRange()
 
-    const showStart = ((page - 1 ) * limit) + 1
+    const showStart = ((page - 1) * limit) + 1
     const showEnd = pagecount === page ? count : (page) * limit
 
     const renderPaginationItem = (start, end, page) => {
+        const className = classnames({
+            'bg-white border-gray-300 text-gray-500 hover:bg-gray-50 hidden md:inline-flex cursor-pointer': i !== page,
+            'inline-flex z-10 bg-indigo-50 border-indigo-500 text-indigo-600 cursor-default': i === page
+        })
         const items = []
         for (let i = start; i <= end; i++) {
             items.push(
                 <div
                     key={i}
                     aria-current="page"
-                    className={`relative items-center px-4 py-2 border text-sm font-medium select-none ${classNames({
-                        'bg-white border-gray-300 text-gray-500 hover:bg-gray-50 hidden md:inline-flex cursor-pointer': i !== page,
-                        'inline-flex z-10 bg-indigo-50 border-indigo-500 text-indigo-600 cursor-default': i === page
-                    })}`}
+                    className={`relative items-center px-4 py-2 border text-sm font-medium select-none ${className}`}
                     onClick={() => handleGetData(i)}
                 >
                     {i}
@@ -92,7 +93,7 @@ const Pagination = ({
                     <nav className="relative z-0 inline-flex rounded-md shadow-sm -space-x-px" aria-label="Pagination">
                         <div
                             href="#"
-                            className={classNames("relative inline-flex items-center px-2 py-2 rounded-l-md border border-gray-300 bg-white text-sm font-medium", {
+                            className={classnames("relative inline-flex items-center px-2 py-2 rounded-l-md border border-gray-300 bg-white text-sm font-medium", {
                                 "text-gray-500": showStart !== 1,
                                 "hover:bg-gray-50": showStart !== 1,
                                 "text-gray-300": showStart === 1,
@@ -109,7 +110,7 @@ const Pagination = ({
                         {renderPaginationItem(start, end, page)}
 
                         <div
-                            className={classNames("relative inline-flex items-center px-2 py-2 rounded-r-md border border-gray-300 bg-white text-sm font-medium", {
+                            className={classnames("relative inline-flex items-center px-2 py-2 rounded-r-md border border-gray-300 bg-white text-sm font-medium", {
                                 "text-gray-500": showEnd !== count,
                                 "hover:bg-gray-50": showEnd !== count,
                                 "text-gray-300": showEnd === count,

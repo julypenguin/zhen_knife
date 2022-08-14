@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import classNames from 'classnames';
+import classnames from 'classnames';
 import { injectIntl, FormattedMessage } from 'react-intl'
 import { ShoppingCartIcon, DocumentTextIcon, CreditCardIcon, ClipboardCheckIcon, ShoppingBagIcon } from '@heroicons/react/outline'
 import data from './shoppingProcess.json'
@@ -29,7 +29,7 @@ const ShoppingProcess = ({
             {data.process_list.map(({ id, step_title_intl, step_desc_intl, icon, color }, processIndex) => (
                 <div
                     key={id}
-                    className={classNames('mb-8 py-4', { 'bg-gray-100': processIndex % 2 })}
+                    className={classnames('mb-8 py-4', { 'bg-gray-100': processIndex % 2 })}
                 >
                     <div className='mb-8'>
                         <div className='mb-4'>
@@ -43,7 +43,7 @@ const ShoppingProcess = ({
                         </div>
                     </div>
                     <div
-                        className={classNames('tracking-wider px-2', {
+                        className={classnames('tracking-wider px-2', {
                             'text-red-500': color === 'red'
                         })}
                     >

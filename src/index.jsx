@@ -2,7 +2,7 @@ import './lib/scrollPolyfill.js'
 import './lib/formdataPolyfill.js'
 
 import React from "react"
-import { render } from "react-dom"
+import { createRoot } from "react-dom/client"
 import { Provider, ReactReduxContext } from 'react-redux'
 import { initializeApp } from "firebase/app";
 import { initializeAppCheck } from "firebase/app-check";
@@ -38,8 +38,6 @@ store.runSaga(rootSaga);
 // install icon
 InstallFontAwesome();
 
-const rootElement = document.getElementById("root");
-
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 
@@ -49,9 +47,9 @@ const defaultFirestore = getFirestore(app);
 
 // const db = firebase.database()
 
-render(
+const root = createRoot(document.getElementById('root'));
+root.render(
     <Provider store={store} context={ReactReduxContext}>
         <App history={history} />
-    </Provider>,
-    rootElement
+    </Provider>
 )

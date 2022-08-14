@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom'
 import propTypes from 'prop-types'
-import classNames from 'classnames'
+import classnames from 'classnames'
 import { tabCompare } from 'lib/tabCompare'
 import { push } from 'connected-react-router';
 import { useDispatch } from 'react-redux'
@@ -22,7 +22,7 @@ const BaseTab = ({
 
     const isMatch = typeof compare === 'function' ? compare() : tabCompare({ to, extpath, exact, strict })
 
-    const linkClass = classNames(
+    const linkClass = classnames(
         'flex',
         'items-center',
         'px-4',

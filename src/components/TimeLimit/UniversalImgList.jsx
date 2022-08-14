@@ -1,5 +1,5 @@
 import React from 'react';
-import classNames from 'classnames';
+import classnames from 'classnames';
 import { FormattedMessage } from 'react-intl';
 import ImgFit from '../Base/ImgFit'
 import img271 from '../../img/sid/img271.jpg'
@@ -31,14 +31,14 @@ const UniversalImgList = () => {
             {data.list.map((msg) => (
                 <div key={msg.id} className='col-span-1'>
                     <div
-                        className={classNames('pt-3 pb-2 px-3 flex-1 m-2 md:pb-1', {
+                        className={classnames('pt-3 pb-2 px-3 flex-1 m-2 md:pb-1', {
                             'bg-green-400': msg.bgc === 'green',
                             'bg-gray-700': msg.bgc !== 'green'
                         })}
                     >
                         <ImgFit src={imgMap[msg.id]} />
                         <div className='pb-2' />
-                        <div className={classNames('text-center text-2xl md:text-xl', {
+                        <div className={classnames('text-center text-2xl md:text-xl', {
                             'text-gray-700': msg.bgc === 'green',
                             'text-green-400': msg.bgc !== 'green'
                         })}>
