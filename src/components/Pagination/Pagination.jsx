@@ -37,17 +37,16 @@ const Pagination = ({
     const showEnd = pagecount === page ? count : (page) * limit
 
     const renderPaginationItem = (start, end, page) => {
-        const className = classnames({
-            'bg-white border-gray-300 text-gray-500 hover:bg-gray-50 hidden md:inline-flex cursor-pointer': i !== page,
-            'inline-flex z-10 bg-indigo-50 border-indigo-500 text-indigo-600 cursor-default': i === page
-        })
         const items = []
         for (let i = start; i <= end; i++) {
             items.push(
                 <div
                     key={i}
                     aria-current="page"
-                    className={`relative items-center px-4 py-2 border text-sm font-medium select-none ${className}`}
+                    className={`relative items-center px-4 py-2 border text-sm font-medium select-none ${classnames({
+                        'bg-white border-gray-300 text-gray-500 hover:bg-gray-50 hidden md:inline-flex cursor-pointer': i !== page,
+                        'inline-flex z-10 bg-indigo-50 border-indigo-500 text-indigo-600 cursor-default': i === page
+                    })}`}
                     onClick={() => handleGetData(i)}
                 >
                     {i}
