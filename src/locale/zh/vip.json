@@ -12,5 +12,14 @@
     "order": "訂單",
     "address": "地址",
     "account_detail": "帳戶詳細資料",
-    "log_out": "登出"
+    "log_out": "登出",
+    "hello": "您好",
+    "isnt_username": "不是 {userName} 嗎？",
+    "please_log_out": "請登出",
+    "in_your_account_control_panel_you_can_view": "在您的帳號控制台裡，您可以檢視",
+    "recent_orders": "近期的訂單",
+    "manage_your": "管理您的",
+    "shipping_address": "收貨地址",
+    "and": "和",
+    "change_password_or_modify_account_info": "更改密碼或修改帳號資料"
 }

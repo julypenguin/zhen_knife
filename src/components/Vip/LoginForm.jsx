@@ -16,8 +16,8 @@ const LoginForm = ({
     const auth = getAuth();
 
     const login = () => {
-        // const email = '123aaa@gmail.com'
-        // const password = 'asdf1111'
+        const email = '123aaa@gmail.com'
+        const password = 'asdf1111'
 
         const auth = getAuth();
 
