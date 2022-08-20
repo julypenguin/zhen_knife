@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { injectIntl, FormattedMessage } from 'react-intl'
 import { FontAwesomeIcon as Icon } from '@fortawesome/react-fontawesome'
 import BaseInput from '../Base/BaseInput.jsx'
 import { MailIcon, PhoneIcon } from '@heroicons/react/outline'
+import { htmlScrollIntoView } from 'lib/scroll'
 
 const ContactPage = ({
     intl,
@@ -19,6 +20,10 @@ const ContactPage = ({
         required_field: getIntlMsg('contact.required_field', '為必填欄位'),
     }
 
+    useEffect(() => {
+        htmlScrollIntoView(true)
+    }, [])
+    
     return (
         <div className='container'>
             {/* 上方描述 */}

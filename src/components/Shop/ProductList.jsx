@@ -5,6 +5,7 @@ import productData from './products.json'
 import ProductImg from './ProductImg'
 import Pagination from '../Pagination/Pagination'
 import { numberWithCommas } from 'lib/numberWithCommas'
+import { htmlScrollIntoView } from 'lib/scroll'
 
 const ProductList = ({
     match,
@@ -64,6 +65,10 @@ const ProductList = ({
     useEffect(() => {
         setPage(1)
     }, [match.url])
+
+    useEffect(() => {
+        htmlScrollIntoView(true)
+    }, [page])
 
     return (
         <div className='relative h-full pl-4'>

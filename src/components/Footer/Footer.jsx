@@ -4,6 +4,7 @@ import { FontAwesomeIcon as Icon } from '@fortawesome/react-fontawesome'
 import NavIcon from '../../containers/Header/NavIcon'
 import zhenGold from '../../img/zhenGold.png'
 import { injectIntl, FormattedMessage } from 'react-intl'
+import { htmlScrollIntoView } from 'lib/scroll'
 
 const navigation = {
     companyInformation: [
@@ -15,7 +16,7 @@ const navigation = {
     shop: [
         { name: '大馬士革系列', href: '/shop/2' },
         { name: '三合鋼系列', href: '/shop/1' },
-        { name: '頂級高碳鋼', href: '#' },
+        { name: '頂級高碳鋼', href: '/shop/3' },
         { name: '特價商品', href: '/shop/19' },
         { name: '刀鞘/刀架', href: '/shop/3' },
     ],
@@ -66,11 +67,11 @@ const navigation = {
             name: 'Youtube',
             href: '#',
             icon: (props) => (
-                
+
                 <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="youtube" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" {...props}>
-                    <path 
-                        fill="currentColor" 
-                        d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z" 
+                    <path
+                        fill="currentColor"
+                        d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"
                     />
                 </svg>
             ),
@@ -80,9 +81,9 @@ const navigation = {
             href: 'https://line.me/ti/p/@vlm0153e',
             icon: (props) => (
                 <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="line" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" {...props}>
-                    <path 
-                        fill="currentColor" 
-                        d="M272.1 204.2v71.1c0 1.8-1.4 3.2-3.2 3.2h-11.4c-1.1 0-2.1-.6-2.6-1.3l-32.6-44v42.2c0 1.8-1.4 3.2-3.2 3.2h-11.4c-1.8 0-3.2-1.4-3.2-3.2v-71.1c0-1.8 1.4-3.2 3.2-3.2H219c1 0 2.1.5 2.6 1.4l32.6 44v-42.2c0-1.8 1.4-3.2 3.2-3.2h11.4c1.8-.1 3.3 1.4 3.3 3.1zm-82-3.2h-11.4c-1.8 0-3.2 1.4-3.2 3.2v71.1c0 1.8 1.4 3.2 3.2 3.2h11.4c1.8 0 3.2-1.4 3.2-3.2v-71.1c0-1.7-1.4-3.2-3.2-3.2zm-27.5 59.6h-31.1v-56.4c0-1.8-1.4-3.2-3.2-3.2h-11.4c-1.8 0-3.2 1.4-3.2 3.2v71.1c0 .9.3 1.6.9 2.2.6.5 1.3.9 2.2.9h45.7c1.8 0 3.2-1.4 3.2-3.2v-11.4c0-1.7-1.4-3.2-3.1-3.2zM332.1 201h-45.7c-1.7 0-3.2 1.4-3.2 3.2v71.1c0 1.7 1.4 3.2 3.2 3.2h45.7c1.8 0 3.2-1.4 3.2-3.2v-11.4c0-1.8-1.4-3.2-3.2-3.2H301v-12h31.1c1.8 0 3.2-1.4 3.2-3.2V234c0-1.8-1.4-3.2-3.2-3.2H301v-12h31.1c1.8 0 3.2-1.4 3.2-3.2v-11.4c-.1-1.7-1.5-3.2-3.2-3.2zM448 113.7V399c-.1 44.8-36.8 81.1-81.7 81H81c-44.8-.1-81.1-36.9-81-81.7V113c.1-44.8 36.9-81.1 81.7-81H367c44.8.1 81.1 36.8 81 81.7zm-61.6 122.6c0-73-73.2-132.4-163.1-132.4-89.9 0-163.1 59.4-163.1 132.4 0 65.4 58 120.2 136.4 130.6 19.1 4.1 16.9 11.1 12.6 36.8-.7 4.1-3.3 16.1 14.1 8.8 17.4-7.3 93.9-55.3 128.2-94.7 23.6-26 34.9-52.3 34.9-81.5z" 
+                    <path
+                        fill="currentColor"
+                        d="M272.1 204.2v71.1c0 1.8-1.4 3.2-3.2 3.2h-11.4c-1.1 0-2.1-.6-2.6-1.3l-32.6-44v42.2c0 1.8-1.4 3.2-3.2 3.2h-11.4c-1.8 0-3.2-1.4-3.2-3.2v-71.1c0-1.8 1.4-3.2 3.2-3.2H219c1 0 2.1.5 2.6 1.4l32.6 44v-42.2c0-1.8 1.4-3.2 3.2-3.2h11.4c1.8-.1 3.3 1.4 3.3 3.1zm-82-3.2h-11.4c-1.8 0-3.2 1.4-3.2 3.2v71.1c0 1.8 1.4 3.2 3.2 3.2h11.4c1.8 0 3.2-1.4 3.2-3.2v-71.1c0-1.7-1.4-3.2-3.2-3.2zm-27.5 59.6h-31.1v-56.4c0-1.8-1.4-3.2-3.2-3.2h-11.4c-1.8 0-3.2 1.4-3.2 3.2v71.1c0 .9.3 1.6.9 2.2.6.5 1.3.9 2.2.9h45.7c1.8 0 3.2-1.4 3.2-3.2v-11.4c0-1.7-1.4-3.2-3.1-3.2zM332.1 201h-45.7c-1.7 0-3.2 1.4-3.2 3.2v71.1c0 1.7 1.4 3.2 3.2 3.2h45.7c1.8 0 3.2-1.4 3.2-3.2v-11.4c0-1.8-1.4-3.2-3.2-3.2H301v-12h31.1c1.8 0 3.2-1.4 3.2-3.2V234c0-1.8-1.4-3.2-3.2-3.2H301v-12h31.1c1.8 0 3.2-1.4 3.2-3.2v-11.4c-.1-1.7-1.5-3.2-3.2-3.2zM448 113.7V399c-.1 44.8-36.8 81.1-81.7 81H81c-44.8-.1-81.1-36.9-81-81.7V113c.1-44.8 36.9-81.1 81.7-81H367c44.8.1 81.1 36.8 81 81.7zm-61.6 122.6c0-73-73.2-132.4-163.1-132.4-89.9 0-163.1 59.4-163.1 132.4 0 65.4 58 120.2 136.4 130.6 19.1 4.1 16.9 11.1 12.6 36.8-.7 4.1-3.3 16.1 14.1 8.8 17.4-7.3 93.9-55.3 128.2-94.7 23.6-26 34.9-52.3 34.9-81.5z"
                     />
                 </svg>
             ),
@@ -133,9 +134,9 @@ const Footer = () => {
                                     </ul>
                                     <li className="flex space-x-6">
                                         {navigation.social.map((item) => (
-                                            <a 
-                                                key={item.name} 
-                                                href={item.href} 
+                                            <a
+                                                key={item.name}
+                                                href={item.href}
                                                 className="text-gray-300 hover:text-white"
                                                 target="_blank"
                                             >
@@ -153,7 +154,14 @@ const Footer = () => {
                                 <ul className="mt-4 space-y-4">
                                     {navigation.shop.map((item) => (
                                         <li key={item.name}>
-                                            <Link to={item.href} className="text-base text-gray-300 hover:text-white">
+                                            <Link
+                                                to={item.href}
+                                                className="text-base text-gray-300 hover:text-white"
+                                                onClick={e => {
+                                                    e.stopPropagation()
+                                                    htmlScrollIntoView(true)
+                                                }}
+                                            >
                                                 {item.name}
                                             </Link>
                                         </li>
@@ -167,7 +175,14 @@ const Footer = () => {
                                 <ul className="mt-4 space-y-4">
                                     {navigation.shopping_process.map((item) => (
                                         <li key={item.name}>
-                                            <Link to={item.href} className="text-base text-gray-300 hover:text-white">
+                                            <Link
+                                                to={item.href}
+                                                className="text-base text-gray-300 hover:text-white"
+                                                onClick={e => {
+                                                    e.stopPropagation()
+                                                    htmlScrollIntoView(true)
+                                                }}
+                                            >
                                                 {item.name}
                                             </Link>
                                         </li>

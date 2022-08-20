@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { injectIntl, FormattedMessage } from 'react-intl'
 import LoginForm from '../../containers/Vip/LoginForm'
 import { getAuth, signOut } from "firebase/auth"
+import { htmlScrollIntoView } from 'lib/scroll'
 
 const VipPage = ({
     profile,
@@ -39,6 +40,10 @@ const VipPage = ({
         and: getIntlMsg('vip.and', '和'),
         change_password_or_modify_account_info: getIntlMsg('vip.change_password_or_modify_account_info', '更改密碼或修改帳號資料'),
     }
+
+    useEffect(() => {
+        htmlScrollIntoView(true)
+    }, [])
 
     return (
         <div className='p-12 container'>
