@@ -1,5 +1,5 @@
-export function htmlScrollIntoView(boolean) {
+export function htmlScrollIntoView(scrollIntoViewOptions) {
     const html = document.querySelector('html')
-    html.scrollIntoView(!!boolean)
+    html.scrollIntoView(scrollIntoViewOptions)
 }
 

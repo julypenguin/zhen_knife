@@ -3,7 +3,9 @@ import * as action from 'actions'
 import { htmlScrollIntoView } from 'lib/scroll'
 
 function* location_change(takeAction) {
-    htmlScrollIntoView(true)
+    htmlScrollIntoView({ 
+        behavior: 'smooth'
+     })
 }
 
 
