@@ -93,7 +93,7 @@ module.exports = {
             filename: '[name].css',
             chunkFilename: process.env.NODE_ENV !== 'production' ? '[id].css' : '[id].[hash].css',
         }),
-        new webpack.optimize.ModuleConcatenationPlugin(),
+        // new webpack.optimize.ModuleConcatenationPlugin(),
         new HtmlWebpackPlugin({
             template: `${__dirname}/www/index.html`,
             filename: "index.html",
