@@ -8,15 +8,10 @@ import ShoppingProcessMenu from './ShoppingProcessMenu'
 import PrivacyPolicy from './PrivacyPolicy'
 import UserAgreement from './UserAgreement'
 import data from './shoppingRelatedPage.json'
-import { htmlScrollIntoView } from 'lib/scroll'
 
 const ShoppingRelatedPage = ({
     push,
 }) => {
-
-    useEffect(() => {
-        htmlScrollIntoView(true)
-    }, [])
 
     return (
         <div className='container'>

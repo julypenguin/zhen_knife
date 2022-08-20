@@ -6,7 +6,6 @@ import ProductDetail from '../../containers/Shop/ProductDetail';
 import BaseBreadcrumbs from '../Base/BaseBreadcrumbs'
 import { Route, Switch } from 'react-router'
 import data from './categories.json'
-import { htmlScrollIntoView } from 'lib/scroll'
 
 const ShopPage = (props) => {
 
@@ -35,10 +34,6 @@ const ShopPage = (props) => {
 
         return pathList
     }
-
-    useEffect(() => {
-        htmlScrollIntoView(true)
-    }, [])
 
     return (
         <div className='container flex flex-col flex-1 overflow-hidden pb-8 mt-4'>

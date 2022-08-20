@@ -20,10 +20,10 @@ const ContactPage = ({
         required_field: getIntlMsg('contact.required_field', '為必填欄位'),
     }
 
-    useEffect(() => {
-        htmlScrollIntoView(true)
-    }, [])
-    
+    // useEffect(() => {
+    //     htmlScrollIntoView(true)
+    // }, [])
+
     return (
         <div className='container'>
             {/* 上方描述 */}

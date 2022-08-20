@@ -4,7 +4,6 @@ import { FontAwesomeIcon as Icon } from '@fortawesome/react-fontawesome'
 import NavIcon from '../../containers/Header/NavIcon'
 import zhenGold from '../../img/zhenGold.png'
 import { injectIntl, FormattedMessage } from 'react-intl'
-import { htmlScrollIntoView } from 'lib/scroll'
 
 const navigation = {
     companyInformation: [
@@ -157,10 +156,6 @@ const Footer = () => {
                                             <Link
                                                 to={item.href}
                                                 className="text-base text-gray-300 hover:text-white"
-                                                onClick={e => {
-                                                    e.stopPropagation()
-                                                    htmlScrollIntoView(true)
-                                                }}
                                             >
                                                 {item.name}
                                             </Link>
@@ -178,10 +173,6 @@ const Footer = () => {
                                             <Link
                                                 to={item.href}
                                                 className="text-base text-gray-300 hover:text-white"
-                                                onClick={e => {
-                                                    e.stopPropagation()
-                                                    htmlScrollIntoView(true)
-                                                }}
                                             >
                                                 {item.name}
                                             </Link>
