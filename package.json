@@ -1,10 +1,11 @@
 {
   "name": "zhen_fe2",
-  "homepage": "zhenkitchenhardware.com",
+  "homepage": "https://julypenguin.github.io/zhen_fe",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "deploy": "gh-pages -d dist",
     "start": "webpack serve --open --progress --config webpack.dev.js",
     "build": "env NODE_ENV=production webpack --progress --config webpack.prod.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -23,6 +24,7 @@
     "css-loader": "^6.7.1",
     "file-loader": "^6.2.0",
     "firebase": "^9.7.0",
+    "gh-pages": "^4.0.0",
     "history": "^4.7.2",
     "postcss-loader": "^7.0.1",
     "prop-types": "^15.7.2",
