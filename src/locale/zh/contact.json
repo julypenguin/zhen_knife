@@ -9,5 +9,8 @@
     "your_email": "您的電子郵件",
     "your_phone": "您的電話號碼",
     "what_you_want_to_ask": "您想詢問的內容",
-    "required_field": "為必填欄位"
+    "required_field": "為必填欄位",
+    "required": "必填",
+    "phone": "電話",
+    "fax": "傳真"
 }

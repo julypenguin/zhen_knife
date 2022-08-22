@@ -1,5 +1,6 @@
 import React from 'react';
 import { UserIcon, MailIcon, PhoneIcon } from '@heroicons/react/outline'
+import { injectIntl } from 'react-intl'
 
 const BaseInput = ({
     label = '',
@@ -7,7 +8,16 @@ const BaseInput = ({
     type = 0,
     id,
     name,
+    required,
+    intl,
 }) => {
+
+    const getIntlMsg = (id, defaultMessage) => intl.formatMessage({ id, defaultMessage })
+
+    const msgintl = {
+        required: getIntlMsg('contact.required', '必填'),
+    }
+
     // type=1(name), =2(mail), =3(tel)
     const renderIcon = () => {
         switch (type) {
@@ -27,7 +37,12 @@ const BaseInput = ({
                 htmlFor={id}
                 className="block text-sm font-medium text-gray-700"
             >
-                {label}
+                {!!required &&
+                    <span
+                        className='text-red-500 mr-1'
+                        title={msgintl.required}
+                    >*</span>}
+                <span>{label}</span>
             </label>
             <div className="mt-1 relative rounded-md shadow-sm">
                 {/* icon */}
@@ -41,10 +56,11 @@ const BaseInput = ({
                     autoComplete="name"
                     className="block w-full shadow-sm py-3 px-10 placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md sm:text-sm"
                     placeholder={placeholder}
+                    required={required}
                 />
             </div>
         </div>
     );
 };
 
-export default BaseInput;
+export default injectIntl(BaseInput);

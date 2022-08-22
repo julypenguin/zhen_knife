@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { injectIntl, FormattedMessage } from 'react-intl'
 import { FontAwesomeIcon as Icon } from '@fortawesome/react-fontawesome'
 import BaseInput from '../Base/BaseInput.jsx'
-import { MailIcon, PhoneIcon } from '@heroicons/react/outline'
+import { MailIcon, PhoneIcon, LocationMarkerIcon } from '@heroicons/react/outline'
 import { htmlScrollIntoView } from 'lib/scroll'
 
 const ContactPage = ({
@@ -18,6 +18,8 @@ const ContactPage = ({
         your_phone: getIntlMsg('contact.your_phone', '您的電話號碼'),
         what_you_want_to_ask: getIntlMsg('contact.what_you_want_to_ask', '您想詢問的內容'),
         required_field: getIntlMsg('contact.required_field', '為必填欄位'),
+        phone: getIntlMsg('contact.phone', '電話'),
+        fax: getIntlMsg('contact.fax', '傳真'),
     }
 
     // useEffect(() => {
@@ -59,13 +61,21 @@ const ContactPage = ({
                                 <span className='ml-2'>9:00~18:00</span>
                             </p>
                             <dl className="mt-8 text-base text-gray-500">
-                                <div>
+                                <div className="mt-6">
                                     <dt className="sr-only">Postal address</dt>
-                                    <dd>
-                                        <FormattedMessage id='contact.b_addr' />
+                                    <dd className="flex">
+                                        <LocationMarkerIcon
+                                            className="flex-shrink-0 h-6 w-6 text-gray-400"
+                                        />
+                                        <span className="ml-3">
+                                            <FormattedMessage
+                                                id='contact.b_addr'
+                                                defaultMessage="台中市西屯區中工二路51-1號"
+                                            />
+                                        </span>
                                     </dd>
                                 </div>
-                                <div className="mt-6">
+                                <div className="mt-3">
                                     <dt className="sr-only">Phone number</dt>
                                     <dd className="flex">
                                         <PhoneIcon className="flex-shrink-0 h-6 w-6 text-gray-400" />
@@ -79,7 +89,12 @@ const ContactPage = ({
                                     <dt className="sr-only">Fax</dt>
                                     <dd className="flex">
                                         {/* fax */}
-                                        <span className='text-xl'><Icon icon='fax' /></span>
+                                        <span className='text-xl pr-1'>
+                                            <Icon
+                                                className='h-5 w-5'
+                                                icon='fax'
+                                            />
+                                        </span>
                                         <span className="ml-3">
                                             (+886)4-23508380
                                         </span>
@@ -96,13 +111,13 @@ const ContactPage = ({
                                 </div>
 
                             </dl>
-                            <div className="mt-6 p-6 text-base text-gray-500 flex ">
+                            <div className="text-base text-gray-500 flex ">
                                 <div className='text-blue-600 hover:text-blue-500 text-5xl mr-4 cursor-pointer p-2'>
-                                    <Icon icon={['fab', 'facebook']} />
+                                    <Icon className='w-8 h-8' icon={['fab', 'facebook']} />
                                 </div>
                                 <a href='https://line.me/ti/p/@vlm0153e' target='_blank' rel='noopener noreferrer'>
                                     <div className='text-green-500 hover:text-green-400 text-5xl cursor-pointer p-2'>
-                                        <Icon icon={['fab', 'line']} />
+                                        <Icon className='w-8 h-8' icon={['fab', 'line']} />
 
                                     </div>
                                 </a>
@@ -113,7 +128,10 @@ const ContactPage = ({
                     {/* 表單 */}
                     <div className="bg-white py-12 px-4 sm:px-6 lg:col-span-3 lg:py-24 lg:px-8 xl:pl-12">
                         <div className="max-w-lg mx-auto lg:max-w-none">
-                            <form action="#" method="POST" className="grid grid-cols-1 gap-y-6">
+                            <form
+                                className="grid grid-cols-1 gap-y-6"
+                                onSubmit={e => e.preventDefault()}
+                            >
                                 <div>
                                     <BaseInput
                                         label={msgintl.your_name}
@@ -121,6 +139,7 @@ const ContactPage = ({
                                         type={1}
                                         id={msgintl.your_name}
                                         name='name'
+                                        required
                                     />
                                 </div>
                                 <div>
@@ -130,6 +149,7 @@ const ContactPage = ({
                                         type={2}
                                         id={msgintl.your_email}
                                         name='email'
+                                        required
                                     />
                                 </div>
                                 <div>
@@ -139,6 +159,7 @@ const ContactPage = ({
                                         type={3}
                                         id={msgintl.your_phone}
                                         name='phone'
+                                        required
                                     />
                                 </div>
                                 <div>
