@@ -112,12 +112,24 @@ const ContactPage = ({
 
                             </dl>
                             <div className="text-base text-gray-500 flex ">
-                                <div className='text-blue-600 hover:text-blue-500 text-5xl mr-4 cursor-pointer p-2'>
-                                    <Icon className='w-8 h-8' icon={['fab', 'facebook']} />
-                                </div>
-                                <a href='https://line.me/ti/p/@vlm0153e' target='_blank' rel='noopener noreferrer'>
+                                <a
+                                    href="https://m.me/112474420116080"
+                                    target='_blank'
+                                    rel='noopener noreferrer'
+                                >
+                                    <div
+                                        className='text-blue-600 hover:text-blue-500 text-5xl cursor-pointer pr-2 py-2'
+                                    >
+                                        <Icon className='w-7 h-7' icon={['fab', 'facebook']} />
+                                    </div>
+                                </a>
+                                <a
+                                    href='https://line.me/ti/p/@vlm0153e'
+                                    target='_blank'
+                                    rel='noopener noreferrer'
+                                >
                                     <div className='text-green-500 hover:text-green-400 text-5xl cursor-pointer p-2'>
-                                        <Icon className='w-8 h-8' icon={['fab', 'line']} />
+                                        <Icon className='w-7 h-7' icon={['fab', 'line']} />
 
                                     </div>
                                 </a>
