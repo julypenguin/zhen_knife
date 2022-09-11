@@ -5,6 +5,7 @@ import LoginForm from '../../containers/Vip/LoginForm'
 import VipTab from '../../containers/Vip/VipTab'
 import VipDefaultPage from '../../containers/Vip/VipDefaultPage'
 import VipOrder from '../../containers/Vip/VipOrder'
+import VipAddress from '../../containers/Vip/VipAddress'
 
 const VipPage = ({
     profile,
@@ -28,6 +29,7 @@ const VipPage = ({
                         <VipTab />
 
                         <Switch>
+                            <Route path="/vip/edit-address" render={(props) => <VipAddress {...props} />} />
                             <Route path="/vip/orders" render={(props) => <VipOrder {...props} />} />
                             <Route path="/vip" render={(props) => <VipDefaultPage {...props} />} />
                         </Switch>
