@@ -21,5 +21,6 @@
     "manage_your": "管理您的",
     "shipping_address": "收貨地址",
     "and": "和",
-    "change_password_or_modify_account_info": "更改密碼或修改帳號資料"
+    "change_password_or_modify_account_info": "更改密碼或修改帳號資料",
+    "no_order_yet": "目前還沒有訂單"
 }

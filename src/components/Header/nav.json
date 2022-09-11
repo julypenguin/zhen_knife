@@ -74,7 +74,6 @@
             "nav": "會員專區",
             "name_intl": "vip",
             "to": "/vip",
-            "exact": "true",
             "strict": "false",
             "sections": []
         }
