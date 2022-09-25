@@ -27,7 +27,7 @@ const VipAddress = ({
 
             <div className='py-4 text-xl'>{msgintl.billing_address}</div>
             
-            <div>{msgintl.address_below_will_be_used_auto_but_you_can_change}</div>
+            <div className='mb-4'>{msgintl.address_below_will_be_used_auto_but_you_can_change}</div>
 
             <form className="space-y-6" action="#" method="POST">
 
