@@ -1,6 +1,7 @@
 const webpack = require("webpack"),
     HtmlWebpackPlugin = require("html-webpack-plugin"),
-    MiniCssExtractPlugin = require("mini-css-extract-plugin")
+    MiniCssExtractPlugin = require("mini-css-extract-plugin"),
+    CopyWebpackPlugin = require('copy-webpack-plugin')
 
 module.exports = {
     entry: ["./src/index.jsx"],
@@ -103,7 +104,12 @@ module.exports = {
             $: "jquery",
             jQuery: "jquery",
             store: "store"
-        })
+        }),
+        new CopyWebpackPlugin({
+            patterns: [
+                { from: `${__dirname}/copy_to_dist`, to: './' },
+            ],
+        }),
     ],
 
     optimization: {
