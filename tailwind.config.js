@@ -11,6 +11,10 @@ module.exports = {
         "176": "44rem",
         "10/21": "47.6%"
       },
+      height: {
+        "main-phone": "calc(100vh - 120px)",
+        "main-full": "calc(100vh - 60px)",
+      },
       padding: {
         "112": "28rem",
         "144": "36rem",

@@ -16,17 +16,28 @@ const Deshboard = ({
 
     return (
         <div className='container'>
-            <section className='flex flex-col justify-center'>
+            <section className='flex flex-col justify-center items-center bg-black'>
                 {/* <div className='w-full h-full absolute top-0 left-0'>
                     <ProductImg img='mainView' />
                 </div> */}
-                <ProductImg img='mainView' className='block object-cover h-screen' />
+                <div className='flex justify-center items-center'>
+                    <ProductImg
+                        img='mainView'
+                        className='hidden object-cover h-main-phone md:h-main-full md:block'
+                    // style={{ height: 'calc(100vh - 120px - 10rem)' }}
+                    />
+                    <ProductImg
+                        img='mainViewMini'
+                        className='block object-cover h-main-phone md:h-main-full md:hidden'
+                    // style={{ height: 'calc(100vh - 120px - 10rem)' }}
+                    />
+                </div>
                 {/* <div className='block w-full h-full xl:h-screen'>
                     <div className='bg-mainView block w-full h-full xl:h-screen'></div>
                 </div> */}
 
                 <div className='center-tools absolute'>
-                    <div className='center-tools-img'>
+                    <div className='center-tools-img pt-[80%] sm:pt-[60%] md:pt-[40%]'>
                         <div className='center-tools-img-fit'>
                             <ProductImg img='zhenBlack' />
                         </div>

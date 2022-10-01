@@ -12,6 +12,7 @@ module.exports = merge(common, {
         hot: true,
         client: { overlay: false },
     },
+    watch: true,
     plugins: [
         new webpack.HotModuleReplacementPlugin(),
     ],

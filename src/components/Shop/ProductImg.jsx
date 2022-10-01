@@ -459,18 +459,20 @@ import market_18 from '../../img/market_18.jpg'
 
 // other
 import mainView from '../../img//mainView.png'
+import mainViewMini from '../../img/mainViewMini.jpg'
 import damascus from '../../img/damascus.jpg'
 import three from '../../img/three.png'
 import carbon from '../../img/carbon.png'
 import newMessage from '../../img/newMessage.jpg'
 import event from '../../img/event.jpg'
-import zhenBlack from '../../img//zhenBlack.png'
+import zhenBlack from '../../img/zhenBlack.png'
 
 
 const ProductImg = ({
     img,
     alt,
     className,
+    style,
 }) => {
 
     const getImg = () => {
@@ -486,7 +488,7 @@ const ProductImg = ({
             case 'deh_01_market_06': return deh_01_market_06
             case 'deh_01_market_08': return deh_01_market_08
             case 'deh_01_market_09': return deh_01_market_09
-        
+
             // deh_02
             case 'deh_02': return deh_02
             case 'deh_02_02': return deh_02_02
@@ -507,372 +509,372 @@ const ProductImg = ({
             case 'deh_03_market_05': return deh_03_market_05
 
             // deh_04
-            case 'deh_04': return deh_04 
-            case 'deh_04_02': return deh_04_02 
-            case 'deh_04_market_01': return deh_04_market_01 
-            case 'deh_04_market_02': return deh_04_market_02 
-            case 'deh_04_market_03': return deh_04_market_03 
-            case 'deh_04_market_04': return deh_04_market_04 
-            case 'deh_04_market_05': return deh_04_market_05 
-            case 'deh_04_market_06': return deh_04_market_06 
-            case 'deh_04_market_07': return deh_04_market_07 
+            case 'deh_04': return deh_04
+            case 'deh_04_02': return deh_04_02
+            case 'deh_04_market_01': return deh_04_market_01
+            case 'deh_04_market_02': return deh_04_market_02
+            case 'deh_04_market_03': return deh_04_market_03
+            case 'deh_04_market_04': return deh_04_market_04
+            case 'deh_04_market_05': return deh_04_market_05
+            case 'deh_04_market_06': return deh_04_market_06
+            case 'deh_04_market_07': return deh_04_market_07
 
             // deh_05
-            case 'deh_05': return deh_05 
-            case 'deh_05_02': return deh_05_02 
-            case 'deh_05_market_01': return deh_05_market_01 
-            case 'deh_05_market_02': return deh_05_market_02 
-            case 'deh_05_market_03': return deh_05_market_03 
-            case 'deh_05_market_04': return deh_05_market_04 
-            case 'deh_05_market_06': return deh_05_market_06 
-            case 'deh_05_market_07': return deh_05_market_07 
+            case 'deh_05': return deh_05
+            case 'deh_05_02': return deh_05_02
+            case 'deh_05_market_01': return deh_05_market_01
+            case 'deh_05_market_02': return deh_05_market_02
+            case 'deh_05_market_03': return deh_05_market_03
+            case 'deh_05_market_04': return deh_05_market_04
+            case 'deh_05_market_06': return deh_05_market_06
+            case 'deh_05_market_07': return deh_05_market_07
 
             // deh_06
-            case 'deh_06': return deh_06 
-            case 'deh_06_02': return deh_06_02 
-            case 'deh_06_market_01': return deh_06_market_01 
-            case 'deh_06_market_02': return deh_06_market_02 
-            case 'deh_06_market_03': return deh_06_market_03 
-            case 'deh_06_market_04': return deh_06_market_04 
-            case 'deh_06_market_05': return deh_06_market_05 
-            case 'deh_06_market_06': return deh_06_market_06 
-            case 'deh_06_market_07': return deh_06_market_07 
+            case 'deh_06': return deh_06
+            case 'deh_06_02': return deh_06_02
+            case 'deh_06_market_01': return deh_06_market_01
+            case 'deh_06_market_02': return deh_06_market_02
+            case 'deh_06_market_03': return deh_06_market_03
+            case 'deh_06_market_04': return deh_06_market_04
+            case 'deh_06_market_05': return deh_06_market_05
+            case 'deh_06_market_06': return deh_06_market_06
+            case 'deh_06_market_07': return deh_06_market_07
 
             // deh_07
-            case 'deh_07': return deh_07 
-            case 'deh_07_02': return deh_07_02 
-            case 'deh_07_market_01': return deh_07_market_01 
-            case 'deh_07_market_02': return deh_07_market_02 
+            case 'deh_07': return deh_07
+            case 'deh_07_02': return deh_07_02
+            case 'deh_07_market_01': return deh_07_market_01
+            case 'deh_07_market_02': return deh_07_market_02
 
             // deh_08
-            case 'deh_08': return deh_08 
-            case 'deh_08_02': return deh_08_02 
-            case 'deh_08_market_01': return deh_08_market_01 
-            case 'deh_08_market_02': return deh_08_market_02 
-            case 'deh_08_market_03': return deh_08_market_03 
-            case 'deh_08_market_04': return deh_08_market_04 
+            case 'deh_08': return deh_08
+            case 'deh_08_02': return deh_08_02
+            case 'deh_08_market_01': return deh_08_market_01
+            case 'deh_08_market_02': return deh_08_market_02
+            case 'deh_08_market_03': return deh_08_market_03
+            case 'deh_08_market_04': return deh_08_market_04
 
             // deh_09
-            case 'deh_09': return deh_09 
-            case 'deh_09_02': return deh_09_02 
-            case 'deh_09_market_01': return deh_09_market_01 
-            case 'deh_09_market_02': return deh_09_market_02 
-            case 'deh_09_market_03': return deh_09_market_03 
-            case 'deh_09_market_04': return deh_09_market_04 
-            case 'deh_09_market_05': return deh_09_market_05 
-            case 'deh_09_market_08': return deh_09_market_08 
-            case 'deh_09_market_09': return deh_09_market_09 
+            case 'deh_09': return deh_09
+            case 'deh_09_02': return deh_09_02
+            case 'deh_09_market_01': return deh_09_market_01
+            case 'deh_09_market_02': return deh_09_market_02
+            case 'deh_09_market_03': return deh_09_market_03
+            case 'deh_09_market_04': return deh_09_market_04
+            case 'deh_09_market_05': return deh_09_market_05
+            case 'deh_09_market_08': return deh_09_market_08
+            case 'deh_09_market_09': return deh_09_market_09
 
             // deh_10
-            case 'deh_10': return deh_10 
-            case 'deh_10_02': return deh_10_02 
-            case 'deh_10_market_01': return deh_10_market_01 
-            case 'deh_10_market_02': return deh_10_market_02 
-            case 'deh_10_market_03': return deh_10_market_03 
-            case 'deh_10_market_04': return deh_10_market_04 
-            case 'deh_10_market_06': return deh_10_market_06 
-            case 'deh_10_market_07': return deh_10_market_07 
-            case 'deh_10_market_08': return deh_10_market_08 
+            case 'deh_10': return deh_10
+            case 'deh_10_02': return deh_10_02
+            case 'deh_10_market_01': return deh_10_market_01
+            case 'deh_10_market_02': return deh_10_market_02
+            case 'deh_10_market_03': return deh_10_market_03
+            case 'deh_10_market_04': return deh_10_market_04
+            case 'deh_10_market_06': return deh_10_market_06
+            case 'deh_10_market_07': return deh_10_market_07
+            case 'deh_10_market_08': return deh_10_market_08
 
             // deh_11
-            case 'deh_11': return deh_11 
-            case 'deh_11_02': return deh_11_02 
-            case 'deh_11_market_01': return deh_11_market_01 
-            case 'deh_11_market_02': return deh_11_market_02 
-            case 'deh_11_market_03': return deh_11_market_03 
-            case 'deh_11_market_04': return deh_11_market_04 
-            case 'deh_11_market_05': return deh_11_market_05 
+            case 'deh_11': return deh_11
+            case 'deh_11_02': return deh_11_02
+            case 'deh_11_market_01': return deh_11_market_01
+            case 'deh_11_market_02': return deh_11_market_02
+            case 'deh_11_market_03': return deh_11_market_03
+            case 'deh_11_market_04': return deh_11_market_04
+            case 'deh_11_market_05': return deh_11_market_05
 
             // deh_12
-            case 'deh_12': return deh_12 
-            case 'deh_12_02': return deh_12_02 
-            case 'deh_12_market_01': return deh_12_market_01 
-            case 'deh_12_market_02': return deh_12_market_02 
-            case 'deh_12_market_03': return deh_12_market_03 
-            case 'deh_12_market_04': return deh_12_market_04 
+            case 'deh_12': return deh_12
+            case 'deh_12_02': return deh_12_02
+            case 'deh_12_market_01': return deh_12_market_01
+            case 'deh_12_market_02': return deh_12_market_02
+            case 'deh_12_market_03': return deh_12_market_03
+            case 'deh_12_market_04': return deh_12_market_04
 
             // deh_13
-            case 'deh_13': return deh_13 
-            case 'deh_13_02': return deh_13_02 
-            case 'deh_13_market_01': return deh_13_market_01 
-            case 'deh_13_market_02': return deh_13_market_02 
-            case 'deh_13_market_03': return deh_13_market_03 
-            case 'deh_13_market_04': return deh_13_market_04 
-            case 'deh_13_market_05': return deh_13_market_05 
-            case 'deh_13_market_06': return deh_13_market_06 
+            case 'deh_13': return deh_13
+            case 'deh_13_02': return deh_13_02
+            case 'deh_13_market_01': return deh_13_market_01
+            case 'deh_13_market_02': return deh_13_market_02
+            case 'deh_13_market_03': return deh_13_market_03
+            case 'deh_13_market_04': return deh_13_market_04
+            case 'deh_13_market_05': return deh_13_market_05
+            case 'deh_13_market_06': return deh_13_market_06
 
             // deh_14
-            case 'deh_14': return deh_14 
-            case 'deh_14_02': return deh_14_02 
-            case 'deh_14_market_01': return deh_14_market_01 
-            case 'deh_14_market_02': return deh_14_market_02 
-            case 'deh_14_market_03': return deh_14_market_03 
-            case 'deh_14_market_04': return deh_14_market_04 
-            case 'deh_14_market_05': return deh_14_market_05 
-            case 'deh_14_market_06': return deh_14_market_06 
+            case 'deh_14': return deh_14
+            case 'deh_14_02': return deh_14_02
+            case 'deh_14_market_01': return deh_14_market_01
+            case 'deh_14_market_02': return deh_14_market_02
+            case 'deh_14_market_03': return deh_14_market_03
+            case 'deh_14_market_04': return deh_14_market_04
+            case 'deh_14_market_05': return deh_14_market_05
+            case 'deh_14_market_06': return deh_14_market_06
 
             // dmh_01
-            case 'dmh_01': return dmh_01 
-            case 'dmh_01_02': return dmh_01_02 
-            case 'dmh_01_market_01': return dmh_01_market_01 
-            case 'dmh_01_market_02': return dmh_01_market_02 
-            case 'dmh_01_market_03': return dmh_01_market_03 
-            case 'dmh_01_market_04': return dmh_01_market_04 
-            case 'dmh_01_market_05': return dmh_01_market_05 
-            case 'dmh_01_market_06': return dmh_01_market_06 
-            case 'dmh_01_market_08': return dmh_01_market_08 
-            case 'dmh_01_market_09': return dmh_01_market_09 
-            case 'dmh_01_market_10': return dmh_01_market_10 
+            case 'dmh_01': return dmh_01
+            case 'dmh_01_02': return dmh_01_02
+            case 'dmh_01_market_01': return dmh_01_market_01
+            case 'dmh_01_market_02': return dmh_01_market_02
+            case 'dmh_01_market_03': return dmh_01_market_03
+            case 'dmh_01_market_04': return dmh_01_market_04
+            case 'dmh_01_market_05': return dmh_01_market_05
+            case 'dmh_01_market_06': return dmh_01_market_06
+            case 'dmh_01_market_08': return dmh_01_market_08
+            case 'dmh_01_market_09': return dmh_01_market_09
+            case 'dmh_01_market_10': return dmh_01_market_10
 
             // dmh_02
-            case 'dmh_02': return dmh_02 
-            case 'dmh_02_02': return dmh_02_02 
-            case 'dmh_02_market_01': return dmh_02_market_01 
-            case 'dmh_02_market_02': return dmh_02_market_02 
-            case 'dmh_02_market_03': return dmh_02_market_03 
-            case 'dmh_02_market_04': return dmh_02_market_04 
-            case 'dmh_02_market_05': return dmh_02_market_05 
+            case 'dmh_02': return dmh_02
+            case 'dmh_02_02': return dmh_02_02
+            case 'dmh_02_market_01': return dmh_02_market_01
+            case 'dmh_02_market_02': return dmh_02_market_02
+            case 'dmh_02_market_03': return dmh_02_market_03
+            case 'dmh_02_market_04': return dmh_02_market_04
+            case 'dmh_02_market_05': return dmh_02_market_05
 
             // dmh_03
-            case 'dmh_03': return dmh_03 
-            case 'dmh_03_02': return dmh_03_02 
-            case 'dmh_03_market_01': return dmh_03_market_01 
-            case 'dmh_03_market_02': return dmh_03_market_02 
-            case 'dmh_03_market_03': return dmh_03_market_03 
-            case 'dmh_03_market_04': return dmh_03_market_04 
-            case 'dmh_03_market_05': return dmh_03_market_05 
-            case 'dmh_03_market_06': return dmh_03_market_06 
-            case 'dmh_03_market_07': return dmh_03_market_07 
-            case 'dmh_03_market_08': return dmh_03_market_08 
-            case 'dmh_03_market_09': return dmh_03_market_09 
-            case 'dmh_03_market_10': return dmh_03_market_10 
+            case 'dmh_03': return dmh_03
+            case 'dmh_03_02': return dmh_03_02
+            case 'dmh_03_market_01': return dmh_03_market_01
+            case 'dmh_03_market_02': return dmh_03_market_02
+            case 'dmh_03_market_03': return dmh_03_market_03
+            case 'dmh_03_market_04': return dmh_03_market_04
+            case 'dmh_03_market_05': return dmh_03_market_05
+            case 'dmh_03_market_06': return dmh_03_market_06
+            case 'dmh_03_market_07': return dmh_03_market_07
+            case 'dmh_03_market_08': return dmh_03_market_08
+            case 'dmh_03_market_09': return dmh_03_market_09
+            case 'dmh_03_market_10': return dmh_03_market_10
 
             // dph_01
-            case 'dph_01': return dph_01 
-            case 'dph_01_02': return dph_01_02 
-            case 'dph_01_market_01': return dph_01_market_01 
-            case 'dph_01_market_02': return dph_01_market_02 
-            case 'dph_01_market_03': return dph_01_market_03 
-            case 'dph_01_market_04': return dph_01_market_04 
-            case 'dph_01_market_05': return dph_01_market_05 
-            case 'dph_01_market_06': return dph_01_market_06 
-            case 'dph_01_market_08': return dph_01_market_08 
-            case 'dph_01_market_09': return dph_01_market_09 
-            case 'dph_01_market_10': return dph_01_market_10 
+            case 'dph_01': return dph_01
+            case 'dph_01_02': return dph_01_02
+            case 'dph_01_market_01': return dph_01_market_01
+            case 'dph_01_market_02': return dph_01_market_02
+            case 'dph_01_market_03': return dph_01_market_03
+            case 'dph_01_market_04': return dph_01_market_04
+            case 'dph_01_market_05': return dph_01_market_05
+            case 'dph_01_market_06': return dph_01_market_06
+            case 'dph_01_market_08': return dph_01_market_08
+            case 'dph_01_market_09': return dph_01_market_09
+            case 'dph_01_market_10': return dph_01_market_10
 
             // dph_02
-            case 'dph_02': return dph_02 
-            case 'dph_02_02': return dph_02_02 
-            case 'dph_02_market_01': return dph_02_market_01 
-            case 'dph_02_market_02': return dph_02_market_02 
-            case 'dph_02_market_03': return dph_02_market_03 
-            case 'dph_02_market_04': return dph_02_market_04 
-            case 'dph_02_market_05': return dph_02_market_05 
-            case 'dph_02_market_07': return dph_02_market_07 
-            case 'dph_02_market_08': return dph_02_market_08 
-            case 'dph_02_market_09': return dph_02_market_09 
+            case 'dph_02': return dph_02
+            case 'dph_02_02': return dph_02_02
+            case 'dph_02_market_01': return dph_02_market_01
+            case 'dph_02_market_02': return dph_02_market_02
+            case 'dph_02_market_03': return dph_02_market_03
+            case 'dph_02_market_04': return dph_02_market_04
+            case 'dph_02_market_05': return dph_02_market_05
+            case 'dph_02_market_07': return dph_02_market_07
+            case 'dph_02_market_08': return dph_02_market_08
+            case 'dph_02_market_09': return dph_02_market_09
 
             // dph_03
-            case 'dph_03': return dph_03 
-            case 'dph_03_02': return dph_03_02 
-            case 'dph_03_market_01': return dph_03_market_01 
-            case 'dph_03_market_02': return dph_03_market_02 
-            case 'dph_03_market_03': return dph_03_market_03 
-            case 'dph_03_market_04': return dph_03_market_04 
-            case 'dph_03_market_05': return dph_03_market_05 
-            case 'dph_03_market_06': return dph_03_market_06 
-            case 'dph_03_market_08': return dph_03_market_08 
-            case 'dph_03_market_09': return dph_03_market_09 
-            case 'dph_03_market_10': return dph_03_market_10 
+            case 'dph_03': return dph_03
+            case 'dph_03_02': return dph_03_02
+            case 'dph_03_market_01': return dph_03_market_01
+            case 'dph_03_market_02': return dph_03_market_02
+            case 'dph_03_market_03': return dph_03_market_03
+            case 'dph_03_market_04': return dph_03_market_04
+            case 'dph_03_market_05': return dph_03_market_05
+            case 'dph_03_market_06': return dph_03_market_06
+            case 'dph_03_market_08': return dph_03_market_08
+            case 'dph_03_market_09': return dph_03_market_09
+            case 'dph_03_market_10': return dph_03_market_10
 
             // dph_04
-            case 'dph_04': return dph_04 
-            case 'dph_04_02': return dph_04_02 
-            case 'dph_04_market_01': return dph_04_market_01 
-            case 'dph_04_market_02': return dph_04_market_02 
-            case 'dph_04_market_03': return dph_04_market_03 
-            case 'dph_04_market_04': return dph_04_market_04 
-            case 'dph_04_market_05': return dph_04_market_05 
-            case 'dph_04_market_06': return dph_04_market_06 
-            case 'dph_04_market_08': return dph_04_market_08 
-            case 'dph_04_market_09': return dph_04_market_09 
-            case 'dph_04_market_10': return dph_04_market_10 
+            case 'dph_04': return dph_04
+            case 'dph_04_02': return dph_04_02
+            case 'dph_04_market_01': return dph_04_market_01
+            case 'dph_04_market_02': return dph_04_market_02
+            case 'dph_04_market_03': return dph_04_market_03
+            case 'dph_04_market_04': return dph_04_market_04
+            case 'dph_04_market_05': return dph_04_market_05
+            case 'dph_04_market_06': return dph_04_market_06
+            case 'dph_04_market_08': return dph_04_market_08
+            case 'dph_04_market_09': return dph_04_market_09
+            case 'dph_04_market_10': return dph_04_market_10
 
             // dpm_01
-            case 'dpm_01': return dpm_01 
-            case 'dpm_01_02': return dpm_01_02 
+            case 'dpm_01': return dpm_01
+            case 'dpm_01_02': return dpm_01_02
 
             // dpm_02
-            case 'dpm_02': return dpm_02 
-            case 'dpm_02_02': return dpm_02_02 
+            case 'dpm_02': return dpm_02
+            case 'dpm_02_02': return dpm_02_02
 
             // dpm_03
-            case 'dpm_03': return dpm_03 
+            case 'dpm_03': return dpm_03
 
             // dpm_04
-            case 'dpm_04': return dpm_04 
-            case 'dpm_04_02': return dpm_04_02 
+            case 'dpm_04': return dpm_04
+            case 'dpm_04_02': return dpm_04_02
 
             // dpm_05
-            case 'dpm_05': return dpm_05 
-            case 'dpm_05_02': return dpm_05_02 
+            case 'dpm_05': return dpm_05
+            case 'dpm_05_02': return dpm_05_02
 
             // dth_01
-            case 'dth_01': return dth_01 
-            case 'dth_01_market_01': return dth_01_market_01 
-            case 'dth_01_market_02': return dth_01_market_02 
-            case 'dth_01_market_03': return dth_01_market_03 
-            case 'dth_01_market_04': return dth_01_market_04 
-            case 'dth_01_market_05': return dth_01_market_05 
-            case 'dth_01_market_06': return dth_01_market_06 
-            case 'dth_01_market_07': return dth_01_market_07 
-            case 'dth_01_market_08': return dth_01_market_08 
+            case 'dth_01': return dth_01
+            case 'dth_01_market_01': return dth_01_market_01
+            case 'dth_01_market_02': return dth_01_market_02
+            case 'dth_01_market_03': return dth_01_market_03
+            case 'dth_01_market_04': return dth_01_market_04
+            case 'dth_01_market_05': return dth_01_market_05
+            case 'dth_01_market_06': return dth_01_market_06
+            case 'dth_01_market_07': return dth_01_market_07
+            case 'dth_01_market_08': return dth_01_market_08
 
             // dth_02
 
             // dwh_01
-            case 'dwh_01': return dwh_01 
-            case 'dwh_01_02': return dwh_01_02 
-            case 'dwh_01_market_01': return dwh_01_market_01 
-            case 'dwh_01_market_02': return dwh_01_market_02 
-            case 'dwh_01_market_03': return dwh_01_market_03 
-            case 'dwh_01_market_04': return dwh_01_market_04 
-            case 'dwh_01_market_05': return dwh_01_market_05 
-            case 'dwh_01_market_06': return dwh_01_market_06 
-            case 'dwh_01_market_08': return dwh_01_market_08 
+            case 'dwh_01': return dwh_01
+            case 'dwh_01_02': return dwh_01_02
+            case 'dwh_01_market_01': return dwh_01_market_01
+            case 'dwh_01_market_02': return dwh_01_market_02
+            case 'dwh_01_market_03': return dwh_01_market_03
+            case 'dwh_01_market_04': return dwh_01_market_04
+            case 'dwh_01_market_05': return dwh_01_market_05
+            case 'dwh_01_market_06': return dwh_01_market_06
+            case 'dwh_01_market_08': return dwh_01_market_08
 
             // dwh_02
-            case 'dwh_02': return dwh_02 
-            case 'dwh_02_02': return dwh_02_02 
-            case 'dwh_02_market_01': return dwh_02_market_01 
-            case 'dwh_02_market_02': return dwh_02_market_02 
-            case 'dwh_02_market_03': return dwh_02_market_03 
-            case 'dwh_02_market_04': return dwh_02_market_04 
-            case 'dwh_02_market_05': return dwh_02_market_05 
-            case 'dwh_02_market_06': return dwh_02_market_06 
-            case 'dwh_02_market_08': return dwh_02_market_08 
-            case 'dwh_02_market_09': return dwh_02_market_09 
+            case 'dwh_02': return dwh_02
+            case 'dwh_02_02': return dwh_02_02
+            case 'dwh_02_market_01': return dwh_02_market_01
+            case 'dwh_02_market_02': return dwh_02_market_02
+            case 'dwh_02_market_03': return dwh_02_market_03
+            case 'dwh_02_market_04': return dwh_02_market_04
+            case 'dwh_02_market_05': return dwh_02_market_05
+            case 'dwh_02_market_06': return dwh_02_market_06
+            case 'dwh_02_market_08': return dwh_02_market_08
+            case 'dwh_02_market_09': return dwh_02_market_09
 
             // kh_01
-            case 'kh_01': return kh_01 
+            case 'kh_01': return kh_01
 
             // kh_02
-            case 'kh_02': return kh_02 
+            case 'kh_02': return kh_02
 
             // sc_01
-            case 'sc_01': return sc_01 
-            case 'sc_01_02': return sc_01_02 
-            case 'sc_01_03': return sc_01_03 
+            case 'sc_01': return sc_01
+            case 'sc_01_02': return sc_01_02
+            case 'sc_01_03': return sc_01_03
 
             // sc_02
-            case 'sc_02': return sc_02 
-            case 'sc_02_02': return sc_02_02 
+            case 'sc_02': return sc_02
+            case 'sc_02_02': return sc_02_02
 
             // sc_03
-            case 'sc_03': return sc_03 
-            case 'sc_03_02': return sc_03_02 
+            case 'sc_03': return sc_03
+            case 'sc_03_02': return sc_03_02
 
             // sck_01
-            case 'sck_01': return sck_01 
-            case 'sck_01_02': return sck_01_02 
-            case 'sck_01_market_01': return sck_01_market_01 
-            case 'sck_01_market_02': return sck_01_market_02 
-            case 'sck_01_market_03': return sck_01_market_03 
-            case 'sck_01_market_04': return sck_01_market_04 
-            case 'sck_01_market_05': return sck_01_market_05 
-            case 'sck_01_market_06': return sck_01_market_06 
-            case 'sck_01_market_09': return sck_01_market_09 
+            case 'sck_01': return sck_01
+            case 'sck_01_02': return sck_01_02
+            case 'sck_01_market_01': return sck_01_market_01
+            case 'sck_01_market_02': return sck_01_market_02
+            case 'sck_01_market_03': return sck_01_market_03
+            case 'sck_01_market_04': return sck_01_market_04
+            case 'sck_01_market_05': return sck_01_market_05
+            case 'sck_01_market_06': return sck_01_market_06
+            case 'sck_01_market_09': return sck_01_market_09
 
             // sck_02
-            case 'sck_02': return sck_02 
-            case 'sck_02_02': return sck_02_02 
-            case 'sck_02_market_01': return sck_02_market_01 
-            case 'sck_02_market_02': return sck_02_market_02 
-            case 'sck_02_market_03': return sck_02_market_03 
+            case 'sck_02': return sck_02
+            case 'sck_02_02': return sck_02_02
+            case 'sck_02_market_01': return sck_02_market_01
+            case 'sck_02_market_02': return sck_02_market_02
+            case 'sck_02_market_03': return sck_02_market_03
 
             // sck_03
-            case 'sck_03': return sck_03 
-            case 'sck_03_02': return sck_03_02 
-            case 'sck_03_market_01': return sck_03_market_01 
-            case 'sck_03_market_02': return sck_03_market_02 
-            case 'sck_03_market_03': return sck_03_market_03 
-            case 'sck_03_market_05': return sck_03_market_05 
+            case 'sck_03': return sck_03
+            case 'sck_03_02': return sck_03_02
+            case 'sck_03_market_01': return sck_03_market_01
+            case 'sck_03_market_02': return sck_03_market_02
+            case 'sck_03_market_03': return sck_03_market_03
+            case 'sck_03_market_05': return sck_03_market_05
 
             // sck_04
-            case 'sck_04': return sck_04 
-            case 'sck_04_02': return sck_04_02 
-            case 'sck_04_market_01': return sck_04_market_01 
-            case 'sck_04_market_02': return sck_04_market_02 
-            case 'sck_04_market_03': return sck_04_market_03 
-            case 'sck_04_market_04': return sck_04_market_04 
+            case 'sck_04': return sck_04
+            case 'sck_04_02': return sck_04_02
+            case 'sck_04_market_01': return sck_04_market_01
+            case 'sck_04_market_02': return sck_04_market_02
+            case 'sck_04_market_03': return sck_04_market_03
+            case 'sck_04_market_04': return sck_04_market_04
 
             // sck_05
-            case 'sck_05': return sck_05 
-            case 'sck_05_02': return sck_05_02 
-            case 'sck_05_market_01': return sck_05_market_01 
-            case 'sck_05_market_02': return sck_05_market_02 
+            case 'sck_05': return sck_05
+            case 'sck_05_02': return sck_05_02
+            case 'sck_05_market_01': return sck_05_market_01
+            case 'sck_05_market_02': return sck_05_market_02
 
             // sck_06
-            case 'sck_06': return sck_06 
-            case 'sck_06_market_01': return sck_06_market_01 
-            case 'sck_06_market_02': return sck_06_market_02 
+            case 'sck_06': return sck_06
+            case 'sck_06_market_01': return sck_06_market_01
+            case 'sck_06_market_02': return sck_06_market_02
 
             // sck_07
-            case 'sck_07': return sck_07 
-            case 'sck_07_02': return sck_07_02 
-            case 'sck_07_market_01': return sck_07_market_01 
-            case 'sck_07_market_02': return sck_07_market_02 
-            case 'sck_07_market_03': return sck_07_market_03 
-            case 'sck_07_market_05': return sck_07_market_05 
+            case 'sck_07': return sck_07
+            case 'sck_07_02': return sck_07_02
+            case 'sck_07_market_01': return sck_07_market_01
+            case 'sck_07_market_02': return sck_07_market_02
+            case 'sck_07_market_03': return sck_07_market_03
+            case 'sck_07_market_05': return sck_07_market_05
 
             // sck_08
-            case 'sck_08': return sck_08 
-            case 'sck_08_02': return sck_08_02 
-            case 'sck_08_market_01': return sck_08_market_01 
-            case 'sck_08_market_02': return sck_08_market_02 
-            case 'sck_08_market_04': return sck_08_market_04 
-            case 'sck_08_market_05': return sck_08_market_05 
-            case 'sck_08_market_06': return sck_08_market_06 
+            case 'sck_08': return sck_08
+            case 'sck_08_02': return sck_08_02
+            case 'sck_08_market_01': return sck_08_market_01
+            case 'sck_08_market_02': return sck_08_market_02
+            case 'sck_08_market_04': return sck_08_market_04
+            case 'sck_08_market_05': return sck_08_market_05
+            case 'sck_08_market_06': return sck_08_market_06
 
             // sck_09
-            case 'sck_09': return sck_09 
-            case 'sck_09_02': return sck_09_02 
-            case 'sck_09_market_01': return sck_09_market_01 
-            case 'sck_09_market_02': return sck_09_market_02 
-            case 'sck_09_market_03': return sck_09_market_03 
+            case 'sck_09': return sck_09
+            case 'sck_09_02': return sck_09_02
+            case 'sck_09_market_01': return sck_09_market_01
+            case 'sck_09_market_02': return sck_09_market_02
+            case 'sck_09_market_03': return sck_09_market_03
 
             // sck_10
-            case 'sck_10': return sck_10 
-            case 'sck_10_02': return sck_10_02 
-            case 'sck_10_market_01': return sck_10_market_01 
-            case 'sck_10_market_02': return sck_10_market_02 
-            case 'sck_10_market_05': return sck_10_market_05 
-            case 'sck_10_market_06': return sck_10_market_06 
+            case 'sck_10': return sck_10
+            case 'sck_10_02': return sck_10_02
+            case 'sck_10_market_01': return sck_10_market_01
+            case 'sck_10_market_02': return sck_10_market_02
+            case 'sck_10_market_05': return sck_10_market_05
+            case 'sck_10_market_06': return sck_10_market_06
 
             // sea_01
-            case 'sea_01': return sea_01 
-            case 'sea_01_02': return sea_01_02 
+            case 'sea_01': return sea_01
+            case 'sea_01_02': return sea_01_02
 
             // sea_03
-            case 'sea_03': return sea_03 
-            case 'sea_03_02': return sea_03_02 
+            case 'sea_03': return sea_03
+            case 'sea_03_02': return sea_03_02
 
             // sea_04
-            case 'sea_04': return sea_04 
-            case 'sea_04_02': return sea_04_02 
-            case 'sea_04_market_01': return sea_04_market_01 
-            case 'sea_04_market_02': return sea_04_market_02 
-            case 'sea_04_market_03': return sea_04_market_03 
-            case 'sea_04_market_06': return sea_04_market_06 
-            case 'sea_04_market_07': return sea_04_market_07 
+            case 'sea_04': return sea_04
+            case 'sea_04_02': return sea_04_02
+            case 'sea_04_market_01': return sea_04_market_01
+            case 'sea_04_market_02': return sea_04_market_02
+            case 'sea_04_market_03': return sea_04_market_03
+            case 'sea_04_market_06': return sea_04_market_06
+            case 'sea_04_market_07': return sea_04_market_07
 
             // sma_01
-            case 'sma_01': return sma_01 
-            case 'sma_01_02': return sma_01_02 
+            case 'sma_01': return sma_01
+            case 'sma_01_02': return sma_01_02
 
             // smh_01
-            case 'smh_01': return smh_01 
-            case 'smh_01_02': return smh_01_02 
+            case 'smh_01': return smh_01
+            case 'smh_01_02': return smh_01_02
 
             // smh_02
             case 'smh_02': return smh_02
@@ -889,30 +891,30 @@ const ProductImg = ({
             case 'smh_02_market_11': return smh_02_market_11
 
             // sph_01
-            case 'sph_01': return sph_01 
-            case 'sph_01_02': return sph_01_02 
-            case 'sph_01_market_01': return sph_01_market_01 
-            case 'sph_01_market_02': return sph_01_market_02 
+            case 'sph_01': return sph_01
+            case 'sph_01_02': return sph_01_02
+            case 'sph_01_market_01': return sph_01_market_01
+            case 'sph_01_market_02': return sph_01_market_02
 
             // sph_02
-            case 'sph_02': return sph_02 
-            case 'sph_02_02': return sph_02_02 
-            case 'sph_02_market_01': return sph_02_market_01 
-            case 'sph_02_market_02': return sph_02_market_02 
-            
+            case 'sph_02': return sph_02
+            case 'sph_02_02': return sph_02_02
+            case 'sph_02_market_01': return sph_02_market_01
+            case 'sph_02_market_02': return sph_02_market_02
+
             // hc_01
-            case 'hc_01': return hc_01 
-            case 'hc_01_02': return hc_01_02 
-            case 'hc_01_market_01': return hc_01_market_01 
-            case 'hc_01_market_02': return hc_01_market_02 
-            case 'hc_01_market_03': return hc_01_market_03 
-            case 'hc_01_market_04': return hc_01_market_04 
-            case 'hc_01_market_05': return hc_01_market_05 
-            case 'hc_01_market_06': return hc_01_market_06 
-            case 'hc_01_market_07': return hc_01_market_07 
-            case 'hc_01_market_08': return hc_01_market_08 
-            case 'hc_01_market_09': return hc_01_market_09 
-            
+            case 'hc_01': return hc_01
+            case 'hc_01_02': return hc_01_02
+            case 'hc_01_market_01': return hc_01_market_01
+            case 'hc_01_market_02': return hc_01_market_02
+            case 'hc_01_market_03': return hc_01_market_03
+            case 'hc_01_market_04': return hc_01_market_04
+            case 'hc_01_market_05': return hc_01_market_05
+            case 'hc_01_market_06': return hc_01_market_06
+            case 'hc_01_market_07': return hc_01_market_07
+            case 'hc_01_market_08': return hc_01_market_08
+            case 'hc_01_market_09': return hc_01_market_09
+
             // market
             case 'market_01': return market_01
             case 'market_02': return market_02
@@ -935,20 +937,26 @@ const ProductImg = ({
 
             // other
             case 'mainView': return mainView
+            case 'mainViewMini': return mainViewMini
             case 'damascus': return damascus
             case 'three': return three
             case 'carbon': return carbon
             case 'newMessage': return newMessage
             case 'event': return event
             case 'zhenBlack': return zhenBlack
-
+            
             default: return ''
         }
     }
 
 
     return (
-        <img src={getImg()} alt={alt} className={`${className ? className : "absolute inset-0 w-full h-full object-cover"}`} />
+        <img
+            src={getImg()}
+            alt={alt}
+            className={`${className ? className : "absolute inset-0 w-full h-full object-cover"}`}
+            style={style}
+        />
     );
 };
 
