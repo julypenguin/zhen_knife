@@ -16,7 +16,8 @@
    "steel": "鋼材",
    "handle": "握柄",
    "color": "色系",
-   "not_find_data": "找不到資料",
+   "no_information_found": "找不到資料",
+   "item_not_found": "找不到商品",
    "categories": {
       "zhen_series": "臻刀具系列",
       "sandwich_steel_series": "三合鋼系列",
@@ -204,5 +205,8 @@
       "scissors_is_multifunctional_it_can_be_used_for_general": "此剪刀為多功能廚房剪，除剪硬骨外皆可適任廚房一般操作",
       "after_longterm_use_recommended_to_disassemble_and_wipe_clean": "長時間使用後，建議要拆開擦拭乾淨才能保持其順暢度，並維持最佳鋒利狀態",
       "clean_and_dry_after_use_and_put_it_in_a_ventilated_and_dry_place": "平常收納即使用完畢清洗擦乾，置放於通風乾燥處即可"
+   },
+   "result": {
+      "add_success": "加入成功"
    }
 }

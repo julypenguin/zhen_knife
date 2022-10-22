@@ -54,7 +54,7 @@ const ProductDetail = ({
         )
     }
 
-    if (!data) return <FormattedMessage id='shop.not_find_data' defaultMessage='找不到資料' />
+    if (!data) return <FormattedMessage id='shop.no_information_found' defaultMessage='找不到資料' />
 
     return (
         <div>

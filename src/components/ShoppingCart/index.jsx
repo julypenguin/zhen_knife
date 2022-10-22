@@ -2,12 +2,13 @@ import React, { Fragment, useState } from 'react'
 import { Dialog, Popover, Tab, Transition } from '@headlessui/react'
 import { MenuIcon, SearchIcon, ShoppingBagIcon, XIcon as XIconOutline } from '@heroicons/react/outline'
 import { CheckIcon, ClockIcon, QuestionMarkCircleIcon, XIcon as XIconSolid } from '@heroicons/react/solid'
+import { FormattedMessage } from 'react-intl'
 import data from './shoppingCart.json'
 import productsData from '../Shop/products.json'
-import { FormattedMessage } from 'react-intl'
 import ProductImg from '../Shop/ProductImg'
 import Counter from '../Shop/Counter'
 import { numberWithCommas } from 'lib/numberWithCommas'
+import BaseModal from '../Base/BaseModal'
 
 const relatedProducts = [
     {
@@ -26,10 +27,8 @@ const ShoppingCartPage = ({
     updateCart,
     push,
 }) => {
-
-    const getRelatedProducts = () => {
-
-    }
+    const [removeItem, setRemoveItem] = useState({})
+    const [showRemoveModal, setShowRemoveModal] = useState(false)
 
     const relatedProducts = cart
         .filter((product, productIdx) => productIdx === 0)
@@ -84,6 +83,14 @@ const ShoppingCartPage = ({
             </span>
             default: return 0
         }
+    }
+
+    const closeModal = () => {
+        setShowRemoveModal(false)
+    }
+
+    const openModal = () => {
+        setShowRemoveModal(true)
     }
 
     return (
@@ -150,7 +157,13 @@ const ShoppingCartPage = ({
                                                         <button
                                                             type="button"
                                                             className="-m-2 p-2 inline-flex text-gray-400 hover:text-gray-500"
-                                                            onClick={() => setCount(productIdx)(0)}
+                                                            onClick={() => {
+                                                                setRemoveItem({
+                                                                    ...product,
+                                                                    productIdx,
+                                                                })
+                                                                openModal()
+                                                            }}
                                                         >
                                                             <span className="sr-only">Remove</span>
                                                             <XIconSolid className="h-5 w-5" aria-hidden="true" />
@@ -163,6 +176,13 @@ const ShoppingCartPage = ({
                                                 <Counter
                                                     defaultCount={product.buyCount}
                                                     handleCount={setCount(productIdx)}
+                                                    handleRemove={() => {
+                                                        setRemoveItem({
+                                                            ...product,
+                                                            productIdx,
+                                                        })
+                                                        openModal()
+                                                    }}
                                                 />
                                             </div>
                                         </div>
@@ -252,6 +272,40 @@ const ShoppingCartPage = ({
                     </section>
                 }
             </main>
+
+            <BaseModal
+                show={showRemoveModal}
+                onHide={closeModal}
+            >
+                <div className=''>
+                    <div className='mb-8'>
+                        <span className='mr-4'>
+                            <FormattedMessage id='shoppingCart.are_you_sure_you_want_to_remove' defaultMessage='是否確定要移除' />
+                        </span>
+                        <span>{removeItem.name}</span>
+                    </div>
+
+                    <div className='flex justify-end'>
+                        <button
+                            className='rounded-md bg-gray-600 bg-opacity-90 px-4 py-2 mr-2  text-sm font-medium text-white hover:bg-opacity-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75'
+                            onClick={closeModal}
+                        >
+                            <FormattedMessage id='global.cancel' defaultMessage='取消' />
+                        </button>
+                        <button
+                            className='rounded-md bg-blue-600 bg-opacity-90 px-4 py-2 text-sm font-medium text-white hover:bg-opacity-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75'
+                            onClick={() => {
+                                setCount(removeItem.productIdx)(0)
+                                setRemoveItem({})
+                                setShowRemoveModal(false)
+                            }}
+                        >
+                            <FormattedMessage id='global.ok' defaultMessage='確定' />
+                        </button>
+                    </div>
+                </div>
+
+            </BaseModal>
         </div>
     )
 }

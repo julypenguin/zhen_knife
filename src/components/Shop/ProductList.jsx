@@ -6,6 +6,7 @@ import ProductImg from './ProductImg'
 import Pagination from '../Pagination/Pagination'
 import { numberWithCommas } from 'lib/numberWithCommas'
 import { htmlScrollIntoView } from 'lib/scroll'
+import BaseModal from '../Base/BaseModal'
 
 const ProductList = ({
     match,
@@ -15,6 +16,7 @@ const ProductList = ({
 }) => {
     const [page, setPage] = useState(1)
     const [limit, setLimit] = useState(12)
+    const [showAddCartModal, setShowAddCartModal] = useState(false)
 
     const ulRef = useRef()
 
@@ -70,6 +72,14 @@ const ProductList = ({
         return newList
     }
 
+    const closeModal = () => {
+        setShowAddCartModal(false)
+    }
+
+    const openModal = () => {
+        setShowAddCartModal(true)
+    }
+
     useEffect(() => {
         ulRef.current.scrollTo(0, 0)
     }, [cats_sid])
@@ -84,6 +94,16 @@ const ProductList = ({
 
     return (
         <div className='relative h-full pl-4'>
+            <BaseModal
+                show={showAddCartModal}
+                onHide={closeModal}
+                size='xs'
+                timeout={1000}
+            >
+                <div className='flex justify-center items-center'>
+                    <FormattedMessage id='shop.result.add_success' defaultMessage='加入成功' />
+                </div>
+            </BaseModal>
             <h1 className='text-lg font-bold'>{newCatData.name}</h1>
             {/* absolute h-full overflow-auto scrollbar scrollbar-thumb-gray-300 scrollbar-track-gray-100 */}
             <ul
@@ -91,7 +111,10 @@ const ProductList = ({
                 ref={ulRef}
             >
                 {!newCatData.product.length ?
-                    < div className='mt-8 col-span-3 mx-auto'>找不到商品...</div>
+                    < div className='mt-8 col-span-3 mx-auto'>
+                        <FormattedMessage id='shop.item_not_found' defaultMessage='找不到商品' />
+                        ...
+                    </div>
                     :
                     formatData(newCatData.product).map((id, i) => (
                         !productData[id] ? null :
@@ -163,7 +186,10 @@ const ProductList = ({
                                         <button
                                             className="w-1/2 flex items-center justify-center rounded-md border border-gray-300 p-2 hover:bg-gray-50"
                                             type="button"
-                                            onClick={() => addCart(productData[id])}
+                                            onClick={() => {
+                                                addCart(productData[id])
+                                                openModal()
+                                            }}
                                         >
                                             <FormattedMessage id='shop.add_to_bag' defaultMessage='加入購物車' />
                                         </button>

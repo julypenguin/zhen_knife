@@ -4,6 +4,7 @@ import { PlusSmIcon, MinusSmIcon } from '@heroicons/react/solid'
 const Counter = ({
     defaultCount = 1,
     handleCount,
+    handleRemove,
 }) => {
     const [count, setCount] = useState(1)
 
@@ -12,7 +13,10 @@ const Counter = ({
         let newCount = 0
         if (option === 1) newCount = count + 1
         if (option === 2) newCount = count - 1
-        if (newCount <= 0) newCount = 1
+        if (newCount <= 0) {
+            newCount = 1
+            if (typeof handleRemove === 'function') handleRemove()
+        }
         setCount(newCount)
     }
 
