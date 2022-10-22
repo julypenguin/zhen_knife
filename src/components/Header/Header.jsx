@@ -8,7 +8,7 @@ import data from './nav.json'
 import categoriesData from '../Shop/categories.json'
 import cateData from '../Shop/categories.json'
 import NavIcon from '../../containers/Header/NavIcon'
-import NavSearch from './NavSearch'
+import NavSearch from '../../containers/Header/NavSearch'
 import Profile from './Profile'
 import { Dialog, Popover, Tab, Transition } from '@headlessui/react'
 import { MenuIcon, SearchIcon, ShoppingCartIcon, XIcon as XIconOutline } from '@heroicons/react/outline'
@@ -159,10 +159,10 @@ const Header = (props) => {
                 </Dialog>
             </Transition.Root>
 
-            <header className="relative bg-white">
+            <header className="relative bg-white border-b border-gray-200">
                 <nav aria-label="Top" className="container mx-auto px-2 sm:px-6">
-                    <div className="border-b border-gray-200">
-                        <div className="h-16 flex items-center">
+                    <div className="flex items-center">
+                        <div className="h-16 flex items-center group flex-1">
                             <button
                                 type="button"
                                 className="bg-white p-2 rounded-md text-gray-400 lg:hidden"
@@ -173,7 +173,7 @@ const Header = (props) => {
                             </button>
 
                             {/* Logo */}
-                            <div className="ml-4 flex lg:ml-0">
+                            <div className="ml-0 flex">
                                 <Link to="/">
                                     <NavIcon />
                                 </Link>
@@ -181,9 +181,9 @@ const Header = (props) => {
 
                             <Navbar {...props} />
 
-                            <div className="ml-auto flex items-center">
+                            <div className="ml-auto flex items-center group-focus-within:flex-1">
                                 {/* 登入 */}
-                                <div className="ml-4 hidden lg:flex lg:items-center lg:justify-end">
+                                <div className="ml-4 hidden lg:flex lg:items-center lg:justify-end group-focus-within:hidden">
                                     {!profile.email ?
                                         <Link to="/vip" className="text-sm font-medium text-gray-700 hover:text-gray-800">
                                             <FormattedMessage id='nav.sign_in' defaultMessage='登入' />
@@ -202,27 +202,27 @@ const Header = (props) => {
                                     <NavSearch />
                                 </div>
 
-                                {/* 多國語系 */}
-                                <button className="mr-2 flex-shrink-0 bg-white p-1 text-gray-400 rounded-full hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-                                    <span className="sr-only">globe</span>
-                                    <Icon className='mr-2' icon='globe' />
-                                    <span>
-                                        <FormattedMessage id='nav.traditional_chinese' defaultMessage='繁體中文' />
-                                    </span>
-                                </button>
-
-                                {/* Cart */}
-                                <div className="ml-4 flow-root lg:ml-6">
-                                    <Link to="/cart" className="group -m-2 p-2 flex items-center">
-                                        <ShoppingCartIcon
-                                            className="flex-shink-0 h-6 w-6 text-gray-400 group-hover:text-gray-500"
-                                            aria-hidden="true"
-                                        />
-                                        <span className="ml-2 text-sm font-medium text-gray-700 group-hover:text-gray-800">{cart.length}</span>
-                                    </Link>
-                                </div>
-
                             </div>
+                        </div>
+                        
+                        {/* 多國語系 */}
+                        <button className="mr-2 flex-shrink-0 bg-white p-1 text-gray-400 rounded-full hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                            <span className="sr-only">globe</span>
+                            <Icon className='mr-2' icon='globe' />
+                            <span>
+                                <FormattedMessage id='nav.traditional_chinese' defaultMessage='繁體中文' />
+                            </span>
+                        </button>
+
+                        {/* Cart */}
+                        <div className="ml-4 flow-root lg:ml-6">
+                            <Link to="/cart" className="group -m-2 p-2 flex items-center">
+                                <ShoppingCartIcon
+                                    className="flex-shink-0 h-6 w-6 text-gray-400 group-hover:text-gray-500"
+                                    aria-hidden="true"
+                                />
+                                <span className="ml-2 text-sm font-medium text-gray-400 group-hover:text-gray-500">{cart.length}</span>
+                            </Link>
                         </div>
                     </div>
                 </nav>

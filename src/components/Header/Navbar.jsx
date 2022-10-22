@@ -9,7 +9,7 @@ const Navbar = ({
 }) => {
 
     return (
-        <div className="hidden lg:ml-auto lg:flex select-none h-full">
+        <div className="hidden lg:ml-auto lg:flex select-none h-full group-focus-within:hidden">
             {data.navList.map((nav, i) => (
                 <BaseTab
                     key={i}

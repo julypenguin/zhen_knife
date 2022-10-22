@@ -1,5 +1,5 @@
 {
-    "search": "搜尋",
+    "search": "搜尋 {name}",
     "submit": "送出",
     "comma": "，",
     "cancel": "取消",
