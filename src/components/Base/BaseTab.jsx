@@ -26,7 +26,7 @@ const BaseTab = ({
         'flex',
         'items-center',
         'px-4',
-        'text-sm',
+        'text-md',
         'font-medium',
         'cursor-pointer',
         {
