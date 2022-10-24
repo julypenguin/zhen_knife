@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { injectIntl, FormattedMessage } from 'react-intl'
 import { FontAwesomeIcon as Icon } from '@fortawesome/react-fontawesome'
-import { MailIcon, PhoneOutgoingIcon } from '@heroicons/react/solid'
+import { EnvelopeIcon, PhoneArrowUpRightIcon } from '@heroicons/react/24/solid'
 
 // 桌面板右下角 chat
 const DesktopChatMenu = ({
@@ -30,7 +30,7 @@ const DesktopChatMenu = ({
                     rel="noreferrer"
                     className='group w-12 h-12 flex justify-center items-center rounded-full cursor-pointer mt-2 bg-blue-500 text-white hover:menu-button hover:justify-start'
                 >
-                    <MailIcon className='w-8 h-8 group-hover:mr-2' />
+                    <EnvelopeIcon className='w-8 h-8 group-hover:mr-2' />
                     <span className='hidden group-hover:inline'>Email</span>
                 </a>
                 {/* tel */}
@@ -40,7 +40,7 @@ const DesktopChatMenu = ({
                     rel="noreferrer"
                     className='group w-12 h-12 flex justify-center items-center rounded-full cursor-pointer mt-2 bg-purple-600 text-white hover:menu-button'
                 >
-                    <PhoneOutgoingIcon className='w-8 h-8 group-hover:mr-2' />
+                    <PhoneArrowUpRightIcon className='w-8 h-8 group-hover:mr-2' />
                     <span className='hidden group-hover:inline'>Phone</span>
                 </a>
                 {/* line */}

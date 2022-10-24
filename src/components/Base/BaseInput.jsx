@@ -1,5 +1,5 @@
 import React from 'react';
-import { UserIcon, MailIcon, PhoneIcon } from '@heroicons/react/outline'
+import { UserIcon, EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/outline'
 import { injectIntl } from 'react-intl'
 
 const BaseInput = ({
@@ -23,7 +23,7 @@ const BaseInput = ({
         switch (type) {
             case 1: return <UserIcon className="h-5 w-5 text-gray-400 z-10" />
 
-            case 2: return <MailIcon className="h-5 w-5 text-gray-400 z-10" />
+            case 2: return <EnvelopeIcon className="h-5 w-5 text-gray-400 z-10" />
 
             case 3: return <PhoneIcon className="h-5 w-5 text-gray-400 z-10" />
 

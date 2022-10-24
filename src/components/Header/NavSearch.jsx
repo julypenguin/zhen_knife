@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { injectIntl, FormattedMessage } from 'react-intl'
-import { SearchIcon } from '@heroicons/react/outline'
+import { MagnifyingGlassIcon } from '@heroicons/react/24/outline'
 import { push } from 'connected-react-router';
 import formdata from 'lib/formdata'
 import catData from '../Shop/categories.json'
@@ -44,8 +44,6 @@ const NavSearch = ({
                 className="relative"
                 onSubmit={e => {
                     e.preventDefault()
-                    const fdata = formdata(e.target)
-                    const { search } = fdata
                     if (!!search) {
                         if (isShopPath) {
                             push(`${pathname}?search=${search}`)
@@ -59,11 +57,9 @@ const NavSearch = ({
                 autoComplete='false'
             >
                 <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none z-10">
-                    <SearchIcon className="h-5 w-5 text-gray-400" />
+                    <MagnifyingGlassIcon className="h-5 w-5 text-gray-400" />
                 </div>
                 <input
-                    id="search"
-                    name="search"
                     className="block w-full pl-10 pr-3 py-2 border border-gray-300 rounded-md leading-5 bg-white placeholder-gray-500 truncate focus:outline-none focus:placeholder-gray-400 focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                     placeholder={msgintl.search}
                     type="search"

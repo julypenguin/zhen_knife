@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import classnames from 'classnames';
 import { injectIntl, FormattedMessage } from 'react-intl'
-import { ShoppingCartIcon, DocumentTextIcon, CreditCardIcon, ClipboardCheckIcon, ShoppingBagIcon } from '@heroicons/react/outline'
+import { ShoppingCartIcon, ClipboardDocumentListIcon, CreditCardIcon, ClipboardDocumentCheckIcon, TruckIcon } from '@heroicons/react/24/outline'
 import data from './shoppingProcess.json'
 
 const ShoppingProcess = ({
@@ -10,15 +10,15 @@ const ShoppingProcess = ({
 
     const IconMap = {
         ShoppingCartIcon: ShoppingCartIcon,
-        DocumentTextIcon: DocumentTextIcon,
+        ClipboardDocumentListIcon: ClipboardDocumentListIcon,
         CreditCardIcon: CreditCardIcon,
-        ClipboardCheckIcon: ClipboardCheckIcon,
-        ShoppingBagIcon: ShoppingBagIcon,
+        ClipboardDocumentCheckIcon: ClipboardDocumentCheckIcon,
+        TruckIcon: TruckIcon,
     }
 
     const renderIcon = (icon) => {
         const Icon = IconMap[icon]
-
+        if (!Icon) return null
         return (
             <Icon className='w-16 h-16 text-gray-500' />
         )

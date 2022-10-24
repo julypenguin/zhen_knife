@@ -98,7 +98,7 @@ const ProductList = ({
                 show={showAddCartModal}
                 onHide={closeModal}
                 size='xs'
-                timeout={1000}
+                timeout={500}
             >
                 <div className='flex justify-center items-center'>
                     <FormattedMessage id='shop.result.add_success' defaultMessage='加入成功' />

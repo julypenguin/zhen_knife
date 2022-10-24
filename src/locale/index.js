@@ -14,8 +14,11 @@ const maplang = {
 }
 
 
-export default (langs = navigator.languages) => {
+export default (langs = localStorage.getItem('language')) => {
+
+    if (!langs) langs = navigator.languages
     if (!Array.isArray(langs)) langs = [langs]
+
     for (let i = 0; i < langs.length; i++)
         if (maplang[langs[i]])
             return maplang[langs[i]]

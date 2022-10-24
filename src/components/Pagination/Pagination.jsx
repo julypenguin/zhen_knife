@@ -1,6 +1,6 @@
 import React from 'react';
 import classnames from 'classnames';
-import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/solid'
+import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/solid'
 
 const Pagination = ({
     data,

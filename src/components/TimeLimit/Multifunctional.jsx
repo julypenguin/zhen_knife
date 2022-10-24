@@ -3,7 +3,7 @@ import { FormattedMessage } from 'react-intl';
 import ImgFit from '../Base/ImgFit'
 import img280 from '../../img/sid/img280.jpg'
 import data from './multifunctional.json'
-import { StarIcon } from '@heroicons/react/solid'
+import { StarIcon } from '@heroicons/react/24/solid'
 
 const Multifunctional = () => {
     return (

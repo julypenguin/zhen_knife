@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { injectIntl, FormattedMessage } from 'react-intl'
 import { FontAwesomeIcon as Icon } from '@fortawesome/react-fontawesome'
 import BaseInput from '../Base/BaseInput.jsx'
-import { MailIcon, PhoneIcon, LocationMarkerIcon } from '@heroicons/react/outline'
+import { EnvelopeIcon, PhoneIcon, MapPinIcon } from '@heroicons/react/24/outline'
 import { htmlScrollIntoView } from 'lib/scroll'
 
 const ContactPage = ({
@@ -64,7 +64,7 @@ const ContactPage = ({
                                 <div className="mt-6">
                                     <dt className="sr-only">Postal address</dt>
                                     <dd className="flex">
-                                        <LocationMarkerIcon
+                                        <MapPinIcon
                                             className="flex-shrink-0 h-6 w-6 text-gray-400"
                                         />
                                         <span className="ml-3">
@@ -103,7 +103,7 @@ const ContactPage = ({
                                 <div className="mt-3">
                                     <dt className="sr-only">Email</dt>
                                     <dd className="flex">
-                                        <MailIcon className="flex-shrink-0 h-6 w-6 text-gray-400" />
+                                        <EnvelopeIcon className="flex-shrink-0 h-6 w-6 text-gray-400" />
                                         <span className="ml-3">
                                             zhen.knife@gmail.com
                                         </span>

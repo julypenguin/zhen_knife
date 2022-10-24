@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { PlusSmIcon, MinusSmIcon } from '@heroicons/react/solid'
+import { PlusSmallIcon, MinusSmallIcon } from '@heroicons/react/24/solid'
 
 const Counter = ({
     defaultCount = 1,
@@ -41,7 +41,7 @@ const Counter = ({
                         >
                             <span className="sr-only">Minus</span>
 
-                            <MinusSmIcon className="h-5 w-5" />
+                            <MinusSmallIcon className="h-5 w-5" />
                         </span>
                         <span
                             className="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700 select-none"
@@ -54,7 +54,7 @@ const Counter = ({
                         >
                             <span className="sr-only">Plus</span>
 
-                            <PlusSmIcon className="h-5 w-5" />
+                            <PlusSmallIcon className="h-5 w-5" />
                         </span>
                     </nav>
                 </div>

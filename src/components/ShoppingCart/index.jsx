@@ -1,7 +1,6 @@
 import React, { Fragment, useState } from 'react'
 import { Dialog, Popover, Tab, Transition } from '@headlessui/react'
-import { MenuIcon, SearchIcon, ShoppingBagIcon, XIcon as XIconOutline } from '@heroicons/react/outline'
-import { CheckIcon, ClockIcon, QuestionMarkCircleIcon, XIcon as XIconSolid } from '@heroicons/react/solid'
+import { XMarkIcon } from '@heroicons/react/24/solid'
 import { FormattedMessage } from 'react-intl'
 import data from './shoppingCart.json'
 import productsData from '../Shop/products.json'
@@ -166,7 +165,7 @@ const ShoppingCartPage = ({
                                                             }}
                                                         >
                                                             <span className="sr-only">Remove</span>
-                                                            <XIconSolid className="h-5 w-5" aria-hidden="true" />
+                                                            <XMarkIcon className="h-5 w-5" aria-hidden="true" />
                                                         </button>
                                                     </div>
                                                 </div>

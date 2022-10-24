@@ -16,7 +16,7 @@
             "step_desc": "資料請確實填寫，以免影響您的權益",
             "step_desc_intl": "please_fill_in_the_information_so_as_not_to_affect_your_rights",
             "color": "",
-            "icon": "DocumentTextIcon"
+            "icon": "ClipboardDocumentListIcon"
         },
         {
             "id": 4003,
@@ -34,7 +34,7 @@
             "step_desc": "若您是選擇ATM轉帳或是超商付款，記得要在三天內付款，訂單才算完成喔!",
             "step_desc_intl": "if_you_choose_ATM_or_supermarket_payment_within_three_days",
             "color": "",
-            "icon": "ClipboardCheckIcon"
+            "icon": "ClipboardDocumentCheckIcon"
         },
         {
             "id": 4005,
@@ -43,7 +43,7 @@
             "step_desc": "請卻確認商品完整，有任何問題歡迎與我們聯繫",
             "step_desc_intl": "please_confirm_product_is_complete_please_contact_us",
             "color": "",
-            "icon": "ShoppingBagIcon"
+            "icon": "TruckIcon"
         }
     ]
 }

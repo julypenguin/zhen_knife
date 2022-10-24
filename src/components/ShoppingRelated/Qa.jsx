@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import classnames from 'classnames';
 import { injectIntl, FormattedMessage } from 'react-intl'
 import { Disclosure, Transition } from '@headlessui/react'
-import { ChevronUpIcon, PlusIcon, MinusSmIcon } from '@heroicons/react/solid'
+import { PlusIcon, MinusSmallIcon } from '@heroicons/react/24/solid'
 import { Link } from 'react-router-dom'
 import data from './qa.json'
 
@@ -15,7 +15,7 @@ const CommonProblem = () => {
                         <Fragment >
                             <Disclosure.Button className="flex justify-start items-center w-full px-4 py-2 mb-2 text-xl font-bold text-left border border-gray-300 bg-white rounded-lg select-none hover:bg-gray-100">
                                 {open ?
-                                    <MinusSmIcon
+                                    <MinusSmallIcon
                                         className={`w-5 h-5 mr-2`}
                                     />
                                     :

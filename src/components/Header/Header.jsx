@@ -3,19 +3,19 @@ import classnames from 'classnames';
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon as Icon } from '@fortawesome/react-fontawesome'
 import { matchPath } from 'react-router'
+import { FormattedMessage } from 'react-intl';
+import { getAuth, signOut } from "firebase/auth"
 import Navbar from '../../containers/Header/Navbar'
 import data from './nav.json'
 import categoriesData from '../Shop/categories.json'
 import cateData from '../Shop/categories.json'
 import NavIcon from '../../containers/Header/NavIcon'
 import NavSearch from '../../containers/Header/NavSearch'
+import SettingLanguage from './SettingLanguage'
 import Profile from './Profile'
 import { Dialog, Popover, Tab, Transition } from '@headlessui/react'
-import { MenuIcon, SearchIcon, ShoppingCartIcon, XIcon as XIconOutline } from '@heroicons/react/outline'
-import { CheckIcon, ClockIcon, QuestionMarkCircleIcon, XIcon as XIconSolid } from '@heroicons/react/solid'
+import { Bars3Icon, ShoppingCartIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import ProductImg from '../Shop/ProductImg'
-import { FormattedMessage } from 'react-intl';
-import { getAuth, signOut } from "firebase/auth"
 
 const Header = (props) => {
     const {
@@ -73,7 +73,7 @@ const Header = (props) => {
                                     onClick={() => setOpen(false)}
                                 >
                                     <span className="sr-only">Close menu</span>
-                                    <XIconOutline className="h-6 w-6" aria-hidden="true" />
+                                    <XMarkIcon className="h-6 w-6" aria-hidden="true" />
                                 </button>
                             </div>
 
@@ -143,17 +143,19 @@ const Header = (props) => {
                                 ))}
                             </div>
 
-                            <div className="border-t border-gray-200 py-6 px-4 space-y-6">
-                                <div className="flow-root">
-                                    <Link
-                                        to="vip"
-                                        className="-m-2 p-2 block font-medium text-gray-900"
-                                        onClick={() => setOpen(false)}
-                                    >
-                                        <FormattedMessage id='nav.sign_in' defaultMessage='登入' />
-                                    </Link>
+                            {!profile.email ? null
+                                :
+                                <div className="border-t border-gray-200 py-6 px-4 space-y-6">
+                                    <div className="flow-root">
+                                        <span
+                                            className='cursor-pointer -m-2 p-2 font-medium text-gray-900 hover:font-bold'
+                                            onClick={logOut}
+                                        >
+                                            <FormattedMessage id='nav.log_out' defaultMessage='登出' />
+                                        </span>
+                                    </div>
                                 </div>
-                            </div>
+                            }
                         </div>
                     </Transition.Child>
                 </Dialog>
@@ -162,14 +164,14 @@ const Header = (props) => {
             <header className="relative bg-white border-b border-gray-200">
                 <nav aria-label="Top" className="container mx-auto px-2 sm:px-6">
                     <div className="flex items-center">
-                        <div className="h-16 flex items-center group flex-1">
+                        <div className="h-16 flex items-center flex-1">
                             <button
                                 type="button"
                                 className="bg-white p-2 rounded-md text-gray-400 lg:hidden"
                                 onClick={() => setOpen(true)}
                             >
                                 <span className="sr-only">Open menu</span>
-                                <MenuIcon className="h-6 w-6" aria-hidden="true" />
+                                <Bars3Icon className="h-6 w-6" aria-hidden="true" />
                             </button>
 
                             {/* Logo */}
@@ -179,40 +181,37 @@ const Header = (props) => {
                                 </Link>
                             </div>
 
-                            <Navbar {...props} />
+                            <div className='flex items-center h-full flex-1 group'>
 
-                            <div className="ml-auto flex items-center group-focus-within:flex-1">
-                                {/* 登入 */}
-                                <div className="ml-4 hidden lg:flex lg:items-center lg:justify-end group-focus-within:hidden">
-                                    {!profile.email ?
-                                        <Link to="/vip" className="text-sm font-medium text-gray-700 hover:text-gray-800">
-                                            <FormattedMessage id='nav.sign_in' defaultMessage='登入' />
-                                        </Link>
-                                        :
-                                        <span
-                                            className='cursor-pointer'
-                                            onClick={logOut}
-                                        >
-                                            <FormattedMessage id='nav.log_out' defaultMessage='登出' />
-                                        </span>
-                                    }
+                                <Navbar {...props} />
+
+                                <div className="ml-auto flex items-center group-focus-within:flex-1">
+                                    {/* 登入 */}
+                                    <div className="ml-4 hidden lg:flex lg:items-center lg:justify-end group-focus-within:hidden">
+                                        {!profile.email ?
+                                            <Link to="/vip" className="text-sm font-medium text-gray-700 hover:text-gray-800">
+                                                <FormattedMessage id='nav.sign_in' defaultMessage='登入' />
+                                            </Link>
+                                            :
+                                            <span
+                                                className='cursor-pointer'
+                                                onClick={logOut}
+                                            >
+                                                <FormattedMessage id='nav.log_out' defaultMessage='登出' />
+                                            </span>
+                                        }
+                                    </div>
+
+                                    <div className="flex-1 flex items-center justify-center px-2 lg:ml-6 lg:justify-end">
+                                        <NavSearch />
+                                    </div>
+
                                 </div>
-
-                                <div className="flex-1 flex items-center justify-center px-2 lg:ml-6 lg:justify-end">
-                                    <NavSearch />
-                                </div>
-
                             </div>
                         </div>
-                        
+
                         {/* 多國語系 */}
-                        <button className="mr-2 flex-shrink-0 bg-white p-1 text-gray-400 rounded-full hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-                            <span className="sr-only">globe</span>
-                            <Icon className='mr-2' icon='globe' />
-                            <span>
-                                <FormattedMessage id='nav.traditional_chinese' defaultMessage='繁體中文' />
-                            </span>
-                        </button>
+                        <SettingLanguage />
 
                         {/* Cart */}
                         <div className="ml-4 flow-root lg:ml-6">

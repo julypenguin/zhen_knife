@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom'
-import { HomeIcon } from '@heroicons/react/solid'
+import { HomeIcon } from '@heroicons/react/24/solid'
 
 const BaseBreadcrumbs = ({
     homeLink,

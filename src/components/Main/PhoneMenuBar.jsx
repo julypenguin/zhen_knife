@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { injectIntl, FormattedMessage } from 'react-intl'
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon as Icon } from '@fortawesome/react-fontawesome'
-import { HomeIcon, ChatIcon, ShoppingBagIcon, ShoppingCartIcon, UserIcon, MailIcon, PhoneOutgoingIcon } from '@heroicons/react/solid'
+import { HomeIcon, ChatBubbleOvalLeftEllipsisIcon, ShoppingBagIcon, ShoppingCartIcon, UserIcon, EnvelopeIcon, PhoneArrowUpRightIcon } from '@heroicons/react/24/solid'
 
 // 手機板底部 chat
 const PhoneMenuBar = ({
@@ -36,7 +36,7 @@ const PhoneMenuBar = ({
                     className='h-16 flex-1 text-center text-white flex justify-center items-center flex-col cursor-pointer bg-menu-phone'
                     onClick={() => setShowChatBottom(!showchatBottom)}
                 >
-                    <ChatIcon className='w-8 h-8' />
+                    <ChatBubbleOvalLeftEllipsisIcon className='w-8 h-8' />
                     <div className='text-sm'>{msgintl.customer_service}</div>
                 </span>
                 <Link
@@ -72,7 +72,7 @@ const PhoneMenuBar = ({
                         rel="noreferrer"
                         className='h-16 flex-1 text-center text-white flex justify-center items-center flex-col cursor-pointer bg-blue-600'
                     >
-                        <MailIcon className='w-8 h-8' />
+                        <EnvelopeIcon className='w-8 h-8' />
                         <div className='text-sm'>Email</div>
                     </a>
                     {/* tel */}
@@ -82,7 +82,7 @@ const PhoneMenuBar = ({
                         rel="noreferrer"
                         className='h-16 flex-1 text-center text-white flex justify-center items-center flex-col cursor-pointer bg-purple-600'
                     >
-                        <PhoneOutgoingIcon className='w-8 h-8' />
+                        <PhoneArrowUpRightIcon className='w-8 h-8' />
                         <div className='text-sm'>Phone</div>
                     </a>
                     {/* line */}
