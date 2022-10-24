@@ -34,7 +34,7 @@ const BaseTab = ({
             'text-white': isMatch,
             'bg-white': !isMatch,
             'text-black': !isMatch,
-            'hover:text-white': !isMatch,
+            'hover:text-black': !isMatch,
             'hover:bg-gray-300': !isMatch,
 
         },
