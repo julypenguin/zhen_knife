@@ -94,16 +94,6 @@ const ProductList = ({
 
     return (
         <div className='relative h-full pl-4'>
-            <BaseModal
-                show={showAddCartModal}
-                onHide={closeModal}
-                size='xs'
-                timeout={500}
-            >
-                <div className='flex justify-center items-center'>
-                    <FormattedMessage id='shop.result.add_success' defaultMessage='加入成功' />
-                </div>
-            </BaseModal>
             <h1 className='text-lg font-bold'>{newCatData.name}</h1>
             {/* absolute h-full overflow-auto scrollbar scrollbar-thumb-gray-300 scrollbar-track-gray-100 */}
             <ul
@@ -209,6 +199,16 @@ const ProductList = ({
                 getdata={getdata}
             />
 
+            <BaseModal
+                show={showAddCartModal}
+                onHide={closeModal}
+                size='xs'
+                timeout={500}
+            >
+                <div className='flex justify-center items-center'>
+                    <FormattedMessage id='shop.result.add_success' defaultMessage='加入成功' />
+                </div>
+            </BaseModal>
         </div >
     );
 };

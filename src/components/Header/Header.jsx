@@ -82,20 +82,18 @@ const Header = (props) => {
                                 <div className="py-4 space-y-8">
                                     <div className="px-4 grid grid-cols-2 gap-x-4">
                                         {data.preview_list.map((preview) => (
-                                            <div key={preview.cat_sid} className="group relative text-sm">
-                                                <div className="aspect-w-1 aspect-h-1 rounded-lg bg-gray-100 overflow-hidden group-hover:opacity-75">
+                                            <div key={preview.cat_sid} className="relative text-sm">
+                                                <div
+                                                    className="mb-4 rounded-lg bg-gray-100 overflow-hidden hover:opacity-75"
+                                                    onClick={() => {
+                                                        setOpen(false)
+                                                        push(preview.href)
+                                                    }}
+                                                >
                                                     <div className='border'>
                                                         <ProductImg img={preview.img} className="object-center object-cover rounded-lg p-1 bg-white" />
                                                     </div>
                                                 </div>
-                                                <Link
-                                                    to={preview.href}
-                                                    className="mt-6 block font-medium text-gray-900"
-                                                    onClick={() => setOpen(false)}
-                                                >
-                                                    <span className="absolute z-10 inset-0" aria-hidden="true" />
-                                                    {/* {preview.name} */}
-                                                </Link>
                                             </div>
                                         ))}
                                     </div>

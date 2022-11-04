@@ -4,6 +4,7 @@ import Counter from './Counter'
 import ProductImg from './ProductImg'
 import productData from './products.json'
 import noticeData from './notice.json'
+import BaseModal from '../Base/BaseModal'
 
 const ProductDetail = ({
     match,
@@ -12,6 +13,7 @@ const ProductDetail = ({
     push,
 }) => {
     const [count, setCount] = useState(1)
+    const [showAddCartModal, setShowAddCartModal] = useState(false)
 
     const intl_id = match.params.intl_id || ''
     const data = productData[intl_id]
@@ -52,6 +54,14 @@ const ProductDetail = ({
                 }
             </div>
         )
+    }
+
+    const closeModal = () => {
+        setShowAddCartModal(false)
+    }
+
+    const openModal = () => {
+        setShowAddCartModal(true)
     }
 
     if (!data) return <FormattedMessage id='shop.no_information_found' defaultMessage='找不到資料' />
@@ -105,7 +115,10 @@ const ProductDetail = ({
                             <button
                                 className="w-1/2 flex items-center justify-center rounded-md border border-gray-300 p-2 hover:bg-gray-50"
                                 type="button"
-                                onClick={() => addCart()}
+                                onClick={() => {
+                                    addCart()
+                                    openModal()
+                                }}
                             >
                                 <FormattedMessage id='shop.add_to_bag' defaultMessage='加入購物車' />
                             </button>
@@ -203,6 +216,17 @@ const ProductDetail = ({
                     </div>
                 ))}
             </div>
+
+            <BaseModal
+                show={showAddCartModal}
+                onHide={closeModal}
+                size='xs'
+                timeout={500}
+            >
+                <div className='flex justify-center items-center'>
+                    <FormattedMessage id='shop.result.add_success' defaultMessage='加入成功' />
+                </div>
+            </BaseModal>
         </div>
     );
 };
