@@ -1,11 +1,14 @@
 import React, { useEffect } from 'react';
 import { injectIntl, FormattedMessage } from 'react-intl'
 import LeftSidebar from './../../containers/Shop/LeftSidebar'
-import ProductList from '../../containers/Shop/ProductList';
-import ProductDetail from '../../containers/Shop/ProductDetail';
+
 import BaseBreadcrumbs from '../Base/BaseBreadcrumbs'
 import { Route, Switch } from 'react-router'
 import data from './categories.json'
+import BaseSuspenseFallback from '../Base/BaseSuspenseFallback'
+
+const ProductDetail = React.lazy(() => import('../../containers/Shop/ProductDetail'))
+const ProductList = React.lazy(() => import('../../containers/Shop/ProductList'))
 
 const ShopPage = (props) => {
 
@@ -52,12 +55,13 @@ const ShopPage = (props) => {
                 </Switch>
 
                 <div className='flex-1 ml-6 divide-y divide-gray-200'>
-
-                    <Switch>
-                        <Route exact path="/shop/detail/:intl_id" render={(props) => <ProductDetail {...props} />} />
-                        <Route exact path="/shop/:cats_sid" render={(props) => <ProductList {...props} />} />
-                        <Route exact path="/shop" render={(props) => <ProductList {...props} />} />
-                    </Switch>
+                    <React.Suspense fallback={<BaseSuspenseFallback />}>
+                        <Switch>
+                            <Route exact path="/shop/detail/:intl_id" render={(props) => <ProductDetail {...props} />} />
+                            <Route exact path="/shop/:cats_sid" render={(props) => <ProductList {...props} />} />
+                            <Route exact path="/shop" render={(props) => <ProductList {...props} />} />
+                        </Switch>
+                    </React.Suspense>
                 </div>
                 {/* <div className='primary'>qqq</div> */}
             </div>

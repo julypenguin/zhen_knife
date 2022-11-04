@@ -3,10 +3,12 @@ import { injectIntl, FormattedMessage } from 'react-intl'
 import { Route, Switch } from 'react-router'
 import LoginForm from '../../containers/Vip/LoginForm'
 import VipTab from '../../containers/Vip/VipTab'
-import VipDefaultPage from '../../containers/Vip/VipDefaultPage'
-import VipOrder from '../../containers/Vip/VipOrder'
-import VipAddress from '../../containers/Vip/VipAddress'
-import VipAccount from '../../containers/Vip/VipAccount'
+import BaseSuspenseFallback from '../Base/BaseSuspenseFallback'
+
+const VipAccount = React.lazy(() => import('../../containers/Vip/VipAccount'))
+const VipAddress = React.lazy(() => import('../../containers/Vip/VipAddress'))
+const VipOrder = React.lazy(() => import('../../containers/Vip/VipOrder'))
+const VipDefaultPage = React.lazy(() => import('../../containers/Vip/VipDefaultPage'))
 
 const VipPage = ({
     profile,
@@ -29,12 +31,14 @@ const VipPage = ({
                     <div className='flex'>
                         <VipTab />
 
-                        <Switch>
-                            <Route path="/vip/edit-account" render={(props) => <VipAccount {...props} />} />
-                            <Route path="/vip/edit-address" render={(props) => <VipAddress {...props} />} />
-                            <Route path="/vip/orders" render={(props) => <VipOrder {...props} />} />
-                            <Route path="/vip" render={(props) => <VipDefaultPage {...props} />} />
-                        </Switch>
+                        <React.Suspense fallback={<BaseSuspenseFallback />}>
+                            <Switch>
+                                <Route path="/vip/edit-account" render={(props) => <VipAccount {...props} />} />
+                                <Route path="/vip/edit-address" render={(props) => <VipAddress {...props} />} />
+                                <Route path="/vip/orders" render={(props) => <VipOrder {...props} />} />
+                                <Route path="/vip" render={(props) => <VipDefaultPage {...props} />} />
+                            </Switch>
+                        </React.Suspense>
                     </div>
                 </div>
                 :

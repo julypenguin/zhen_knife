@@ -22,10 +22,6 @@ const ContactPage = ({
         fax: getIntlMsg('contact.fax', '傳真'),
     }
 
-    // useEffect(() => {
-    //     htmlScrollIntoView(true)
-    // }, [])
-
     return (
         <div className='container'>
             {/* 上方描述 */}

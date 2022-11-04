@@ -2,12 +2,13 @@ import React, { useEffect } from 'react';
 import classnames from 'classnames';
 import { injectIntl, FormattedMessage } from 'react-intl'
 import { Route, Switch } from 'react-router'
-import ShoppingProcess from './ShoppingProcess'
-import Qa from './Qa'
 import ShoppingProcessMenu from './ShoppingProcessMenu'
-import PrivacyPolicy from './PrivacyPolicy'
-import UserAgreement from './UserAgreement'
 import data from './shoppingRelatedPage.json'
+
+const UserAgreement = React.lazy(() => import('./UserAgreement'))
+const PrivacyPolicy = React.lazy(() => import('./PrivacyPolicy'))
+const Qa = React.lazy(() => import('./Qa'))
+const ShoppingProcess = React.lazy(() => import('./ShoppingProcess'))
 
 const ShoppingRelatedPage = ({
     push,

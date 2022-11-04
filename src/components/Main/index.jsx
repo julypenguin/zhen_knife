@@ -6,14 +6,17 @@ import { getAuth, onAuthStateChanged } from "firebase/auth"
 
 import Header from '../../containers/Header/Header'
 import Footer from '../../containers/Footer/Footer'
-import Deshboard from '../../containers/Main/Deshboard'
-import Shop from '../../containers/Shop/index'
-import ContactPage from '../../containers/Contact/ContactPage'
-import ShoppingRelatedPage from '../../containers/ShoppingRelated/ShoppingRelatedPage'
-import ShoppingCartPage from '../../containers/ShoppingCart/ShoppingCartPage'
-import VipPage from '../../containers/Vip/VipPage'
 import PhoneMenuBar from './PhoneMenuBar'
 import DesktopChatMenu from './DesktopChatMenu'
+import BaseSuspenseFallback from '../Base/BaseSuspenseFallback'
+
+const Deshboard = React.lazy(() => import('../../containers/Main/Deshboard'))
+const Shop = React.lazy(() => import('../../containers/Shop/index'))
+const ContactPage = React.lazy(() => import('../../containers/Contact/ContactPage'))
+const ShoppingRelatedPage = React.lazy(() => import('../../containers/ShoppingRelated/ShoppingRelatedPage'))
+const ShoppingCartPage = React.lazy(() => import('../../containers/ShoppingCart/ShoppingCartPage'))
+const VipPage = React.lazy(() => import('../../containers/Vip/VipPage'))
+
 import { update_cart, update_profile } from 'actions'
 
 
@@ -48,21 +51,22 @@ const index = (props) => {
             <div className='main flex flex-col'>
                 <Route path="/" render={(props) => <Header {...props} />} />
 
+                <React.Suspense fallback={<BaseSuspenseFallback />}>
 
-                <div
-                    className='flex flex-col flex-1'
-                >
+                    <div
+                        className='flex flex-col flex-1'
+                    >
+                        <Switch>
+                            <Route path="/cart" render={(props) => <ShoppingCartPage {...props} />} />
+                            <Route path="/shopping_process" render={(props) => <ShoppingRelatedPage {...props} />} />
+                            <Route path="/contact" render={(props) => <ContactPage {...props} />} />
+                            <Route path="/shop" render={(props) => <Shop {...props} />} />
+                            <Route path="/vip" render={(props) => <VipPage {...props} />} />
+                            <Route exact path="/" render={(props) => <Deshboard {...props} />} />
+                        </Switch>
 
-                    <Switch>
-                        <Route path="/cart" render={(props) => <ShoppingCartPage {...props} />} />
-                        <Route path="/shopping_process" render={(props) => <ShoppingRelatedPage {...props} />} />
-                        <Route path="/contact" render={(props) => <ContactPage {...props} />} />
-                        <Route path="/shop" render={(props) => <Shop {...props} />} />
-                        <Route path="/vip" render={(props) => <VipPage {...props} />} />
-                        <Route exact path="/" render={(props) => <Deshboard {...props} />} />
-                    </Switch>
-
-                </div>
+                    </div>
+                </React.Suspense>
 
                 <Route path="/" render={(props) => <Footer {...props} />} />
 

@@ -9,18 +9,6 @@ import Counter from '../Shop/Counter'
 import { numberWithCommas } from 'lib/numberWithCommas'
 import BaseModal from '../Base/BaseModal'
 
-const relatedProducts = [
-    {
-        id: 1,
-        name: 'Billfold Wallet',
-        href: '#',
-        imageSrc: 'https://tailwindui.com/img/ecommerce-images/shopping-cart-page-01-related-product-01.jpg',
-        imageAlt: 'Front of Billfold Wallet in natural leather.',
-        price: '$118',
-        color: 'Natural',
-    },
-]
-
 const ShoppingCartPage = ({
     cart,
     updateCart,

@@ -4,6 +4,7 @@ import React, { Component } from 'react'
 import { IntlProvider } from 'react-intl'
 import PropTypes from 'prop-types'
 import Main from './Main'
+import BaseSuspenseFallback from './Base/BaseSuspenseFallback'
 
 class App extends Component {
 
@@ -23,7 +24,9 @@ class App extends Component {
         // get intl-config by container so IntlProvider(Context API) in here
         return (
             <IntlProvider defaultLocale='zh' {...language}>
-                {isprefetching ? this.renderPageLoading() : <Main history={history} />}
+                <React.Suspense fallback={<BaseSuspenseFallback />}>
+                    {isprefetching ? this.renderPageLoading() : <Main history={history} />}
+                </React.Suspense>
             </IntlProvider>
         )
     }
