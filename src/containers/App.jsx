@@ -3,10 +3,9 @@ import App from '../components/App.jsx'
 import { update_profile } from 'actions'
 
 const mapStateToProps = (state) => {
-    const { intl, profile } = state
+    const { intl } = state
     return {
         intl,
-        profile,
     }
 }
 
