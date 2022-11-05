@@ -2,7 +2,6 @@ import React, { useEffect, useMemo } from 'react';
 import { ConnectedRouter } from 'connected-react-router'
 import { Route, Switch } from 'react-router'
 import { useSelector, useDispatch } from 'react-redux'
-import { getAuth, onAuthStateChanged } from "firebase/auth"
 
 import Header from '../../containers/Header/Header'
 import Footer from '../../containers/Footer/Footer'
@@ -29,16 +28,6 @@ const index = (props) => {
     const cart = useSelector(state => state.cart)
     const dispatch = useDispatch()
     const updateCart = data => dispatch(update_cart(data))
-    const updateProfile = data => dispatch(update_profile(data))
-
-    const auth = getAuth();
-    onAuthStateChanged(auth, (user) => {
-        if (user) {
-            updateProfile(user)
-        } else {
-            updateProfile({})
-        }
-    });
 
     useEffect(() => {
         if (!localStorage.getItem('cart')) return
