@@ -204,12 +204,12 @@ const Header = (props) => {
                                         <NavSearch />
                                     </div>
 
+                                    {/* 多國語系 */}
+                                    <SettingLanguage />
                                 </div>
                             </div>
                         </div>
 
-                        {/* 多國語系 */}
-                        <SettingLanguage />
 
                         {/* Cart */}
                         <div className="ml-4 flow-root lg:ml-6">

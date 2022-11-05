@@ -36,7 +36,7 @@ const NavSearch = ({
     }, [categoryName])
 
     return (
-        <div className="max-w-lg w-full ease-in duration-100 lg:max-w-xs group-focus-within:max-w-full">
+        <div className="max-w-lg w-full ease-in duration-75 lg:max-w-xs group-focus-within:max-w-full">
             <label htmlFor="search" className="sr-only">
                 <FormattedMessage id='global.search' />
             </label>

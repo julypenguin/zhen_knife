@@ -17,7 +17,7 @@ const SettingLanguage = () => {
     const [selected, setSelected] = useState(defaultSelected || {})
 
     return (
-        <div className="">
+        <div className="group-focus-within:hidden hidden sm:block">
             <Listbox value={selected} onChange={selectedlang => {
                 localStorage.setItem('language', selectedlang.locale)
                 setSelected(selectedlang)
