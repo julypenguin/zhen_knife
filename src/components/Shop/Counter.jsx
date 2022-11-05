@@ -31,7 +31,7 @@ const Counter = ({
     }, [count])
 
     return (
-        <div className="bg-white flex items-center justify-between">
+        <div className="bg-white flex items-center justify-between mr-2 mb-4">
             <div className="sm:flex-1 sm:flex sm:items-center sm:justify-between">
                 <div>
                     <nav className="relative z-0 inline-flex shadow-sm -space-x-px">

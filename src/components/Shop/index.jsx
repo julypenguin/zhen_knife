@@ -54,7 +54,7 @@ const ShopPage = (props) => {
                     <Route path="/shop" render={(props) => <LeftSidebar {...props} />} />
                 </Switch>
 
-                <div className='flex-1 ml-6 divide-y divide-gray-200'>
+                <div className='w-full ml-6 divide-y divide-gray-200'>
                     <React.Suspense fallback={<BaseSuspenseFallback />}>
                         <Switch>
                             <Route exact path="/shop/detail/:intl_id" render={(props) => <ProductDetail {...props} />} />

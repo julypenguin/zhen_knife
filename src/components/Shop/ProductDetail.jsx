@@ -97,13 +97,13 @@ const ProductDetail = ({
                     <div className="flex items-baseline mt-4 mb-6">
                     </div>
                     <div className='flex-1'></div>
-                    <div className="flex space-x-3 mb-4 text-sm font-medium">
+                    <div className="flex text-sm font-medium flex-wrap">
                         <Counter
                             handleCount={setCount}
                         />
-                        <div className="flex-auto flex space-x-3">
+                        <div className="flex-auto flex space-x-3 mb-4">
                             <button
-                                className="w-1/2 flex items-center justify-center rounded-md bg-gray-700 hover:bg-black text-white p-2"
+                                className="flex items-center justify-center rounded-md bg-gray-700 hover:bg-black text-white px-3 py-2"
                                 type="button"
                                 onClick={() => {
                                     addCart()
@@ -113,7 +113,7 @@ const ProductDetail = ({
                                 <FormattedMessage id='shop.buy_now' defaultMessage='直接結帳' />
                             </button>
                             <button
-                                className="w-1/2 flex items-center justify-center rounded-md border border-gray-300 p-2 hover:bg-gray-50"
+                                className="flex items-center justify-center rounded-md border border-gray-300 p-2 hover:bg-gray-50"
                                 type="button"
                                 onClick={() => {
                                     addCart()
