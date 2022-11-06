@@ -23,7 +23,7 @@
     "connected-react-router": "^6.9.1",
     "css-loader": "^6.7.1",
     "file-loader": "^6.2.0",
-    "firebase": "^9.7.0",
+    "firebase": "^9.13.0",
     "gh-pages": "^4.0.0",
     "history": "^4.7.2",
     "postcss-loader": "^7.0.1",
