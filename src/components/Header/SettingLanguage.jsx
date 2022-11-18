@@ -17,7 +17,7 @@ const SettingLanguage = () => {
     const [selected, setSelected] = useState(defaultSelected || {})
 
     return (
-        <div className="group-focus-within:hidden hidden sm:block">
+        <div className="hidden md:block">
             <Listbox value={selected} onChange={selectedlang => {
                 localStorage.setItem('language', selectedlang.locale)
                 setSelected(selectedlang)
@@ -38,12 +38,12 @@ const SettingLanguage = () => {
                         leaveFrom="opacity-100"
                         leaveTo="opacity-0"
                     >
-                        <Listbox.Options className="absolute mt-1 max-h-60 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm">
+                        <Listbox.Options className="absolute mt-1 max-h-60 w-full overflow-auto rounded-md bg-white py-1 text-base z-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm">
                             {langList.map((lang, langIdx) => (
                                 <Listbox.Option
                                     key={langIdx}
                                     className={({ active }) =>
-                                        `relative cursor-default select-none p-2 ${active ? 'bg-indigo-100 text-indigo-900' : 'text-gray-900'
+                                        `relative cursor-default select-none p-2 bg-white ${active ? 'bg-indigo-100 text-indigo-900' : 'text-gray-900'
                                         }`
                                     }
                                     value={lang}

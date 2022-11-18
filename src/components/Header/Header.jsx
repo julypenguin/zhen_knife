@@ -127,6 +127,11 @@ const Header = (props) => {
 
                             {/* side nav */}
                             <div className="py-4 border-t border-gray-200">
+                                {/* 多國語系 */}
+                                <div className='px-4 text-black'>
+                                    <SettingLanguage />
+                                </div>
+
                                 {data.navList.map((nav) => (
                                     nav.sections.length ? null :
                                         <div key={nav.id}>
@@ -204,10 +209,11 @@ const Header = (props) => {
                                         <NavSearch />
                                     </div>
 
-                                    {/* 多國語系 */}
-                                    <SettingLanguage />
                                 </div>
                             </div>
+
+                            {/* 多國語系 */}
+                            <SettingLanguage />
                         </div>
 
 
