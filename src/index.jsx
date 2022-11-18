@@ -42,7 +42,7 @@ const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 
 const defaultStorage = getStorage(app);
-const defaultFirestore = getFirestore(app);
+const db = getFirestore(app);
 // firebase.analytics();
 
 // const db = firebase.database()

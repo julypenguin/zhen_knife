@@ -1,13 +1,36 @@
-import React, { useEffect } from 'react';
+import React, { useState } from 'react';
 import { injectIntl, FormattedMessage } from 'react-intl'
 import { FontAwesomeIcon as Icon } from '@fortawesome/react-fontawesome'
+import { collection, addDoc } from "firebase/firestore";
 import BaseInput from '../Base/BaseInput.jsx'
 import { EnvelopeIcon, PhoneIcon, MapPinIcon } from '@heroicons/react/24/outline'
 import { htmlScrollIntoView } from 'lib/scroll'
 
 const ContactPage = ({
     intl,
+    profile,
+    db,
 }) => {
+    const [name, setName] = useState('')
+    const [email, setEmail] = useState(profile.email || '')
+    const [phoneNumber, setPhoneNumber] = useState(profile.phoneNumber || '')
+    const [content, setContent] = useState('')
+
+    const onSubmit = async () => {
+        try {
+            const docRef = await addDoc(collection(db, "contact1"), {
+                name,
+                email,
+                phoneNumber,
+                content,
+                useAgent: navigator.userAgent,
+                btime: new Date().toISOString(),
+                is_read: false,
+            });
+        } catch (e) {
+            console.error("Error adding document: ", e);
+        }
+    }
 
     const getIntlMsg = (id, defaultMessage) => intl.formatMessage({ id, defaultMessage })
 
@@ -138,7 +161,10 @@ const ContactPage = ({
                         <div className="max-w-lg mx-auto lg:max-w-none">
                             <form
                                 className="grid grid-cols-1 gap-y-6"
-                                onSubmit={e => e.preventDefault()}
+                                onSubmit={e => {
+                                    e.preventDefault()
+                                    onSubmit()
+                                }}
                             >
                                 <div>
                                     <BaseInput
@@ -148,6 +174,10 @@ const ContactPage = ({
                                         id={msgintl.your_name}
                                         name='name'
                                         required
+                                        value={name}
+                                        onChange={e => {
+                                            setName(e.target.value)
+                                        }}
                                     />
                                 </div>
                                 <div>
@@ -158,6 +188,10 @@ const ContactPage = ({
                                         id={msgintl.your_email}
                                         name='email'
                                         required
+                                        value={email}
+                                        onChange={e => {
+                                            setEmail(e.target.value)
+                                        }}
                                     />
                                 </div>
                                 <div>
@@ -168,6 +202,10 @@ const ContactPage = ({
                                         id={msgintl.your_phone}
                                         name='phone'
                                         required
+                                        value={phoneNumber}
+                                        onChange={e => {
+                                            setPhoneNumber(e.target.value)
+                                        }}
                                     />
                                 </div>
                                 <div>
@@ -183,6 +221,10 @@ const ContactPage = ({
                                         rows="4"
                                         className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
                                         placeholder={msgintl.what_you_want_to_ask}
+                                        value={content}
+                                        onChange={e => {
+                                            setContent(e.target.value)
+                                        }}
                                     />
                                 </div>
                                 <div>

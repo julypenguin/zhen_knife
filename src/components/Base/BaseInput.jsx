@@ -10,6 +10,8 @@ const BaseInput = ({
     name,
     required,
     intl,
+    value,
+    onChange,
 }) => {
 
     const getIntlMsg = (id, defaultMessage) => intl.formatMessage({ id, defaultMessage })
@@ -53,10 +55,11 @@ const BaseInput = ({
                     type="text"
                     name={name}
                     id={id}
-                    autoComplete="name"
                     className="block w-full shadow-sm py-3 px-10 placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md sm:text-sm"
                     placeholder={placeholder}
                     required={required}
+                    value={value}
+                    onChange={onChange}
                 />
             </div>
         </div>
