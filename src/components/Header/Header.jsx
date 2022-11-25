@@ -188,22 +188,23 @@ const Header = (props) => {
 
                                 <Navbar {...props} />
 
+                                {/* 登入 */}
+                                {/* <div className="ml-4 hidden lg:flex lg:items-center lg:justify-end group-focus-within:hidden">
+                                    {!profile.email ?
+                                        <Link to="/vip" className="text-sm font-medium text-gray-700 hover:text-gray-800">
+                                            <FormattedMessage id='nav.sign_in' defaultMessage='登入' />
+                                        </Link>
+                                        :
+                                        <span
+                                            className='cursor-pointer'
+                                            onClick={logOut}
+                                        >
+                                            <FormattedMessage id='nav.log_out' defaultMessage='登出' />
+                                        </span>
+                                    }
+                                </div> */}
+
                                 <div className="ml-auto flex items-center group-focus-within:flex-1">
-                                    {/* 登入 */}
-                                    <div className="ml-4 hidden lg:flex lg:items-center lg:justify-end group-focus-within:hidden">
-                                        {!profile.email ?
-                                            <Link to="/vip" className="text-sm font-medium text-gray-700 hover:text-gray-800">
-                                                <FormattedMessage id='nav.sign_in' defaultMessage='登入' />
-                                            </Link>
-                                            :
-                                            <span
-                                                className='cursor-pointer'
-                                                onClick={logOut}
-                                            >
-                                                <FormattedMessage id='nav.log_out' defaultMessage='登出' />
-                                            </span>
-                                        }
-                                    </div>
 
                                     <div className="flex-1 flex items-center justify-center px-2 lg:ml-6 lg:justify-end">
                                         <NavSearch />
