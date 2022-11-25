@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { injectIntl, FormattedMessage } from 'react-intl'
 import { FontAwesomeIcon as Icon } from '@fortawesome/react-fontawesome'
-import { getAuth, createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword } from "firebase/auth"
+import { getAuth, createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, sendEmailVerification } from "firebase/auth"
 
 const LoginForm = ({
     profile,
@@ -16,8 +16,8 @@ const LoginForm = ({
     const auth = getAuth();
 
     const login = () => {
-        const email = '123aaa@gmail.com'
-        const password = 'asdf1111'
+        // const email = '123aaa@gmail.com'
+        // const password = 'asdf1111'
 
         const auth = getAuth();
 
@@ -38,11 +38,18 @@ const LoginForm = ({
 
     const register = () => {
         const auth = getAuth();
-
         createUserWithEmailAndPassword(auth, email, password)
             .then((userCredential) => {
                 // Signed in 
                 const user = userCredential.user;
+                const actionCodeSettings = {
+                    url: `${window.location.origin}?${user.email}`
+                }
+                console.log('user', user)
+                // 發送驗證 email
+                sendEmailVerification(user, actionCodeSettings)
+                    .then(res => console.log('res', res))
+                    .catch(error => console.log('error', error))
                 // ...
             })
             .catch((error) => {
@@ -154,7 +161,7 @@ const LoginForm = ({
                                     // type="submit"
                                     className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                                 >
-                                    {msgintl.sign_in}
+                                    {isLogin ? msgintl.sign_in : msgintl.register}
                                 </button>
                             </div>
 
