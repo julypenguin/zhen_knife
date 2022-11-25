@@ -68,3 +68,5 @@ package-lock.json
 package-lock.json
 
 firebaseConfig.js
+
+.DS_Store
