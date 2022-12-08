@@ -22,7 +22,10 @@ const ShopPage = (props) => {
             .map(category => {
                 return {
                     link: `/shop${!category.cats_sid ? '' : `/${category.cats_sid}`}`,
-                    path: <FormattedMessage id={`shop.categories.${category.intl_id}`} />,
+                    path: <FormattedMessage
+                        id={`shop.categories.${category.intl_id}`}
+                        defaultMessage={category.name}
+                    />,
                 }
             })
 

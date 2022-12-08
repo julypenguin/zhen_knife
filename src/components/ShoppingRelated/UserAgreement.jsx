@@ -8,7 +8,10 @@ const PrivacyPolicy = () => {
     return (
         <div>
             <h2 className='text-4xl font-bold mb-4'>
-                <FormattedMessage id={`shoppingProcess.user_agreement.${data.title_intl}`} />
+                <FormattedMessage
+                    id={`shoppingProcess.user_agreement.${data.title_intl}`}
+                    defaultMessage={data.title}
+                />
             </h2>
 
             {data.policy_list.map((policy) => (
@@ -28,7 +31,11 @@ const PrivacyPolicy = () => {
                             })}
                         >
                             {desc.desc_intl ?
-                                <FormattedMessage id={`shoppingProcess.user_agreement.${desc.desc_intl}`} />
+                                <FormattedMessage
+                                    id={`shoppingProcess.user_agreement.${desc.desc_intl}`}
+                                    values={{ domain: window.location.origin }}
+                                    defaultMessage={desc.desc}
+                                />
                                 :
                                 desc.itme_list.map((item) => (
                                     <Fragment key={item.id}>
@@ -39,7 +46,10 @@ const PrivacyPolicy = () => {
                                                     [`text-${item.color}-500`]: item.color
                                                 })}
                                             >
-                                                <FormattedMessage id={`shoppingProcess.user_agreement.${item.item_intl}`} />
+                                                <FormattedMessage
+                                                    id={`shoppingProcess.user_agreement.${item.item_intl}`}
+                                                    defaultMessage={item.item}
+                                                />
                                             </span>
                                             :
                                             <Link
@@ -49,7 +59,10 @@ const PrivacyPolicy = () => {
                                                     [`text-${item.color}-500`]: item.color
                                                 })}
                                             >
-                                                <FormattedMessage id={`shoppingProcess.user_agreement.${item.item_intl}`} />
+                                                <FormattedMessage
+                                                    id={`shoppingProcess.user_agreement.${item.item_intl}`}
+                                                    defaultMessage={item.item}
+                                                />
                                             </Link>
                                         }
                                     </Fragment>

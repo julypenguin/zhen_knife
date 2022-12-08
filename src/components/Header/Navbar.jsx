@@ -17,7 +17,10 @@ const Navbar = ({
                     to={nav.to}
                     strict={nav.strict}
                 >
-                    <FormattedMessage id={`nav.${nav.name_intl}`} />
+                    <FormattedMessage
+                        id={`nav.${nav.name_intl}`}
+                        defaultMessage={nav.nav}
+                    />
                 </BaseTab>
             ))}
         </div>

@@ -102,7 +102,10 @@ const Header = (props) => {
                                         nav.name_intl !== 'zhen_series' ? null :
                                             <div key={nav.id}>
                                                 <p className="px-4 mb-4 font-bold text-gray-900">
-                                                    <FormattedMessage id={`nav.${nav.name_intl}`} />
+                                                    <FormattedMessage
+                                                        id={`nav.${nav.name_intl}`}
+                                                        defaultMessage={nav.nav}
+                                                    />
                                                 </p>
                                                 <ul
                                                     role="list"
@@ -115,7 +118,10 @@ const Header = (props) => {
                                                                 className="px-4 py-2 block text-gray-500 hover:bg-blue-400 hover:text-white"
                                                                 onClick={() => setOpen(false)}
                                                             >
-                                                                <FormattedMessage id={`shop.categories.${cate.intl_id}`} />
+                                                                <FormattedMessage
+                                                                    id={`shop.categories.${cate.intl_id}`}
+                                                                    defaultMessage={cate.name}
+                                                                />
                                                             </Link>
                                                         </li>
                                                     ))}
@@ -140,7 +146,10 @@ const Header = (props) => {
                                                 className="px-4 py-2 block font-medium text-gray-900 hover:bg-blue-400 hover:text-white"
                                                 onClick={() => setOpen(false)}
                                             >
-                                                <FormattedMessage id={`nav.${nav.name_intl}`} />
+                                                <FormattedMessage 
+                                                id={`nav.${nav.name_intl}`} 
+                                                defaultMessage={nav}
+                                                />
                                             </Link>
                                         </div>
                                 ))}

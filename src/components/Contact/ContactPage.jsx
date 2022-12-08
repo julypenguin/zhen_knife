@@ -50,12 +50,15 @@ const ContactPage = ({
             {/* 上方描述 */}
             <div className='p-4 md:p-8 flex flex-wrap justify-center lg:py-16'>
                 <div className='text-3xl font-bold py-4 w-full text-center lg:pb-8'>
-                    <FormattedMessage id='contact.contact_us' />
+                    <FormattedMessage id='contact.contact_us' defaultMessage='聯絡我們' />
                 </div>
                 <div className='grid grid-cols-5'>
                     <div className='md:col-span-1' />
                     <div className='col-span-5 md:col-span-3 leading-8 text-center'>
-                        <FormattedMessage id='contact.contact_content' />
+                        <FormattedMessage
+                            id='contact.contact_content'
+                            defaultMessage='臻刀具秉持著最好的服務精神，對於消費者的問題，我們都會盡快處理。若是您有什麼問題或希望與我們合作，除了一般的電話聯絡方式，也歡應透過表單提交，提供多元的方式，讓消費者有更多的連絡選擇。'
+                        />
                     </div>
                     <div className='md:col-span-1' />
 
@@ -71,12 +74,21 @@ const ContactPage = ({
                     <div className="bg-gray-50 py-12 px-4 sm:px-6 lg:col-span-2 lg:px-8 lg:py-24 xl:pr-12">
                         <div className="max-w-lg mx-auto">
                             <h2 className="text-2xl font-extrabold tracking-tight text-gray-900 sm:text-3xl">
-                                <FormattedMessage id='contact.contact_info' />
+                                <FormattedMessage
+                                    id='contact.contact_info'
+                                    defaultMessage='聯絡資訊'
+                                />
                             </h2>
                             <p className="mt-3 text-lg leading-6 text-gray-500">
-                                <FormattedMessage id='contact.business_hours' />
+                                <FormattedMessage
+                                    id='contact.business_hours'
+                                    defaultMessage='營業時間'
+                                />
                                 <span className='mx-2'>:</span>
-                                <FormattedMessage id='contact.bh_time' />
+                                <FormattedMessage
+                                    id='contact.bh_time'
+                                    defaultMessage='週一至週五'
+                                />
                                 <span className='ml-2'>9:00~18:00</span>
                             </p>
                             <dl className="mt-8 text-base text-gray-500">
@@ -232,7 +244,10 @@ const ContactPage = ({
                                         type="submit"
                                         className="inline-flex justify-center py-3 px-6 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                                     >
-                                        <FormattedMessage id='global.submit' />
+                                        <FormattedMessage
+                                            id='global.submit'
+                                            defaultMessage='送出'
+                                        />
                                     </button>
                                 </div>
                             </form>

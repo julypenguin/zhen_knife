@@ -38,7 +38,7 @@ const NavSearch = ({
     return (
         <div className="max-w-lg w-full ease-in duration-75 lg:max-w-xs group-focus-within:max-w-full">
             <label htmlFor="search" className="sr-only">
-                <FormattedMessage id='global.search' />
+                <FormattedMessage id='global.search' defaultMessage='搜尋' />
             </label>
             <form
                 className="relative"

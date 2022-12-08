@@ -106,7 +106,10 @@ const Footer = () => {
                             />
                         </div>
                         <p className="text-gray-300 text-base">
-                            <FormattedMessage id='footer.premium_cooking_knives_is_an_enterprise_spacializing' />
+                            <FormattedMessage
+                                id='footer.premium_cooking_knives_is_an_enterprise_spacializing'
+                                defaultMessage='臻 高級料理刀具是一家專業生產廚房刀具的企業，公司擁有先進的生產設備，產品質量優良，價格合理，暢銷德、法、美、英、西班牙等歐美國際市場，深受客商信賴和用戶青睞！'
+                            />
                         </p>
                         {/* <div className="flex space-x-6">
                             {navigation.social.map((item) => (
@@ -121,7 +124,10 @@ const Footer = () => {
                         <div className="md:grid md:grid-cols-3 md:gap-8">
                             <div className=''>
                                 <h3 className="text-xl font-semibold text-gray-400 tracking-wider">
-                                    <FormattedMessage id='footer.company_information' />
+                                    <FormattedMessage
+                                        id='footer.company_information'
+                                        defaultMessage='公司資訊'
+                                    />
                                 </h3>
                                 <div className="mt-4 space-y-4">
                                     <ul className="mt-4 space-y-4">
@@ -148,7 +154,10 @@ const Footer = () => {
                             </div>
                             <div className="mt-12 md:mt-0">
                                 <h3 className="text-xl font-semibold text-gray-400 tracking-wider">
-                                    <FormattedMessage id='nav.zhen_series' />
+                                    <FormattedMessage
+                                        id='nav.zhen_series'
+                                        defaultMessage='臻刀具系列'
+                                    />
                                 </h3>
                                 <ul className="mt-4 space-y-4">
                                     {navigation.shop.map((item) => (
@@ -165,7 +174,10 @@ const Footer = () => {
                             </div>
                             <div className="mt-12 md:mt-0">
                                 <h3 className="text-xl font-semibold text-gray-400 tracking-wider">
-                                    <FormattedMessage id='nav.shopping_related' />
+                                    <FormattedMessage
+                                        id='nav.shopping_related'
+                                        defaultMessage='購物相關'
+                                    />
                                 </h3>
                                 <ul className="mt-4 space-y-4">
                                     {navigation.shopping_process.map((item) => (
