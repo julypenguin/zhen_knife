@@ -11,6 +11,7 @@ const App = ({
     updateProfile,
     intl: { language },
     history,
+    profile,
 }) => {
     const [isPreFetching, setIsPreFetching] = useState(true)
 
@@ -21,6 +22,7 @@ const App = ({
         if (user) {
             updateProfile(user)
         } else {
+            if (!profile.email) return
             updateProfile({})
         }
     });
