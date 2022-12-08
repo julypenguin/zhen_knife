@@ -17,7 +17,7 @@ const NavSearch = ({
         qs_obj[name] = val
     })
     const pathname = window.location.pathname
-    const isShopPath = pathname.includes('shop')
+    const isShopPath = pathname === '/shop' || pathname.includes('/shop/') && !pathname.includes('/shop/detail')
     let categoryId = !isShopPath ? 0 : Number(pathname.slice(6))
     categoryId = isNaN(categoryId) ? 0 : categoryId
     const [category] = catData.categories.filter(cate => cate.cats_sid === categoryId)
@@ -32,8 +32,10 @@ const NavSearch = ({
     }
 
     useEffect(() => {
+        if (pathname.includes('/shop/detail')) return
+        if (router.action === "POP" && isShopPath) return
         setSearch('')
-    }, [categoryName])
+    }, [pathname])
 
     return (
         <div className="max-w-lg w-full ease-in duration-75 lg:max-w-xs group-focus-within:max-w-full">
