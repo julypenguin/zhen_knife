@@ -18,7 +18,7 @@ const ContactPage = ({
 
     const onSubmit = async () => {
         try {
-            const docRef = await addDoc(collection(db, "contact1"), {
+            const docRef = await addDoc(collection(db, "contact"), {
                 name,
                 email,
                 phoneNumber,
