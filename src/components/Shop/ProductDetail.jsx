@@ -201,7 +201,7 @@ const ProductDetail = ({
                 </div>
             }
 
-            {detail.note_list.length &&
+            {!!detail.note_list.length &&
                 <div className='px-8 mt-8 text-red-500'>
 
                 </div>
