@@ -1,9 +1,50 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { injectIntl, FormattedMessage } from 'react-intl'
+import { collection, addDoc, setDoc, doc, getDoc } from "firebase/firestore";
+import BaseModal from '../Base/BaseModal'
 
 const VipAccount = ({
+    profile,
+    db,
     intl,
 }) => {
+    const [lastName, setLastName] = useState('')
+    const [firstName, setFirstName] = useState('')
+    const [showUpdateModal, setShowUpdateModal] = useState(false)
+    const [updateError, setUpdateError] = useState(false)
+
+    const onClose = () => {
+        setShowUpdateModal(false)
+        setUpdateError(false)
+    }
+
+    const getAccount = async () => {
+        const accountRef = doc(db, `${profile.email}`, 'account');
+        const accountSnap = await getDoc(accountRef);
+
+        if (accountSnap.exists()) {
+            const { lastName, firstName } = accountSnap.data()
+            setLastName(lastName || '')
+            setFirstName(firstName || '')
+        } else {
+            // doc.data() will be undefined in this case
+            console.log("No such document!");
+        }
+    }
+
+    const onSubmit = async () => {
+        try {
+            const alovelaceDocumentRef = await setDoc(doc(db, `${profile.email}`, "account"), {
+                lastName,
+                firstName,
+            });
+            await setShowUpdateModal(true)
+        } catch (e) {
+            setShowUpdateModal(true)
+            setUpdateError(true)
+            console.error("Error account adding document: ", e);
+        }
+    }
 
     const getIntlMsg = (id, defaultMessage) => intl.formatMessage({ id, defaultMessage })
 
@@ -23,12 +64,22 @@ const VipAccount = ({
         save: getIntlMsg('global.save', '儲存'),
     }
 
+    useEffect(() => {
+        getAccount()
+    }, [])
+
     return (
         <div className='w-8/12'>
             <div className='py-4 text-xl'>{msgintl.account_detail}</div>
 
-            <form className="space-y-6" action="#" method="POST">
-
+            <form
+                className="space-y-6"
+                onSubmit={e => {
+                    e.stopPropagation()
+                    e.preventDefault()
+                    onSubmit()
+                }}
+            >
                 <div className="mt-5 md:col-span-2 md:mt-0">
                     <div className="grid grid-cols-6 gap-6">
                         <div className="col-span-6 sm:col-span-3">
@@ -42,6 +93,10 @@ const VipAccount = ({
                                 autoComplete="given-name"
                                 className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                                 placeholder={msgintl.first_name}
+                                value={firstName}
+                                onChange={e => {
+                                    setFirstName(e.target.value)
+                                }}
                             />
                         </div>
 
@@ -56,21 +111,18 @@ const VipAccount = ({
                                 autoComplete="family-name"
                                 className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                                 placeholder={msgintl.last_name}
+                                value={lastName}
+                                onChange={e => {
+                                    setLastName(e.target.value)
+                                }}
                             />
                         </div>
 
                         <div className="col-span-6 sm:col-span-6">
-                            <label htmlFor="email-address" className="block text-sm font-medium text-gray-700">
+                            <span className="mb-2 block text-sm font-medium text-gray-700">
                                 {msgintl.email}
-                            </label>
-                            <input
-                                type="text"
-                                name="email-address"
-                                id="email-address"
-                                autoComplete="email"
-                                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
-                                placeholder={msgintl.email}
-                            />
+                            </span>
+                            <div>{profile.email}</div>
                         </div>
                     </div>
                 </div>
@@ -79,19 +131,25 @@ const VipAccount = ({
 
                 <div className="flex justify-end">
                     <button
-                        type="button"
-                        className="rounded-md border border-gray-300 bg-white py-2 px-4 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
-                    >
-                        {msgintl.cancel}
-                    </button>
-                    <button
                         type="submit"
                         className="ml-3 inline-flex justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                        onClick={onSubmit}
                     >
                         {msgintl.save}
                     </button>
                 </div>
             </form>
+
+            <BaseModal
+                show={showUpdateModal}
+                onHide={onClose}
+            >
+                {updateError ?
+                    <FormattedMessage id='global.result.update_fail' defaultMessage='修改失敗' />
+                    :
+                    <FormattedMessage id='global.result.update_success' defaultMessage='修改成功' />
+                }
+            </BaseModal>
         </div>
     );
 };

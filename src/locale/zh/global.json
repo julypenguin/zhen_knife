@@ -4,5 +4,11 @@
     "comma": "，",
     "cancel": "取消",
     "save": "儲存",
-    "ok": "確定"
+    "ok": "確定",
+    "result": {
+        "update_success": "修改成功",
+        "update_fail": "修改失敗",
+        "save_success": "儲存成功",
+        "save_fail": "儲存失敗"
+    }
 }
