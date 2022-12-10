@@ -1,23 +1,26 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { injectIntl, FormattedMessage } from 'react-intl'
 import LeftSidebar from './../../containers/Shop/LeftSidebar'
 
 import BaseBreadcrumbs from '../Base/BaseBreadcrumbs'
 import { Route, Switch } from 'react-router'
 import data from './categories.json'
+import productsData from './products.json'
 import BaseSuspenseFallback from '../Base/BaseSuspenseFallback'
 
 const ProductDetail = React.lazy(() => import('../../containers/Shop/ProductDetail'))
 const ProductList = React.lazy(() => import('../../containers/Shop/ProductList'))
 
 const ShopPage = (props) => {
+    const [parentCatsSid, setParentCatsSid] = useState(0)
 
     const getPath = (props) => {
         const cats_sid = Number(props.match.params.cats_sid) || 0
         const intl_id = props.match.params.intl_id || ''
+
         const pathList = data.categories
             .filter(category => {
-                return !category.cats_sid || category.cats_sid === cats_sid
+                return !category.cats_sid || category.cats_sid === cats_sid || category.cats_sid === parentCatsSid
             })
             .map(category => {
                 return {
@@ -33,7 +36,10 @@ const ShopPage = (props) => {
             if (!cats_sid) {
                 pathList.push({
                     link: `/shop/detail/${intl_id}`,
-                    path: <FormattedMessage id={`shop.products.${intl_id}`} />,
+                    path: <FormattedMessage
+                        id={`shop.products.${intl_id}`}
+                        defaultMessage={productsData[intl_id].name}
+                    />,
                 })
             }
         }
@@ -53,8 +59,8 @@ const ShopPage = (props) => {
             <div className='py-4 flex flex-1'>
                 {/* <LeftSidebar /> */}
                 <Switch>
-                    <Route path="/shop/:cats_sid" render={(props) => <LeftSidebar {...props} />} />
-                    <Route path="/shop" render={(props) => <LeftSidebar {...props} />} />
+                    <Route path="/shop/:cats_sid" render={(props) => <LeftSidebar {...props} parentCatsSid={parentCatsSid} setParentCatsSid={setParentCatsSid} />} />
+                    <Route path="/shop" render={(props) => <LeftSidebar {...props} parentCatsSid={parentCatsSid} setParentCatsSid={setParentCatsSid} />} />
                 </Switch>
 
                 <div className='w-full ml-6 divide-y divide-gray-200'>

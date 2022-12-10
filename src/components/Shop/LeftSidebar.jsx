@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import classnames from 'classnames';
 import { injectIntl, FormattedMessage } from 'react-intl'
 import data from './categories.json'
@@ -9,11 +9,18 @@ import { FontAwesomeIcon as Icon } from '@fortawesome/react-fontawesome'
 
 const LeftSidebarCopy = ({
     match,
+    parentCatsSid,
+    setParentCatsSid,
     push,
 }) => {
     const [all_series] = data.categories.filter(category => category.cats_sid === 0)
 
-    const cats_sid = Number(match.params.cats_sid) || 0
+    const cats_sid = match.params.cats_sid === undefined ? 0 :
+    isNaN(Number(match.params.cats_sid)) ? parentCatsSid : Number(match.params.cats_sid)
+
+    useEffect(() => {
+        setParentCatsSid(cats_sid)
+    }, [cats_sid])
 
     return (
         <div className='hidden lg:block'>
