@@ -37,7 +37,7 @@ const index = (props) => {
 
     return (
         <ConnectedRouter history={history}>
-            <div className='main flex flex-col'>
+            <div className='main flex flex-col min-h-screen'>
                 <Route path="/" render={(props) => <Header {...props} />} />
 
                 <React.Suspense fallback={<BaseSuspenseFallback />}>
