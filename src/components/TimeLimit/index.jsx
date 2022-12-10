@@ -19,23 +19,25 @@ const index = (props) => {
             {/* 限時搶購活動頁主圖 */}
             <ViewMain />
 
-            {/* 可拆洗的剪刀 */}
-            <WashScissors />
+            <div className='container'>
+                {/* 可拆洗的剪刀 */}
+                <WashScissors />
 
-            {/* 臻。剪刀 */}
-            <ScissorsIntro />
+                {/* 臻。剪刀 */}
+                <ScissorsIntro />
 
-            {/* 影片介紹 */}
-            <YoutubeIframe />
+                {/* 影片介紹 */}
+                <YoutubeIframe />
 
-            {/* 特點介紹 */}
-            <FeaturesIntro />
+                {/* 特點介紹 */}
+                <FeaturesIntro />
 
-            {/* 特點介紹下頁 */}
-            <FeaturesIntroSide />
+                {/* 特點介紹下頁 */}
+                <FeaturesIntroSide />
 
-            {/* 設計理念 */}
-            <DesignConcept />
+                {/* 設ß計理念 */}
+                <DesignConcept />
+            </div>
 
             {/* 一把萬用 */}
             <Universal />

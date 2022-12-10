@@ -15,7 +15,7 @@ const Deshboard = ({
     }
 
     return (
-        <div className='container'>
+        <div>
             <section className='flex flex-col justify-center items-center bg-black'>
                 {/* <div className='w-full h-full absolute top-0 left-0'>
                     <ProductImg img='mainView' />
