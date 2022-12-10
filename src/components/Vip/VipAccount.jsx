@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { injectIntl, FormattedMessage } from 'react-intl'
-import { collection, addDoc, setDoc, doc, getDoc } from "firebase/firestore";
+import { setDoc, doc, getDoc } from "firebase/firestore";
 import BaseModal from '../Base/BaseModal'
 
 const VipAccount = ({
@@ -34,7 +34,7 @@ const VipAccount = ({
 
     const onSubmit = async () => {
         try {
-            const alovelaceDocumentRef = await setDoc(doc(db, `${profile.email}`, "account"), {
+            await setDoc(doc(db, `${profile.email}`, "account"), {
                 lastName,
                 firstName,
             });
@@ -126,8 +126,6 @@ const VipAccount = ({
                         </div>
                     </div>
                 </div>
-
-
 
                 <div className="flex justify-end">
                     <button
