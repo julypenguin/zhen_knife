@@ -16,6 +16,7 @@ const ShoppingCartPage = ({
 }) => {
     const [removeItem, setRemoveItem] = useState({})
     const [showRemoveModal, setShowRemoveModal] = useState(false)
+    const [disabledcheckout, setDisabledcheckout] = useState(true)
 
     const relatedProducts = cart
         .filter((product, productIdx) => productIdx === 0)
@@ -47,7 +48,8 @@ const ShoppingCartPage = ({
         const productCost = cart.reduce((acc, product) => {
             const price = Number(product.price)
             if (isNaN(price)) return acc
-            return acc + price
+            const totalPrice = price * product.buyCount
+        return acc + totalPrice
         }, 0)
 
         const shippingEstimate = 0
@@ -55,17 +57,17 @@ const ShoppingCartPage = ({
 
         switch (type) {
             case 1: return <span>
-                <span>$</span>
+                <span className='mr-1'>NT$</span>
                 {numberWithCommas(productCost)}
             </span>
             case 2: return shippingEstimate ?
                 <span>
-                    <span>$</span>
+                    <span className='mr-1'>NT$</span>
                     {numberWithCommas(shippingEstimate)}
                 </span> :
                 <FormattedMessage id='shoppingCart.free_transportation' defaultMessage='免運' />
             case 3: return <span>
-                <span>$</span>
+                <span className='mr-1'>NT$</span>
                 {numberWithCommas(orderTotal)}
             </span>
             default: return 0
@@ -213,7 +215,9 @@ const ShoppingCartPage = ({
                             <div className="mt-6">
                                 <button
                                     type="submit"
-                                    className="w-full bg-indigo-600 border border-transparent rounded-md shadow-sm py-3 px-4 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-indigo-500"
+                                    className={`w-full border border-transparent rounded-md shadow-sm py-3 px-4 text-base font-medium text-white  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50  ${disabledcheckout ? 'bg-indigo-200' : 'bg-indigo-600 hover:bg-indigo-700 focus:ring-indigo-500'}`}
+                                    disabled={disabledcheckout}
+                                    title={'目前無結帳功能'}
                                 >
                                     <FormattedMessage id='shoppingCart.checkout' defaultMessage='前往結帳' />
                                 </button>

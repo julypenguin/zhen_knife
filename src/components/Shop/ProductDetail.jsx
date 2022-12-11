@@ -5,6 +5,7 @@ import ProductImg from './ProductImg'
 import productData from './products.json'
 import noticeData from './notice.json'
 import BaseModal from '../Base/BaseModal'
+import { product_limit } from 'Config'
 
 const ProductDetail = ({
     match,
@@ -27,7 +28,7 @@ const ProductDetail = ({
                 if (bag.cat_sid !== data.cat_sid) return bag
                 return {
                     ...bag,
-                    buyCount: bag.buyCount + count
+                    buyCount: bag.buyCount + count > product_limit ? product_limit : bag.buyCount + count
                 }
             })
         } else {
