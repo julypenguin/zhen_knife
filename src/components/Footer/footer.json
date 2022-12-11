@@ -1,0 +1,75 @@
+{
+    "companyInformation": [
+        {
+            "name": "台中市西屯區中工二路51-1號",
+            "name_intl": "company_address"
+        },
+        {
+            "name": "電話 : 04-23508566",
+            "name_intl": "company_tel"
+        },
+        {
+            "name": "傳真 : 04-23508380",
+            "name_intl": "company_fax"
+        },
+        {
+            "name": "信箱：zhen.knife@gmail.com",
+            "name_intl": "company_email"
+        }
+    ],
+    "shop": [
+        { 
+            "cats_sid": 0,
+            "name": "全系列", 
+            "intl_id": "all_series"
+        },
+        { 
+            "cats_sid": 1,
+            "name": "三合鋼系列", 
+            "intl_id": "sandwich_steel_series"
+        },
+        { 
+            "cats_sid": 2,
+            "name": "大馬士革系列", 
+            "intl_id": "damascus_series"
+        },
+        { 
+            "cats_sid": 3,
+            "name": "高碳鋼系列", 
+            "intl_id": "high_carbon_steel_series"
+        },
+        { 
+            "cats_sid": 4,
+            "name": "刀座 / 刀鞘", 
+            "intl_id": "knife_holder_and_scabbard_series"
+        },
+        { 
+            "cats_sid": 20,
+            "name": "特價商品", 
+            "intl_id": "special_offer",
+            "href": "/shop/20" 
+        }
+    ],
+    "shopping_process": [
+        { 
+            "name": "購物流程", 
+            "href": "#" 
+        },
+        { 
+            "name": "常見問題", 
+            "href": "#" 
+        },
+        { 
+            "name": "隱私權政策", 
+            "href": "#" 
+        },
+        { 
+            "name": "用戶協議", 
+            "href": "#" 
+        },
+        { 
+            "name": "聯絡我們", 
+            "href": "#" 
+        }
+    ]
+}
